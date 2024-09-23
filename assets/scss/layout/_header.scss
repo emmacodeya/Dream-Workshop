@@ -1,3 +1,24 @@
 .header{
-  background-image: linear-gradient(to bottom, black 10%, transparent 100%);
+  color: $gray-100;
+}
+
+
+.navbar-nav {
+    gap: 56px;
+    .nav-link {
+        color: $gray-100;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 30px;
+        letter-spacing: 10%;
+    }
+}
+
+.login-btn {
+    padding: 16px 24px;
+    //styleName: Bold/text & button M;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0.09em;
 }
