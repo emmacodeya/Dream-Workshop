@@ -1,42 +1,90 @@
 .front-page-banner {
-  background-image: url('https://images.unsplash.com/photo-1553877522-43269d4ea984?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+  background-image: url('/assets/images/Banner.png');
+  background-blend-mode: saturation;
   background-repeat: none;
   background-size: cover ;
   height: 100vh;
 }
 
-//  banner-input
-.input-group {
-  max-width: 350px;
-  background-color: white;
-}
-
-.input-group-text {
-  border: none;
-  background-color: transparent;
-}
-
-.form-control {
-  border: none;
-}
-.search-text{
-  color: #ADB5BD;
-}
-.input-group:focus-within .search-text {
-  color: #212529;
+.banner-title {
+  color: $gray-100;
   font-weight: bold;
+  font-size: 64px;
+  line-height: 76.8px;
+  letter-spacing: 5%;
+  span {
+    color:$primary-600;
+  }
 }
-#search:focus {
-  outline: none;
-  box-shadow: none;
-  border-color: transparent;
+.banner-content {
+  width: 606px;
+}
+//  banner-input
+.banner-input {
+  width: 41.25%;
+  background-color: #333333B2;
+  color: $gray-100;
+  padding: 13px 24px;
+  border:2px solid $gray-100;
+  border-radius: 0%;
+  &:focus {
+    background-color: #333333B2;
+    color: $gray-100;
+    border:2px solid $primary-600;
+  }
+  &::placeholder {
+    color: $gray-100; 
+  }
 }
 
+.search-dropdown {
+  width:33.66% ;
+}
+
+.dropdown-btn {
+  background-color: $gray-800;
+  color: $gray-100; 
+  padding: 13px 24px;
+  border:2px solid $gray-100;
+  border-radius: 0px;
+  width: 100%;
+  &:hover {
+    background-color: $gray-800;
+    color: $gray-100;
+    border:2px solid $primary-600;
+  }
+  &:focus {
+    background-color: #333333B2;
+    color: $gray-100;
+    border:2px solid $primary-600;
+  }
+}
+
+.dropdown-menu {
+  background-color: $gray-800; 
+  border-radius: 0px;
+  width: 100%;
+  .dropdown-hover:hover {
+    outline: 2px dashed #43E1BF
+  }
+  .dropdown-item {
+    padding: 13px 24px;
+    &:hover {
+      background-color: $gray-800;
+      color: $gray-100;
+    }
+  }
+}
 
 .search-btn {
-  width: 100px;
-  height: 40px;
+  width: 120px;
+  padding: 13px 24px;
 }
+
+.n-icon::after {
+  display: none;
+}
+
 
 .industry-card {
   height: 100px;
