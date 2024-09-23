@@ -19,18 +19,8 @@ body {
       display: inline-block;
     }
     
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6 {
-      letter-spacing: 2%;
-
-    }
-    
     p {
-      letter-spacing: 0.05em;
+      letter-spacing: 0.10em;
       margin-bottom: 0;
       color: $gray-100;
     }
