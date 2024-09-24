@@ -107,21 +107,23 @@
   color: $gray-200;
 }
 
-.swiper-slide {
-  border: 1px solid #43E1BF;
+.popular-card {
+  background-color: $gray-800;
+}
+.businessSwiper {
+  max-width: 1168px;
+}
+.business-swiper {
+  width: 280px;
+}
+.popular-card-body {
+  padding: 32px 24px 20px;
 }
 
-.swiper-slide {
-  height: auto;
-  //因為每張照片不同，所以這裡使用 height: auto; 將所有 .swiper-slide 設定為自適應高度。下面的 height: 100%; 會使圖片內容填滿外部容器的高度。
-  
-  img {
-    display: block;
-    width: 200px;
-    height: 100%;
-    object-fit: cover;
-    //object-fit 可設定其圖片內容與外框的關係，使用 cover 即表示內容會縮放到整個外框。
-  }
+.popular-card-title {
+  font-weight: bold;
+  line-height: 36px;
+  letter-spacing: 11%;
 }
 
 
