@@ -1,484 +1,532 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>創夢工坊</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@200..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Bootstrap 5 CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaTioPzWJ0h8cCw2WLLQpG2L1z4lg3FL2jvoLIweDvffp8EGFKzGpqp1E0i" crossorigin="anonymous">
-    <!-- Bootstrap 5 JS + Popper.js -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeo5v4Mw5dldwbg6GPHa1w6ZT6tztFIdSTwBKxULy5hG9ANk" crossorigin="anonymous"></script>
-    <link href="https://fonts.googleapis.com/css?family=Material+Icons%7CMaterial+Icons+Outlined%7CMaterial+Icons+Two+Tone%7CMaterial+Icons+Round%7CMaterial+Icons+Sharp" rel="stylesheet">
-    <!-- Link Swiper's CSS -->
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>創夢工坊</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@200..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaTioPzWJ0h8cCw2WLLQpG2L1z4lg3FL2jvoLIweDvffp8EGFKzGpqp1E0i" crossorigin="anonymous">
+  <!-- Bootstrap 5 JS + Popper.js -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ENjdO4Dr2bkBIFxQpeo5v4Mw5dldwbg6GPHa1w6ZT6tztFIdSTwBKxULy5hG9ANk"
+    crossorigin="anonymous"></script>
+  <link
+    href="https://fonts.googleapis.com/css?family=Material+Icons%7CMaterial+Icons+Outlined%7CMaterial+Icons+Two+Tone%7CMaterial+Icons+Round%7CMaterial+Icons+Sharp"
+    rel="stylesheet">
+  <!-- Link Swiper's CSS -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-  </head>
-  <body>
-    <%- include('./layout/header'); -%>
+</head>
+
+<body>
+  <%- include('./layout/header'); -%>
     <!-- banner -->
-        <div class="front-page-banner d-flex justify-content-center align-items-center">
-          <div class="banner-content fuck">
-            <h1 class="banner-title fw-bold text-center">
-              投資未來<br>創造<span>無限</span>可能!
-            </h1>
-              <div class="d-flex align-items-center">
-                <input type="text" class="banner-input form-control me-3 flex-grow-1" placeholder="搜尋...">
-  
-                <div class="search-dropdown navbar-expand-lg me-3">
-                  <div class="dropdown">
-                    <button class="btn dropdown-btn dropdown-toggle n-icon d-flex justify-content-between align-items-center" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
-                        找創業項目<span class="material-icons-outlined text-gray-100 p-0">
-                          keyboard_arrow_down
-                        </span>
-                    </button>
-                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                      <li class="dropdown-hover"><button class="dropdown-item text-gray-100" type="button">找創業項目</button></li>
-                      <li class="dropdown-hover"><button class="dropdown-item text-gray-100" type="button">找投資</button></li>
-                    </ul>
-                  </div>
-                </div>
-  
-                <button type="submit" class="search-btn btn btn-primary-600 fw-bold">搜尋</button>
-              </div>  
-          </div>
-        </div>
+    <div class="front-page-banner d-flex justify-content-center align-items-center">
+      <div class="banner-content fuck">
+        <h1 class="banner-title fw-bold text-center">
+          投資未來<br>創造<span>無限</span>可能!
+        </h1>
+        <div class="d-flex align-items-center">
+          <input type="text" class="banner-input form-control me-3 flex-grow-1" placeholder="搜尋...">
 
+          <div class="search-dropdown navbar-expand-lg me-3">
+            <div class="dropdown">
+              <button class="btn dropdown-btn dropdown-toggle n-icon d-flex justify-content-between align-items-center"
+                type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+                找創業項目<span class="material-icons-outlined text-gray-100 p-0">
+                  keyboard_arrow_down
+                </span>
+              </button>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <li class="dropdown-hover"><button class="dropdown-item text-gray-100" type="button">找創業項目</button></li>
+                <li class="dropdown-hover"><button class="dropdown-item text-gray-100" type="button">找投資</button></li>
+              </ul>
+            </div>
+          </div>
 
-      <!-- 獨家特色 -->
-       <section class="bg-gray-1000">
-        <div class="features container py-lg-15">
-          <h2 class="fw-bold text-center text-primary-600 mb-lg-8">獨家特色</h2>
-          <div class="row">
-            <div class="col-4">
-              <div class="text-center">
-                <div class="feature-icon mb-lg-3">
-                  <img src="/assets/images/icons/search.png" alt="icon">
-                </div>
-                <h4 class="text-gray-100 mb-3">精準搜尋</h4>
-                <p class="feature-content">利用我們的搜尋系統,你可以輕鬆篩選並找到符合您創業需求的合適夥伴和機會。高效、快捷,讓您的創業之路更加順利。</p>
-              </div> 
-            </div>
-            <div class="col-4">
-              <div class="text-center">
-                <div class="feature-icon mb-lg-3">
-                  <img src="/assets/images/icons/start.png" alt="icon">
-                </div>
-                <h4 class="text-gray-100 mb-3">真實評價</h4>
-                <p class="feature-content">合作更安心!我們的真實評價系統讓你在選擇創業夥伴時更加有依據。每一位用戶都可以留下真實評價,讓你了解對方的合作表現和口碑,確保每一次合作都更有保障。</p>
-              </div>        
-            </div>
-            <div class="col-4">
-              <div class="text-center">
-                <div class="feature-icon mb-lg-3">
-                  <img src="/assets/images/icons/chat-message.png" alt="icon">
-                </div>
-                <h4 class="text-gray-100 mb-3">創業分享討論區</h4>
-                <p class="feature-content">創業路上不孤單!我們的討論區是你尋求建議和分享創業心得的理想場所。來自各行各業的創業者在這裡匯聚,交流心得、討論問題,共同助力彼此的創業夢想成真。</p>
-              </div>      
-            </div>
-          </div>
-         </div>
-       </section>
-       
-
-       <!-- 熱門創業項目 -->
-        <div class="bg-gray-1000">
-          <div class="container py-5 py-lg-15">
-            <h2 class="fw-bold text-center text-primary-600 mb-lg-8">熱門創業項目</h2>
-            <!-- <div class="row">
-              <div class="col-3">
-                <div class="card popular-card text-center">
-                  <div class="card-body p-3">
-                    <h5 class="mb-3">綠能創新股份有限公司</h5>
-                    <div class="d-flex justify-content-center align-items-center mb-4">
-                      <span class="me-2">環保科技</span><span>|</span><span class="ms-2">智慧設備</span>
-                    </div>
-                    <p>
-                      專注於開發可持續能源解決方案,致力於減少碳足跡並推動清潔能源的使用。
-                    </p>
-                  </div>
-                  <a href="#" class="btn btn-light rounded-0">
-                    <p>資金規模</p>
-                    <strong>$ 40,000000 NTD</strong>
-                  </a>
-                </div>
-              </div>
-              <div class="col-3">
-                <div class="card popular-card text-center">
-                  <div class="card-body p-3">
-                    <h5 class="mb-3">綠能創新股份有限公司</h5>
-                    <div class="d-flex justify-content-center align-items-center mb-4">
-                      <span class="me-2">環保科技</span><span>|</span><span class="ms-2">智慧設備</span>
-                    </div>
-                    <p>
-                      專注於開發可持續能源解決方案,致力於減少碳足跡並推動清潔能源的使用。
-                    </p>
-                  </div>
-                  <a href="#" class="btn btn-light rounded-0">
-                    <p>資金規模</p>
-                    <strong>$ 40,000000 NTD</strong>
-                  </a>
-                </div>
-              </div>
-              <div class="col-3">
-                <div class="card popular-card text-center">
-                  <div class="card-body p-3">
-                    <h5 class="mb-3">綠能創新股份有限公司</h5>
-                    <div class="d-flex justify-content-center align-items-center mb-4">
-                      <span class="me-2">環保科技</span><span>|</span><span class="ms-2">智慧設備</span>
-                    </div>
-                    <p>
-                      專注於開發可持續能源解決方案,致力於減少碳足跡並推動清潔能源的使用。
-                    </p>
-                  </div>
-                  <a href="#" class="btn btn-light rounded-0">
-                    <p>資金規模</p>
-                    <strong>$ 40,000000 NTD</strong>
-                  </a>
-                </div>
-              </div>
-              <div class="col-3">
-                <div class="card popular-card text-center">
-                  <div class="card-body p-3">
-                    <h5 class="mb-3">綠能創新股份有限公司</h5>
-                    <div class="d-flex justify-content-center align-items-center mb-4">
-                      <span class="me-2">環保科技</span><span>|</span><span class="ms-2">智慧設備</span>
-                    </div>
-                    <p>
-                      專注於開發可持續能源解決方案,致力於減少碳足跡並推動清潔能源的使用。
-                    </p>
-                  </div>
-                  <a href="#" class="btn btn-light rounded-0">
-                    <p>資金規模</p>
-                    <strong>$ 40,000000 NTD</strong>
-                  </a>
-                </div>
-              </div>
-            </div> -->
-            <!-- Swiper -->
-  <div class="swiper businessSwiper">
-    <div class="swiper-wrapper pe-12">
-      <!-- 1 -->
-      <div class="business-swiper swiper-slide">
-        <div class="card popular-card text-center">
-          <div class="popular-card-body">
-            <img class="company-logo mb-3" src="/assets/images/logo/green-logo.png" alt="green-logo">
-            <h4 class="mb-3 popular-card-title text-ellipsis text-primary-600">綠能創新股份有限公司</h4>
-            <div class="d-flex justify-content-center align-items-center mb-4">
-              <h5 class="fs-5 me-2">環保科技｜智慧設備</h5>
-            </div>
-            <p>
-              專注於開發可持續能源解決方案,致力於減少碳足跡並推動清潔能源的使用
-            </p>
-          </div>
-          <a href="#" class="btn btn-gray-600 py-3">
-            <p class="fs-5">資金規模</p>
-            <p class="fs-5 fw-bold text-white">NT$ 40,000000</p>
-          </a>
-        </div>
-      </div>
-      <!-- 2 -->
-      <div class="swiper-slide">
-        <div class="card popular-card text-center">
-          <div class="popular-card-body">
-            <img class="company-logo mb-3" src="/assets/images/logo/higger-logo.png" alt="green-logo">
-            <h4 class="mb-3 popular-card-title text-ellipsis text-primary-600">林媽媽中式餐館</h4>
-            <div class="d-flex justify-content-center align-items-center mb-4">
-              <h5 class="fs-5 me-2">餐飲</h5>
-            </div>
-            <p>
-              我們中式餐館注重精緻的中國美食，結合中華傳統與創新，提供優質的用餐體驗
-            </p>
-          </div>
-          <a href="#" class="btn btn-gray-600 py-3">
-            <p class="fs-5">資金規模</p>
-            <p class="fs-5 fw-bold text-white">NT$ 800,000</p>
-          </a>
-        </div>
-      </div>
-      <!-- 3 -->
-      <div class="swiper-slide">
-        <div class="card popular-card text-center">
-          <div class="popular-card-body">
-            <img class="company-logo mb-3" src="/assets/images/logo/checkmate-logo.png" alt="green-logo">
-            <h4 class="mb-3 popular-card-title text-ellipsis text-primary-600">迅捷物流股份有限公司</h4>
-            <div class="d-flex justify-content-center align-items-center mb-4">
-              <h5 class="fs-5 me-2">物流運輸</h5>
-            </div>
-            <p>
-              提供高效物流與供應鏈管理服務，確保貨物快速安全抵達目的地
-            </p>
-          </div>
-          <a href="#" class="btn btn-gray-600 py-3">
-            <p class="fs-5">資金規模</p>
-            <p class="fs-5 fw-bold text-white">$ NT$ 20,000,000</p>
-          </a>
-        </div>
-      </div>
-      <!-- 4 -->
-      <div class="swiper-slide">
-        <div class="card popular-card text-center">
-          <div class="popular-card-body">
-            <img class="company-logo mb-3" src="/assets/images/logo/legally-logo.png" alt="green-logo">
-            <h4 class="mb-3 popular-card-title text-ellipsis text-primary-600">尚品生活股份有限公司</h4>
-            <div class="d-flex justify-content-center align-items-center mb-4">
-              <h5 class="fs-5 me-2">電子商務</h5>
-            </div>
-            <p>
-              提供多樣化的高品質產品，打造便捷愉快的購物體驗
-            </p>
-          </div>
-          <a href="#" class="btn btn-gray-600 py-3">
-            <p class="fs-5">資金規模</p>
-            <p class="fs-5 fw-bold text-white">NT$ 1,500,000</p>
-          </a>
-        </div>
-      </div>
-      <!-- 5 -->
-      <div class="swiper-slide">
-        <div class="card popular-card text-center">
-          <div class="popular-card-body">
-            <img class="company-logo mb-3" src="/assets/images/logo/green-logo.png" alt="green-logo">
-            <h4 class="mb-3 popular-card-title text-ellipsis text-primary-600">綠能創新股份有限公司</h4>
-            <div class="d-flex justify-content-center align-items-center mb-4">
-              <h5 class="fs-5 me-2">環保科技｜智慧設備</h5>
-            </div>
-            <p>
-              專注於開發可持續能源解決方案,致力於減少碳足跡並推動清潔能源的使用。
-            </p>
-          </div>
-          <a href="#" class="btn btn-gray-600 py-3">
-            <p class="fs-5">資金規模</p>
-            <p class="fs-5 fw-bold text-white">$ 40,000000 NTD</p>
-          </a>
-        </div>
-      </div>
-      <!-- 6 -->
-      <div class="swiper-slide">
-        <div class="card popular-card text-center">
-          <div class="popular-card-body">
-            <img class="company-logo mb-3" src="/assets/images/logo/green-logo.png" alt="green-logo">
-            <h4 class="mb-3 popular-card-title text-ellipsis text-primary-600">綠能創新股份有限公司</h4>
-            <div class="d-flex justify-content-center align-items-center mb-4">
-              <h5 class="fs-5 me-2">環保科技｜智慧設備</h5>
-            </div>
-            <p>
-              專注於開發可持續能源解決方案,致力於減少碳足跡並推動清潔能源的使用。
-            </p>
-          </div>
-          <a href="#" class="btn btn-gray-600 py-3">
-            <p class="fs-5">資金規模</p>
-            <p class="fs-5 fw-bold text-white">$ 40,000000 NTD</p>
-          </a>
+          <button type="submit" class="search-btn btn btn-primary-600 fw-bold">搜尋</button>
         </div>
       </div>
     </div>
-    <div class="swiper-button-next"></div>
-    <div class="swiper-button-prev"></div>
-  </div>
+
+
+    <div class="bg-halo">
+
+      <!-- 獨家特色 -->
+      <div class="features container py-lg-15">
+        <h2 class="fw-bold text-center text-primary-600 mb-lg-8">獨家特色</h2>
+        <div class="row">
+          <div class="col-4">
+            <div class="text-center">
+              <div class="feature-icon mb-lg-3">
+                <img src="/assets/images/icons/search.png" alt="icon">
+              </div>
+              <h4 class="text-gray-100 mb-3">精準搜尋</h4>
+              <p class="feature-content">利用我們的搜尋系統,你可以輕鬆篩選並找到符合您創業需求的合適夥伴和機會。高效、快捷,讓您的創業之路更加順利。</p>
+            </div>
           </div>
-        </div>
-        
-
-
-        <!-- 推薦投資人 -->
-        <div class="container py-5">
-          <h2 class="fw-bold text-center mb-5">推薦投資人</h2>
-          <div class="row">
-            <div class="col-3">
-              <div class="card popular-card text-center">
-                <div class="card-body p-3">
-                  <h5 class="mb-3">Michael Smith</h5>
-                  <div class="d-flex justify-content-center align-items-center mb-4">
-                    <span class="me-2">偏好投資領域: 金融</span>
-                  </div>
-                  <p>
-                    在金融領域有深厚的背景,對創新支付解決方案和區塊鏈技術特別感興趣。
-                  </p>
-                </div>
-                <a href="#" class="btn btn-light rounded-0">
-                  <p>資金規模</p>
-                  <strong>$ 40,000000 NTD</strong>
-                </a>
+          <div class="col-4">
+            <div class="text-center">
+              <div class="feature-icon mb-lg-3">
+                <img src="/assets/images/icons/start.png" alt="icon">
               </div>
+              <h4 class="text-gray-100 mb-3">真實評價</h4>
+              <p class="feature-content">合作更安心!我們的真實評價系統讓你在選擇創業夥伴時更加有依據。每一位用戶都可以留下真實評價,讓你了解對方的合作表現和口碑,確保每一次合作都更有保障。</p>
             </div>
-            <div class="col-3">
-              <div class="card popular-card text-center">
-                <div class="card-body p-3">
-                  <h5 class="mb-3">綠能創新股份有限公司</h5>
-                  <div class="d-flex justify-content-center align-items-center mb-4">
-                    <span class="me-2">環保科技</span><span>|</span><span class="ms-2">智慧設備</span>
-                  </div>
-                  <p>
-                    專注於開發可持續能源解決方案,致力於減少碳足跡並推動清潔能源的使用。
-                  </p>
-                </div>
-                <a href="#" class="btn btn-light rounded-0">
-                  <p>資金規模</p>
-                  <strong>$ 40,000000 NTD</strong>
-                </a>
+          </div>
+          <div class="col-4">
+            <div class="text-center">
+              <div class="feature-icon mb-lg-3">
+                <img src="/assets/images/icons/chat-message.png" alt="icon">
               </div>
-            </div>
-            <div class="col-3">
-              <div class="card popular-card text-center">
-                <div class="card-body p-3">
-                  <h5 class="mb-3">綠能創新股份有限公司</h5>
-                  <div class="d-flex justify-content-center align-items-center mb-4">
-                    <span class="me-2">環保科技</span><span>|</span><span class="ms-2">智慧設備</span>
-                  </div>
-                  <p>
-                    專注於開發可持續能源解決方案,致力於減少碳足跡並推動清潔能源的使用。
-                  </p>
-                </div>
-                <a href="#" class="btn btn-light rounded-0">
-                  <p>資金規模</p>
-                  <strong>$ 40,000000 NTD</strong>
-                </a>
-              </div>
-            </div>
-            <div class="col-3">
-              <div class="card popular-card text-center">
-                <div class="card-body p-3">
-                  <h5 class="mb-3">綠能創新股份有限公司</h5>
-                  <div class="d-flex justify-content-center align-items-center mb-4">
-                    <span class="me-2">環保科技</span><span>|</span><span class="ms-2">智慧設備</span>
-                  </div>
-                  <p>
-                    專注於開發可持續能源解決方案,致力於減少碳足跡並推動清潔能源的使用。
-                  </p>
-                </div>
-                <a href="#" class="btn btn-light rounded-0">
-                  <p>資金規模</p>
-                  <strong>$ 40,000,000 NTD</strong>
-                </a>
-              </div>
+              <h4 class="text-gray-100 mb-3">創業分享討論區</h4>
+              <p class="feature-content">創業路上不孤單!我們的討論區是你尋求建議和分享創業心得的理想場所。來自各行各業的創業者在這裡匯聚,交流心得、討論問題,共同助力彼此的創業夢想成真。</p>
             </div>
           </div>
         </div>
+      </div>
 
-
-        <!-- 領域地圖 -->
-         <div class="container py-5">
-          <div class="row">
-            <div class="col-3">
-              <h3>領域地圖</h3>
-              <p>快速找尋您的投資標的</p>
+      <!-- 熱門創業項目 -->
+      <div class="container py-5 py-lg-15">
+        <h2 class="fw-bold text-center text-primary-600 mb-lg-8">熱門創業項目</h2>
+        <!-- Swiper -->
+        <div class="swiper businessSwiper">
+          <div class="swiper-wrapper pe-12">
+            <!-- 1 -->
+            <div class="business-swiper swiper-slide">
+              <div class="card popular-card text-center h-100">
+                <div class="popular-card-body position-relative">
+                  <a href="#">
+                    <img class="favorite" src="/assets/images/icons/heart.png" alt="heart">
+                  </a>
+                  <img class="company-logo mb-3" src="/assets/images/logo/green-logo.png" alt="green-logo">
+                  <h4 class="mb-3 popular-card-title text-ellipsis text-primary-600">綠能創新股份有限公司</h4>
+                  <div class="d-flex justify-content-center align-items-center mb-4">
+                    <h5 class="fs-5 me-2 text-gray-200">環保科技｜智慧設備</h5>
+                  </div>
+                  <p>
+                    專注於開發可持續能源解決方案,致力於減少碳足跡並推動清潔能源的使用
+                  </p>
+                </div>
+                <a href="#" class="btn btn-gray-600 py-3">
+                  <p class="fs-5">資金規模</p>
+                  <p class="fs-5 fw-bold text-white">NT$ 40,000000</p>
+                </a>
+              </div>
             </div>
-            <div class="col-9">
-              <div class="row g-3">
-                <div class="col-lg-3">
-                  <div class="card industry-card">
-                    不限產業
+            <!-- 2 -->
+            <div class="swiper-slide">
+              <div class="card popular-card text-center h-100">
+                <div class="popular-card-body">
+                  <a href="#">
+                    <img class="favorite" src="/assets/images/icons/heart-outline.png" alt="heart">
+                  </a>
+                  <img class="company-logo mb-3" src="/assets/images/logo/higger-logo.png" alt="green-logo">
+                  <h4 class="mb-3 popular-card-title text-ellipsis text-primary-600">林媽媽中式餐館</h4>
+                  <div class="d-flex justify-content-center align-items-center mb-4">
+                    <h5 class="fs-5 me-2 text-gray-200">餐飲</h5>
                   </div>
+                  <p>
+                    我們中式餐館注重精緻的中國美食，結合中華傳統與創新，提供優質的用餐體驗
+                  </p>
                 </div>
-                <div class="col-lg-3">
-                  <div class="card industry-card">
-                    批發/零售
+                <a href="#" class="btn btn-gray-600 py-3">
+                  <p class="fs-5">資金規模</p>
+                  <p class="fs-5 fw-bold text-white">NT$ 800,000</p>
+                </a>
+              </div>
+            </div>
+            <!-- 3 -->
+            <div class="swiper-slide">
+              <div class="card popular-card text-center h-100">
+                <div class="popular-card-body">
+                  <a href="#">
+                    <img class="favorite" src="/assets/images/icons/heart.png" alt="heart">
+                  </a>
+                  <img class="company-logo mb-3" src="/assets/images/logo/checkmate-logo.png" alt="green-logo">
+                  <h4 class="mb-3 popular-card-title text-ellipsis text-primary-600">迅捷物流股份有限公司</h4>
+                  <div class="d-flex justify-content-center align-items-center mb-4">
+                    <h5 class="fs-5 me-2 text-gray-200">物流運輸</h5>
                   </div>
+                  <p>
+                    提供高效物流與供應鏈管理服務，確保貨物快速安全抵達目的地
+                  </p>
                 </div>
-                <div class="col-lg-3">
-                  <div class="card industry-card">
-                    生物科技
+                <a href="#" class="btn btn-gray-600 py-3">
+                  <p class="fs-5">資金規模</p>
+                  <p class="fs-5 fw-bold text-white">$ NT$ 20,000,000</p>
+                </a>
+              </div>
+            </div>
+            <!-- 4 -->
+            <div class="swiper-slide">
+              <div class="card popular-card text-center h-100">
+                <div class="popular-card-body">
+                  <a href="#">
+                    <img class="favorite" src="/assets/images/icons/heart-outline.png" alt="heart">
+                  </a>
+                  <img class="company-logo mb-3" src="/assets/images/logo/legally-logo.png" alt="green-logo">
+                  <h4 class="mb-3 popular-card-title text-ellipsis text-primary-600">尚品生活股份有限公司</h4>
+                  <div class="d-flex justify-content-center align-items-center mb-4">
+                    <h5 class="fs-5 me-2 text-gray-200">電子商務</h5>
                   </div>
+                  <p>
+                    提供消費者多樣化的高品質產品，打造更加便捷愉快的購物體驗
+                  </p>
                 </div>
-                <div class="col-lg-3">
-                  <div class="card industry-card">
-                    網際網路相關
+                <a href="#" class="btn btn-gray-600 py-3">
+                  <p class="fs-5">資金規模</p>
+                  <p class="fs-5 fw-bold text-white">NT$ 1,500,000</p>
+                </a>
+              </div>
+            </div>
+            <!-- 5 -->
+            <div class="swiper-slide">
+              <div class="card popular-card text-center h-100">
+                <div class="popular-card-body">
+                  <a href="#"></a>
+                  <img class="favorite" src="/assets/images/icons/heart.png" alt="heart">
+                  </a>
+                  <img class="company-logo mb-3" src="/assets/images/logo/green-logo.png" alt="green-logo">
+                  <h4 class="mb-3 popular-card-title text-ellipsis text-primary-600">綠能創新股份有限公司</h4>
+                  <div class="d-flex justify-content-center align-items-center mb-4">
+                    <h5 class="fs-5 me-2 text-gray-200">環保科技｜智慧設備</h5>
                   </div>
+                  <p>
+                    專注於開發可持續能源解決方案,致力於減少碳足跡並推動清潔能源的使用。
+                  </p>
                 </div>
-                <div class="col-lg-3">
-                  <div class="card industry-card">
-                    文教相關
+                <a href="#" class="btn btn-gray-600 py-3">
+                  <p class="fs-5">資金規模</p>
+                  <p class="fs-5 fw-bold text-white">$ 40,000000 NTD</p>
+                </a>
+              </div>
+            </div>
+            <!-- 6 -->
+            <div class="swiper-slide">
+              <div class="card popular-card text-center h-100">
+                <div class="popular-card-body">
+                  <a href="#">
+                    <img class="favorite" src="/assets/images/icons/heart-outline.png" alt="heart">
+                  </a>
+                  <img class="company-logo mb-3" src="/assets/images/logo/green-logo.png" alt="green-logo">
+                  <h4 class="mb-3 popular-card-title text-ellipsis text-primary-600">綠能創新股份有限公司</h4>
+                  <div class="d-flex justify-content-center align-items-center mb-4">
+                    <h5 class="fs-5 me-2 text-gray-200">環保科技｜智慧設備</h5>
                   </div>
+                  <p>
+                    專注於開發可持續能源解決方案,致力於減少碳足跡並推動清潔能源的使用。
+                  </p>
                 </div>
-                <div class="col-lg-3">
-                  <div class="card industry-card">
-                    大眾傳播相關
-                  </div>
-                </div>
-                <div class="col-lg-3">
-                  <div class="card industry-card">
-                    旅遊/休閒/運動
-                  </div>
-                </div>
-                <div class="col-lg-3">
-                  <div class="card industry-card">
-                    一般服務
-                  </div>
-                </div>
-                <div class="col-lg-3">
-                  <div class="card industry-card">
-                    電子資訊/軟體/半導體相關
-                  </div>
-                </div>
-                <div class="col-lg-3">
-                  <div class="card industry-card">
-                    一般製造
-                  </div>
-                </div>
-                <div class="col-lg-3">
-                  <div class="card industry-card">
-                    物流/倉儲
-                  </div>
-                </div>
-                <div class="col-lg-3">
-                  <div class="card industry-card">
-                    政治宗教及社福相關
-                  </div>
-                </div>
-                <div class="col-lg-3">
-                  <div class="card industry-card">
-                    金融投顧/保險
-                  </div>
-                </div>
-                <div class="col-lg-3">
-                  <div class="card industry-card">
-                    法律／會計／顧問／研發
-                  </div>
-                </div>
-                <div class="col-lg-3">
-                  <div class="card industry-card">
-                    設計相關
-                  </div>
-                </div>
-                <div class="col-lg-3">
-                  <div class="card industry-card">
-                    建築營造/不動產相關
-                  </div>
-                </div>
+                <a href="#" class="btn btn-gray-600 py-3">
+                  <p class="fs-5">資金規模</p>
+                  <p class="fs-5 fw-bold text-white">$ 40,000000 NTD</p>
+                </a>
               </div>
             </div>
           </div>
-         </div>
-
-
-         <!-- Swiper JS -->
-         <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
-         <script>
-          var swiper = new Swiper(".businessSwiper", {
-            //一個畫面顯示幾個內容
-            slidesPerView: 4,
-            //每個內容之間的間隔為 16px
-            spaceBetween: 16,
-            navigation: {
-              nextEl: ".swiper-button-next",
-              prevEl: ".swiper-button-prev",
-            },
-          });
-         </script>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+        </div>
+      </div>
 
 
 
-      
+
+     <!-- 推薦投資人 -->
+     <div class="container py-lg-15">
+      <h2 class="fw-bold text-center mb-5 text-primary-600">推薦投資人</h2>
+      <!-- Swiper -->
+      <div class="swiper businessSwiper">
+        <div class="swiper-wrapper pe-12">
+          <!-- 1 -->
+          <div class="business-swiper swiper-slide">
+            <div class="card popular-card text-center h-100">
+              <div class="popular-card-body position-relative">
+                <a href="#">
+                  <img class="favorite" src="/assets/images/icons/heart.png" alt="investor">
+                </a>
+                <img class="company-logo mb-3" src="/assets/images/investor1.png" alt="green-logo">
+                <h4 class="mb-3 popular-card-title text-ellipsis text-primary-600">Michael Smith</h4>
+                <h6 class="text-gray-200">偏好投資領域</h6>
+                <h6 class="fw-bold text-gray-100">金融</h6>
+                <p>
+                  在金融領域有深厚的背景，對創新支付解決方案和區塊鏈技術特別感興趣
+                </p>
+              </div>
+              <a href="#" class="btn btn-gray-600 py-3">
+                <p class="fs-5">資金規模</p>
+                <p class="fs-5 fw-bold text-white">NT$ 40,000000</p>
+              </a>
+            </div>
+          </div>
+          <!-- 2 -->
+          <div class="swiper-slide">
+            <div class="card popular-card text-center h-100">
+              <div class="popular-card-body">
+                <a href="#">
+                  <img class="favorite" src="/assets/images/icons/heart-outline.png" alt="heart">
+                </a>
+                <img class="company-logo mb-3" src="/assets/images/investor2.png" alt="green-logo">
+                <h4 class="mb-3 popular-card-title text-ellipsis text-primary-600">Darrell Steward</h4>
+                <h6 class="text-gray-200">偏好投資領域</h6>
+                <h6 class="fw-bold text-gray-100">醫療</h6>
+                <p>
+                  生物醫學博士，熱衷於支持研發創新藥物和醫療設備，改善病患生活品質
+                </p>
+              </div>
+              <a href="#" class="btn btn-gray-600 py-3">
+                <p class="fs-5">資金規模</p>
+                <p class="fs-5 fw-bold text-white">NT$ 800,000</p>
+              </a>
+            </div>
+          </div>
+          <!-- 3 -->
+          <div class="swiper-slide">
+            <div class="card popular-card text-center h-100">
+              <div class="popular-card-body">
+                <a href="#">
+                  <img class="favorite" src="/assets/images/icons/heart.png" alt="heart">
+                </a>
+                <img class="company-logo mb-3" src="/assets/images/investor3.png" alt="green-logo">
+                <h4 class="mb-3 popular-card-title text-ellipsis text-primary-600">Michael Smith</h4>
+                <h6 class="text-gray-200">偏好投資領域</h6>
+                <h6 class="fw-bold text-gray-100">金融</h6>
+                <p>
+                  在金融領域有深厚的背景，對創新支付解決方案和區塊鏈技術特別感興趣
+                </p>
+              </div>
+              <a href="#" class="btn btn-gray-600 py-3">
+                <p class="fs-5">資金規模</p>
+                <p class="fs-5 fw-bold text-white">$ NT$ 20,000,000</p>
+              </a>
+            </div>
+          </div>
+          <!-- 4 -->
+          <div class="swiper-slide">
+            <div class="card popular-card text-center h-100">
+              <div class="popular-card-body">
+                <a href="#">
+                  <img class="favorite" src="/assets/images/icons/heart-outline.png" alt="heart">
+                </a>
+                <img class="company-logo mb-3" src="/assets/images/investor1.png" alt="green-logo">
+                <h4 class="mb-3 popular-card-title text-ellipsis text-primary-600">Marvin McKinney</h4>
+                <h6 class="text-gray-200">偏好投資領域</h6>
+                <h6 class="fw-bold text-gray-100">物聯網</h6>
+                <p>
+                  工程背景，專注於投資物聯網相關技術，推動互聯設備的普及與應用
+                </p>
+              </div>
+              <a href="#" class="btn btn-gray-600 py-3">
+                <p class="fs-5">資金規模</p>
+                <p class="fs-5 fw-bold text-white">NT$ 1,500,000</p>
+              </a>
+            </div>
+          </div>
+          <!-- 5 -->
+          <div class="swiper-slide">
+            <div class="card popular-card text-center h-100">
+              <div class="popular-card-body">
+                <a href="#"></a>
+                <img class="favorite" src="/assets/images/icons/heart.png" alt="heart">
+                </a>
+                <img class="company-logo mb-3" src="/assets/images/investor2.png" alt="green-logo">
+                <h4 class="mb-3 popular-card-title text-ellipsis text-primary-600">Darrell Steward</h4>
+                <h6 class="text-gray-200">偏好投資領域</h6>
+                <h6 class="fw-bold text-gray-100">醫療</h6>
+                <p>
+                  生物醫學博士，熱衷於支持研發創新藥物和醫療設備，改善病患生活品質
+                </p>
+              </div>
+              <a href="#" class="btn btn-gray-600 py-3">
+                <p class="fs-5">資金規模</p>
+                <p class="fs-5 fw-bold text-white">$ 40,000000 NTD</p>
+              </a>
+            </div>
+          </div>
+          <!-- 6 -->
+          <div class="swiper-slide">
+            <div class="card popular-card text-center h-100">
+              <div class="popular-card-body">
+                <a href="#">
+                  <img class="favorite" src="/assets/images/icons/heart-outline.png" alt="heart">
+                </a>
+                <img class="company-logo mb-3" src="/assets/images/investor1.png" alt="green-logo">
+                <h4 class="mb-3 popular-card-title text-ellipsis text-primary-600">Marvin McKinney</h4>
+                <h6 class="text-gray-200">偏好投資領域</h6>
+                <h6 class="fw-bold text-gray-100">物聯網</h6>
+                <p>
+                  工程背景，專注於投資物聯網相關技術，推動互聯設備的普及與應用
+                </p>
+              </div>
+              <a href="#" class="btn btn-gray-600 py-3">
+                <p class="fs-5">資金規模</p>
+                <p class="fs-5 fw-bold text-white">$ 40,000000 NTD</p>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+    </div>
+  </div>  
+
+    <!-- 領域地圖 -->
+     <section class="bg-field">
+      <div class="container py-lg-15">
+        <div class="row">
+          <div class="col-3">
+            <div class="d-flex justify-content-center align-items-center h-100">
+              <div class="text-center">
+                <h3 class="fw-bold text-primary-600 mb-lg-3">領域地圖</h3>
+                <h4 class="text-gray-200">快速找尋<br>您的投資標的</h4>
+              </div> 
+            </div>
+            
+          </div>
+          <div class="col-9">
+            <div class="row g-3">
+              <div class="col-lg-3">
+                <a class="card industry-card" href="#" style="background-image: url(/assets/images/Map-item-20.png);">
+                  <h5>不限產業</h5>
+                </a>
+              </div>
+              <div class="col-lg-3">
+                <a class="card industry-card" href="#" style="background-image: url(/assets/images/Map-item-1.png);">
+                  <h5>批發/零售</h5>
+                </a>
+              </div>
+              <div class="col-lg-3">
+                <a class="card industry-card" href="#" style="background-image: url(/assets/images/Map-item-2.png);">
+                  <h5>生物科技</h5>
+                </a>
+              </div>
+              <div class="col-lg-3">
+                <a class="card industry-card" href="#" style="background-image: url(/assets/images/Map-item-3.png);">
+                  <h5>網際網路相關</h5>
+                </a>
+              </div>
+              <div class="col-lg-3">
+                <a class="card industry-card" href="#" style="background-image: url(/assets/images/Map-item-4.png);">
+                  <h5>文教相關</h5>
+                </a>
+              </div>
+              <div class="col-lg-3">
+                <a class="card industry-card" href="#" style="background-image: url(/assets/images/Map-item-5.png);">
+                  <h5>大眾傳播相關</h5>
+                </a>
+              </div>
+              <div class="col-lg-3">
+                <a class="card industry-card" href="#" style="background-image: url(/assets/images/Map-item-6.png);">
+                  <h5>旅遊/休閒/運動</h5>
+                </a>
+              </div>
+              <div class="col-lg-3">
+                <a class="card industry-card" href="#" style="background-image: url(/assets/images/Map-item-7.png);">
+                  <h5>一般服務</h5>
+                </a>
+              </div>
+              <div class="col-lg-3">
+                <a class="card industry-card" href="#" style="background-image: url(/assets/images/Map-item-8.png);">
+                  <h5>電子資訊/軟體/半導體相關</h5>
+                </a>
+              </div>
+              <div class="col-lg-3">
+                <a class="card industry-card" href="#" style="background-image: url(/assets/images/Map-item-9.png);">
+                  <h5>一般製造</h5>
+                </a>
+              </div>
+              <div class="col-lg-3">
+                <a class="card industry-card" href="#" style="background-image: url(/assets/images/Map-item-10.png);">
+                  <h5>物流/倉儲</h5>
+                </a>
+              </div>
+              <div class="col-lg-3">
+                <a class="card industry-card" href="#" style="background-image: url(/assets/images/Map-item-11.png);">
+                  <h5>政治宗教及社福相關</h5>
+                </a>
+              </div>
+              <div class="col-lg-3">
+                <a class="card industry-card" href="#" style="background-image: url(/assets/images/Map-item-12.png);">
+                  <h5>金融投顧/保險</h5>
+                </a>
+              </div>
+              <div class="col-lg-3">
+                <a class="card industry-card" href="#" style="background-image: url(/assets/images/Map-item-13.png);">
+                  <h5>法律/會計/顧問/研發</h5>
+                </a>
+              </div>
+              <div class="col-lg-3">
+                <a class="card industry-card" href="#" style="background-image: url(/assets/images/Map-item-14.png);">
+                  <h5>設計相關</h5>
+                </a>
+              </div>
+              <div class="col-lg-3">
+                <a class="card industry-card" href="#" style="background-image: url(/assets/images/Map-item-15.png);">
+                  <h5>建築營造/不動產相關</h5>
+                </a>
+              </div>
+              <div class="col-lg-3">
+                <a class="card industry-card" href="#" style="background-image: url(/assets/images/Map-item-16.png);">
+                  <h5>醫療保健/環境衛生</h5>
+                </a>
+              </div>
+              <div class="col-lg-3">
+                <a class="card industry-card" href="#" style="background-image: url(/assets/images/Map-item-17.png);">
+                  <h5>礦石及土石採取</h5>
+                </a>
+              </div>
+              <div class="col-lg-3">
+                <a class="card industry-card" href="#" style="background-image: url(/assets/images/Map-item-18.png);">
+                  <h5>住宿相關</h5>
+                </a>
+              </div>
+              <div class="col-lg-3">
+                <a class="card industry-card" href="#" style="background-image: url(/assets/images/Map-item-19.png);">
+                  <h5>餐飲</h5>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+     </section>
+    
+
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script>
+      var swiper = new Swiper(".businessSwiper", {
+        //一個畫面顯示幾個內容
+        slidesPerView: 4,
+        //每個內容之間的間隔為 16px
+        spaceBetween: 16,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+
+
+
+
     <%- include('./layout/footer'); -%>
-    <!-- Bootstrap 5 JS + Popper.js 放在這裡 -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeo5v4Mw5dldwbg6GPHa1w6ZT6tztFIdSTwBKxULy5hG9ANk" crossorigin="anonymous"></script>
-    <script type="module" src="../main.js"></script>
-  </body>
+      <!-- Bootstrap 5 JS + Popper.js 放在這裡 -->
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeo5v4Mw5dldwbg6GPHa1w6ZT6tztFIdSTwBKxULy5hG9ANk"
+        crossorigin="anonymous"></script>
+      <script type="module" src="../main.js"></script>
+</body>
+
 </html>
