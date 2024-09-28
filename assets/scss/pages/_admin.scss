@@ -1,0 +1,74 @@
+.admin {
+  &-logo {
+    width: 200px;
+    cursor: pointer;
+  }
+
+  &-nav {
+    &-link {
+      font-weight: 500;
+      border-left: 4px solid transparent;
+      cursor: pointer;
+      padding: 0 10px;
+      margin-bottom: 20px;
+
+      &:hover {
+        color: #43E1BF !important;
+      }
+
+      &.active {
+        color: #43E1BF !important;
+        border-left: 4px solid #43E1BF;
+        font-weight: 700;
+      }
+    }
+
+    &__logo {
+      width: 70px;
+    }
+  }
+
+  &-account {
+    th,
+    td {
+      padding: 8px 30px;
+      vertical-align: middle;
+    }
+    
+    tr:first-child th:first-child {
+      border-top-left-radius: 5px;
+    }
+    
+    tr:last-child td:first-child {
+      border-bottom-left-radius: 5px;
+    }
+    
+    tr:first-child th:last-child {
+      border-top-right-radius: 5px;
+    }
+    
+    tr:last-child td:last-child {
+      border-bottom-right-radius: 5px;
+    }
+  }
+
+  &-modal {
+    &-body {
+      p {
+        color: #000;
+      }
+    }
+  }
+
+  &-success {
+    color: #43E1BF;
+    font-weight: 700;
+  }
+
+  &-error {
+    color: #FB5A72;
+    font-weight: 700;
+  }
+}
+
+
