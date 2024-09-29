@@ -23,6 +23,7 @@
     rel="stylesheet">
   <!-- Link Swiper's CSS -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
 </head>
 
 <body>
@@ -30,28 +31,33 @@
     <!-- banner -->
     <div class="front-page-banner d-flex justify-content-center align-items-center">
       <div class="banner-content fuck">
-        <h1 class="banner-title fw-bold text-center">
+        <h1 class="banner-title fw-bold text-center mb-5">
           投資未來<br>創造<span>無限</span>可能!
         </h1>
-        <div class="d-flex align-items-center">
-          <input type="text" class="banner-input form-control me-3 flex-grow-1" placeholder="搜尋...">
+        <div class="banner-search d-flex align-items-center">
+          <div class="d-flex mb-3 mb-lg-0">
+            <input type="text" class="banner-input form-control me-lg-3 me-1 flex-grow-1" placeholder="搜尋...">
 
-          <div class="search-dropdown navbar-expand-lg me-3">
-            <div class="dropdown">
-              <button class="btn dropdown-btn dropdown-toggle n-icon d-flex justify-content-between align-items-center"
-                type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
-                找創業項目<span class="material-icons-outlined text-gray-100 p-0">
-                  keyboard_arrow_down
-                </span>
-              </button>
-              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                <li class="dropdown-hover"><button class="dropdown-item text-gray-100" type="button">找創業項目</button></li>
-                <li class="dropdown-hover"><button class="dropdown-item text-gray-100" type="button">找投資</button></li>
-              </ul>
+            <div class="search-dropdown navbar-expand-lg me-lg-3">
+              <div class="dropdown">
+                <button class="btn dropdown-btn dropdown-toggle n-icon d-flex justify-content-between align-items-center"
+                  type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+                  找創業項目<span class="material-icons-outlined text-gray-100 p-0">
+                    keyboard_arrow_down
+                  </span>
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <li class="dropdown-hover"><button class="dropdown-item text-gray-100" type="button">找創業項目</button></li>
+                  <li class="dropdown-hover"><button class="dropdown-item text-gray-100" type="button">找投資</button></li>
+                </ul>
+              </div>
             </div>
           </div>
 
-          <button type="submit" class="search-btn btn btn-primary-600 fw-bold">搜尋</button>
+          <div class="d-flex align-items-center">
+            <button type="submit" class="search-btn btn btn-primary-600 fw-bold">搜尋</button>
+          </div>
+          
         </div>
       </div>
     </div>
@@ -60,33 +66,33 @@
     <div class="bg-halo">
 
       <!-- 獨家特色 -->
-      <div class="features container py-lg-15">
-        <h2 class="fw-bold text-center text-primary-600 mb-lg-8">獨家特色</h2>
+      <div class="features container py-8 py-lg-15">
+        <h2 class="feature-title fw-bold text-center text-primary-600 mb-lg-8 mb-5">獨家特色</h2>
         <div class="row">
-          <div class="col-4">
+          <div class="col-lg-4 mb-6">
             <div class="text-center">
-              <div class="feature-icon mb-lg-3">
+              <div class="feature-icon mb-lg-3 mb-1">
                 <img src="/assets/images/icons/search.png" alt="icon">
               </div>
-              <h4 class="text-gray-100 mb-3">精準搜尋</h4>
+              <h4 class="text-gray-100 mb-lg-3 mb-1">精準搜尋</h4>
               <p class="feature-content">利用我們的搜尋系統,你可以輕鬆篩選並找到符合您創業需求的合適夥伴和機會。高效、快捷,讓您的創業之路更加順利。</p>
             </div>
           </div>
-          <div class="col-4">
+          <div class="col-lg-4 mb-6">
             <div class="text-center">
-              <div class="feature-icon mb-lg-3">
+              <div class="feature-icon mb-lg-3 mb-1">
                 <img src="/assets/images/icons/start.png" alt="icon">
               </div>
-              <h4 class="text-gray-100 mb-3">真實評價</h4>
+              <h4 class="text-gray-100 mb-lg-3 mb-1">真實評價</h4>
               <p class="feature-content">合作更安心!我們的真實評價系統讓你在選擇創業夥伴時更加有依據。每一位用戶都可以留下真實評價,讓你了解對方的合作表現和口碑,確保每一次合作都更有保障。</p>
             </div>
           </div>
-          <div class="col-4">
+          <div class="col-lg-4 mb-6">
             <div class="text-center">
-              <div class="feature-icon mb-lg-3">
+              <div class="feature-icon mb-lg-3 mb-1">
                 <img src="/assets/images/icons/chat-message.png" alt="icon">
               </div>
-              <h4 class="text-gray-100 mb-3">創業分享討論區</h4>
+              <h4 class="text-gray-100 mb-lg-3 mb-1">創業分享討論區</h4>
               <p class="feature-content">創業路上不孤單!我們的討論區是你尋求建議和分享創業心得的理想場所。來自各行各業的創業者在這裡匯聚,交流心得、討論問題,共同助力彼此的創業夢想成真。</p>
             </div>
           </div>
@@ -94,8 +100,8 @@
       </div>
 
       <!-- 熱門創業項目 -->
-      <div class="container py-5 py-lg-15">
-        <h2 class="fw-bold text-center text-primary-600 mb-lg-8">熱門創業項目</h2>
+      <div class="container py-8 py-lg-15">
+        <h2 class="fw-bold text-center text-primary-600 mb-5 mb-lg-8">熱門創業項目</h2>
         <!-- Swiper -->
         <div class="swiper businessSwiper">
           <div class="swiper-wrapper pe-12">
@@ -241,7 +247,7 @@
 
 
      <!-- 推薦投資人 -->
-     <div class="container py-lg-15">
+     <div class="container py-8 py-lg-15">
       <h2 class="fw-bold text-center mb-5 text-primary-600">推薦投資人</h2>
       <!-- Swiper -->
       <div class="swiper businessSwiper">
@@ -380,116 +386,117 @@
   </div>  
 
     <!-- 領域地圖 -->
-     <section class="bg-field">
-      <div class="container py-lg-15">
+     <section>
+      <div class="container py-8 py-lg-15">
         <div class="row">
-          <div class="col-3">
-            <div class="d-flex justify-content-center align-items-center h-100">
+          <div class="col-lg-3">
+            <div class="d-flex justify-content-center align-items-center h-100 mb-5">
               <div class="text-center">
-                <h3 class="fw-bold text-primary-600 mb-lg-3">領域地圖</h3>
-                <h4 class="text-gray-200">快速找尋<br>您的投資標的</h4>
+                <h3 class="fw-bold text-primary-600 mb-1 mb-lg-3">領域地圖</h3>
+                <h4 class="
+                field-slogan text-gray-200">快速找尋<br>您的投資標的</h4>
               </div> 
             </div>
             
           </div>
-          <div class="col-9">
-            <div class="row g-3">
-              <div class="col-lg-3">
+          <div class="col-lg-9">
+            <div class="row row-cols-lg-4 row-cols-md-2 row-cols-2 g-lg-3 g-1">
+              <div class="col">
                 <a class="card industry-card" href="#" style="background-image: url(/assets/images/Map-item-20.png);">
                   <h5>不限產業</h5>
                 </a>
               </div>
-              <div class="col-lg-3">
+              <div class="col">
                 <a class="card industry-card" href="#" style="background-image: url(/assets/images/Map-item-1.png);">
                   <h5>批發/零售</h5>
                 </a>
               </div>
-              <div class="col-lg-3">
+              <div class="col">
                 <a class="card industry-card" href="#" style="background-image: url(/assets/images/Map-item-2.png);">
                   <h5>生物科技</h5>
                 </a>
               </div>
-              <div class="col-lg-3">
+              <div class="col">
                 <a class="card industry-card" href="#" style="background-image: url(/assets/images/Map-item-3.png);">
                   <h5>網際網路相關</h5>
                 </a>
               </div>
-              <div class="col-lg-3">
+              <div class="col">
                 <a class="card industry-card" href="#" style="background-image: url(/assets/images/Map-item-4.png);">
                   <h5>文教相關</h5>
                 </a>
               </div>
-              <div class="col-lg-3">
+              <div class="col">
                 <a class="card industry-card" href="#" style="background-image: url(/assets/images/Map-item-5.png);">
                   <h5>大眾傳播相關</h5>
                 </a>
               </div>
-              <div class="col-lg-3">
+              <div class="col">
                 <a class="card industry-card" href="#" style="background-image: url(/assets/images/Map-item-6.png);">
                   <h5>旅遊/休閒/運動</h5>
                 </a>
               </div>
-              <div class="col-lg-3">
+              <div class="col">
                 <a class="card industry-card" href="#" style="background-image: url(/assets/images/Map-item-7.png);">
                   <h5>一般服務</h5>
                 </a>
               </div>
-              <div class="col-lg-3">
+              <div class="col">
                 <a class="card industry-card" href="#" style="background-image: url(/assets/images/Map-item-8.png);">
                   <h5>電子資訊/軟體/半導體相關</h5>
                 </a>
               </div>
-              <div class="col-lg-3">
+              <div class="col">
                 <a class="card industry-card" href="#" style="background-image: url(/assets/images/Map-item-9.png);">
                   <h5>一般製造</h5>
                 </a>
               </div>
-              <div class="col-lg-3">
+              <div class="col">
                 <a class="card industry-card" href="#" style="background-image: url(/assets/images/Map-item-10.png);">
                   <h5>物流/倉儲</h5>
                 </a>
               </div>
-              <div class="col-lg-3">
+              <div class="col">
                 <a class="card industry-card" href="#" style="background-image: url(/assets/images/Map-item-11.png);">
                   <h5>政治宗教及社福相關</h5>
                 </a>
               </div>
-              <div class="col-lg-3">
+              <div class="col">
                 <a class="card industry-card" href="#" style="background-image: url(/assets/images/Map-item-12.png);">
                   <h5>金融投顧/保險</h5>
                 </a>
               </div>
-              <div class="col-lg-3">
+              <div class="col">
                 <a class="card industry-card" href="#" style="background-image: url(/assets/images/Map-item-13.png);">
                   <h5>法律/會計/顧問/研發</h5>
                 </a>
               </div>
-              <div class="col-lg-3">
+              <div class="col">
                 <a class="card industry-card" href="#" style="background-image: url(/assets/images/Map-item-14.png);">
                   <h5>設計相關</h5>
                 </a>
               </div>
-              <div class="col-lg-3">
+              <div class="col">
                 <a class="card industry-card" href="#" style="background-image: url(/assets/images/Map-item-15.png);">
                   <h5>建築營造/不動產相關</h5>
                 </a>
               </div>
-              <div class="col-lg-3">
+              <div class="col">
                 <a class="card industry-card" href="#" style="background-image: url(/assets/images/Map-item-16.png);">
                   <h5>醫療保健/環境衛生</h5>
                 </a>
               </div>
-              <div class="col-lg-3">
+              <div class="col">
                 <a class="card industry-card" href="#" style="background-image: url(/assets/images/Map-item-17.png);">
                   <h5>礦石及土石採取</h5>
                 </a>
               </div>
-              <div class="col-lg-3">
+              <div class="col">
                 <a class="card industry-card" href="#" style="background-image: url(/assets/images/Map-item-18.png);">
                   <h5>住宿相關</h5>
                 </a>
               </div>
-              <div class="col-lg-3">
+              <div class="col">
                 <a class="card industry-card" href="#" style="background-image: url(/assets/images/Map-item-19.png);">
                   <h5>餐飲</h5>
                 </a>
@@ -500,13 +507,13 @@
       </div>
      </section>
     
-
+     <%- include('./layout/footer'); -%>
 
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
     <script>
-      var swiper = new Swiper(".businessSwiper", {
+      const swiper = new Swiper(".businessSwiper", {
         //一個畫面顯示幾個內容
         slidesPerView: 4,
         //每個內容之間的間隔為 16px
@@ -515,13 +522,27 @@
           nextEl: ".swiper-button-next",
           prevEl: ".swiper-button-prev",
         },
+        breakpoints: {
+         1296: {
+        slidesPerView: 4, 
+        slidesPerGroup: 1, 
+        spaceBetween: 16 
+        },
+         768: {
+        slidesPerView: 2, 
+        slidesPerGroup: 1, 
+        spaceBetween: 24 
+        },
+        375: {
+         slidesPerView: 1.5, 
+         slidesPerGroup: 1, 
+         spaceBetween: 16 
+        }
+    }
       });
     </script>
 
 
-
-
-    <%- include('./layout/footer'); -%>
       <!-- Bootstrap 5 JS + Popper.js 放在這裡 -->
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ENjdO4Dr2bkBIFxQpeo5v4Mw5dldwbg6GPHa1w6ZT6tztFIdSTwBKxULy5hG9ANk"
