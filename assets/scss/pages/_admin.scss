@@ -1,4 +1,6 @@
 .admin {
+  font-family: "Inter", system-ui;
+  
   &-logo {
     width: 200px;
     cursor: pointer;
@@ -69,6 +71,22 @@
     color: #FB5A72;
     font-weight: 700;
   }
+
+  &-search {
+    width: 280px;
+  }
+
+  &-dropdown {
+    &__button {
+      width: 120px;
+    }
+
+    .dropdown-item {
+      color: #fff;
+
+      &:hover {
+        color: #43E1BF;
+      }
+    }
+  }
 }
-
-
