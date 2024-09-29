@@ -1,30 +1,39 @@
-.header{
+.header {
   color: $gray-100;
   backdrop-filter: blur(10px);
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 
+.btn-toggler {
+  color: $gray-200;
+  border: none;
+}
+
+.navbar-toggler-icon {
+  .bi-list {
+    font-size: 48px;
+  }
+}
 
 .navbar-nav {
-    gap: 56px;
-    .nav-link {
-        color: $gray-100;
-        font-weight: 700;
-        font-size: 20px;
-        line-height: 30px;
-        letter-spacing: 10%;
-        &:hover {
-            color: $primary-600
-        }
+  gap: 56px;
+  .nav-link {
+    color: $gray-100;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 10%;
+    &:hover {
+      color: $primary-600;
     }
-    
+  }
 }
 
 .login-btn {
-    padding: 16px 24px;
-    //styleName: Bold/text & button M;
-    font-size: 16px;
-    font-weight: 700;
-    line-height: 24px;
-    letter-spacing: 0.09em;
+  padding: 16px 24px;
+  //styleName: Bold/text & button M;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0.09em;
 }
