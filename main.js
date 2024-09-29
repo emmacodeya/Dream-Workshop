@@ -2,7 +2,6 @@
 import './assets/scss/all.scss';
 import 'bootstrap/dist/js/bootstrap.min.js';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
-import './js/admin/admin-page.js'
 
 // 引入 CKEditor 5
 import ClassicEditor from '@ckeditor/ckeditor5-build-classic';
