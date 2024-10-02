@@ -1,6 +1,6 @@
-<h1 class="fs-2 mb-7 fw-bold">會員管理</h1>
+<h1 class="fs-2 mb-7 fw-bold">創業項目</h1>
 <form class="form-inline w-100 d-flex align-items-center">
-  <input class="form-control me-2 flex-grow-1 admin-search" type="search" placeholder="搜尋 ID / 會員姓名">
+  <input class="form-control me-2 flex-grow-1 admin-search" type="search" placeholder="搜尋項目編號 / 項目名稱">
   
   <button class="btn btn-primary-600 fw-bold rounded me-3" type="submit">搜尋</button>
   
@@ -31,19 +31,18 @@
   <table class="table mt-4">
     <thead class="table-light">
       <tr>
-        <th width="20">ID</th>
-        <th width="90">姓名</th>
+        <th width="70">項目編號</th>
+        <th width="140">項目名稱</th>
         <th width="90">審核狀態</th>
-        <th width="90">帳戶狀態</th>
-        <th width="30" class="text-center">會員資訊</th>
-        <th width="30" class="text-center">會員審核</th>
-        <th width="30" class="text-center">刪除</th>
+        <th width="90">啟用狀態</th>
+        <th width="30" class="text-center">詳細資訊</th>
+        <th width="30" class="text-center">項目管理</th>
       </tr>
     </thead>
     <tbody>
       <tr>
         <td>1</td>
-        <td>John Smith</td>
+        <td>林媽媽中式餐館</td>
         <td>
           <p class="fw-bold text-primary-600">
             已審核
@@ -56,27 +55,22 @@
         </td>
         </td>
         <td class="text-center">
-          <button class="btn btn-outline-primary btn-sm" type="button" data-bs-toggle="modal" data-bs-target="#accountViewModal">
+          <button class="btn btn-outline-primary btn-sm" type="button" data-bs-toggle="modal" data-bs-target="#startupViewModal">
             查看
           </button>
         </td>
         <td class="text-center">
-          <button class="btn btn-outline-primary btn-sm" type="button" data-bs-toggle="modal" data-bs-target="#accountVerifyModal">
-            審核
-          </button>
-        </td>
-        <td class="text-center">
-          <button type="button" class="btn btn-outline-danger btn-sm" data-bs-toggle="modal" data-bs-target="#delAccountModal">
-            刪除
+          <button class="btn btn-outline-primary btn-sm" type="button" data-bs-toggle="modal" data-bs-target="#startupVerifyModal">
+            管理
           </button>
         </td>
       </tr>
       <tr>
         <td>2</td>
-        <td>Christopher Jones</td>
+        <td>迅捷物流股份有限公司</td>
         <td>
-          <p class="fw-bold text-primary-600">
-            已審核
+          <p class="fw-bold text-danger">
+            未審核
           </p>
         </td>
         <td>
@@ -86,18 +80,13 @@
         </td>
         </td>
         <td class="text-center">
-          <button  class="btn btn-outline-primary btn-sm" type="button" data-bs-toggle="modal" data-bs-target="#accountViewModal">
+          <button class="btn btn-outline-primary btn-sm" type="button" data-bs-toggle="modal" data-bs-target="#startupViewModal">
             查看
           </button>
         </td>
         <td class="text-center">
-          <button class="btn btn-outline-primary btn-sm" type="button" data-bs-toggle="modal" data-bs-target="#accountVerifyModal">
-            審核
-          </button>
-        </td>
-        <td class="text-center">
-          <button type="button" class="btn btn-outline-danger btn-sm" data-bs-toggle="modal" data-bs-target="#delAccountModal">
-            刪除
+          <button class="btn btn-outline-primary btn-sm" type="button" data-bs-toggle="modal" data-bs-target="#startupVerifyModal">
+            管理
           </button>
         </td>
       </tr>
@@ -105,44 +94,24 @@
   </table>
 </div>
 <!-- 資訊 -->
-<div class="modal fade" id="accountViewModal" tabindex="-1">
+<div class="modal fade" id="startupViewModal" tabindex="-1">
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header bg-primary-600">
-        <h5 class="fs-3 modal-title fw-bold">會員資訊</h5>
+        <h5 class="fs-3 modal-title fw-bold">創業項目詳情</h5>
         <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
       </div>
       <div class="modal-body admin-modal-body">
-        <h4 class="fs-4 fw-bold mb-3">基本資訊</h4>
-        <p >會員ID：1</p>
-        <p>姓名：John Smith</p>
-        <p>性別：男</p>
-        <p>身分：投資者</p>
-        <p>連絡電話：0912345678</p>
-        <p>電子信箱：happy5678@gmail.com</p>
-        <hr>
-        <h4 class="fs-4 fw-bold mb-3">查看權限</h4>
-        <h5 class="fs-5 fw-bold">創業項目</h5>
-        <table class="table mt-4 mb-6">
-          <thead class="table-light">
-            <tr>
-              <th width="100">項目</th>
-              <th width="120">權限</th>
-            </tr>
-          </thead>
-          <tbody id="startup-tbody"></tbody>
-        </table>
-
-        <h5 class="fs-5 fw-bold">投資人</h5>
-        <table class="table mt-4">
-          <thead class="table-light">
-            <tr>
-              <th width="100">投資人</th>
-              <th width="120">權限</th>
-            </tr>
-          </thead>
-          <tbody id="investor-tbody"></tbody>
-        </table>
+        <p>項目編號：1</p>
+        <p>建立者ID：1</p>
+        <p>建立者：John Smith</p>
+        <p>項目名稱：林媽媽中式餐館</p>
+        <p>類別：餐飲</p>
+        <p>簡介：專注於提供正宗的中國美食體驗。我們的餐廳擁有豐富多樣的菜單,包括粤菜、川菜、湘菜等多種地方菜系,每道菜品均由經驗豐富的廚師團隊精心烹製,保證品質與口感的卓越一致性。我們的使命是在現代化和溫馨的環境中,將傳統中國烹飪藝術與當地食材完美結合,為客人提供一場無與倫比的美食之旅。</p>
+        <p>規模：10 人以下</p>
+        <p>資本額：3,000,000</p>
+        <p>募款金額：800,000</p>
+        <p>開始募資時間：2024/07/25</p>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary rounded" data-bs-dismiss="modal">取消</button>
@@ -151,21 +120,39 @@
     </div>
   </div>
 </div>
-<!-- 審核 -->
-<div class="modal fade" id="accountVerifyModal" tabindex="-1">
+<!-- 管理 -->
+<div class="modal fade" id="startupVerifyModal" tabindex="-1">
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header bg-primary-600">
-        <h5 class="fs-3 modal-title fw-bold">會員審核</h5>
+        <h5 class="fs-3 modal-title fw-bold">創業項目管理</h5>
         <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
       </div>
       <div class="modal-body admin-modal-body">
-        <h4 class="fs-5 mb-3">會員身分證正面</h4>
-        <img class="mb-8" src="../../assets/images/身分證正面樣本.jpg" alt="身分證正面">
-        <h4 class="fs-5 mb-3">會員身分證反面</h4>
-        <img class="mb-8" src="../../assets/images/身分證背面樣本.jpg" alt="身分證反面">
-        <h4 class="fs-5 mb-3">第二證件正面</h4>
-        <img src="../../assets/images/第二張證件樣本.jpg" alt="第二證件">
+        <h4 class="fs-4 mb-3">是否啟用</h4>
+        <form class="d-flex">
+          <label class="me-2">
+              <input type="radio" name="fruit" value="available">啟用
+          </label>
+          <label>
+              <input type="radio" name="fruit" value="unavailable">未啟用
+          </label>
+        </form>
+        <hr>
+        <h4 class="fs-4 mb-3">是否設置為熱門</h4>
+        <form class="d-flex">
+          <label class="me-2">
+              <input type="radio" name="fruit" value="available">是
+          </label>
+          <label>
+              <input type="radio" name="fruit" value="unavailable">否
+          </label>
+        </form>
+        <hr>
+        <h4 class="fs-4 mb-3">公司行號審核</h4>
+        <p class="mb-3">公司名稱：上海公司</p>
+        <p class="mb-2">財力證明：</p>
+        <img src="https://picsum.photos/id/514/600/400" alt="">
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary rounded">未通過</button>
