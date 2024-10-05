@@ -1,0 +1,194 @@
+<h1 class="fs-2 mb-7 fw-bold">創業項目</h1>
+<form class="form-inline w-100 d-flex align-items-center">
+  <input class="form-control me-2 flex-grow-1 admin-search" type="search" placeholder="搜尋項目編號 / 項目名稱">
+  
+  <button class="btn btn-primary-600 fw-bold rounded me-3" type="submit">搜尋</button>
+  
+  <div class="admin-dropdown dropdown me-3">
+    <button class="btn btn-secondary dropdown-toggle rounded bg-gray-1000" type="button" id="dropdownButtonVerify" data-bs-toggle="dropdown">
+      審核狀態
+    </button>
+    <ul class="dropdown-menu rounded bg-gray-1000">
+      <li><a class="dropdown-item" href="#">全部</a></li>
+      <li><a class="dropdown-item" href="#">已審核</a></li>
+      <li><a class="dropdown-item" href="#">未審核</a></li>
+    </ul>
+  </div>
+  
+  <div class="admin-dropdown dropdown">
+    <button class="btn btn-secondary dropdown-toggle rounded bg-gray-1000" type="button" id="dropdownButtonStatus" data-bs-toggle="dropdown">
+      啟用狀態
+    </button>
+    <ul class="dropdown-menu dropdown-menu_short rounded bg-gray-1000">
+      <li><a class="dropdown-item" href="#">全部</a></li>
+      <li><a class="dropdown-item" href="#">啟用</a></li>
+      <li><a class="dropdown-item" href="#">未啟用</a></li>
+    </ul>
+  </div>
+</form>
+
+<div class="admin-account">
+  <table class="table mt-4">
+    <thead class="table-light">
+      <tr>
+        <th width="70">項目編號</th>
+        <th width="140">項目名稱</th>
+        <th width="90">審核狀態</th>
+        <th width="90">啟用狀態</th>
+        <th width="30" class="text-center">詳細資訊</th>
+        <th width="30" class="text-center">項目管理</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>1</td>
+        <td>林媽媽中式餐館</td>
+        <td>
+          <p class="fw-bold text-primary-600">
+            已審核
+          </p>
+        </td>
+        <td>
+          <p class="fw-bold text-primary-600">
+            啟用
+          </p>
+        </td>
+        </td>
+        <td class="text-center">
+          <button class="btn btn-outline-primary btn-sm" type="button" data-bs-toggle="modal" data-bs-target="#startupViewModal">
+            查看
+          </button>
+        </td>
+        <td class="text-center">
+          <button class="btn btn-outline-primary btn-sm" type="button" data-bs-toggle="modal" data-bs-target="#startupVerifyModal">
+            管理
+          </button>
+        </td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>迅捷物流股份有限公司</td>
+        <td>
+          <p class="fw-bold text-danger">
+            未審核
+          </p>
+        </td>
+        <td>
+          <p class="fw-bold text-danger">
+            未啟用
+          </p>
+        </td>
+        </td>
+        <td class="text-center">
+          <button class="btn btn-outline-primary btn-sm" type="button" data-bs-toggle="modal" data-bs-target="#startupViewModal">
+            查看
+          </button>
+        </td>
+        <td class="text-center">
+          <button class="btn btn-outline-primary btn-sm" type="button" data-bs-toggle="modal" data-bs-target="#startupVerifyModal">
+            管理
+          </button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<!-- 資訊 -->
+<div class="modal fade" id="startupViewModal" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header bg-primary-600">
+        <h5 class="fs-3 modal-title fw-bold">創業項目詳情</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body admin-modal-body">
+        <p>項目編號：1</p>
+        <p>建立者ID：1</p>
+        <p>建立者：John Smith</p>
+        <p>項目名稱：林媽媽中式餐館</p>
+        <p>類別：餐飲</p>
+        <p>簡介：專注於提供正宗的中國美食體驗。我們的餐廳擁有豐富多樣的菜單,包括粤菜、川菜、湘菜等多種地方菜系,每道菜品均由經驗豐富的廚師團隊精心烹製,保證品質與口感的卓越一致性。我們的使命是在現代化和溫馨的環境中,將傳統中國烹飪藝術與當地食材完美結合,為客人提供一場無與倫比的美食之旅。</p>
+        <p>規模：10 人以下</p>
+        <p>資本額：3,000,000</p>
+        <p>募款金額：800,000</p>
+        <p>開始募資時間：2024/07/25</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary rounded" data-bs-dismiss="modal">取消</button>
+        <button type="button" class="btn btn-primary-600 rounded">確認</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- 管理 -->
+<div class="modal fade" id="startupVerifyModal" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header bg-primary-600">
+        <h5 class="fs-3 modal-title fw-bold">創業項目管理</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body admin-modal-body">
+        <h4 class="fs-4 mb-3">是否啟用</h4>
+        <form class="d-flex">
+          <label class="me-2">
+              <input type="radio" name="fruit" value="available">啟用
+          </label>
+          <label>
+              <input type="radio" name="fruit" value="unavailable">未啟用
+          </label>
+        </form>
+        <hr>
+        <h4 class="fs-4 mb-3">是否設置為熱門</h4>
+        <form class="d-flex">
+          <label class="me-2">
+              <input type="radio" name="fruit" value="available">是
+          </label>
+          <label>
+              <input type="radio" name="fruit" value="unavailable">否
+          </label>
+        </form>
+        <hr>
+        <h4 class="fs-4 mb-3">公司行號審核</h4>
+        <p class="mb-3">公司名稱：上海公司</p>
+        <p class="mb-2">財力證明：</p>
+        <img src="https://picsum.photos/id/514/600/400" alt="">
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary rounded">未通過</button>
+        <button type="button" class="btn btn-primary-600 rounded">通過</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- 刪除 -->
+<div id="delAccountModal"
+ref="delCommentModal"
+class="modal fade"
+tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content border-0">
+      <div class="modal-header bg-danger text-white">
+        <h5 class="modal-title fw-bold">
+          <span>刪除帳戶</span>
+        </h5>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="modal"
+        ></button>
+      </div>
+      <div class="modal-body">
+        是否刪除ID為
+        <strong class="text-danger">1</strong>
+        之帳戶(刪除後將無法恢復)。
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-outline-secondary rounded" data-bs-dismiss="modal">
+          取消
+        </button>
+        <button type="button" class="btn btn-danger rounded">確認刪除</button>
+      </div>
+    </div>
+  </div>
+</div>
