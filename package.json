@@ -11,15 +11,21 @@
   },
   "devDependencies": {
     "ejs": "^3.1.9",
+    "prettier": "^3.3.3",
     "vite": "^4.2.0",
     "vite-plugin-ejs": "^1.6.4"
   },
   "dependencies": {
+    "@ckeditor/ckeditor5-build-classic": "^43.1.1",
+    "@ckeditor/ckeditor5-font": "^43.1.0",
+    "@ckeditor/ckeditor5-react": "^9.2.0",
     "bootstrap": "^5.3.3",
+    "bootstrap-icons": "^1.11.3",
     "gh-pages": "^5.0.0",
     "glob": "^10.2.2",
     "sass": "^1.61.0",
     "sass-loader": "^13.2.2",
+    "swiper": "^11.1.14",
     "vite-plugin-live-reload": "^3.0.2"
   }
 }

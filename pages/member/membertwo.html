@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>會員中心</title>
+</head>
+
+<body>
+    <%- include('./layout/header'); -%>
+     <main class="bg-gray-1000 py-15">
+         
+        <section class="container pt-8">
+             
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                  <li class="breadcrumb-item text-white"><a href="index.html">首頁</a></li>
+                  <i class="bi bi-caret-right-fill text-white"></i>
+                  <li class="breadcrumb-item text-white"><a href="member.html">會員中心</a></li>
+                  <i class="bi bi-caret-right-fill text-white"></i>
+                  <li class="breadcrumb-item text-white fw-bold active" aria-current="page">個人資料</li>
+                </ol>
+            </nav>
+   
+
+          <h2 class="text-primary-600 py-1 fw-bold border-bottom pb-8">會員中心</h2>
+    </section>
+
+
+        <section class="py-lg-10 py-8">
+            <div class="container">
+              <h2 class="mb-7 fw-bolder fs-4 fs-lg-2">大家都在看</h2>
+              <div class="row">
+                <div class="col-lg-3">
+                  <div class="nav flex-column nav-pills bg-white p-4 h-100 d-none d-lg-block" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                    <button class="nav-link fw-bolder text-dark text-start active mb-4 p-3 fs-5" id="v-pills-alcohol-tab" data-bs-toggle="pill" data-bs-target="#v-pills-alcohol" type="button" role="tab" aria-controls="v-pills-alcohol" aria-selected="true">我的帳戶
+                    </button>
+                    <button class="nav-link fw-bolder text-dark text-start mb-4 p-3 fs-5" id="v-pills-noodle-tab" data-bs-toggle="pill" data-bs-target="#v-pills-noodle" type="button" role="tab" aria-controls="v-pills-noodle" aria-selected="false">．台灣拉麵地圖</button>
+                    <button class="nav-link fw-bolder text-dark text-start mb-4 p-3 fs-5" id="v-pills-island-tab" data-bs-toggle="pill" data-bs-target="#v-pills-island" type="button" role="tab" aria-controls="v-pills-island" aria-selected="false">．海島自由行</button>
+                    <button class="nav-link fw-bolder text-dark text-start mb-4 p-3 fs-5" id="v-pills-travel-tab" data-bs-toggle="pill" data-bs-target="#v-pills-travel" type="button" role="tab" aria-controls="v-pills-travel" aria-selected="false">．短天數出門推薦</button>
+                    <button class="nav-link fw-bolder text-dark text-start mb-4 p-3 fs-5" id="v-pills-weekend-tab" data-bs-toggle="pill" data-bs-target="#v-pills-weekend" type="button" role="tab" aria-controls="v-pills-weekend" aria-selected="false">．周末露營趣</button>
+                  </div>
+                </div>
+                <div class="col-lg-9">
+                  <div class="tab-content rounded-lg-0 rounded-3 bg-white h-100 p-lg-7 p-3" id="v-pills-tabContent">
+                    <div class="tab-pane fade show active p-4 alcohol" id="v-pills-alcohol" role="tabpanel" aria-labelledby="v-pills-alcohol-tab">
+                      <h3 class="fw-bolder text-secondary-200 fs-4 mb-lg-5 mb-2">我的帳戶</h3>
+                      <ul class="list-unstyled d-grid mb-lg-7 mb-3 text gap-lg-4 gap-1">
+                        <li><a class="text-gray-dark" href="#">｜城市酒吧人氣榜,盤點當紅熱門酒吧</a></li>
+                        <li><a class="text-gray-dark" href="#">｜你要的調酒師在這裡！五月全台酒吧客座活動整理</a></li>
+                        <li><a class="text-gray-dark" href="#">｜台南老宅手工酒藏,尋味百年人文釀意</a></li>
+                      </ul>
+                      <ul class="list-unstyled d-flex img mb-lg-7 mb-3">
+                        <li class="flex-grow-1">
+                          <picture>
+                          <source media="(max-width: 991px)" srcset="https://github.com/hexschool/2022-web-layout-training/blob/main/2024-week6/hots-1-sm.png?raw=true">
+                  <source media="(max-width: 992px)" srcset="https://github.com/hexschool/2022-web-layout-training/blob/main/2024-week6/hots-1.png?raw=true">
+                  <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2024-week6/hots-1.png?raw=true" class="img-fluid w-lg-25 w-100" alt="圖片1"></li>
+                </picture>
+                        <li>
+                          <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2024-week6/hots-2.png?raw=true" class="img-fluid d-none d-lg-block" alt="圖片2">
+                        </li>
+                        <li>
+                          <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2024-week6/hots-3.png?raw=true" class="img-fluid d-none d-lg-block" alt="圖片3">
+                        </li>
+                        <li>
+                          <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2024-week6/hots-4.png?raw=true" class="img-fluid d-none d-lg-block" alt="圖片4">
+                        </li>
+                      </ul>
+                      <div class="section-footer d-lg-flex justify-content-between">
+                        <ul class="list-unstyled d-flex justify-content-center gap-3">
+                          <li><a href="#" class="px-lg-2 px-1 py-1 rounded-2 fw-bold">#夜貓行程</a></li>
+                          <li><a href="#" class="px-lg-2 px-1 py-1 rounded-2 fw-bold">#barhopping</a></li>
+                          <li><a href="#" class="px-lg-2 px-1 py-1 rounded-2 fw-bold">#全台酒吧</a></li>
+                        </ul>
+                        <a href="" class="d-flex align-items-center justify-content-center text-secondary-200 fw-bold fs-lg-5 fs-6 eng-font">View More<i class="bi bi-arrow-right fs-lg-5 fs-6 ms-2 text-secondary-200"></i></a>
+                      </div>
+                </div>
+                    <div class="tab-pane fade show p-4" id="v-pills-noodle" role="tabpanel" aria-labelledby="v-pills-noodle-tab">
+                      <h3 class="fw-bolder text-secondary-200 fs-4 mb-4">台北拉麵圖鑑</h3>
+                      <ul class="list-unstyled d-grid mb-7 text gap-4">
+                        <li><a class="text-gray-dark" href="#">｜城市酒吧人氣榜,盤點當紅熱門酒吧</a></li>
+                        <li><a class="text-gray-dark" href="#">｜你要的調酒師在這裡！五月全台酒吧客座活動整理</a></li>
+                        <li><a class="text-gray-dark" href="#">｜台南老宅手工酒藏,尋味百年人文釀意</a></li>
+                      </ul>
+                      <ul class="list-unstyled d-flex img mb-7">
+                        <li><img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2024-week6/hots-3-sm.png?raw=true" class="img-fluid" alt="圖片4"></li>
+                        <li><img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2024-week6/hots-3-sm.png?raw=true" class="img-fluid" alt="圖片5"></li>
+                      </ul>
+                      <div class="section-footer d-flex justify-content-between">
+                        <ul class="list-unstyled d-flex gap-3">
+                          <li><a  href="#" class="px-2 py-1 rounded-2 fw-bold">#雞白湯</a></li>
+                          <li><a href="#" class="px-2 py-1 rounded-2 fw-bold">#拉麵</a></li>
+                          <li><a href="#" class="px-2 py-1 rounded-2 fw-bold">#台北美食</a></li>
+                        </ul>
+                        <a href="" class="d-flex align-items-center text-secondary-200 fw-bold fs-5 eng-font">View More<i class="bi bi-arrow-right fs-5 ms-2"></i></a>
+                      </div>
+                    </div>
+                    <div class="tab-pane fade show p-4" id="v-pills-island" role="tabpanel" aria-labelledby="v-pills-island-tab">
+                      <h3 class="fw-bolder text-secondary-200 fs-4 mb-4">海島自由行</h3>
+                      <ul class="list-unstyled d-grid mb-7 text gap-4">
+                        <li><a class="text-gray-dark" href="#">｜私島慢活島嶼生活 - 在熱帶天堂品...</a></li>
+                        <li><a class="text-gray-dark" href="#">｜海島漂流記 - 在陽光、沙灘和比基...</a></li>
+                        <li><a class="text-gray-dark" href="#">｜島嶼蹤跡 - 揭開加勒比海上世外桃...</a></li>
+                      </ul>
+                      <ul class="list-unstyled d-flex img mb-7">
+                        <li><img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2024-week6/hots-4-sm.png?raw=true" class="img-fluid" alt="圖片6"></li>
+                        <li>
+                          <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2024-week6/hots-4-sm.png?raw=true" class="img-fluid" alt="圖片7">
+                        </li>
+                      </ul>
+                      <div class="section-footer d-flex justify-content-between">
+                        <ul class="list-unstyled d-flex gap-3">
+                          <li><a href="#" class="px-2 py-1 rounded-2 fw-bold">#熱帶國家</a></li>
+                          <li><a href="#" class="px-2 py-1 rounded-2 fw-bold">#海邊</a></li>
+                          <li><a href="#" class="px-2 py-1 rounded-2 fw-bold">#無敵海景</a></li>
+                        </ul>
+                        <a href="" class="d-flex align-items-center text-secondary-200 fw-bold fs-5 eng-font">View More<i class="bi bi-arrow-right fs-5 ms-2"></i></a>
+                      </div>
+                    </div>
+                    <div class="tab-pane fade show p-4" id="v-pills-travel" role="tabpanel" aria-labelledby="v-pills-travel-tab">
+                      <h3 class="fw-bolder text-secondary-200 fs-4 mb-4">短天數出國推薦</h3>
+                      <ul class="list-unstyled d-grid mb-7 text gap-4">
+                        <li><a class="text-gray-dark" href="#">｜72小時東京遊走 - 當個時尚東京通</a></li>
+                        <li><a class="text-gray-dark" href="#">｜48小時曼谷遊玩全攻略</a></li>
+                        <li><a class="text-gray-dark" href="#">｜三天兩夜賞櫻微醺東京</a></li>
+                      </ul>
+                      <ul class="list-unstyled d-flex img mb-7">
+                        <li><img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2024-week6/hots-5-sm.png?raw=true" class="img-fluid" alt="圖片8"></li>
+                        <li>
+                          <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2024-week6/hots-5-sm.png?raw=true" class="img-fluid" alt="圖片9">
+                        </li>
+                      </ul>
+                      <div class="section-footer d-flex justify-content-between">
+                        <ul class="list-unstyled d-flex gap-3">
+                          <li><a href="#" class="px-2 py-1 rounded-2 fw-bold">#說走就走</a></li>
+                          <li><a href="#" class="px-2 py-1 rounded-2 fw-bold">#出國玩</a></li>
+                          <li><a href="#" class="px-2 py-1 rounded-2 fw-bold">#東亞</a></li>
+                        </ul>
+                        <a href="" class="d-flex align-items-center text-secondary-200 fw-bold fs-5 eng-font">View More<i class="bi bi-arrow-right fs-5 ms-2"></i></a>
+                      </div>
+                    </div>
+                    <div class="tab-pane fade show p-4" id="v-pills-weekend" role="tabpanel" aria-labelledby="v-pills-weekend-tab">
+                      <h3 class="fw-bolder text-secondary-200 fs-4 mb-4">週末露營趣</h3>
+                      <ul class="list-unstyled d-grid mb-7 text gap-4">
+                        <li><a class="text-gray-dark" href="#">｜週末說走就走露營記</a></li>
+                        <li><a class="text-gray-dark" href="#">｜城市野營日記</a></li>
+                        <li><a class="text-gray-dark" href="#">｜和寵物去露營 - 大自然之旅的雙倍...</a></li>
+                      </ul>
+                      <ul class=" list-unstyled d-flex img mb-7">
+                        <li><img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2024-week6/hots-2-sm.png?raw=true" class="img-fluid" alt="圖片10"></li>
+                        <li>
+                          <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2024-week6/hots-2-sm.png?raw=true" class="img-fluid" alt="圖片11">
+                        </li>
+                      </ul>
+                      <div class="section-footer d-flex justify-content-between">
+                        <ul class="list-unstyled d-flex gap-3">
+                          <li><a href="#" class="px-2 py-1 rounded-2 fw-bold">#戶外</a></li>
+                          <li><a href="#" class="px-2 py-1 rounded-2 fw-bold">#露營控</a></li>
+                          <li><a href="#" class="px-2 py-1 rounded-2 fw-bold">#四季</a></li>
+                        </ul>
+                        <a href="" class="d-flex align-items-center text-secondary-200 fw-bold fs-5 eng-font">View More<i class="bi bi-arrow-right fs-5 ms-2"></i></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+     
+
+     
+
+
+
+   
+
+   
+    </main>
+     
+    <%- include('./layout/footer'); -%>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script type="module" src="/main.js"></script>
+</body>
+</html>

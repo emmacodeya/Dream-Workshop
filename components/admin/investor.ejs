@@ -1,0 +1,197 @@
+<h1 class="fs-2 mb-7 fw-bold">投資者</h1>
+<form class="form-inline w-100 d-flex align-items-center">
+  <input class="form-control me-2 flex-grow-1 admin-search" type="search" placeholder="搜尋 ID / 投資者姓名">
+  
+  <button class="btn btn-primary-600 fw-bold rounded me-3" type="submit">搜尋</button>
+  
+  <div class="admin-dropdown dropdown me-3">
+    <button class="btn btn-secondary dropdown-toggle rounded bg-gray-1000" type="button" id="dropdownButtonVerify" data-bs-toggle="dropdown">
+      審核狀態
+    </button>
+    <ul class="dropdown-menu rounded bg-gray-1000">
+      <li><a class="dropdown-item" href="#">全部</a></li>
+      <li><a class="dropdown-item" href="#">已審核</a></li>
+      <li><a class="dropdown-item" href="#">未審核</a></li>
+    </ul>
+  </div>
+  
+  <div class="admin-dropdown dropdown">
+    <button class="btn btn-secondary dropdown-toggle rounded bg-gray-1000" type="button" id="dropdownButtonStatus" data-bs-toggle="dropdown">
+      啟用狀態
+    </button>
+    <ul class="dropdown-menu dropdown-menu_short rounded bg-gray-1000">
+      <li><a class="dropdown-item" href="#">全部</a></li>
+      <li><a class="dropdown-item" href="#">啟用</a></li>
+      <li><a class="dropdown-item" href="#">未啟用</a></li>
+    </ul>
+  </div>
+</form>
+
+<div class="admin-account">
+  <table class="table mt-4">
+    <thead class="table-light">
+      <tr>
+        <th width="70">會員ID</th>
+        <th width="140">投資者姓名</th>
+        <th width="90">審核狀態</th>
+        <th width="90">啟用狀態</th>
+        <th width="30" class="text-center">詳細資訊</th>
+        <th width="30" class="text-center">投資者管理</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>1</td>
+        <td>Michael Smith</td>
+        <td>
+          <p class="fw-bold text-primary-600">
+            已審核
+          </p>
+        </td>
+        <td>
+          <p class="fw-bold text-primary-600">
+            啟用
+          </p>
+        </td>
+        </td>
+        <td class="text-center">
+          <button class="btn btn-outline-primary btn-sm" type="button" data-bs-toggle="modal" data-bs-target="#investorViewModal">
+            查看
+          </button>
+        </td>
+        <td class="text-center">
+          <button class="btn btn-outline-primary btn-sm" type="button" data-bs-toggle="modal" data-bs-target="#investorVerifyModal">
+            管理
+          </button>
+        </td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>Olivia Davis</td>
+        <td>
+          <p class="fw-bold text-danger">
+            未審核
+          </p>
+        </td>
+        <td>
+          <p class="fw-bold text-danger">
+            未啟用
+          </p>
+        </td>
+        </td>
+        <td class="text-center">
+          <button class="btn btn-outline-primary btn-sm" type="button" data-bs-toggle="modal" data-bs-target="#investorViewModal">
+            查看
+          </button>
+        </td>
+        <td class="text-center">
+          <button class="btn btn-outline-primary btn-sm" type="button" data-bs-toggle="modal" data-bs-target="#investorVerifyModal">
+            管理
+          </button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<!-- 資訊 -->
+<div class="modal fade" id="investorViewModal" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header bg-primary-600">
+        <h5 class="fs-3 modal-title fw-bold">投資者詳情</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body admin-modal-body">
+        <p>投資人會員ID：7</p>
+        <p>姓名：Michael Smith</p>
+        <p>偏好領域：餐飲 ，一般服務 ，批發 / 零售</p>
+        <p>資金規模：30,000,000</p>
+        <p>投資人經歷：我在一個貧困的家庭中長大。
+          年輕時參加過海軍,因此他的全名經常被縮寫為「謝船長」。
+          在海軍服役期間,學到了許多關於紀律和金錢的重要教訓。
+          退役後,開辦了蟹堡王餐廳。
+          蟹堡王以其招牌菜「蟹堡」而聞名,
+          而這個漢堡的秘方是嚴格保守的秘密。
+          餐廳迅速成為比奇堡(Bikini Bottom)最受歡迎的餐飲場所之一。
+          經營風格非常嚴格且注重成本控制。
+          座右銘是「省錢就是賺錢」。儘管如此,我對餐廳的成功和顧客的滿意度也有高度的重視。
+          在這希望能夠找到同為餐飲相關領域的夥伴,我可以運用手邊相關資源,攜手夥伴共同開創新事業</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary rounded" data-bs-dismiss="modal">取消</button>
+        <button type="button" class="btn btn-primary-600 rounded">確認</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- 管理 -->
+<div class="modal fade" id="investorVerifyModal" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header bg-primary-600">
+        <h5 class="fs-3 modal-title fw-bold">投資者管理</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body admin-modal-body">
+        <h4 class="fs-4 mb-3">是否啟用</h4>
+        <form class="d-flex">
+          <label class="me-2">
+              <input type="radio" name="fruit" value="available">啟用
+          </label>
+          <label>
+              <input type="radio" name="fruit" value="unavailable">未啟用
+          </label>
+        </form>
+        <hr>
+        <h4 class="fs-4 mb-3">是否設置為熱門</h4>
+        <form class="d-flex">
+          <label class="me-2">
+              <input type="radio" name="fruit" value="available">是
+          </label>
+          <label>
+              <input type="radio" name="fruit" value="unavailable">否
+          </label>
+        </form>
+        <hr>
+        <h4 class="fs-4 mb-3">財力驗證</h4>
+        <p class="mb-2">財力證明：</p>
+        <img src="https://picsum.photos/id/514/600/400" alt="">
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary rounded">未通過</button>
+        <button type="button" class="btn btn-primary-600 rounded">通過</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- 刪除 -->
+<div id="delAccountModal"
+ref="delCommentModal"
+class="modal fade"
+tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content border-0">
+      <div class="modal-header bg-danger text-white">
+        <h5 class="modal-title fw-bold">
+          <span>刪除帳戶</span>
+        </h5>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="modal"
+        ></button>
+      </div>
+      <div class="modal-body">
+        是否刪除ID為
+        <strong class="text-danger">1</strong>
+        之帳戶(刪除後將無法恢復)。
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-outline-secondary rounded" data-bs-dismiss="modal">
+          取消
+        </button>
+        <button type="button" class="btn btn-danger rounded">確認刪除</button>
+      </div>
+    </div>
+  </div>
+</div>
