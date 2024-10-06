@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>文章頁面</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+  <script type="module" crossorigin src="/Dream-Workshop/assets/bootstrap.bundle.min-669049f5.js"></script>
+  <link rel="stylesheet" href="/Dream-Workshop/assets/bootstrap.bundle-dad9f8ea.css">
+</head>
+
+<body>
+    <nav class="header navbar navbar-expand-lg fixed-top">
+    <div class="container d-flex justify-content-center">
+        <!-- logo -->
+          <div class="d-flex justify-content-between align-items-center me-auto">
+            <a class="navbar-brand" href="index.html">
+                <img src="/Dream-Workshop/assets/創夢工坊-logo-fb8def81.png" alt="創夢工坊" style="width: 56px;">
+            </a>
+         </div>
+         <button class="navbar-toggler btn-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon d-flex align-items-center justify-content-center">
+            <i class="bi bi-list list-icon"></i>
+          </span>
+        </button>
+      
+      <!-- nav -->
+      <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="/pages/project/ProjectList-project.html">找創業項目</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/pages/investor/ProjectList-investor.html">找投資人</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">付費方案</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/pages/discuss.html">討論區</a>
+          </li>
+        </ul>
+      </div>
+
+       <a href="#" class="btn login-btn btn-primary-600 d-none d-lg-block">
+        註冊/登入
+       </a>
+    </div>
+  </nav>  
+    <main class="bg-gray-1000 py-15">
+        <!-- 首頁>討論區>文章頁面 -->
+        <section class="container py-8 d-lg-block d-none">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                  <li class="breadcrumb-item text-white"><a href="index.html">首頁</a></li>
+                  <i class="bi bi-caret-right-fill text-white"></i>
+                  <li class="breadcrumb-item text-white"><a href="discuss.html">討論區</a></li>
+                  <i class="bi bi-caret-right-fill text-white"></i>
+                  <li class="breadcrumb-item text-white fw-bold active" aria-current="page">是否該放棄年薪七百萬的工作？</li>
+                </ol>
+            </nav>
+        </section>
+          <!-- 文章標題內文 -->
+        <section class="container pt-lg-0 pt-8">
+             <h2 class="text-primary-600 fw-bold pb-3">是否該放棄年薪七百萬的工作？</h2>
+             <div class="d-flex align-items-center border-bottom border-gray-600 pb-3">
+                <img src="/Dream-Workshop/assets/文章頁面頭像-103487f2.png" alt="頭像" class="rounded-circle me-2" style="width: 36px; height: 36px;">
+                <p class="fw-bold fs-lg-5">梶田隆章<span class="mx-1">•</span></p>
+                <time datetime="2024-09-20T22:20" class="text-gray-400">2024/09/20 22:20</time>
+            </div>
+
+            <div class="article-text fs-lg-4 fs-5 my-5">
+                <p> 為了避免文章太長，我先提供一個簡短的懶人包，<br>
+                    我 35 歲男性，外商科技業務，目前本業年薪 700 萬，<br>
+                    資產大概累積 2000 萬，已婚，未買房，預計會買房也想生小孩（最多兩胎）。<br>
+                    除了本業，同時有經營副業，副業年收入大概 160 萬，<br>
+                    不過完全是自由業接案子為主，很吃市場狀況。<br>
+                    但是最近本業做到身心靈都快爆了，很想辭職去努力衝刺副業，也可以多陪陪家人，<br>
+                    不知道這樣會不會很衝動？</p>
+            </div>
+        </section>
+         
+
+         <!-- 切換文章 -->
+         <section class="container ">
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide bg-gray-800 article-swiper py-lg-2 py-1 pe-lg-4 pe-1 ps-lg-10 ps-8">
+                        <h5 class="text-gray-400 fs-lg-5 fw-bold pb-1">上一篇文章</h5>
+                        <p class="text-gray-200">文章標題文章標題</p>
+                        <p class="text-gray-200">文章標題文章標題</p>
+                    </div>
+                    <div class="swiper-slide bg-gray-800 article-swiper  py-lg-2 py-1 pe-lg-4 pe-1 ps-lg-10 ps-8">
+                        <h5 class="text-gray-400 fs-lg-5 pb-1 fw-bold">下一篇文章</h5>
+                        <p class="text-gray-200">文章標題文章標題</p>
+                        
+                    </div>
+                    <div class="swiper-slide bg-gray-800 article-swiper  py-lg-2 py-1 pe-lg-4 pe-1 ps-lg-10 ps-8">
+                        <h5 class="text-gray-400 fs-lg-5 pb-1 fw-bold">下一篇文章</h5>
+                        <p class="text-gray-200">文章標題文章標題</p>
+                        
+                    </div>
+                    <div class="swiper-slide bg-gray-800 article-swiper  py-lg-2 py-1 pe-lg-4 pe-1 ps-lg-10 ps-8">
+                        <h5 class="text-gray-400 fs-lg-5 pb-1 fw-bold">下一篇文章</h5>
+                        <p class="text-gray-200">文章標題文章標題</p>
+                        
+                    </div>
+                </div>
+                <div class="swiper-button-next mx-4"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </section>
+
+         <!-- 留言板 -->
+         <section class="container py-lg-8 py-6">
+            <div>
+                <h4 class="text-gray-200 border-bottom border-gray-400 pb-3 fs-6">共15則留言</h4>
+            </div>
+            <div class="mt-lg-7 mt-4">
+                <div class="d-flex border-bottom border-gray-600">
+                    <img src="/Dream-Workshop/assets/留言頭像1-97c57edc.png" alt="曹穎惠" class="rounded-circle me-2" style="width: 40px; height: 40px;">
+                    <div>
+                        <p class="fs-lg-5 fw-bold pb-2">曹穎惠</p>
+                        <p class="fs-lg-4 message-board">想創就創，反正工作隨時都有</p>
+                        <div class="d-flex align-items-center fs-5 mb-lg-7 mb-2">
+                            <p class="fw-bold pe-1">B1</p>
+                            <time datetime="2024-09-20T22:20" class="text-gray-400">2024/09/20 22:20</time>
+                            <span class="text-gray-400 px-1">•</span>
+                            <a href="#" class="text-primary-600">回覆</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-lg-7 mt-4">
+                <div class="d-flex border-bottom border-gray-600">
+                    <img src="/Dream-Workshop/assets/留言頭像2-6ada11f4.png" alt="中村修二" class="rounded-circle me-2" style="width: 40px; height: 40px;">
+                    <div>
+                        <p class="fs-lg-5 fw-bold pb-2">中村修二</p>
+                        <p class="fs-lg-4 message-board">創失敗了回去工作也會甘願一點 至少試過了</p>
+                        <div class="d-flex align-items-center fs-5 mb-lg-7 mb-2">
+                            <p class="fw-bold pe-1">B2</p>
+                            <time datetime="2024-09-21T00:20" class="text-gray-400">2024/09/21 00:20</time>
+                            <span class="text-gray-400 px-1">•</span>
+                            <a href="#" class="text-primary-600">回覆</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-lg-7 mt-4">
+                <div class="d-flex border-bottom border-gray-600">
+                    <img src="/Dream-Workshop/assets/留言頭像3-fc5cf1ed.png" alt="三島由紀夫" class="rounded-circle me-2" style="width: 40px; height: 40px;">
+                    <div>
+                        <p class="fs-lg-5 fw-bold pb-2">三島由紀夫</p>
+                        <p class="fs-lg-4 message-board">你的副業，老婆能夠幫忙嗎？讓它變老婆主業試試看</p>
+                        <div class="d-flex align-items-center fs-5 mb-lg-7 mb-2">
+                            <p class="fw-bold pe-1">B3</p>
+                            <time datetime="2024-09-21T04:20" class="text-gray-400">2024/09/21 04:20</time>
+                            <span class="text-gray-400 px-1">•</span>
+                            <a href="#" class="text-primary-600">回覆</a>
+                        </div>
+                    <div class="d-flex">
+                        <img src="/Dream-Workshop/assets/留言頭像4-17e6a905.png" alt="戴琪" class="rounded-circle me-2" style="width: 40px; height: 40px;">
+                        <div>
+                        <p class="fs-lg-5 fw-bold pb-2">戴琪</p>
+                        <p class="fs-lg-4 message-board">我也有這想法，不過這種職缺其實不多，通常卡就不太換了<br>而且我也熬蠻久才到這薪資水位</p>
+                        <div class="d-flex align-items-center fs-5 mb-lg-7 mb-2">
+                            <p class="fw-bold pe-1">B3-1</p>
+                            <time class="text-gray-400">今天 22:20</time>
+                            <span class="text-gray-400 px-1">•</span>
+                            <a href="#" class="text-primary-600">回覆</a>
+                        </div>
+                       </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+            <div class="mt-lg-7 mt-4">
+                <div class="d-flex border-bottom border-gray-600">
+                    <img src="/Dream-Workshop/assets/留言頭像5-d0e57fe3.png" alt="中村修二" class="rounded-circle me-2" style="width: 40px; height: 40px;">
+                    <div>
+                        <p class="fs-lg-5 fw-bold pb-2">戴琪</p>
+                        <p class="fs-lg-4 message-board">再多幹幾年就退休了，何必想不開去創業</p>
+                        <div class="d-flex align-items-center fs-5 mb-lg-7 mb-2">
+                            <p class="fw-bold pe-1">B4</p>
+                            <time class="text-gray-400">昨天 22:20</time>
+                            <span class="text-gray-400 px-1">•</span>
+                            <a href="#" class="text-primary-600">回覆</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-lg-7 mt-4">
+                <div class="d-flex border-bottom border-gray-600">
+                    <img src="/Dream-Workshop/assets/留言頭像6-eeb3505c.png" alt="丁肇中" class="rounded-circle me-2" style="width: 40px; height: 40px;">
+                    <div>
+                        <p class="fs-lg-5 fw-bold pb-2">丁肇中</p>
+                        <p class="fs-lg-4 message-board">副業目前跟你本業比差太多，你本業都說很累了，幹嘛還要花時間處理副業阿？</p>
+                        <div class="d-flex align-items-center fs-5 mb-lg-7 mb-2">
+                            <p class="fw-bold pe-1">B5</p>
+                            <time class="text-gray-400">今天 22:20</time>
+                            <span class="text-gray-400 px-1">•</span>
+                            <a href="#" class="text-primary-600">回覆</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+         <!-- 頁碼 -->
+        <nav aria-label="Page navigation example">
+            <ul class="pagination pagination-sm pagination-bg-gray-1000 justify-content-center">
+              <li class="page-item">
+                <a class="page-link bg-transparent border-0 text-gray-400"><i class="bi bi-chevron-left"></i></a>
+              </li>
+              <li class="page-item active"><a class="page-link bg-transparent border-0 text-primary-400" href="#">1</a></li>
+              <li class="page-item"><a class="page-link bg-transparent border-0 text-gray-400" href="#">2</a></li>
+              <li class="page-item"><a class="page-link bg-transparent border-0 text-gray-400" href="#">3</a></li>
+              <li class="page-item"><a class="page-link bg-transparent border-0 text-gray-400" href="#"><i class="bi bi-chevron-right"></i></a></li>
+            </ul>
+          </nav> 
+          <!-- 回覆留言 -->
+          <section class="container">
+            <form class="row">
+                <div class="col">
+                  <label for="message" class="form-label"></label>
+                  <input type="text" class="form-control message-input text-gray-600 bg-gray-1000" id="message" value="請留下您寶貴的意見...">
+                </div>
+            </form>
+            <div class="form-check py-3">
+                <input class="form-check-input bg-gray-1000" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label text-white" for="flexCheckDefault">
+                    我已閱讀過並同意遵守討論區規則、本站服務條款與個人資料保護法。
+                </label>
+            </div>
+            <div class="text-end">
+            <button class="btn btn-primary-600 fw-bolder py-lg-3 py-2 px-4">發表回應</button>
+             </div>
+          </section>
+
+    </main>
+   
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.mySwiper', {
+            slidesPerView: 2,
+            spaceBetween: 10,
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            breakpoints: {
+                768: {
+                    slidesPerView: 2, 
+                    spaceBetween: 10,
+                },
+            },
+            effect: 'slide', 
+            speed: 600, 
+        });
+    </script>
+        <footer class="footer">
+    <img class="bg-field" src="/Dream-Workshop/assets/bg-field-c52487a8.png"></img>
+    <div class="mask"></div>
+    <div class="container">
+        <div class="row py-8">
+            <div class="col-lg-3 community-wrap mb-5">
+                <div class="community">
+                    <a href="index.html">
+                        <img class="mb-1" src="/Dream-Workshop/assets/創夢工坊-logo-fb8def81.png" alt="創夢工坊" style="width: 60px;">
+                    </a>
+                    
+                    <h3 class="fw-bold mb-5">Dream Workshop</h3>
+                    <ul class="d-flex justify-content-center justify-content-lg-start">
+                        <li><a href="#"><i class="icons bi bi-facebook me-3"></i></a></li>
+                        <li><a href="#"><i class="icons bi bi-instagram me-3"></i></a></li>
+                        <li><a href="#"><i class="icons bi bi-line"></i></a></li>
+                    </ul>
+                </div>     
+            </div>
+            <div class="col-lg-9 d-flex">
+                <ul class="footer-navbar me-5">
+                    <li class="fs-5 fw-bold text-gray-400 mb-3"><a href="about-us.html">關於我們</a></li>
+                    <li><a class="fw-bold text-primary-600 mb-2" href="#">網站理念</a></li>
+                    <li><a class="fw-bold text-primary-600 mb-2" href="#">常見問題</a></li>
+                    <li><a class="fw-bold text-primary-600" href="#">隱私權政策</a></li>
+                </ul>
+                <ul class="footer-navbar me-5">
+                    <li class="fs-5 fw-bold text-gray-400 mb-3"><a href="#">付費方案</a></li>
+                    <li class="fw-bold text-primary-600 mb-2"><a href="#">購點方案</a></li>
+                    <li class="fw-bold text-primary-600"><a href="#">購點專區</a></li>
+                </ul>
+                <ul class="footer-navbar">
+                    <li class="fs-5 fw-bold text-gray-400 mb-3">特色服務</li>
+                    <li class="fw-bold text-primary-600 mb-2"><a href="activity.html">平台對接活動</a></li>
+                    <li class="fw-bold text-primary-600"><a href="discuss.html">討論區</a></li>
+                </ul>
+            </div>
+        </div>
+        <small class="px-3 px-lg-0 text-gray-400">© Dream Workshop 2024 Copyright. All Rights Reserved.</small>
+    </div>   
+</footer>    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    
+    
+</body>
+</html>

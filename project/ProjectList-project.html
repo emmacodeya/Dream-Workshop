@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <script type="module" crossorigin src="/Dream-Workshop/assets/bootstrap.bundle.min-669049f5.js"></script>
+  <link rel="stylesheet" href="/Dream-Workshop/assets/bootstrap.bundle-dad9f8ea.css">
+</head>
+<body>
+    <nav class="header navbar navbar-expand-lg fixed-top">
+    <div class="container d-flex justify-content-center">
+        <!-- logo -->
+          <div class="d-flex justify-content-between align-items-center me-auto">
+            <a class="navbar-brand" href="index.html">
+                <img src="/Dream-Workshop/assets/創夢工坊-logo-fb8def81.png" alt="創夢工坊" style="width: 56px;">
+            </a>
+         </div>
+         <button class="navbar-toggler btn-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon d-flex align-items-center justify-content-center">
+            <i class="bi bi-list list-icon"></i>
+          </span>
+        </button>
+      
+      <!-- nav -->
+      <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="/pages/project/ProjectList-project.html">找創業項目</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/pages/investor/ProjectList-investor.html">找投資人</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">付費方案</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/pages/discuss.html">討論區</a>
+          </li>
+        </ul>
+      </div>
+
+       <a href="#" class="btn login-btn btn-primary-600 d-none d-lg-block">
+        註冊/登入
+       </a>
+    </div>
+  </nav>  <div class="bg-gray-1000">
+
+      <!-- 熱門創業項目 -->
+      <div class="container py-5 py-lg-15">
+        <h2 class="fw-bold fs-1 text-center text-primary-600 mb-lg-8 py-lg-8">熱門創業項目</h2>
+        <!-- Swiper -->
+        <div class="swiper businessSwiper">
+          <div class="swiper-wrapper pe-12">
+            <!-- 1 -->
+            <div class="business-swiper swiper-slide">
+              <div class="card popular-card text-center h-100">
+                <div class="popular-card-body position-relative">
+                  <a href="#">
+                    <img class="favorite" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACIAAAAfCAYAAACCox+xAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAH9SURBVHgBzZfLccIwEIZXggIowSW4g5grlyQVxByZAYIriKmACQzD0U4FyY0j0IFLcAkc4MQr/4LtCWCDxUv5ZmRpbEv6vVqt1oJS8DyvNJvNWmg+oZgoJZQpSiCECAqFwmetVgvT+g4GA2O5XNqqfUWKABfNdzoDBvUxaDseVKUvaDcaDTdVCA80n89Hm83GpPyExWKxzA1YYYTKUOgboE/ZcRy2FhXju/iab9qZUgUjErBtkxomPoLn3H6I5Eu327VRWXQZBqmLiLEwdysRgvX+IE3Ec4ter2ehHpFeymyRJ9IMNsizhGkM0oyUsiTpnyDX6/WUNMMaeGlC0gyWJpAISF+kmcViMZFRiB2TPsbQEMbO2iZNYOu6XG+F4CQckwarQITfbDYniRAGvlKlXd7wKBHharVKViIRwuuEhw49COwUl+c8EsLATD4ql+6PW6/X93arSHsLB6GP6o3uQOQX1cP7IqsDxHDS8kK3FfEDEa9pzzLPmsh5A7odAZyzmvVQnOrZ6XRKSOc4V1FNIY9E/M1PlYXEXOMz7BOwhHNKRG4hl4rJcsw0cucjiL42qW1tN68IpkAKDIfDSaVS4aZ15lUXwpXOLyUhOcUoi2By+8gh/C+EpMrbG0wI+zBi3l0I0+/3TaR5/JtK2Bm8PW8Zd9RArDFQro0z9At4Zemo+hFkGgAAAABJRU5ErkJggg==" alt="heart">
+                  </a>
+                  <img class="company-logo mb-3" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJQAAAA8CAYAAACAc5NXAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAbBSURBVHgB7V2LURs7FL0YkhCGGfwqyFJBeBXEVIA7wFQAVIBTAVABuIIHFWAqgFdBlgqyzDD8P++cfVegiDV2wNjK3j0zO7sraSXZOnt/kuwJMYDLy8u1iYmJr2E60rofP37s8Pri4qIxOTm5EZZ5eHjY+vTp0/6gZXq1hTLH09PT21JyTIkNPOBohYn39/cJTh29TTDojbAMyLHr3fYtU6vVlorKIL0lBlATA8BgHhalgwiJDBkgU1KUfn19/a8YgAlCQa0d45QVZNVl+EgK0rLZ2dljMQAThCIgjdKC5Pcg1DPQfhIjmBAjuLq62pECOwpI9VyXYoJl8iTdBimThJkg8xak5LoYgBWjPJcSGNiirKTPo71INHAZGP+pGIEllXciYwJCDWZUnhlCQUqMbVCnpqZMeHiEGRuKgB31U0ZkiHvIEPT8S4zAjIRSZDJ6pGII1gg1crUHZyAVQzBFqB6xqPdu04xBTpgi1Djcd0iocajZscGahBp56MBSyIAwE9gkEK3u3tzctPw0ncxtyxAAwrbCtNvb27HFv8YBU2GDXri+vj4oWnLyO8Dz3enp6UUxDmteXiFIBnk79qRCRSgCqmpf3giotkOpUKk8hzdG0U1Fw19CJaEUb4kXWVrv1A8VoZ7walLUarWKUIpK5SkgZaju5uR1OIWEMxXArFChQoUKQwM3VTLgCO/rgR4Y14QjLWGepv+4vLxcdeVxvcc0XTueP6/3vxx4dtNvB2ltzXvQczt8Hurwi7a7pXUwEFrHddOVYXm/7y7d76PWceTXy89U1E+/DOvokb8kkSHKqRfdfbuJL9Ml0b5pqSe2rdMlCe4f3XwYxnNMD/bFJWHdaivlKIiQs/wqBnk3fB5pLZTNyXF3d7eIaZwMaXW0m2j7zOvyGvN3y64ffh9JNKQvuHsSEqd96bOuXetIeqRHhegIxTcWX1Q+cEqgFgZ+4sOHD0uv3crNOTa3dMXNrSlBGpq/hfq3QORFECP7/Plz6qQhgfR5pLst6G3mFzRDstRpnPeaxlGi8ZJR9SbqbKLdDvqUl+eWdiXcMfLWtG8nIJ6rIuMz7ibGpcXREQpfGL/QhNcg0srs7Kz70opc8wUSQ69felvrGLR5XoCUeX3e4KbeFqfdoof5ewYqcfYQwPxeUIQeHlXgMo4T7X+e5hdyRLu/v98mMdw9SHWonzfTcplLC+E+B4kfo2cZo8p7/KGJAXbbNt0b66nHZ+Cbj3Lu9gBH5qnGrvSBJ8kKSYv0PZRpaV9S7UuX/XNlQJYFbZMSsAvipbhObm5uaAd1ZDBQxe7odSoRzh9GRyi+nW7/nFMhvcpSJXpRag5evUede149p/L6vjXOz8/XZmZmtoL0/JdcVF3RjusW7AFc1nMGMm2oanRkHZRQ/Ax72maUca/oIuX4oh7tAk+dydnZ2UJBWaqgFR4vTZ0gf80r5waiq+emby/51x7aejj1F6qyBGqMA50bz5AiuwXSrKHnhHV5xnlTBkfmPgdUd5Q7kaMjFNUB33ZeY/A28Tb/Q28MNsURzsvyCkCt7LIOPfKwAQjgpALVCMMQO3TpeR2SCjbWLg46BLldFIYeCAxyR/PpBf5i/7A+j0BtdRLWXPt+yKEP6t7nOHjt9/GeiDJsgAFZ4cDK/29z09lHvX4qpx98r8vVReJiINnOprbTckZ6UR2UbPD2vjOcwbJ4tlOQ33ZeIgbbz264C9+o15hXHS8O7aiu9Ec98CC7EhminsuDZPkGSUJ3nKK+49QV03lmCMC58DR6kT+HQTqlMU+1hPxnvyTn8t09pQek31eQmM+nuN5X++bxed/j8tvmGa77l7BOvz8sB8LU/b6FZVx6eO/3ke2En8X//BUqlBLmVxvw7Yea+iFvRwZp+rd1iWF6PZSS6UCGg9y4Dz1Aa7C+wK4h/X8f6nfAid7oPK9RwjShIFG+yZABo3pBDMO6hDKtnt4DZo3yIRrjIUwb5yYl1JCN8RD1omi7FZgjFBfvYcCPZLjGeAgS9ijGqZH3hhmVR3eeS3jladZ/VOA84LqVXTEmCEUyYcrkwF9+O0pwJQSmbxYtkMqEygOZNsdFJoJtow8bYgCll1Cq6n7K+JFB9c2XXUqVXkLBCI8l1vSWncl/DEpPKMaD3IK9MSMd5785jAomjHLGhCYnJ1cRcBy5HaUq7pgrPq14ehUqVKgQJ0x4eTDMY1kBkJZ9jq/UhNJNAFHFf+7u7tbDfX1lQqkJxW1R4wxo9kCpf4+z7GGDGL2qVEqMUv+TAvf3wVXfwZFIBOA/U93e3pr47+EKFSpUiA//ARvKOI/zb9KhAAAAAElFTkSuQmCC" alt="green-logo">
+                  <h4 class="mb-3 popular-card-title text-ellipsis text-primary-600">綠能創新股份有限公司</h4>
+                  <div class="d-flex justify-content-center align-items-center mb-4">
+                    <h5 class="fs-5 me-2 text-gray-200">環保科技｜智慧設備</h5>
+                  </div>
+                  <p>
+                    專注於開發可持續能源解決方案,致力於減少碳足跡並推動清潔能源的使用
+                  </p>
+                </div>
+                <a href="#" class="btn btn-gray-600 py-3">
+                  <p class="fs-5">資金規模</p>
+                  <p class="fs-5 fw-bold text-white">NT$ 40,000000</p>
+                </a>
+              </div>
+            </div>
+            
+            <!-- 2 -->
+            <div class="swiper-slide">
+              <div class="card popular-card text-center h-100">
+                <div class="popular-card-body">
+                  <a href="#">
+                    <img class="favorite" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACIAAAAfCAYAAACCox+xAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAL8SURBVHgBtVc7ktpAEB0JyOUb4BvgExhSEntPsNqQ4mM4wYrQkdZ8ihB8gt2MEHEC6wbmCAQQ8fNroaFa8syiWcGrmpphpG697unPYAkFptOps9lsulh+xahgOBhrjNCyrLBQKPxqNBorlexkMinv93vXVNZSEPCw/CGuAEpnUNqXSk1kgX673faUREjRdrtdnE6nisiOVbFYrNECXlhgKhvIhpCp9Xo98pYoyl1Y8yrOruR4wwiOx+Patm1ycRXjO3tejglEa7kJY9bwWMBlyUDsuUy2AiPom5EhkUcGg4GLl6Yptg9gu0oRE77vl6HATxHiCCD7pJPFcS7wrTIj3et0Oi8RkeFw+FdahAerw+HwRbpMB8jMMD3yPcjOoPTpPTmQcUDmDyOzRrx8sqGwKpJn614jQYDVlFVrRoIM6F2TI90gwck6xMEW5zS7KINFS5EBpJCCDTJVGiBRy2IAAR4IUkZ8K5KLsIg2sF4JA+DDofg4AhHHGQWzzZ+YErklbEov+cOwhuSFIxdRiqe8UKGoFncGtQFxrkkRcDShjYD7zV9CjchSonNht9tVU7+Xso4sGEPKhs9ZM8AUcVPk7SBAFtVksPbZu06pVHoWdwLS/Fkk24FHc0QkzuuAPeyORqNHcWNQK4Ful31nJuvWJX2pP4hkkXkZj8c3yyI6EiSGz/RTJb6cxIUINSlqQEzWQVq9xhGem0QcF5eMRKZ4vDEmChrcNMPksa1IQR4yiuAkeK1WK5GtlkpY0VmjC5DuemhCgo4cBv/XHC2dklRKG5PRkHgDiQfV+7ZOEV2MMPGmlvmYNMcRIji1dxUtEdnmTcloSAT8fqqC9mg4FDFD99Bas9lMXAMo3ZFpiezIcmsj2CIDUPBcTDzKKbUXvOiBhPtREoRMHpGAZ6g8e3yPag+8Q7Ofet2DAX2REUZEdGQUMCJBKAhDzOfzZb1ep2VV80oXJH4KQxh7RCL9X4j+VOGIuumKeXciBJkldPmOb/F5LtP5QP/eaIic+AdwbejXTjxb4AAAAABJRU5ErkJggg==" alt="heart">
+                  </a>
+                  <img class="company-logo mb-3" src="data:image/png;base64,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" alt="green-logo">
+                  <h4 class="mb-3 popular-card-title text-ellipsis text-primary-600">林媽媽中式餐館</h4>
+                  <div class="d-flex justify-content-center align-items-center mb-4">
+                    <h5 class="fs-5 me-2 text-gray-200">餐飲</h5>
+                  </div>
+                  <p>
+                    我們中式餐館注重精緻的中國美食，結合中華傳統與創新，提供優質的用餐體驗
+                  </p>
+                </div>
+                <a href="#" class="btn btn-gray-600 py-3">
+                  <p class="fs-5">資金規模</p>
+                  <p class="fs-5 fw-bold text-white">NT$ 800,000</p>
+                </a>
+              </div>
+            </div>
+            <!-- 3 -->
+            <div class="swiper-slide">
+              <div class="card popular-card text-center h-100">
+                <div class="popular-card-body">
+                  <a href="#">
+                    <img class="favorite" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACIAAAAfCAYAAACCox+xAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAH9SURBVHgBzZfLccIwEIZXggIowSW4g5grlyQVxByZAYIriKmACQzD0U4FyY0j0IFLcAkc4MQr/4LtCWCDxUv5ZmRpbEv6vVqt1oJS8DyvNJvNWmg+oZgoJZQpSiCECAqFwmetVgvT+g4GA2O5XNqqfUWKABfNdzoDBvUxaDseVKUvaDcaDTdVCA80n89Hm83GpPyExWKxzA1YYYTKUOgboE/ZcRy2FhXju/iab9qZUgUjErBtkxomPoLn3H6I5Eu327VRWXQZBqmLiLEwdysRgvX+IE3Ec4ter2ehHpFeymyRJ9IMNsizhGkM0oyUsiTpnyDX6/WUNMMaeGlC0gyWJpAISF+kmcViMZFRiB2TPsbQEMbO2iZNYOu6XG+F4CQckwarQITfbDYniRAGvlKlXd7wKBHharVKViIRwuuEhw49COwUl+c8EsLATD4ql+6PW6/X93arSHsLB6GP6o3uQOQX1cP7IqsDxHDS8kK3FfEDEa9pzzLPmsh5A7odAZyzmvVQnOrZ6XRKSOc4V1FNIY9E/M1PlYXEXOMz7BOwhHNKRG4hl4rJcsw0cucjiL42qW1tN68IpkAKDIfDSaVS4aZ15lUXwpXOLyUhOcUoi2By+8gh/C+EpMrbG0wI+zBi3l0I0+/3TaR5/JtK2Bm8PW8Zd9RArDFQro0z9At4Zemo+hFkGgAAAABJRU5ErkJggg==" alt="heart">
+                  </a>
+                  <img class="company-logo mb-3" src="data:image/png;base64,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" alt="green-logo">
+                  <h4 class="mb-3 popular-card-title text-ellipsis text-primary-600">迅捷物流股份有限公司</h4>
+                  <div class="d-flex justify-content-center align-items-center mb-4">
+                    <h5 class="fs-5 me-2 text-gray-200">物流運輸</h5>
+                  </div>
+                  <p>
+                    提供高效物流與供應鏈管理服務，確保貨物快速安全抵達目的地
+                  </p>
+                </div>
+                <a href="#" class="btn btn-gray-600 py-3">
+                  <p class="fs-5">資金規模</p>
+                  <p class="fs-5 fw-bold text-white">$ NT$ 20,000,000</p>
+                </a>
+              </div>
+            </div>
+            <!-- 4 -->
+            <div class="swiper-slide">
+              <div class="card popular-card text-center h-100">
+                <div class="popular-card-body">
+                  <a href="#">
+                    <img class="favorite" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACIAAAAfCAYAAACCox+xAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAL8SURBVHgBtVc7ktpAEB0JyOUb4BvgExhSEntPsNqQ4mM4wYrQkdZ8ihB8gt2MEHEC6wbmCAQQ8fNroaFa8syiWcGrmpphpG697unPYAkFptOps9lsulh+xahgOBhrjNCyrLBQKPxqNBorlexkMinv93vXVNZSEPCw/CGuAEpnUNqXSk1kgX673faUREjRdrtdnE6nisiOVbFYrNECXlhgKhvIhpCp9Xo98pYoyl1Y8yrOruR4wwiOx+Patm1ycRXjO3tejglEa7kJY9bwWMBlyUDsuUy2AiPom5EhkUcGg4GLl6Yptg9gu0oRE77vl6HATxHiCCD7pJPFcS7wrTIj3et0Oi8RkeFw+FdahAerw+HwRbpMB8jMMD3yPcjOoPTpPTmQcUDmDyOzRrx8sqGwKpJn614jQYDVlFVrRoIM6F2TI90gwck6xMEW5zS7KINFS5EBpJCCDTJVGiBRy2IAAR4IUkZ8K5KLsIg2sF4JA+DDofg4AhHHGQWzzZ+YErklbEov+cOwhuSFIxdRiqe8UKGoFncGtQFxrkkRcDShjYD7zV9CjchSonNht9tVU7+Xso4sGEPKhs9ZM8AUcVPk7SBAFtVksPbZu06pVHoWdwLS/Fkk24FHc0QkzuuAPeyORqNHcWNQK4Ful31nJuvWJX2pP4hkkXkZj8c3yyI6EiSGz/RTJb6cxIUINSlqQEzWQVq9xhGem0QcF5eMRKZ4vDEmChrcNMPksa1IQR4yiuAkeK1WK5GtlkpY0VmjC5DuemhCgo4cBv/XHC2dklRKG5PRkHgDiQfV+7ZOEV2MMPGmlvmYNMcRIji1dxUtEdnmTcloSAT8fqqC9mg4FDFD99Bas9lMXAMo3ZFpiezIcmsj2CIDUPBcTDzKKbUXvOiBhPtREoRMHpGAZ6g8e3yPag+8Q7Ofet2DAX2REUZEdGQUMCJBKAhDzOfzZb1ep2VV80oXJH4KQxh7RCL9X4j+VOGIuumKeXciBJkldPmOb/F5LtP5QP/eaIic+AdwbejXTjxb4AAAAABJRU5ErkJggg==" alt="heart">
+                  </a>
+                  <img class="company-logo mb-3" src="data:image/png;base64,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" alt="green-logo">
+                  <h4 class="mb-3 popular-card-title text-ellipsis text-primary-600">尚品生活股份有限公司</h4>
+                  <div class="d-flex justify-content-center align-items-center mb-4">
+                    <h5 class="fs-5 me-2 text-gray-200">電子商務</h5>
+                  </div>
+                  <p>
+                    提供消費者多樣化的高品質產品，打造更加便捷愉快的購物體驗
+                  </p>
+                </div>
+                <a href="#" class="btn btn-gray-600 py-3">
+                  <p class="fs-5">資金規模</p>
+                  <p class="fs-5 fw-bold text-white">NT$ 1,500,000</p>
+                </a>
+              </div>
+            </div>
+            <!-- 5 -->
+            <div class="swiper-slide">
+              <div class="card popular-card text-center h-100">
+                <div class="popular-card-body">
+                  <a href="#"></a>
+                  <img class="favorite" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACIAAAAfCAYAAACCox+xAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAH9SURBVHgBzZfLccIwEIZXggIowSW4g5grlyQVxByZAYIriKmACQzD0U4FyY0j0IFLcAkc4MQr/4LtCWCDxUv5ZmRpbEv6vVqt1oJS8DyvNJvNWmg+oZgoJZQpSiCECAqFwmetVgvT+g4GA2O5XNqqfUWKABfNdzoDBvUxaDseVKUvaDcaDTdVCA80n89Hm83GpPyExWKxzA1YYYTKUOgboE/ZcRy2FhXju/iab9qZUgUjErBtkxomPoLn3H6I5Eu327VRWXQZBqmLiLEwdysRgvX+IE3Ec4ter2ehHpFeymyRJ9IMNsizhGkM0oyUsiTpnyDX6/WUNMMaeGlC0gyWJpAISF+kmcViMZFRiB2TPsbQEMbO2iZNYOu6XG+F4CQckwarQITfbDYniRAGvlKlXd7wKBHharVKViIRwuuEhw49COwUl+c8EsLATD4ql+6PW6/X93arSHsLB6GP6o3uQOQX1cP7IqsDxHDS8kK3FfEDEa9pzzLPmsh5A7odAZyzmvVQnOrZ6XRKSOc4V1FNIY9E/M1PlYXEXOMz7BOwhHNKRG4hl4rJcsw0cucjiL42qW1tN68IpkAKDIfDSaVS4aZ15lUXwpXOLyUhOcUoi2By+8gh/C+EpMrbG0wI+zBi3l0I0+/3TaR5/JtK2Bm8PW8Zd9RArDFQro0z9At4Zemo+hFkGgAAAABJRU5ErkJggg==" alt="heart">
+                  </a>
+                  <img class="company-logo mb-3" src="data:image/png;base64,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" alt="green-logo">
+                  <h4 class="mb-3 popular-card-title text-ellipsis text-primary-600">綠能創新股份有限公司</h4>
+                  <div class="d-flex justify-content-center align-items-center mb-4">
+                    <h5 class="fs-5 me-2 text-gray-200">環保科技｜智慧設備</h5>
+                  </div>
+                  <p>
+                    專注於開發可持續能源解決方案,致力於減少碳足跡並推動清潔能源的使用。
+                  </p>
+                </div>
+                <a href="#" class="btn btn-gray-600 py-3">
+                  <p class="fs-5">資金規模</p>
+                  <p class="fs-5 fw-bold text-white">$ 40,000000 NTD</p>
+                </a>
+              </div>
+            </div>
+            <!-- 6 -->
+            <div class="swiper-slide">
+              <div class="card popular-card text-center h-100">
+                <div class="popular-card-body">
+                  <a href="#">
+                    <img class="favorite" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACIAAAAfCAYAAACCox+xAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAL8SURBVHgBtVc7ktpAEB0JyOUb4BvgExhSEntPsNqQ4mM4wYrQkdZ8ihB8gt2MEHEC6wbmCAQQ8fNroaFa8syiWcGrmpphpG697unPYAkFptOps9lsulh+xahgOBhrjNCyrLBQKPxqNBorlexkMinv93vXVNZSEPCw/CGuAEpnUNqXSk1kgX673faUREjRdrtdnE6nisiOVbFYrNECXlhgKhvIhpCp9Xo98pYoyl1Y8yrOruR4wwiOx+Patm1ycRXjO3tejglEa7kJY9bwWMBlyUDsuUy2AiPom5EhkUcGg4GLl6Yptg9gu0oRE77vl6HATxHiCCD7pJPFcS7wrTIj3et0Oi8RkeFw+FdahAerw+HwRbpMB8jMMD3yPcjOoPTpPTmQcUDmDyOzRrx8sqGwKpJn614jQYDVlFVrRoIM6F2TI90gwck6xMEW5zS7KINFS5EBpJCCDTJVGiBRy2IAAR4IUkZ8K5KLsIg2sF4JA+DDofg4AhHHGQWzzZ+YErklbEov+cOwhuSFIxdRiqe8UKGoFncGtQFxrkkRcDShjYD7zV9CjchSonNht9tVU7+Xso4sGEPKhs9ZM8AUcVPk7SBAFtVksPbZu06pVHoWdwLS/Fkk24FHc0QkzuuAPeyORqNHcWNQK4Ful31nJuvWJX2pP4hkkXkZj8c3yyI6EiSGz/RTJb6cxIUINSlqQEzWQVq9xhGem0QcF5eMRKZ4vDEmChrcNMPksa1IQR4yiuAkeK1WK5GtlkpY0VmjC5DuemhCgo4cBv/XHC2dklRKG5PRkHgDiQfV+7ZOEV2MMPGmlvmYNMcRIji1dxUtEdnmTcloSAT8fqqC9mg4FDFD99Bas9lMXAMo3ZFpiezIcmsj2CIDUPBcTDzKKbUXvOiBhPtREoRMHpGAZ6g8e3yPag+8Q7Ofet2DAX2REUZEdGQUMCJBKAhDzOfzZb1ep2VV80oXJH4KQxh7RCL9X4j+VOGIuumKeXciBJkldPmOb/F5LtP5QP/eaIic+AdwbejXTjxb4AAAAABJRU5ErkJggg==" alt="heart">
+                  </a>
+                  <img class="company-logo mb-3" src="data:image/png;base64,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" alt="green-logo">
+                  <h4 class="mb-3 popular-card-title text-ellipsis text-primary-600">綠能創新股份有限公司</h4>
+                  <div class="d-flex justify-content-center align-items-center mb-4">
+                    <h5 class="fs-5 me-2 text-gray-200">環保科技｜智慧設備</h5>
+                  </div>
+                  <p>
+                    專注於開發可持續能源解決方案,致力於減少碳足跡並推動清潔能源的使用。
+                  </p>
+                </div>
+                <a href="#" class="btn btn-gray-600 py-3">
+                  <p class="fs-5">資金規模</p>
+                  <p class="fs-5 fw-bold text-white">$ 40,000000 NTD</p>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+        </div>
+      </div>
+
+      <!-- 篩選產業 -->
+        <div class="container py-lg-15">
+          <h2 class="fw-bold fs-1 text-center text-primary-600 mb-lg-8 py-lg-8">篩選產業</h2>
+          <div class="row">
+            <div class="col-12">
+              <div class="row g-3">
+                <div class="col-lg-3">
+                  <a class="card industry-card" href="#" style="background-image: url(/Dream-Workshop/assets/Map-item-20-3779984a.png);">
+                    <h5>不限產業</h5>
+                  </a>
+                </div>
+                <div class="col-lg-3">
+                  <a class="card industry-card" href="#" style="background-image: url(/Dream-Workshop/assets/Map-item-1-6bd554ef.png);">
+                    <h5>批發/零售</h5>
+                  </a>
+                </div>
+                <div class="col-lg-3">
+                  <a class="card industry-card" href="#" style="background-image: url(/Dream-Workshop/assets/Map-item-2-6651a152.png);">
+                    <h5>生物科技</h5>
+                  </a>
+                </div>
+                <div class="col-lg-3">
+                  <a class="card industry-card" href="#" style="background-image: url(/Dream-Workshop/assets/Map-item-3-7367502a.png);">
+                    <h5>網際網路相關</h5>
+                  </a>
+                </div>
+                <div class="col-lg-3">
+                  <a class="card industry-card" href="#" style="background-image: url(/Dream-Workshop/assets/Map-item-4-8a16c28d.png);">
+                    <h5>文教相關</h5>
+                  </a>
+                </div>
+                <div class="col-lg-3">
+                  <a class="card industry-card" href="#" style="background-image: url(/Dream-Workshop/assets/Map-item-5-0f04795a.png);">
+                    <h5>大眾傳播相關</h5>
+                  </a>
+                </div>
+                <div class="col-lg-3">
+                  <a class="card industry-card" href="#" style="background-image: url(/Dream-Workshop/assets/Map-item-6-881b5e74.png);">
+                    <h5>旅遊/休閒/運動</h5>
+                  </a>
+                </div>
+                <div class="col-lg-3">
+                  <a class="card industry-card" href="#" style="background-image: url(/Dream-Workshop/assets/Map-item-7-a49d490e.png);">
+                    <h5>一般服務</h5>
+                  </a>
+                </div>
+                <div class="col-lg-3">
+                  <a class="card industry-card" href="#" style="background-image: url(/Dream-Workshop/assets/Map-item-8-d33a48a6.png);">
+                    <h5>電子資訊/軟體/半導體相關</h5>
+                  </a>
+                </div>
+                <div class="col-lg-3">
+                  <a class="card industry-card" href="#" style="background-image: url(/Dream-Workshop/assets/Map-item-9-1543cd8f.png);">
+                    <h5>一般製造</h5>
+                  </a>
+                </div>
+                <div class="col-lg-3">
+                  <a class="card industry-card" href="#" style="background-image: url(/Dream-Workshop/assets/Map-item-10-7c845395.png);">
+                    <h5>物流/倉儲</h5>
+                  </a>
+                </div>
+                <div class="col-lg-3">
+                  <a class="card industry-card" href="#" style="background-image: url(/Dream-Workshop/assets/Map-item-11-316e957a.png);">
+                    <h5>政治宗教及社福相關</h5>
+                  </a>
+                </div>
+                <div class="col-lg-3">
+                  <a class="card industry-card" href="#" style="background-image: url(/Dream-Workshop/assets/Map-item-12-06b6968e.png);">
+                    <h5>金融投顧/保險</h5>
+                  </a>
+                </div>
+                <div class="col-lg-3">
+                  <a class="card industry-card" href="#" style="background-image: url(/Dream-Workshop/assets/Map-item-13-0813be6f.png);">
+                    <h5>法律/會計/顧問/研發</h5>
+                  </a>
+                </div>
+                <div class="col-lg-3">
+                  <a class="card industry-card" href="#" style="background-image: url(/Dream-Workshop/assets/Map-item-14-890c6878.png);">
+                    <h5>設計相關</h5>
+                  </a>
+                </div>
+                <div class="col-lg-3">
+                  <a class="card industry-card" href="#" style="background-image: url(/Dream-Workshop/assets/Map-item-15-e6cf370e.png);">
+                    <h5>建築營造/不動產相關</h5>
+                  </a>
+                </div>
+                <div class="col-lg-3">
+                  <a class="card industry-card" href="#" style="background-image: url(/Dream-Workshop/assets/Map-item-16-ce1fefc2.png);">
+                    <h5>醫療保健/環境衛生</h5>
+                  </a>
+                </div>
+                <div class="col-lg-3">
+                  <a class="card industry-card" href="#" style="background-image: url(/Dream-Workshop/assets/Map-item-17-b6ae3717.png);">
+                    <h5>礦石及土石採取</h5>
+                  </a>
+                </div>
+                <div class="col-lg-3">
+                  <a class="card industry-card" href="#" style="background-image: url(/Dream-Workshop/assets/Map-item-18-9949e97e.png);">
+                    <h5>住宿相關</h5>
+                  </a>
+                </div>
+                <div class="col-lg-3">
+                  <a class="card industry-card" href="#" style="background-image: url(/Dream-Workshop/assets/Map-item-19-160fe409.png);">
+                    <h5>餐飲</h5>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      <!-- 篩選後項目 -->
+        <div class="container py-5">
+          <div class="d-flex justify-content-between  py-lg-8">
+            <div class="col-3"></div>
+            <h2 class="fw-bold  mb-5 text-center text-primary-600 col-6">餐飲 / 一般服務</h2>
+            <div class="navbar-expand-lg col-3 text-end">
+              <div class="dropdown">
+                <button class="btn btn-dark dropdown-toggle rounded-0 border border-1 border-white" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+                    預設排序
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <li><button class="dropdown-item" type="button"></button>預設排序</li>
+                  <li><button class="dropdown-item" type="button"></button>依募資金額：高至低</li>
+                  <li><button class="dropdown-item" type="button"></button>依募資金額：低至高</li>
+                  <li><button class="dropdown-item" type="button"></button>依上架時間：新至舊</li>
+                  <li><button class="dropdown-item" type="button"></button>依上架時間：舊至新</li>
+                  <li><button class="dropdown-item" type="button"></button>依公司成立狀態：未設立</li>
+                  <li><button class="dropdown-item" type="button"></button>依公司成立狀態：已設立</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+            <div class="card mb-3 bg-gray-800">
+                <div class="row g-0 d-flex">
+                  <div class="col-3 d-flex justify-content-center align-items-center">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAHXPluq6GtTRPDIHRv5kJPy86uFjp5sO7hg&s" class="img-fluid rounded" alt="logo">
+                  </div>
+                  <div class="col-7">
+                    <div class="card-body">
+                      <a href="Project-introduction.html" class="fs-2 text-primary-600 fw-bold m-1">Fresh Master Food Co., Ltd.</a>
+                      <div class="d-flex">
+                        <h5 class="fs-5 text-light m-1">公司成立狀態：未設立</h5>
+                        <h5 class="fs-5 text-light m-1">產業分類：餐飲</h5>
+                      </div>
+                      <p class="m-1">我們中式餐館注重精緻的中國美食,結合中華傳統與創新,提供優質的用餐體驗</p>
+                      <h1 class="fs-1 m-1 text-light">募資金額：50,000,000</h1>
+                      <p class="m-1 fs-6 text-gray-400">2024/7/25</p>
+                    </div>
+                  </div>
+                  <div class="col-2 d-flex justify-content-center align-items-center">
+                    <i class="bi bi-heart fs-3 text-light"></i>
+                  </div>
+                </div>
+            </div>
+            <div class="card mb-3 bg-gray-800">
+              <div class="row g-0 d-flex">
+                <div class="col-3 d-flex justify-content-center align-items-center">
+                  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAHXPluq6GtTRPDIHRv5kJPy86uFjp5sO7hg&s" class="img-fluid rounded" alt="logo">
+                </div>
+                <div class="col-7">
+                  <div class="card-body">
+                    <a href="Project-introduction.html" class="fs-2 text-primary-600 fw-bold m-1">Fresh Master Food Co., Ltd.</a>
+                    <div class="d-flex">
+                      <h5 class="fs-5 text-light m-1">公司成立狀態：未設立</h5>
+                      <h5 class="fs-5 text-light m-1">產業分類：餐飲</h5>
+                    </div>
+                    <p class="m-1">我們中式餐館注重精緻的中國美食,結合中華傳統與創新,提供優質的用餐體驗</p>
+                    <h1 class="fs-1 m-1 text-light">募資金額：50,000,000</h1>
+                    <p class="m-1 fs-6 text-gray-400">2024/7/25</p>
+                  </div>
+                </div>
+                <div class="col-2 d-flex justify-content-center align-items-center">
+                  <i class="bi bi-heart fs-3 text-light"></i>
+                </div>
+              </div>
+            </div>
+            <div class="card mb-3 bg-gray-800">
+              <div class="row g-0 d-flex">
+                <div class="col-3 d-flex justify-content-center align-items-center">
+                  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAHXPluq6GtTRPDIHRv5kJPy86uFjp5sO7hg&s" class="img-fluid rounded" alt="logo">
+                </div>
+                <div class="col-7">
+                  <div class="card-body">
+                    <a href="Project-introduction.html" class="fs-2 text-primary-600 fw-bold m-1">Fresh Master Food Co., Ltd.</a>
+                    <div class="d-flex">
+                      <h5 class="fs-5 text-light m-1">公司成立狀態：未設立</h5>
+                      <h5 class="fs-5 text-light m-1">產業分類：餐飲</h5>
+                    </div>
+                    <p class="m-1">我們中式餐館注重精緻的中國美食,結合中華傳統與創新,提供優質的用餐體驗</p>
+                    <h1 class="fs-1 m-1 text-light">募資金額：50,000,000</h1>
+                    <p class="m-1 fs-6 text-gray-400">2024/7/25</p>
+                  </div>
+                </div>
+                <div class="col-2 d-flex justify-content-center align-items-center">
+                  <i class="bi bi-heart fs-3 text-light"></i>
+                </div>
+              </div>
+            </div>
+            <div class="card mb-3 bg-gray-800">
+              <div class="row g-0 d-flex">
+                <div class="col-3 d-flex justify-content-center align-items-center">
+                  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAHXPluq6GtTRPDIHRv5kJPy86uFjp5sO7hg&s" class="img-fluid rounded" alt="logo">
+                </div>
+                <div class="col-7">
+                  <div class="card-body">
+                    <a href="Project-introduction.html" class="fs-2 text-primary-600 fw-bold m-1">Fresh Master Food Co., Ltd.</a>
+                    <div class="d-flex">
+                      <h5 class="fs-5 text-light m-1">公司成立狀態：未設立</h5>
+                      <h5 class="fs-5 text-light m-1">產業分類：餐飲</h5>
+                    </div>
+                    <p class="m-1">我們中式餐館注重精緻的中國美食,結合中華傳統與創新,提供優質的用餐體驗</p>
+                    <h1 class="fs-1 m-1 text-light">募資金額：50,000,000</h1>
+                    <p class="m-1 fs-6 text-gray-400">2024/7/25</p>
+                  </div>
+                </div>
+                <div class="col-2 d-flex justify-content-center align-items-center">
+                  <i class="bi bi-heart fs-3 text-light"></i>
+                </div>
+              </div>
+            </div>
+            <div class="card mb-3 bg-gray-800">
+              <div class="row g-0 d-flex">
+                <div class="col-3 d-flex justify-content-center align-items-center">
+                  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAHXPluq6GtTRPDIHRv5kJPy86uFjp5sO7hg&s" class="img-fluid rounded" alt="logo">
+                </div>
+                <div class="col-7">
+                  <div class="card-body">
+                    <a href="Project-introduction.html" class="fs-2 text-primary-600 fw-bold m-1">Fresh Master Food Co., Ltd.</a>
+                    <div class="d-flex">
+                      <h5 class="fs-5 text-light m-1">公司成立狀態：未設立</h5>
+                      <h5 class="fs-5 text-light m-1">產業分類：餐飲</h5>
+                    </div>
+                    <p class="m-1">我們中式餐館注重精緻的中國美食,結合中華傳統與創新,提供優質的用餐體驗</p>
+                    <h1 class="fs-1 m-1 text-light">募資金額：50,000,000</h1>
+                    <p class="m-1 fs-6 text-gray-400">2024/7/25</p>
+                  </div>
+                </div>
+                <div class="col-2 d-flex justify-content-center align-items-center">
+                  <i class="bi bi-heart fs-3 text-light"></i>
+                </div>
+              </div>
+            </div>
+
+        </div>
+
+  </div>
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <script>
+    var swiper = new Swiper(".businessSwiper", {
+      //一個畫面顯示幾個內容
+      slidesPerView: 4,
+      //每個內容之間的間隔為 16px
+      spaceBetween: 16,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>
+
+
+
+    <footer class="footer">
+    <img class="bg-field" src="/Dream-Workshop/assets/bg-field-c52487a8.png"></img>
+    <div class="mask"></div>
+    <div class="container">
+        <div class="row py-8">
+            <div class="col-lg-3 community-wrap mb-5">
+                <div class="community">
+                    <a href="index.html">
+                        <img class="mb-1" src="/Dream-Workshop/assets/創夢工坊-logo-fb8def81.png" alt="創夢工坊" style="width: 60px;">
+                    </a>
+                    
+                    <h3 class="fw-bold mb-5">Dream Workshop</h3>
+                    <ul class="d-flex justify-content-center justify-content-lg-start">
+                        <li><a href="#"><i class="icons bi bi-facebook me-3"></i></a></li>
+                        <li><a href="#"><i class="icons bi bi-instagram me-3"></i></a></li>
+                        <li><a href="#"><i class="icons bi bi-line"></i></a></li>
+                    </ul>
+                </div>     
+            </div>
+            <div class="col-lg-9 d-flex">
+                <ul class="footer-navbar me-5">
+                    <li class="fs-5 fw-bold text-gray-400 mb-3"><a href="about-us.html">關於我們</a></li>
+                    <li><a class="fw-bold text-primary-600 mb-2" href="#">網站理念</a></li>
+                    <li><a class="fw-bold text-primary-600 mb-2" href="#">常見問題</a></li>
+                    <li><a class="fw-bold text-primary-600" href="#">隱私權政策</a></li>
+                </ul>
+                <ul class="footer-navbar me-5">
+                    <li class="fs-5 fw-bold text-gray-400 mb-3"><a href="#">付費方案</a></li>
+                    <li class="fw-bold text-primary-600 mb-2"><a href="#">購點方案</a></li>
+                    <li class="fw-bold text-primary-600"><a href="#">購點專區</a></li>
+                </ul>
+                <ul class="footer-navbar">
+                    <li class="fs-5 fw-bold text-gray-400 mb-3">特色服務</li>
+                    <li class="fw-bold text-primary-600 mb-2"><a href="activity.html">平台對接活動</a></li>
+                    <li class="fw-bold text-primary-600"><a href="discuss.html">討論區</a></li>
+                </ul>
+            </div>
+        </div>
+        <small class="px-3 px-lg-0 text-gray-400">© Dream Workshop 2024 Copyright. All Rights Reserved.</small>
+    </div>   
+</footer>    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+
+</body>
+</html>
