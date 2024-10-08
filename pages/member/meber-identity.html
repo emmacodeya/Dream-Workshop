@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>會員中心</title>
+    <title>可用點數</title>
 </head>
 
 <body>
@@ -11,29 +11,30 @@
   
     <main class="bg-gray-1000 py-15">
        
+        <!-- 首頁>會員中心 -->
         <section class="container pt-8">
-            <ul class="nav d-flex align-items-center">
-                <li class="nav-item">
-                  <a class="text-white" href="index.html">首頁</a>
-                </li>
-                <i class="bi bi-caret-right-fill text-white"></i>
-                <li class="nav-item">
-                  <a class="text-white" href="member.html">會員中心</a>
-                </li>
-              </ul>
-
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item text-white"><a href="index.html">首頁</a></li>
+              <i class="bi bi-caret-right-fill text-white"></i>
+              <li class="breadcrumb-item text-white"><a href="member.html">會員中心</a></li>
+              <i class="bi bi-caret-right-fill text-white"></i>
+              <li class="breadcrumb-item text-white fw-bold active" aria-current="page">身分審核</li>
+            </ol>
+        </nav>
               <h2 class="text-primary-600 py-1 fw-bold border-bottom pb-8">會員中心</h2>
         </section>
 
-
+ 
         <section class="container">
             <div class="row">
+              <!-- 首頁>sidebar -->
                 <div class="col-lg-3 col-6">
                     <%- include('./components/member-sidebar'); %>
                 </div>
 
            <div class="col-lg-9 col-6">
-             <h2 class="text-primary-600">身分審核</h2>
+            
              <form class="my-8">
               <div class="mb-3 row">
                   <label for="name" class="col-lg-2 col-form-label text-white">姓名:</label>
