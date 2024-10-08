@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>會員登入</title>
+</head>
+<body>
+    <%- include('./layout/header'); -%>
+    
+    <div class="container">
+        <div class="login">
+            <h1 class="mb-5">會員登入</h1>
+            <div class="mx-auto mb-4">
+                <label for="email" class="text-gray-100 fs-5 mb-2">電子郵件</label>
+                <input id="email" type="text" class="banner-input form-control me-lg-3 me-1 flex-grow-1" placeholder="請輸入電子郵件">
+            </div>
+            <div class="mb-4">
+                <label for="password" class="text-gray-100 fs-5 mb-2">密碼</label>
+                <input id="password" type="text" class="banner-input form-control me-lg-3 me-1 flex-grow-1" placeholder="請輸入密碼">
+            </div>
+            <a href="#" class="text-gray-100 text-end">忘記密碼</a>
+            <div>
+                <a href="#" class="btn btn-primary-600">登入</a>
+                <a href="#" class="btn btn-primary-600">註冊會員</a>
+            </div>
+            
+        </div>  
+    </div>
+    <%- include('./layout/footer'); -%>
+    <script type="module" src="../main.js"></script>
+</body>
+</html>
