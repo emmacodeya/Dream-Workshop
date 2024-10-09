@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>會員中心</title>
+</head>
+
+<body>
+    <%- include('./layout/header'); -%>
+  
+<main class="bg-gray-1000 py-15">
+       <!-- 首頁>會員中心>創業項目收藏 -->
+    <section class="container pt-8">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                      <li class="breadcrumb-item text-white"><a href="index.html">首頁</a></li>
+                      <i class="bi bi-caret-right-fill text-white"></i>
+                      <li class="breadcrumb-item text-white"><a href="member.html">會員中心</a></li>
+                      <i class="bi bi-caret-right-fill text-white"></i>
+                      <li class="breadcrumb-item text-white fw-bold active" aria-current="page"></li>
+                    </ol>
+                </nav>
+              <h2 class="text-primary-600 py-1 fw-bold border-bottom pb-8">會員中心</h2>
+        </section>
+
+        <!-- 導覽列+已建創業項目內文 -->
+     <section class="container">
+         <div class="row">
+            <div class="col-lg-3 col-4">
+                    <%- include('./components/member-sidebar'); %>
+            </div>
+            <div class="col-lg-9 col-8">
+                <!-- 林媽媽中式餐館 -->
+                <div class="card bg-gray-800 mt-8">
+                     <div class="d-flex justify-content-between created-title">
+                        <div class="d-flex align-items-center">
+                         <h3 class="text-white fs-3 fw-bold">林媽媽中式餐館</h3>
+                         <i class="bi bi-clipboard-check text-primary-400 fs-3 ps-1"></i>
+                        </div>
+                        <div>
+                            <a href="#">
+                                <img class="favorite" src="/assets/images/icons/heart.png" alt="heart">
+                              </a>
+                        </div> 
+                     </div>
+                    <div class="row g-0 created-bady">
+                      <div class="col-md-4 d-flex align-items-center justify-content-center">
+                        <img src="/assets/images/mamacook.png" class="img-fluid rounded-start" alt="林媽媽">
+                      </div>
+                      <div class="col-md-8">
+                        <div class="card-body created-form">
+                            <div class="d-flex pb-2">
+                              <ul>
+                                <li class="fs-5 text-gray-400 fw-bold">公司成立狀態</li>
+                                <li class="fs-3 text-primary-400 fw-bold">未設立</li>
+                               </ul>
+                              <ul>
+                                <li class="fs-5 text-gray-400 fw-bold">產業分類</li>
+                                <li class="fs-3 text-primary-400 fw-bold">餐飲</li>
+                              </ul>
+                            </div>
+                            <div class="d-flex pb-2">
+                                <ul>
+                                  <li class="fs-5 text-gray-400 fw-bold">規模</li>
+                                  <li class="fs-3 text-primary-400 fw-bold">10人以下</li>
+                                 </ul>
+                                <ul>
+                                  <li class="fs-5 text-gray-400 fw-bold">資本額</li>
+                                  <li class="fs-3 text-primary-400 fw-bold">3,000,000</li>
+                                </ul>
+                              </div>
+                            <div class="d-flex align-items-center">
+                                <ul>
+                                  <li class="fs-5 text-gray-400 fw-bold">募資金額</li>
+                                  <li class="fs-3 text-primary-400 fw-bold">50,000,000</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="d-flex flex-lg-row flex-column align-items-lg-center p-3">
+                            <form class="row g-3">
+                                <div class="col m-0">
+                                  <label for="project-Remark" class="form-label text-white fs-5"></label>
+                                  <textarea id="project-Remark" rows="3" cols="30" class="bg-transparent text-white">請填寫備註...</textarea>
+                                </div>
+                            </form>
+                            <button type="button" class="btn btn-gray-200 text-gray-800 fw-bold ms-lg-5">保存</button>
+                        </div> 
+                      </div>
+                    </div>
+                    <div>
+                        <a href="/pages/project/Project-introduction.html" type="button" class="btn btn-primary-600 w-100 py-2 bg-gray-600 border-0 text-primary-600 fs-5 fw-bold">查看詳情<i class="bi bi-chevron-right ps-1"></i></a>   
+                    </div>
+                </div>
+                <!-- come寵物美容 -->
+                <div class="card bg-gray-800 my-6">
+                    <div class="d-flex justify-content-between created-title">
+                       <div class="d-flex align-items-center">
+                        <h3 class="text-white fs-3 fw-bold">come寵物美容</h3>
+                        <i class="bi bi-clipboard-check text-primary-400 fs-3 ps-1"></i>
+                       </div>
+                       <div>
+                        <a href="#">
+                            <img class="favorite" src="/assets/images/icons/heart.png" alt="heart">
+                          </a>
+                    </div> 
+                    </div>
+                   <div class="row g-0 created-bady">
+                        <div class="col-md-4 d-flex align-items-center justify-content-center">
+                       <img src="/assets/images/come.png" class="img-fluid rounded-start" alt="come寵物美容">
+                       </div>
+                     <div class="col-md-8">
+                       <div class="card-body created-form">
+                           <div class="d-flex pb-2">
+                             <ul>
+                               <li class="fs-5 text-gray-400 fw-bold">公司成立狀態</li>
+                               <li class="fs-3 text-primary-400 fw-bold">未設立</li>
+                              </ul>
+                             <ul>
+                               <li class="fs-5 text-gray-400 fw-bold">產業分類</li>
+                               <li class="fs-3 text-primary-400 fw-bold">餐飲</li>
+                             </ul>
+                           </div>
+                           <div class="d-flex pb-2">
+                               <ul>
+                                 <li class="fs-5 text-gray-400 fw-bold">規模</li>
+                                 <li class="fs-3 text-primary-400 fw-bold">10人以下</li>
+                                </ul>
+                               <ul>
+                                 <li class="fs-5 text-gray-400 fw-bold">資本額</li>
+                                 <li class="fs-3 text-primary-400 fw-bold">3,000,000</li>
+                               </ul>
+                             </div>
+                           <div class="d-flex align-items-center">
+                               <ul>
+                                 <li class="fs-5 text-gray-400 fw-bold">募資金額</li>
+                                 <li class="fs-3 text-primary-400 fw-bold">800,000</li>
+                               </ul>
+                           </div>
+                       </div>
+                       <div class="d-flex flex-lg-row flex-column align-items-lg-center p-3">
+                        <form class="row g-3">
+                            <div class="col m-0">
+                              <label for="project-Remark" class="form-label text-white fs-5"></label>
+                              <textarea id="project-Remark" rows="3" cols="30" class="bg-transparent text-white">請填寫備註...</textarea>
+                            </div>
+                        </form>
+                        <button type="button" class="btn btn-gray-200 text-gray-800 fw-bold ms-lg-5">保存</button>
+                    </div> 
+                     </div>
+                   </div>
+                   <div>
+                       <a href="#" type="button" class="btn btn-primary-600 w-100 py-2 bg-gray-600 border-0 text-primary-600 fs-5 fw-bold">查看詳情<i class="bi bi-chevron-right ps-1"></i></a>   
+                   </div>
+               </div>
+               <!-- 猛毒創意有限公司 -->
+               <div class="card bg-gray-800 my-6">
+                <div class="d-flex justify-content-between created-title">
+                   <div class="d-flex align-items-center">
+                    <h3 class="text-white fs-3 fw-bold">猛毒創意有限公司</h3>
+                    <i class="bi bi-clipboard-check text-primary-400 fs-3 ps-1"></i>
+                   </div>
+                   <div>
+                    <a href="#">
+                        <img class="favorite" src="/assets/images/icons/heart.png" alt="heart">
+                      </a>
+                </div> 
+                </div>
+               <div class="row g-0 created-bady">
+                    <div class="col-md-4 d-flex align-items-center justify-content-center">
+                   <img src="/assets/images/猛毒.png" class="img-fluid rounded-start" alt="come寵物美容">
+                   </div>
+                 <div class="col-md-8">
+                   <div class="card-body created-form">
+                       <div class="d-flex pb-2">
+                         <ul>
+                           <li class="fs-5 text-gray-400 fw-bold">公司成立狀態</li>
+                           <li class="fs-3 text-primary-400 fw-bold">未設立</li>
+                          </ul>
+                         <ul>
+                           <li class="fs-5 text-gray-400 fw-bold">產業分類</li>
+                           <li class="fs-3 text-primary-400 fw-bold">餐飲</li>
+                         </ul>
+                       </div>
+                       <div class="d-flex pb-2">
+                           <ul>
+                             <li class="fs-5 text-gray-400 fw-bold">規模</li>
+                             <li class="fs-3 text-primary-400 fw-bold">10人以下</li>
+                            </ul>
+                           <ul>
+                             <li class="fs-5 text-gray-400 fw-bold">資本額</li>
+                             <li class="fs-3 text-primary-400 fw-bold">3,000,000</li>
+                           </ul>
+                         </div>
+                       <div class="d-flex align-items-center">
+                           <ul>
+                             <li class="fs-5 text-gray-400 fw-bold">募資金額</li>
+                             <li class="fs-3 text-primary-400 fw-bold">800,000</li>
+                           </ul>
+                       </div>
+                   </div>
+                   <div class="d-flex flex-lg-row flex-column align-items-lg-center p-3">
+                    <form class="row g-3">
+                        <div class="col m-0">
+                          <label for="project-Remark" class="form-label text-white fs-5"></label>
+                          <textarea id="project-Remark" rows="3" cols="30" class="bg-transparent text-white">請填寫備註...</textarea>
+                        </div>
+                    </form>
+                    <button type="button" class="btn btn-gray-200 text-gray-800 fw-bold ms-lg-5">保存</button>
+                </div> 
+                 </div>
+               </div>
+               <div>
+                   <a href="#" type="button" class="btn btn-primary-600 w-100 py-2 bg-gray-600 border-0 text-primary-600 fs-5 fw-bold">查看詳情<i class="bi bi-chevron-right ps-1"></i></a>   
+               </div>
+           </div>
+            
+            
+
+            
+           
+                
+            </div>
+            
+
+
+                   
+        
+
+             
+
+               
+
+
+        </div>
+    </section> 
+</main>
+     
+    <%- include('./layout/footer'); -%>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script type="module" src="/main.js"></script>
+</body>
+</html>
