@@ -25,7 +25,19 @@
 - 投資者以及創業項目方能夠快速找到期望合作的產業領域對象
 - 使用者能夠查看投資者或是創業項目的過往評價，以檢視適合的合作對象
 
+# 創夢工坊 Dream-Workshop
+
+我們致力於搭建一個創新和成長為核心的創業投資平台，幫助創業者和投資者實現他們的夢想。
+
 ## [Demo](https://emmacodeya.github.io/Dream-Workshop/)
+
+### 桌機版
+
+![Desktop Demo](demo-lg.jpg)
+
+### 手機版
+
+![Mobile Demo](demo-sm.jpg)
 
 ## Node.js 版本
 
@@ -59,6 +71,19 @@
 
 - JavaScript 程式碼可寫在 main.js 檔案
 
+Dream-Workshop/ # 創夢工坊
+│
+├── assets/ # 靜態資源
+│ |── images/ # 圖片與資源文件
+| └── scss/ # SCSS 的樣式放置處
+├── components/ # 頁面 ejs 模板放置處
+├── js/ # 頁面 JavaScript 檔案
+├── pages/ # 頁面放置處
+├── main.js # 入口文件
+├── package.json # 相依套件與腳本
+├── README.md # 本專案的 README
+└── vite.config.js # Vite 配置
+
 ## 專案技術
 
 - Node.js v16.15.0
@@ -71,20 +96,16 @@
 
 ## 聯絡我們
 
-- **Emma**  
-  GitHub: [Emma](https://github.com/emmacodeya)  
+- GitHub: [Emma](https://github.com/emmacodeya)  
   Email: [kkes60128angel@gmail.com](mailto:kkes60128angel@gmail.com)
 
-- **Neo**  
-  GitHub: [Neo](https://github.com/nani0917)  
+- GitHub: [Neo](https://github.com/nani0917)  
   Email: [s8906400@gmail.com](mailto:s8906400@gmail.com)
 
-- **Kun**  
-  GitHub: [Kun](https://github.com/barry91205)  
+- GitHub: [Kun](https://github.com/barry91205)  
   Email: [barry91205@gmail.com](mailto:barry91205@gmail.com)
 
-- **Ivy**  
-  GitHub: [Ivy](https://github.com/ivy7661)  
+- GitHub: [Ivy](https://github.com/ivy7661)  
   Email: [ivy7661@gmail.com](mailto:ivy7661@gmail.com)
 
 ### 注意事項
