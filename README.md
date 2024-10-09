@@ -27,14 +27,6 @@
 
 ## [Demo](https://emmacodeya.github.io/Dream-Workshop/)
 
-### 桌機版
-
-![Desktop Demo](demo-lg.jpg)
-
-### 手機版
-
-![Mobile Demo](demo-sm.jpg)
-
 ## Node.js 版本
 
 - 專案的 Node.js 版本需為 v16 以上
@@ -55,30 +47,18 @@
 
 ## 資料夾結構
 
-- assets # 靜態資源放置處
-
-  - images # 圖片放置處
-  - scss # SCSS 的樣式放置處
-
-- components # 頁面 ejs 模板放置處
-- js # 頁面專用的 JavaScript 檔案
-- layout # ejs 模板放置處
-- pages # 頁面放置處
-
-- JavaScript 程式碼可寫在 main.js 檔案
-
-Dream-Workshop/ # 創夢工坊
-│
-├── assets/ # 靜態資源
-│ |── images/ # 圖片與資源文件
-| └── scss/ # SCSS 的樣式放置處
-├── components/ # 頁面 ejs 模板放置處
-├── js/ # 頁面 JavaScript 檔案
-├── pages/ # 頁面放置處
-├── main.js # 入口文件
-├── package.json # 相依套件與腳本
-├── README.md # 本專案的 README
-└── vite.config.js # Vite 配置
+- Dream-Workshop/ # 創夢工坊
+- │
+- ├── assets/ # 靜態資源
+- │ |── images/ # 圖片與資源文件
+- | └── scss/ # SCSS 的樣式放置處
+- ├── components/ # 頁面 ejs 模板放置處
+- ├── js/ # 頁面 JavaScript 檔案
+- ├── pages/ # 頁面放置處
+- ├── main.js # 入口文件
+- ├── package.json # 相依套件與腳本
+- ├── README.md # 本專案的 README
+- └── vite.config.js # Vite 配置
 
 ## 專案技術
 
