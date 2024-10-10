@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>會員中心</title>
+</head>
+
+<body>
+    <%- include('./layout/header'); -%>
+  
+    <main class="bg-gray-1000 py-15">
+       <!-- 首頁>會員中心>已創投資人 -->
+        <section class="container pt-8">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                      <li class="breadcrumb-item text-white"><a href="index.html">首頁</a></li>
+                      <i class="bi bi-caret-right-fill text-white"></i>
+                      <li class="breadcrumb-item text-white"><a href="member.html">會員中心</a></li>
+                      <i class="bi bi-caret-right-fill text-white"></i>
+                      <li class="breadcrumb-item text-white fw-bold active" aria-current="page">新增投資人</li>
+                    </ol>
+                </nav>
+              <h2 class="text-primary-600 py-1 fw-bold border-bottom pb-8">會員中心</h2>
+        </section>
+
+        <!-- 導覽列+新增投資人 -->
+        <section class="container">
+            <div class="row">
+             <div class="col-lg-3 col-4">
+                    <%- include('./components/member-sidebar'); %>
+                </div>
+            <div class="col-lg-9 col-8">
+                
+                <div>
+                    <h3 class="text-gray-400 py-8 fw-bolder ">基本資料</h3>
+              
+                <div class="d-flex pb-8">
+                    <div class="w-50">
+                        <h5 class="text-white">投資人頭像:</h5>
+                        <a href="#" class="upload text-end text-white">上傳圖片</a>
+                    </div>
+                  
+                    <form class="row g-3 ms-2">
+                        <div class="col-md-6 ">
+                            <label for="project-name" class="form-label text-white fs-5">姓名</label>
+                            <input type="text" class="form-control text-center inputField" id="project-name" value="夢天天">
+                        </div>
+                        <div class="col-md-6">
+                            <label for="project-phone" class="form-label text-white fs-5">聯絡電話</label>
+                            <input type="tel" class="form-control text-center inputField" id="project-phone" value="0912-123-456">
+                        </div>
+                        <div class="col-md-4">
+                            <label for="project-website" class="form-label text-white fs-5">電子郵箱</label>
+                            <input type="email" class="form-control text-center inputField" id="project-website" value="qwer@gmail.com">
+                        </div>
+                        <div class="col-md-4">
+                            <label for="project-capital" class="form-label text-white fs-5">資本額</label>
+                            <input type="text" class="form-control text-center inputField" id="project-capital" value="3,000,000">
+                        </div>
+                        <div class="col-md-4">
+                            <label for="industry" class="form-label text-white fs-5">偏好領域</label>
+                            <select id="industry" name="industry" class="fs-6 p-1">
+                              <option value="" selected >請選擇</option>
+                              <option value="wholesale-retail">批發/零售</option>
+                              <option value="biotechnology">生物科技</option>
+                              <option value="internet">網際網路相關</option>
+                              <option value="established">文教相關</option>
+                              <option value="spread">大眾傳播相關</option>
+                              <option value="travel">旅遊/休閒/運動</option>
+                              <option value="serve">一般服務</option>
+                              <option value="electronic">電子資訊/軟體/半導體相關</option>
+                              <option value="manufacturing">一般製造</option>
+                              <option value="logistics">物流/倉儲</option>
+                              <option value="politics">政治宗教及社福相關</option>
+                              <option value="finance">金融投顧/保險</option>
+                              <option value="accounting">法律/會計/顧問/研發</option>
+                              <option value="design">設計相關</option>
+                              <option value="architecture">建築營造/不動產相關</option>
+                              <option value="healthcare">醫療保健/環境衛生</option>
+                              <option value="ore">礦石及土石採取</option>
+                              <option value="stay">住宿相關</option>
+                              <option value="food" selected>餐飲</option>
+                            </select>
+                        </div>
+                      </form>
+                         
+                </div>
+            </div>
+
+            <form class="row g-3">
+                <div class="col">
+                  <label for="project-Introduction" class="form-label text-white fs-5">自傳</label>
+                  <textarea id="project-Introduction" rows="15" cols="120"  class="bg-transparent text-white inputField">
+                    經歷:
+
+                    我在一個貧困的家庭中長大。
+                    年輕時參加過海軍,因此他的全名經常被縮寫為「謝船長」。
+                    在海軍服役期間,學到了許多關於紀律和金錢的重要教訓。
+                    
+                    退役後,開辦了蟹堡王餐廳。
+                    蟹堡王以其招牌菜「蟹堡」而聞名,
+                    而這個漢堡的秘方是嚴格保守的秘密。
+                    餐廳迅速成為比奇堡(Bikini Bottom)最受歡迎的餐飲場所之一。
+                    
+                    經營風格非常嚴格且注重成本控制。
+                    座右銘是「省錢就是賺錢」。儘管如此,他對餐廳的成功和顧客的滿意度也有高度的重視。</textarea>
+                </div>
+                <div class="col">
+                    <label for="project-illustrate" class="form-label text-white fs-5 me-15 ">投資經歷</label>
+                    <textarea id="project-illustrate" rows="6" cols="120" class="bg-transparent text-white inputField">
+                        開辦蟹堡王餐廳。
+                        現任蟹堡王餐廳老闆,至今約20餘年
+                        
+                        具備豐富企業營運管理、商業開發等專業經驗</textarea>
+                </div>
+                <div class="col">
+                    <label for="project-advantages" class="form-label text-white fs-5 me-8 ">具體相關資源</label>
+                    <textarea id="project-advantages" rows="6" cols="120" class="bg-transparent text-white inputField">
+                        人脈和關係網
+                        本人在比奇堡擁有廣泛的人脈和關係網,從食材供應商乃至設備廠商,
+                        這些資源對於他的生意發展和問題解決至關重要。
+                        
+                        創新能力
+                        本人能夠適應市場變化,發想新的產品和促銷活動,以滿足顧客需求並吸引新顧客。</textarea>
+                </div>
+            </form>
+            <div class="py-8">
+                <h5 class="text-white">上傳照片參考</h5>
+                <div class="d-flex align-items-center justify-content-between pt-5">
+                    
+                        <a href="#" class="upload text-end text-white">上傳圖片</a>
+                 
+                    
+                        <a href="#" class="upload text-end text-white">上傳圖片</a>
+                 
+
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal"><button type="button" class="btn btn-primary-600 fw-bold">申請財力證明審核</button></a>                
+                </div> 
+            </div>
+
+
+                    <div class="d-flex justify-content-around pt-8">
+                        <button   type="button"  class="btn btn-lg btn-gray-600 fw-bolder" id="clearButton">清除</button>
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal-store"><button class="btn btn-lg btn-primary-600 fw-bolder">儲存變更</button></a>
+                    </div>
+                
+                </div>
+
+             
+
+               
+
+
+           </div>
+        </section>
+
+        <!-- modal 申請財力證明審核 -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content bg-gray-1000">
+                <div class="modal-header border-0">
+                    <div class="d-flex flex-column align-items-center">
+                    <h5 class="modal-title text-white fs-4" id="exampleModalLabel">財力證明</h5>
+                    <p class="text-gray-400 mt-3">財力證明（此照片僅供審核用，不會公開至頁面上）</p>
+                    </div>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                <div class="modal-body text-center mt-3">
+                    <a href="#" class="upload text-end text-white me-8">上傳圖片</a>
+                    <a href="#" class="upload text-end text-white">上傳圖片</a>
+                </div>
+                <div class="border-0 text-center my-5">
+                    <button type="button" class="btn btn-lg btn-primary-600 fw-bolder mb-5">審核</button>
+                    <p class="text-gray-400">審核需3-5個工作天</p>
+                </div>
+              </div>
+            </div>
+        </div>
+       
+         <!-- modal 儲存變更 -->
+         <div class="modal fade" id="exampleModal-store" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content bg-gray-1000">
+                    <div class="modal-header border-0">
+                        <!-- <h5 class="modal-title text-primary-600" id="exampleModalLabel">林媽媽中式餐館</h5> -->
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                    <div class="modal-body text-center text-primary-600 fs-3 fw-bold">
+                       儲存成功
+                    </div>
+                    <div class="border-0 text-center mt-15 mb-14">
+                        <button type="button" class="btn btn-lg btn-primary-600 fw-bolder  px-9" data-bs-dismiss="modal" aria-label="Close">確認</button>
+                    </div>
+                  </div>
+            </div>
+        </div>
+       
+   
+    </main>
+     <!-- 清除輸入文字 -->
+    <script>
+     document.getElementById('clearButton').addEventListener('click', function() {
+     document.querySelectorAll('.inputField').forEach(function(input) {
+      input.value = ''; 
+    });
+  });
+
+    </script>
+    <%- include('./layout/footer'); -%>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script type="module" src="/main.js"></script>
+</body>
+</html>
