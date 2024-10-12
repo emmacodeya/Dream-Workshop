@@ -26,7 +26,7 @@ export default defineConfig({
   // base 的寫法：
   // base: '/Repository 的名稱/'
   // base: '/Dream-Workshop/',
-  base: '/',
+  base: '/Dream-Workshop/',
   plugins: [
     liveReload(['./layout/**/*.ejs', './pages/**/*.ejs', './pages/**/*.html']),
     ViteEjsPlugin(),
