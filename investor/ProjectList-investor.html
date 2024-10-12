@@ -5,15 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-  <script type="module" crossorigin src="/Dream-Workshop/assets/bootstrap.bundle.min-669049f5.js"></script>
-  <link rel="stylesheet" href="/Dream-Workshop/assets/bootstrap.bundle-dad9f8ea.css">
+  <script type="module" crossorigin src="/Dream-Workshop/assets/bootstrap.bundle.min-bcf1dd1c.js"></script>
+  <link rel="stylesheet" href="/Dream-Workshop/assets/bootstrap.bundle-bbf8e9cc.css">
 </head>
 <body>
     <nav class="header navbar navbar-expand-lg fixed-top">
     <div class="container d-flex justify-content-center">
         <!-- logo -->
           <div class="d-flex justify-content-between align-items-center me-auto">
-            <a class="navbar-brand" href="index.html">
+            <a class="navbar-brand" href="/pages/index.html">
                 <img src="/Dream-Workshop/assets/創夢工坊-logo-fb8def81.png" alt="創夢工坊" style="width: 56px;">
             </a>
          </div>
@@ -30,7 +30,7 @@
             <a class="nav-link" href="/Dream-Workshop/project/ProjectList-project.html">找創業項目</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/Dream-Workshop/investor/ProjectList-investor.html">找投資人</a>
+            <a class="nav-link" href="investor/ProjectList-investor.html">找投資人</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">付費方案</a>
@@ -41,258 +41,254 @@
         </ul>
       </div>
 
-       <a href="#" class="btn login-btn btn-primary-600 d-none d-lg-block">
+       <a href="/pages/login.html" class="btn login-btn btn-primary-600 d-none d-lg-block">
         註冊/登入
        </a>
     </div>
   </nav>  <div class="bg-gray-1000">
 
-      <!-- 推薦投資人 -->
-      <div class="container py-5 py-lg-15">
-        <h2 class="fw-bold fs-1 text-center text-primary-600 mb-lg-8 py-lg-8">推薦投資人</h2>
-        <!-- Swiper -->
-        <div class="swiper businessSwiper">
-          <div class="swiper-wrapper pe-12">
-            <!-- 1 -->
-            <div class="business-swiper swiper-slide">
-              <div class="card popular-card text-center h-100">
-                <div class="popular-card-body position-relative">
-                  <a href="#">
-                    <img class="favorite" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACIAAAAfCAYAAACCox+xAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAH9SURBVHgBzZfLccIwEIZXggIowSW4g5grlyQVxByZAYIriKmACQzD0U4FyY0j0IFLcAkc4MQr/4LtCWCDxUv5ZmRpbEv6vVqt1oJS8DyvNJvNWmg+oZgoJZQpSiCECAqFwmetVgvT+g4GA2O5XNqqfUWKABfNdzoDBvUxaDseVKUvaDcaDTdVCA80n89Hm83GpPyExWKxzA1YYYTKUOgboE/ZcRy2FhXju/iab9qZUgUjErBtkxomPoLn3H6I5Eu327VRWXQZBqmLiLEwdysRgvX+IE3Ec4ter2ehHpFeymyRJ9IMNsizhGkM0oyUsiTpnyDX6/WUNMMaeGlC0gyWJpAISF+kmcViMZFRiB2TPsbQEMbO2iZNYOu6XG+F4CQckwarQITfbDYniRAGvlKlXd7wKBHharVKViIRwuuEhw49COwUl+c8EsLATD4ql+6PW6/X93arSHsLB6GP6o3uQOQX1cP7IqsDxHDS8kK3FfEDEa9pzzLPmsh5A7odAZyzmvVQnOrZ6XRKSOc4V1FNIY9E/M1PlYXEXOMz7BOwhHNKRG4hl4rJcsw0cucjiL42qW1tN68IpkAKDIfDSaVS4aZ15lUXwpXOLyUhOcUoi2By+8gh/C+EpMrbG0wI+zBi3l0I0+/3TaR5/JtK2Bm8PW8Zd9RArDFQro0z9At4Zemo+hFkGgAAAABJRU5ErkJggg==" alt="heart">
-                  </a>
-                  <img class="company-logo mb-3" src="data:image/png;base64,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" alt="green-logo">
-                  <h4 class="mb-3 popular-card-title text-ellipsis text-primary-600">Michael Smith</h4>
-                  <div class="d-flex justify-content-center align-items-center mb-4">
-                    <h5 class="fs-5 me-2 text-gray-200">偏好投資領域: 金融</h5>
+     <!-- 推薦投資人 -->
+        <div class="container py-8 py-lg-15">
+          <h2 class="fw-bold text-center mb-5 text-primary-600">推薦投資人</h2>
+          <!-- Swiper -->
+          <div class="swiper businessSwiper">
+            <div class="swiper-wrapper pe-12">
+              <!-- 1 -->
+              <div class="business-swiper swiper-slide">
+                <div class="card popular-card text-center h-100">
+                  <div class="popular-card-body position-relative">
+                    <a href="#">
+                      <img class="favorite" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACIAAAAfCAYAAACCox+xAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAH9SURBVHgBzZfLccIwEIZXggIowSW4g5grlyQVxByZAYIriKmACQzD0U4FyY0j0IFLcAkc4MQr/4LtCWCDxUv5ZmRpbEv6vVqt1oJS8DyvNJvNWmg+oZgoJZQpSiCECAqFwmetVgvT+g4GA2O5XNqqfUWKABfNdzoDBvUxaDseVKUvaDcaDTdVCA80n89Hm83GpPyExWKxzA1YYYTKUOgboE/ZcRy2FhXju/iab9qZUgUjErBtkxomPoLn3H6I5Eu327VRWXQZBqmLiLEwdysRgvX+IE3Ec4ter2ehHpFeymyRJ9IMNsizhGkM0oyUsiTpnyDX6/WUNMMaeGlC0gyWJpAISF+kmcViMZFRiB2TPsbQEMbO2iZNYOu6XG+F4CQckwarQITfbDYniRAGvlKlXd7wKBHharVKViIRwuuEhw49COwUl+c8EsLATD4ql+6PW6/X93arSHsLB6GP6o3uQOQX1cP7IqsDxHDS8kK3FfEDEa9pzzLPmsh5A7odAZyzmvVQnOrZ6XRKSOc4V1FNIY9E/M1PlYXEXOMz7BOwhHNKRG4hl4rJcsw0cucjiL42qW1tN68IpkAKDIfDSaVS4aZ15lUXwpXOLyUhOcUoi2By+8gh/C+EpMrbG0wI+zBi3l0I0+/3TaR5/JtK2Bm8PW8Zd9RArDFQro0z9At4Zemo+hFkGgAAAABJRU5ErkJggg==" alt="investor">
+                    </a>
+                    <img class="company-logo mb-3" src="/Dream-Workshop/assets/investor1-80d717ee.png" alt="green-logo">
+                    <h4 class="mb-3 popular-card-title text-ellipsis text-primary-600">Michael Smith</h4>
+                    <h6 class="text-gray-200">偏好投資領域</h6>
+                    <h6 class="fw-bold text-gray-100">金融</h6>
+                    <p>
+                      在金融領域有深厚的背景，對創新支付解決方案和區塊鏈技術特別感興趣
+                    </p>
                   </div>
-                  <p>
-                    在金融領域有深厚的背景,對創新支付解決方案和區塊鏈技術特別感興趣。
-                  </p>
+                  <a href="#" class="btn btn-gray-600 py-3">
+                    <p class="fs-5">資金規模</p>
+                    <p class="fs-5 fw-bold text-white">NT$ 40,000,000</p>
+                  </a>
                 </div>
-                <a href="#" class="btn btn-gray-600 py-3">
-                  <p class="fs-5">資金規模</p>
-                  <p class="fs-5 fw-bold text-white">NT$ 40,000,000</p>
-                </a>
+              </div>
+              <!-- 2 -->
+              <div class="swiper-slide">
+                <div class="card popular-card text-center h-100">
+                  <div class="popular-card-body">
+                    <a href="#">
+                      <img class="favorite" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACIAAAAfCAYAAACCox+xAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAL8SURBVHgBtVc7ktpAEB0JyOUb4BvgExhSEntPsNqQ4mM4wYrQkdZ8ihB8gt2MEHEC6wbmCAQQ8fNroaFa8syiWcGrmpphpG697unPYAkFptOps9lsulh+xahgOBhrjNCyrLBQKPxqNBorlexkMinv93vXVNZSEPCw/CGuAEpnUNqXSk1kgX673faUREjRdrtdnE6nisiOVbFYrNECXlhgKhvIhpCp9Xo98pYoyl1Y8yrOruR4wwiOx+Patm1ycRXjO3tejglEa7kJY9bwWMBlyUDsuUy2AiPom5EhkUcGg4GLl6Yptg9gu0oRE77vl6HATxHiCCD7pJPFcS7wrTIj3et0Oi8RkeFw+FdahAerw+HwRbpMB8jMMD3yPcjOoPTpPTmQcUDmDyOzRrx8sqGwKpJn614jQYDVlFVrRoIM6F2TI90gwck6xMEW5zS7KINFS5EBpJCCDTJVGiBRy2IAAR4IUkZ8K5KLsIg2sF4JA+DDofg4AhHHGQWzzZ+YErklbEov+cOwhuSFIxdRiqe8UKGoFncGtQFxrkkRcDShjYD7zV9CjchSonNht9tVU7+Xso4sGEPKhs9ZM8AUcVPk7SBAFtVksPbZu06pVHoWdwLS/Fkk24FHc0QkzuuAPeyORqNHcWNQK4Ful31nJuvWJX2pP4hkkXkZj8c3yyI6EiSGz/RTJb6cxIUINSlqQEzWQVq9xhGem0QcF5eMRKZ4vDEmChrcNMPksa1IQR4yiuAkeK1WK5GtlkpY0VmjC5DuemhCgo4cBv/XHC2dklRKG5PRkHgDiQfV+7ZOEV2MMPGmlvmYNMcRIji1dxUtEdnmTcloSAT8fqqC9mg4FDFD99Bas9lMXAMo3ZFpiezIcmsj2CIDUPBcTDzKKbUXvOiBhPtREoRMHpGAZ6g8e3yPag+8Q7Ofet2DAX2REUZEdGQUMCJBKAhDzOfzZb1ep2VV80oXJH4KQxh7RCL9X4j+VOGIuumKeXciBJkldPmOb/F5LtP5QP/eaIic+AdwbejXTjxb4AAAAABJRU5ErkJggg==" alt="heart">
+                    </a>
+                    <img class="company-logo mb-3" src="/Dream-Workshop/assets/investor2-c3f24f9d.png" alt="green-logo">
+                    <h4 class="mb-3 popular-card-title text-ellipsis text-primary-600">Darrell Steward</h4>
+                    <h6 class="text-gray-200">偏好投資領域</h6>
+                    <h6 class="fw-bold text-gray-100">醫療</h6>
+                    <p>
+                      生物醫學博士，熱衷於支持研發創新藥物和醫療設備，改善病患生活品質
+                    </p>
+                  </div>
+                  <a href="#" class="btn btn-gray-600 py-3">
+                    <p class="fs-5">資金規模</p>
+                    <p class="fs-5 fw-bold text-white">NT$ 800,000</p>
+                  </a>
+                </div>
+              </div>
+              <!-- 3 -->
+              <div class="swiper-slide">
+                <div class="card popular-card text-center h-100">
+                  <div class="popular-card-body">
+                    <a href="#">
+                      <img class="favorite" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACIAAAAfCAYAAACCox+xAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAH9SURBVHgBzZfLccIwEIZXggIowSW4g5grlyQVxByZAYIriKmACQzD0U4FyY0j0IFLcAkc4MQr/4LtCWCDxUv5ZmRpbEv6vVqt1oJS8DyvNJvNWmg+oZgoJZQpSiCECAqFwmetVgvT+g4GA2O5XNqqfUWKABfNdzoDBvUxaDseVKUvaDcaDTdVCA80n89Hm83GpPyExWKxzA1YYYTKUOgboE/ZcRy2FhXju/iab9qZUgUjErBtkxomPoLn3H6I5Eu327VRWXQZBqmLiLEwdysRgvX+IE3Ec4ter2ehHpFeymyRJ9IMNsizhGkM0oyUsiTpnyDX6/WUNMMaeGlC0gyWJpAISF+kmcViMZFRiB2TPsbQEMbO2iZNYOu6XG+F4CQckwarQITfbDYniRAGvlKlXd7wKBHharVKViIRwuuEhw49COwUl+c8EsLATD4ql+6PW6/X93arSHsLB6GP6o3uQOQX1cP7IqsDxHDS8kK3FfEDEa9pzzLPmsh5A7odAZyzmvVQnOrZ6XRKSOc4V1FNIY9E/M1PlYXEXOMz7BOwhHNKRG4hl4rJcsw0cucjiL42qW1tN68IpkAKDIfDSaVS4aZ15lUXwpXOLyUhOcUoi2By+8gh/C+EpMrbG0wI+zBi3l0I0+/3TaR5/JtK2Bm8PW8Zd9RArDFQro0z9At4Zemo+hFkGgAAAABJRU5ErkJggg==" alt="heart">
+                    </a>
+                    <img class="company-logo mb-3" src="/Dream-Workshop/assets/investor3-d90bfa9f.png" alt="green-logo">
+                    <h4 class="mb-3 popular-card-title text-ellipsis text-primary-600">Michael Smith</h4>
+                    <h6 class="text-gray-200">偏好投資領域</h6>
+                    <h6 class="fw-bold text-gray-100">金融</h6>
+                    <p>
+                      在金融領域有深厚的背景，對創新支付解決方案和區塊鏈技術特別感興趣
+                    </p>
+                  </div>
+                  <a href="#" class="btn btn-gray-600 py-3">
+                    <p class="fs-5">資金規模</p>
+                    <p class="fs-5 fw-bold text-white">$ NT$ 20,000,000</p>
+                  </a>
+                </div>
+              </div>
+              <!-- 4 -->
+              <div class="swiper-slide">
+                <div class="card popular-card text-center h-100">
+                  <div class="popular-card-body">
+                    <a href="#">
+                      <img class="favorite" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACIAAAAfCAYAAACCox+xAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAL8SURBVHgBtVc7ktpAEB0JyOUb4BvgExhSEntPsNqQ4mM4wYrQkdZ8ihB8gt2MEHEC6wbmCAQQ8fNroaFa8syiWcGrmpphpG697unPYAkFptOps9lsulh+xahgOBhrjNCyrLBQKPxqNBorlexkMinv93vXVNZSEPCw/CGuAEpnUNqXSk1kgX673faUREjRdrtdnE6nisiOVbFYrNECXlhgKhvIhpCp9Xo98pYoyl1Y8yrOruR4wwiOx+Patm1ycRXjO3tejglEa7kJY9bwWMBlyUDsuUy2AiPom5EhkUcGg4GLl6Yptg9gu0oRE77vl6HATxHiCCD7pJPFcS7wrTIj3et0Oi8RkeFw+FdahAerw+HwRbpMB8jMMD3yPcjOoPTpPTmQcUDmDyOzRrx8sqGwKpJn614jQYDVlFVrRoIM6F2TI90gwck6xMEW5zS7KINFS5EBpJCCDTJVGiBRy2IAAR4IUkZ8K5KLsIg2sF4JA+DDofg4AhHHGQWzzZ+YErklbEov+cOwhuSFIxdRiqe8UKGoFncGtQFxrkkRcDShjYD7zV9CjchSonNht9tVU7+Xso4sGEPKhs9ZM8AUcVPk7SBAFtVksPbZu06pVHoWdwLS/Fkk24FHc0QkzuuAPeyORqNHcWNQK4Ful31nJuvWJX2pP4hkkXkZj8c3yyI6EiSGz/RTJb6cxIUINSlqQEzWQVq9xhGem0QcF5eMRKZ4vDEmChrcNMPksa1IQR4yiuAkeK1WK5GtlkpY0VmjC5DuemhCgo4cBv/XHC2dklRKG5PRkHgDiQfV+7ZOEV2MMPGmlvmYNMcRIji1dxUtEdnmTcloSAT8fqqC9mg4FDFD99Bas9lMXAMo3ZFpiezIcmsj2CIDUPBcTDzKKbUXvOiBhPtREoRMHpGAZ6g8e3yPag+8Q7Ofet2DAX2REUZEdGQUMCJBKAhDzOfzZb1ep2VV80oXJH4KQxh7RCL9X4j+VOGIuumKeXciBJkldPmOb/F5LtP5QP/eaIic+AdwbejXTjxb4AAAAABJRU5ErkJggg==" alt="heart">
+                    </a>
+                    <img class="company-logo mb-3" src="/Dream-Workshop/assets/investor1-80d717ee.png" alt="green-logo">
+                    <h4 class="mb-3 popular-card-title text-ellipsis text-primary-600">Marvin McKinney</h4>
+                    <h6 class="text-gray-200">偏好投資領域</h6>
+                    <h6 class="fw-bold text-gray-100">物聯網</h6>
+                    <p>
+                      工程背景，專注於投資物聯網相關技術，推動互聯設備的普及與應用
+                    </p>
+                  </div>
+                  <a href="#" class="btn btn-gray-600 py-3">
+                    <p class="fs-5">資金規模</p>
+                    <p class="fs-5 fw-bold text-white">NT$ 1,500,000</p>
+                  </a>
+                </div>
+              </div>
+              <!-- 5 -->
+              <div class="swiper-slide">
+                <div class="card popular-card text-center h-100">
+                  <div class="popular-card-body">
+                    <a href="#"></a>
+                    <img class="favorite" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACIAAAAfCAYAAACCox+xAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAH9SURBVHgBzZfLccIwEIZXggIowSW4g5grlyQVxByZAYIriKmACQzD0U4FyY0j0IFLcAkc4MQr/4LtCWCDxUv5ZmRpbEv6vVqt1oJS8DyvNJvNWmg+oZgoJZQpSiCECAqFwmetVgvT+g4GA2O5XNqqfUWKABfNdzoDBvUxaDseVKUvaDcaDTdVCA80n89Hm83GpPyExWKxzA1YYYTKUOgboE/ZcRy2FhXju/iab9qZUgUjErBtkxomPoLn3H6I5Eu327VRWXQZBqmLiLEwdysRgvX+IE3Ec4ter2ehHpFeymyRJ9IMNsizhGkM0oyUsiTpnyDX6/WUNMMaeGlC0gyWJpAISF+kmcViMZFRiB2TPsbQEMbO2iZNYOu6XG+F4CQckwarQITfbDYniRAGvlKlXd7wKBHharVKViIRwuuEhw49COwUl+c8EsLATD4ql+6PW6/X93arSHsLB6GP6o3uQOQX1cP7IqsDxHDS8kK3FfEDEa9pzzLPmsh5A7odAZyzmvVQnOrZ6XRKSOc4V1FNIY9E/M1PlYXEXOMz7BOwhHNKRG4hl4rJcsw0cucjiL42qW1tN68IpkAKDIfDSaVS4aZ15lUXwpXOLyUhOcUoi2By+8gh/C+EpMrbG0wI+zBi3l0I0+/3TaR5/JtK2Bm8PW8Zd9RArDFQro0z9At4Zemo+hFkGgAAAABJRU5ErkJggg==" alt="heart">
+                    </a>
+                    <img class="company-logo mb-3" src="/Dream-Workshop/assets/investor2-c3f24f9d.png" alt="green-logo">
+                    <h4 class="mb-3 popular-card-title text-ellipsis text-primary-600">Darrell Steward</h4>
+                    <h6 class="text-gray-200">偏好投資領域</h6>
+                    <h6 class="fw-bold text-gray-100">醫療</h6>
+                    <p>
+                      生物醫學博士，熱衷於支持研發創新藥物和醫療設備，改善病患生活品質
+                    </p>
+                  </div>
+                  <a href="#" class="btn btn-gray-600 py-3">
+                    <p class="fs-5">資金規模</p>
+                    <p class="fs-5 fw-bold text-white">$ 40,000000 NTD</p>
+                  </a>
+                </div>
+              </div>
+              <!-- 6 -->
+              <div class="swiper-slide">
+                <div class="card popular-card text-center h-100">
+                  <div class="popular-card-body">
+                    <a href="#">
+                      <img class="favorite" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACIAAAAfCAYAAACCox+xAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAL8SURBVHgBtVc7ktpAEB0JyOUb4BvgExhSEntPsNqQ4mM4wYrQkdZ8ihB8gt2MEHEC6wbmCAQQ8fNroaFa8syiWcGrmpphpG697unPYAkFptOps9lsulh+xahgOBhrjNCyrLBQKPxqNBorlexkMinv93vXVNZSEPCw/CGuAEpnUNqXSk1kgX673faUREjRdrtdnE6nisiOVbFYrNECXlhgKhvIhpCp9Xo98pYoyl1Y8yrOruR4wwiOx+Patm1ycRXjO3tejglEa7kJY9bwWMBlyUDsuUy2AiPom5EhkUcGg4GLl6Yptg9gu0oRE77vl6HATxHiCCD7pJPFcS7wrTIj3et0Oi8RkeFw+FdahAerw+HwRbpMB8jMMD3yPcjOoPTpPTmQcUDmDyOzRrx8sqGwKpJn614jQYDVlFVrRoIM6F2TI90gwck6xMEW5zS7KINFS5EBpJCCDTJVGiBRy2IAAR4IUkZ8K5KLsIg2sF4JA+DDofg4AhHHGQWzzZ+YErklbEov+cOwhuSFIxdRiqe8UKGoFncGtQFxrkkRcDShjYD7zV9CjchSonNht9tVU7+Xso4sGEPKhs9ZM8AUcVPk7SBAFtVksPbZu06pVHoWdwLS/Fkk24FHc0QkzuuAPeyORqNHcWNQK4Ful31nJuvWJX2pP4hkkXkZj8c3yyI6EiSGz/RTJb6cxIUINSlqQEzWQVq9xhGem0QcF5eMRKZ4vDEmChrcNMPksa1IQR4yiuAkeK1WK5GtlkpY0VmjC5DuemhCgo4cBv/XHC2dklRKG5PRkHgDiQfV+7ZOEV2MMPGmlvmYNMcRIji1dxUtEdnmTcloSAT8fqqC9mg4FDFD99Bas9lMXAMo3ZFpiezIcmsj2CIDUPBcTDzKKbUXvOiBhPtREoRMHpGAZ6g8e3yPag+8Q7Ofet2DAX2REUZEdGQUMCJBKAhDzOfzZb1ep2VV80oXJH4KQxh7RCL9X4j+VOGIuumKeXciBJkldPmOb/F5LtP5QP/eaIic+AdwbejXTjxb4AAAAABJRU5ErkJggg==" alt="heart">
+                    </a>
+                    <img class="company-logo mb-3" src="/Dream-Workshop/assets/investor1-80d717ee.png" alt="green-logo">
+                    <h4 class="mb-3 popular-card-title text-ellipsis text-primary-600">Marvin McKinney</h4>
+                    <h6 class="text-gray-200">偏好投資領域</h6>
+                    <h6 class="fw-bold text-gray-100">物聯網</h6>
+                    <p>
+                      工程背景，專注於投資物聯網相關技術，推動互聯設備的普及與應用
+                    </p>
+                  </div>
+                  <a href="#" class="btn btn-gray-600 py-3">
+                    <p class="fs-5">資金規模</p>
+                    <p class="fs-5 fw-bold text-white">$ 40,000000 NTD</p>
+                  </a>
+                </div>
               </div>
             </div>
-            <!-- 2 -->
-            <div class="business-swiper swiper-slide">
-              <div class="card popular-card text-center h-100">
-                <div class="popular-card-body position-relative">
-                  <a href="#">
-                    <img class="favorite" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACIAAAAfCAYAAACCox+xAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAH9SURBVHgBzZfLccIwEIZXggIowSW4g5grlyQVxByZAYIriKmACQzD0U4FyY0j0IFLcAkc4MQr/4LtCWCDxUv5ZmRpbEv6vVqt1oJS8DyvNJvNWmg+oZgoJZQpSiCECAqFwmetVgvT+g4GA2O5XNqqfUWKABfNdzoDBvUxaDseVKUvaDcaDTdVCA80n89Hm83GpPyExWKxzA1YYYTKUOgboE/ZcRy2FhXju/iab9qZUgUjErBtkxomPoLn3H6I5Eu327VRWXQZBqmLiLEwdysRgvX+IE3Ec4ter2ehHpFeymyRJ9IMNsizhGkM0oyUsiTpnyDX6/WUNMMaeGlC0gyWJpAISF+kmcViMZFRiB2TPsbQEMbO2iZNYOu6XG+F4CQckwarQITfbDYniRAGvlKlXd7wKBHharVKViIRwuuEhw49COwUl+c8EsLATD4ql+6PW6/X93arSHsLB6GP6o3uQOQX1cP7IqsDxHDS8kK3FfEDEa9pzzLPmsh5A7odAZyzmvVQnOrZ6XRKSOc4V1FNIY9E/M1PlYXEXOMz7BOwhHNKRG4hl4rJcsw0cucjiL42qW1tN68IpkAKDIfDSaVS4aZ15lUXwpXOLyUhOcUoi2By+8gh/C+EpMrbG0wI+zBi3l0I0+/3TaR5/JtK2Bm8PW8Zd9RArDFQro0z9At4Zemo+hFkGgAAAABJRU5ErkJggg==" alt="heart">
-                  </a>
-                  <img class="company-logo mb-3" src="data:image/png;base64,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" alt="green-logo">
-                  <h4 class="mb-3 popular-card-title text-ellipsis text-primary-600">Michael Smith</h4>
-                  <div class="d-flex justify-content-center align-items-center mb-4">
-                    <h5 class="fs-5 me-2 text-gray-200">偏好投資領域: 金融</h5>
-                  </div>
-                  <p>
-                    在金融領域有深厚的背景,對創新支付解決方案和區塊鏈技術特別感興趣。
-                  </p>
-                </div>
-                <a href="#" class="btn btn-gray-600 py-3">
-                  <p class="fs-5">資金規模</p>
-                  <p class="fs-5 fw-bold text-white">NT$ 40,000,000</p>
-                </a>
-              </div>
-            </div>
-            <!-- 3 -->
-            <div class="business-swiper swiper-slide">
-              <div class="card popular-card text-center h-100">
-                <div class="popular-card-body position-relative">
-                  <a href="#">
-                    <img class="favorite" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACIAAAAfCAYAAACCox+xAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAH9SURBVHgBzZfLccIwEIZXggIowSW4g5grlyQVxByZAYIriKmACQzD0U4FyY0j0IFLcAkc4MQr/4LtCWCDxUv5ZmRpbEv6vVqt1oJS8DyvNJvNWmg+oZgoJZQpSiCECAqFwmetVgvT+g4GA2O5XNqqfUWKABfNdzoDBvUxaDseVKUvaDcaDTdVCA80n89Hm83GpPyExWKxzA1YYYTKUOgboE/ZcRy2FhXju/iab9qZUgUjErBtkxomPoLn3H6I5Eu327VRWXQZBqmLiLEwdysRgvX+IE3Ec4ter2ehHpFeymyRJ9IMNsizhGkM0oyUsiTpnyDX6/WUNMMaeGlC0gyWJpAISF+kmcViMZFRiB2TPsbQEMbO2iZNYOu6XG+F4CQckwarQITfbDYniRAGvlKlXd7wKBHharVKViIRwuuEhw49COwUl+c8EsLATD4ql+6PW6/X93arSHsLB6GP6o3uQOQX1cP7IqsDxHDS8kK3FfEDEa9pzzLPmsh5A7odAZyzmvVQnOrZ6XRKSOc4V1FNIY9E/M1PlYXEXOMz7BOwhHNKRG4hl4rJcsw0cucjiL42qW1tN68IpkAKDIfDSaVS4aZ15lUXwpXOLyUhOcUoi2By+8gh/C+EpMrbG0wI+zBi3l0I0+/3TaR5/JtK2Bm8PW8Zd9RArDFQro0z9At4Zemo+hFkGgAAAABJRU5ErkJggg==" alt="heart">
-                  </a>
-                  <img class="company-logo mb-3" src="data:image/png;base64,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" alt="green-logo">
-                  <h4 class="mb-3 popular-card-title text-ellipsis text-primary-600">Michael Smith</h4>
-                  <div class="d-flex justify-content-center align-items-center mb-4">
-                    <h5 class="fs-5 me-2 text-gray-200">偏好投資領域: 金融</h5>
-                  </div>
-                  <p>
-                    在金融領域有深厚的背景,對創新支付解決方案和區塊鏈技術特別感興趣。
-                  </p>
-                </div>
-                <a href="#" class="btn btn-gray-600 py-3">
-                  <p class="fs-5">資金規模</p>
-                  <p class="fs-5 fw-bold text-white">NT$ 40,000,000</p>
-                </a>
-              </div>
-            </div>
-            <!-- 4 -->
-            <div class="business-swiper swiper-slide">
-              <div class="card popular-card text-center h-100">
-                <div class="popular-card-body position-relative">
-                  <a href="#">
-                    <img class="favorite" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACIAAAAfCAYAAACCox+xAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAH9SURBVHgBzZfLccIwEIZXggIowSW4g5grlyQVxByZAYIriKmACQzD0U4FyY0j0IFLcAkc4MQr/4LtCWCDxUv5ZmRpbEv6vVqt1oJS8DyvNJvNWmg+oZgoJZQpSiCECAqFwmetVgvT+g4GA2O5XNqqfUWKABfNdzoDBvUxaDseVKUvaDcaDTdVCA80n89Hm83GpPyExWKxzA1YYYTKUOgboE/ZcRy2FhXju/iab9qZUgUjErBtkxomPoLn3H6I5Eu327VRWXQZBqmLiLEwdysRgvX+IE3Ec4ter2ehHpFeymyRJ9IMNsizhGkM0oyUsiTpnyDX6/WUNMMaeGlC0gyWJpAISF+kmcViMZFRiB2TPsbQEMbO2iZNYOu6XG+F4CQckwarQITfbDYniRAGvlKlXd7wKBHharVKViIRwuuEhw49COwUl+c8EsLATD4ql+6PW6/X93arSHsLB6GP6o3uQOQX1cP7IqsDxHDS8kK3FfEDEa9pzzLPmsh5A7odAZyzmvVQnOrZ6XRKSOc4V1FNIY9E/M1PlYXEXOMz7BOwhHNKRG4hl4rJcsw0cucjiL42qW1tN68IpkAKDIfDSaVS4aZ15lUXwpXOLyUhOcUoi2By+8gh/C+EpMrbG0wI+zBi3l0I0+/3TaR5/JtK2Bm8PW8Zd9RArDFQro0z9At4Zemo+hFkGgAAAABJRU5ErkJggg==" alt="heart">
-                  </a>
-                  <img class="company-logo mb-3" src="data:image/png;base64,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" alt="green-logo">
-                  <h4 class="mb-3 popular-card-title text-ellipsis text-primary-600">Michael Smith</h4>
-                  <div class="d-flex justify-content-center align-items-center mb-4">
-                    <h5 class="fs-5 me-2 text-gray-200">偏好投資領域: 金融</h5>
-                  </div>
-                  <p>
-                    在金融領域有深厚的背景,對創新支付解決方案和區塊鏈技術特別感興趣。
-                  </p>
-                </div>
-                <a href="#" class="btn btn-gray-600 py-3">
-                  <p class="fs-5">資金規模</p>
-                  <p class="fs-5 fw-bold text-white">NT$ 40,000,000</p>
-                </a>
-              </div>
-            </div>
-            <!-- 5 -->
-            <div class="business-swiper swiper-slide">
-              <div class="card popular-card text-center h-100">
-                <div class="popular-card-body position-relative">
-                  <a href="#">
-                    <img class="favorite" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACIAAAAfCAYAAACCox+xAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAH9SURBVHgBzZfLccIwEIZXggIowSW4g5grlyQVxByZAYIriKmACQzD0U4FyY0j0IFLcAkc4MQr/4LtCWCDxUv5ZmRpbEv6vVqt1oJS8DyvNJvNWmg+oZgoJZQpSiCECAqFwmetVgvT+g4GA2O5XNqqfUWKABfNdzoDBvUxaDseVKUvaDcaDTdVCA80n89Hm83GpPyExWKxzA1YYYTKUOgboE/ZcRy2FhXju/iab9qZUgUjErBtkxomPoLn3H6I5Eu327VRWXQZBqmLiLEwdysRgvX+IE3Ec4ter2ehHpFeymyRJ9IMNsizhGkM0oyUsiTpnyDX6/WUNMMaeGlC0gyWJpAISF+kmcViMZFRiB2TPsbQEMbO2iZNYOu6XG+F4CQckwarQITfbDYniRAGvlKlXd7wKBHharVKViIRwuuEhw49COwUl+c8EsLATD4ql+6PW6/X93arSHsLB6GP6o3uQOQX1cP7IqsDxHDS8kK3FfEDEa9pzzLPmsh5A7odAZyzmvVQnOrZ6XRKSOc4V1FNIY9E/M1PlYXEXOMz7BOwhHNKRG4hl4rJcsw0cucjiL42qW1tN68IpkAKDIfDSaVS4aZ15lUXwpXOLyUhOcUoi2By+8gh/C+EpMrbG0wI+zBi3l0I0+/3TaR5/JtK2Bm8PW8Zd9RArDFQro0z9At4Zemo+hFkGgAAAABJRU5ErkJggg==" alt="heart">
-                  </a>
-                  <img class="company-logo mb-3" src="data:image/png;base64,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" alt="green-logo">
-                  <h4 class="mb-3 popular-card-title text-ellipsis text-primary-600">Michael Smith</h4>
-                  <div class="d-flex justify-content-center align-items-center mb-4">
-                    <h5 class="fs-5 me-2 text-gray-200">偏好投資領域: 金融</h5>
-                  </div>
-                  <p>
-                    在金融領域有深厚的背景,對創新支付解決方案和區塊鏈技術特別感興趣。
-                  </p>
-                </div>
-                <a href="#" class="btn btn-gray-600 py-3">
-                  <p class="fs-5">資金規模</p>
-                  <p class="fs-5 fw-bold text-white">NT$ 40,000,000</p>
-                </a>
-              </div>
-            </div>
-            <!-- 6 -->
-            <div class="business-swiper swiper-slide">
-              <div class="card popular-card text-center h-100">
-                <div class="popular-card-body position-relative">
-                  <a href="#">
-                    <img class="favorite" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACIAAAAfCAYAAACCox+xAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAH9SURBVHgBzZfLccIwEIZXggIowSW4g5grlyQVxByZAYIriKmACQzD0U4FyY0j0IFLcAkc4MQr/4LtCWCDxUv5ZmRpbEv6vVqt1oJS8DyvNJvNWmg+oZgoJZQpSiCECAqFwmetVgvT+g4GA2O5XNqqfUWKABfNdzoDBvUxaDseVKUvaDcaDTdVCA80n89Hm83GpPyExWKxzA1YYYTKUOgboE/ZcRy2FhXju/iab9qZUgUjErBtkxomPoLn3H6I5Eu327VRWXQZBqmLiLEwdysRgvX+IE3Ec4ter2ehHpFeymyRJ9IMNsizhGkM0oyUsiTpnyDX6/WUNMMaeGlC0gyWJpAISF+kmcViMZFRiB2TPsbQEMbO2iZNYOu6XG+F4CQckwarQITfbDYniRAGvlKlXd7wKBHharVKViIRwuuEhw49COwUl+c8EsLATD4ql+6PW6/X93arSHsLB6GP6o3uQOQX1cP7IqsDxHDS8kK3FfEDEa9pzzLPmsh5A7odAZyzmvVQnOrZ6XRKSOc4V1FNIY9E/M1PlYXEXOMz7BOwhHNKRG4hl4rJcsw0cucjiL42qW1tN68IpkAKDIfDSaVS4aZ15lUXwpXOLyUhOcUoi2By+8gh/C+EpMrbG0wI+zBi3l0I0+/3TaR5/JtK2Bm8PW8Zd9RArDFQro0z9At4Zemo+hFkGgAAAABJRU5ErkJggg==" alt="heart">
-                  </a>
-                  <img class="company-logo mb-3" src="data:image/png;base64,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" alt="green-logo">
-                  <h4 class="mb-3 popular-card-title text-ellipsis text-primary-600">Michael Smith</h4>
-                  <div class="d-flex justify-content-center align-items-center mb-4">
-                    <h5 class="fs-5 me-2 text-gray-200">偏好投資領域: 金融</h5>
-                  </div>
-                  <p>
-                    在金融領域有深厚的背景,對創新支付解決方案和區塊鏈技術特別感興趣。
-                  </p>
-                </div>
-                <a href="#" class="btn btn-gray-600 py-3">
-                  <p class="fs-5">資金規模</p>
-                  <p class="fs-5 fw-bold text-white">NT$ 40,000,000</p>
-                </a>
-              </div>
-            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
           </div>
-          <div class="swiper-button-next"></div>
-          <div class="swiper-button-prev"></div>
         </div>
-      </div>
+        
 
       <!-- 篩選產業 -->
         <div class="container py-lg-15">
-          <h2 class="fw-bold fs-1 text-center text-primary-600 mb-lg-8 py-lg-8">篩選產業</h2>
-          <div class="row">
+          <h2 class="fw-bold fs-3 text-center text-primary-600 mb-lg-1">篩選產業</h2>
+          <p class="text-gray-200 text-center fs-4 mb-lg-8">快速找尋您的投資標的</p>
+          <div class="row ">
             <div class="col-12">
-              <div class="row g-3">
-                <div class="col-lg-3">
+              <div class="row row-cols-lg-5 row-cols-md-2 row-cols-2 g-lg-3 g-1">
+                <div class="col">
                   <a class="card industry-card" href="#" style="background-image: url(/Dream-Workshop/assets/Map-item-20-3779984a.png);">
                     <h5>不限產業</h5>
                   </a>
                 </div>
-                <div class="col-lg-3">
+                <div class="col">
                   <a class="card industry-card" href="#" style="background-image: url(/Dream-Workshop/assets/Map-item-1-6bd554ef.png);">
                     <h5>批發/零售</h5>
                   </a>
                 </div>
-                <div class="col-lg-3">
+                <div class="col">
                   <a class="card industry-card" href="#" style="background-image: url(/Dream-Workshop/assets/Map-item-2-6651a152.png);">
                     <h5>生物科技</h5>
                   </a>
                 </div>
-                <div class="col-lg-3">
+                <div class="col">
                   <a class="card industry-card" href="#" style="background-image: url(/Dream-Workshop/assets/Map-item-3-7367502a.png);">
                     <h5>網際網路相關</h5>
                   </a>
                 </div>
-                <div class="col-lg-3">
+                <div class="col">
                   <a class="card industry-card" href="#" style="background-image: url(/Dream-Workshop/assets/Map-item-4-8a16c28d.png);">
                     <h5>文教相關</h5>
                   </a>
                 </div>
-                <div class="col-lg-3">
+                <div class="col">
                   <a class="card industry-card" href="#" style="background-image: url(/Dream-Workshop/assets/Map-item-5-0f04795a.png);">
                     <h5>大眾傳播相關</h5>
                   </a>
                 </div>
-                <div class="col-lg-3">
+                <div class="col">
                   <a class="card industry-card" href="#" style="background-image: url(/Dream-Workshop/assets/Map-item-6-881b5e74.png);">
                     <h5>旅遊/休閒/運動</h5>
                   </a>
                 </div>
-                <div class="col-lg-3">
+                <div class="col">
                   <a class="card industry-card" href="#" style="background-image: url(/Dream-Workshop/assets/Map-item-7-a49d490e.png);">
                     <h5>一般服務</h5>
                   </a>
                 </div>
-                <div class="col-lg-3">
+                <div class="col">
                   <a class="card industry-card" href="#" style="background-image: url(/Dream-Workshop/assets/Map-item-8-d33a48a6.png);">
                     <h5>電子資訊/軟體/半導體相關</h5>
                   </a>
                 </div>
-                <div class="col-lg-3">
+                <div class="col">
                   <a class="card industry-card" href="#" style="background-image: url(/Dream-Workshop/assets/Map-item-9-1543cd8f.png);">
                     <h5>一般製造</h5>
                   </a>
                 </div>
-                <div class="col-lg-3">
+                <div class="col">
                   <a class="card industry-card" href="#" style="background-image: url(/Dream-Workshop/assets/Map-item-10-7c845395.png);">
                     <h5>物流/倉儲</h5>
                   </a>
                 </div>
-                <div class="col-lg-3">
+                <div class="col">
                   <a class="card industry-card" href="#" style="background-image: url(/Dream-Workshop/assets/Map-item-11-316e957a.png);">
                     <h5>政治宗教及社福相關</h5>
                   </a>
                 </div>
-                <div class="col-lg-3">
+                <div class="col">
                   <a class="card industry-card" href="#" style="background-image: url(/Dream-Workshop/assets/Map-item-12-06b6968e.png);">
                     <h5>金融投顧/保險</h5>
                   </a>
                 </div>
-                <div class="col-lg-3">
+                <div class="col">
                   <a class="card industry-card" href="#" style="background-image: url(/Dream-Workshop/assets/Map-item-13-0813be6f.png);">
                     <h5>法律/會計/顧問/研發</h5>
                   </a>
                 </div>
-                <div class="col-lg-3">
+                <div class="col">
                   <a class="card industry-card" href="#" style="background-image: url(/Dream-Workshop/assets/Map-item-14-890c6878.png);">
                     <h5>設計相關</h5>
                   </a>
                 </div>
-                <div class="col-lg-3">
+                <div class="col">
                   <a class="card industry-card" href="#" style="background-image: url(/Dream-Workshop/assets/Map-item-15-e6cf370e.png);">
                     <h5>建築營造/不動產相關</h5>
                   </a>
                 </div>
-                <div class="col-lg-3">
+                <div class="col">
                   <a class="card industry-card" href="#" style="background-image: url(/Dream-Workshop/assets/Map-item-16-ce1fefc2.png);">
                     <h5>醫療保健/環境衛生</h5>
                   </a>
                 </div>
-                <div class="col-lg-3">
+                <div class="col">
                   <a class="card industry-card" href="#" style="background-image: url(/Dream-Workshop/assets/Map-item-17-b6ae3717.png);">
                     <h5>礦石及土石採取</h5>
                   </a>
                 </div>
-                <div class="col-lg-3">
+                <div class="col">
                   <a class="card industry-card" href="#" style="background-image: url(/Dream-Workshop/assets/Map-item-18-9949e97e.png);">
                     <h5>住宿相關</h5>
                   </a>
                 </div>
-                <div class="col-lg-3">
+                <div class="col">
                   <a class="card industry-card" href="#" style="background-image: url(/Dream-Workshop/assets/Map-item-19-160fe409.png);">
                     <h5>餐飲</h5>
                   </a>
@@ -304,45 +300,383 @@
 
       <!-- 篩選後項目 -->
         <div class="container py-5">
-          <div class="d-flex justify-content-between  py-lg-8">
-            <div class="col-3"></div>
-            <h2 class="fw-bold  mb-5 text-center text-primary-600 col-6">不限產業</h2>
-            <div class="navbar-expand-lg col-3 text-end">
+          <div class="d-flex justify-content-between">
+            <h2 class="fw-bold fs-4 text-start text-gray-200 col-6">選擇產業 ： 餐飲 / 一般服務</h2>
+            <div class="navbar-expand-lg col-6 text-end">
               <div class="dropdown">
                 <button class="btn btn-dark dropdown-toggle rounded-0 border border-1 border-white" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
                     預設排序
                 </button>
                 <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                   <li><button class="dropdown-item" type="button"></button>預設排序</li>
-                  <li><button class="dropdown-item" type="button"></button>依資金規模：高至低</li>
-                  <li><button class="dropdown-item" type="button"></button>依資金規模：低至高</li>
-                  <li><button class="dropdown-item" type="button"></button>依建立時間：新至舊</li>
-                  <li><button class="dropdown-item" type="button"></button>依建議時間：舊至新</li>
+                  <li><button class="dropdown-item" type="button"></button>依募資金額：高至低</li>
+                  <li><button class="dropdown-item" type="button"></button>依募資金額：低至高</li>
+                  <li><button class="dropdown-item" type="button"></button>依上架時間：新至舊</li>
+                  <li><button class="dropdown-item" type="button"></button>依上架時間：舊至新</li>
+                  <li><button class="dropdown-item" type="button"></button>依公司成立狀態：未設立</li>
+                  <li><button class="dropdown-item" type="button"></button>依公司成立狀態：已設立</li>
                 </ul>
               </div>
             </div>
           </div>
-            <div class="card mb-3 bg-gray-800">
-                <div class="row g-0 d-flex">
-                  <div class="col-3 d-flex justify-content-center align-items-center">
-                    <img src="/Dream-Workshop/assets/海綿寶寶-a417dc60.png" class="img-fluid rounded" alt="logo">
-                  </div>
-                  <div class="col-7">
-                    <div class="card-body">
-                      <a href="Investor-autobiography.html" class="fs-2 text-primary-600 fw-bold m-1">謝阿金</a>
-                        <h5 class="fs-5 text-light m-1">偏好領域：餐飲，一般服務，批發／零售</h5>
-                      <p class="m-1">經歷: <br>
-                        我在一個貧困的家庭中長大。
-                        年輕時參加過海軍,因此他的全名經常被縮寫為「謝船長」...</p>
-                      <h1 class="fs-1 m-1 text-light">資金規模：40,000,000</h1>
-                      <p class="m-1 fs-6 text-gray-400">2024/7/25</p>
-                    </div>
-                  </div>
-                  <div class="col-2 d-flex justify-content-center align-items-center">
-                    <i class="bi bi-heart fs-3 text-light"></i>
-                  </div>
+
+          <!-- 1 -->
+          <div class="card bg-gray-800 mt-8">
+            <div class="d-flex justify-content-between project-title">              
+                <div>
+                  <a href="Project-introduction.html" class="text-white fs-3 fw-bold">謝阿金</a>
+                </div>
+                <div class="d-flex align-items-center">
+                  <a href="#">
+                    <i class="bi bi-heart text-light fs-5"></i>
+                  </a>
                 </div>
             </div>
+            <div class="solid border-bottom border-gray-600"></div>
+           <div class="row g-0 created-body">
+             <div class="col-md-4 d-flex align-items-center justify-content-center px-5">
+               <img src="/Dream-Workshop/assets/海綿寶寶-a417dc60.png" class="img-fluid rounded p-4" alt="謝阿金">
+             </div>
+             <div class="col-md-8">
+              <!-- 電腦版開始 -->
+              <div class="card-body created-form d-lg-block d-none">
+                   <div class="d-flex pb-2">
+                     <ul class="list-unstyled">
+                       <li class="fs-5 text-gray-400 fw-bold">偏好領域</li>
+                       <li class="fs-5 text-primary-400 fw-bold">餐飲，一般服務，批發／零售</li>
+                      </ul>
+                      <ul class="list-unstyled ps-12">
+                        <li class="fs-5 text-gray-400 fw-bold">資金規模</li>
+                        <li class="fs-2 text-primary-400 fw-bold">3,000,000</li>
+                      </ul>
+                   </div>
+                   <div class="d-flex">
+                       <ul class="list-unstyled">
+                        <li class="fs-5 text-gray-400 fw-bold">經歷</li>
+                        <li class="fs-5 text-primary-400 fw-bold">我在一個貧困的家庭中長大。
+                          年輕時參加過海軍,因此他的全名經常被縮寫為「謝船長」</li>
+                        </ul>
+                    </div>   
+              </div>
+              <!-- 電腦版結束 -->
+
+
+              <!-- 手機版開始 -->
+              <div class="card-body created-form d-lg-none d-block p-4">
+                <div class="d-flex pb-2">
+                  <ul class="list-unstyled">
+                    <li class="fs-5 text-gray-400 fw-bold">偏好領域</li>
+                    <li class="fs-5 text-primary-400 fw-bold">餐飲，一般服務，批發／零售</li>
+                  </ul>
+                </div>
+                <div class="d-flex">
+                    <ul class="list-unstyled">
+                      <li class="fs-5 text-gray-400 fw-bold">經歷</li>
+                      <li class="fs-5 text-primary-400 fw-bold">我在一個貧困的家庭中長大。
+                        年輕時參加過海軍,因此他的全名經常被縮寫為「謝船長」</li>
+                    </ul>
+                </div>
+                <div>
+                  <ul class="list-unstyled">
+                    <li class="fs-5 text-gray-400 fw-bold">資金規模</li>
+                    <li class="fs-2 text-primary-400 fw-bold">3,000,000</li>
+                  </ul>
+                </div>
+              </div>
+              <!-- 手機版結束 -->
+
+             </div>
+           </div>
+          </div>
+
+           <!-- 2 -->
+           <div class="card bg-gray-800 mt-8">
+            <div class="d-flex justify-content-between project-title">              
+                <div>
+                  <a href="Project-introduction.html" class="text-white fs-3 fw-bold">謝阿金</a>
+                </div>
+                <div class="d-flex align-items-center">
+                  <a href="#">
+                    <i class="bi bi-heart text-light fs-5"></i>
+                  </a>
+                </div>
+            </div>
+            <div class="solid border-bottom border-gray-600"></div>
+           <div class="row g-0 created-body">
+             <div class="col-md-4 d-flex align-items-center justify-content-center px-5">
+               <img src="/Dream-Workshop/assets/海綿寶寶-a417dc60.png" class="img-fluid rounded p-4" alt="謝阿金">
+             </div>
+             <div class="col-md-8">
+              <!-- 電腦版開始 -->
+              <div class="card-body created-form d-lg-block d-none">
+                   <div class="d-flex pb-2">
+                     <ul class="list-unstyled">
+                       <li class="fs-5 text-gray-400 fw-bold">偏好領域</li>
+                       <li class="fs-5 text-primary-400 fw-bold">餐飲，一般服務，批發／零售</li>
+                      </ul>
+                      <ul class="list-unstyled ps-12">
+                        <li class="fs-5 text-gray-400 fw-bold">資金規模</li>
+                        <li class="fs-2 text-primary-400 fw-bold">3,000,000</li>
+                      </ul>
+                   </div>
+                   <div class="d-flex">
+                       <ul class="list-unstyled">
+                        <li class="fs-5 text-gray-400 fw-bold">經歷</li>
+                        <li class="fs-5 text-primary-400 fw-bold">我在一個貧困的家庭中長大。
+                          年輕時參加過海軍,因此他的全名經常被縮寫為「謝船長」</li>
+                        </ul>
+                    </div>   
+              </div>
+              <!-- 電腦版結束 -->
+
+
+              <!-- 手機版開始 -->
+              <div class="card-body created-form d-lg-none d-block p-4">
+                <div class="d-flex pb-2">
+                  <ul class="list-unstyled">
+                    <li class="fs-5 text-gray-400 fw-bold">偏好領域</li>
+                    <li class="fs-5 text-primary-400 fw-bold">餐飲，一般服務，批發／零售</li>
+                  </ul>
+                </div>
+                <div class="d-flex">
+                    <ul class="list-unstyled">
+                      <li class="fs-5 text-gray-400 fw-bold">經歷</li>
+                      <li class="fs-5 text-primary-400 fw-bold">我在一個貧困的家庭中長大。
+                        年輕時參加過海軍,因此他的全名經常被縮寫為「謝船長」</li>
+                    </ul>
+                </div>
+                <div>
+                  <ul class="list-unstyled">
+                    <li class="fs-5 text-gray-400 fw-bold">資金規模</li>
+                    <li class="fs-2 text-primary-400 fw-bold">3,000,000</li>
+                  </ul>
+                </div>
+              </div>
+              <!-- 手機版結束 -->
+
+             </div>
+           </div>
+          </div>
+
+           <!-- 3 -->
+           <div class="card bg-gray-800 mt-8">
+            <div class="d-flex justify-content-between project-title">              
+                <div>
+                  <a href="Project-introduction.html" class="text-white fs-3 fw-bold">謝阿金</a>
+                </div>
+                <div class="d-flex align-items-center">
+                  <a href="#">
+                    <i class="bi bi-heart text-light fs-5"></i>
+                  </a>
+                </div>
+            </div>
+            <div class="solid border-bottom border-gray-600"></div>
+           <div class="row g-0 created-body">
+             <div class="col-md-4 d-flex align-items-center justify-content-center px-5">
+               <img src="/Dream-Workshop/assets/海綿寶寶-a417dc60.png" class="img-fluid rounded p-4" alt="謝阿金">
+             </div>
+             <div class="col-md-8">
+              <!-- 電腦版開始 -->
+              <div class="card-body created-form d-lg-block d-none">
+                   <div class="d-flex pb-2">
+                     <ul class="list-unstyled">
+                       <li class="fs-5 text-gray-400 fw-bold">偏好領域</li>
+                       <li class="fs-5 text-primary-400 fw-bold">餐飲，一般服務，批發／零售</li>
+                      </ul>
+                      <ul class="list-unstyled ps-12">
+                        <li class="fs-5 text-gray-400 fw-bold">資金規模</li>
+                        <li class="fs-2 text-primary-400 fw-bold">3,000,000</li>
+                      </ul>
+                   </div>
+                   <div class="d-flex">
+                       <ul class="list-unstyled">
+                        <li class="fs-5 text-gray-400 fw-bold">經歷</li>
+                        <li class="fs-5 text-primary-400 fw-bold">我在一個貧困的家庭中長大。
+                          年輕時參加過海軍,因此他的全名經常被縮寫為「謝船長」</li>
+                        </ul>
+                    </div>   
+              </div>
+              <!-- 電腦版結束 -->
+
+
+              <!-- 手機版開始 -->
+              <div class="card-body created-form d-lg-none d-block p-4">
+                <div class="d-flex pb-2">
+                  <ul class="list-unstyled">
+                    <li class="fs-5 text-gray-400 fw-bold">偏好領域</li>
+                    <li class="fs-5 text-primary-400 fw-bold">餐飲，一般服務，批發／零售</li>
+                  </ul>
+                </div>
+                <div class="d-flex">
+                    <ul class="list-unstyled">
+                      <li class="fs-5 text-gray-400 fw-bold">經歷</li>
+                      <li class="fs-5 text-primary-400 fw-bold">我在一個貧困的家庭中長大。
+                        年輕時參加過海軍,因此他的全名經常被縮寫為「謝船長」</li>
+                    </ul>
+                </div>
+                <div>
+                  <ul class="list-unstyled">
+                    <li class="fs-5 text-gray-400 fw-bold">資金規模</li>
+                    <li class="fs-2 text-primary-400 fw-bold">3,000,000</li>
+                  </ul>
+                </div>
+              </div>
+              <!-- 手機版結束 -->
+
+             </div>
+           </div>
+          </div>
+
+           <!-- 4 -->
+           <div class="card bg-gray-800 mt-8">
+            <div class="d-flex justify-content-between project-title">              
+                <div>
+                  <a href="Project-introduction.html" class="text-white fs-3 fw-bold">謝阿金</a>
+                </div>
+                <div class="d-flex align-items-center">
+                  <a href="#">
+                    <i class="bi bi-heart text-light fs-5"></i>
+                  </a>
+                </div>
+            </div>
+            <div class="solid border-bottom border-gray-600"></div>
+           <div class="row g-0 created-body">
+             <div class="col-md-4 d-flex align-items-center justify-content-center px-5">
+               <img src="/Dream-Workshop/assets/海綿寶寶-a417dc60.png" class="img-fluid rounded p-4" alt="謝阿金">
+             </div>
+             <div class="col-md-8">
+              <!-- 電腦版開始 -->
+              <div class="card-body created-form d-lg-block d-none">
+                   <div class="d-flex pb-2">
+                     <ul class="list-unstyled">
+                       <li class="fs-5 text-gray-400 fw-bold">偏好領域</li>
+                       <li class="fs-5 text-primary-400 fw-bold">餐飲，一般服務，批發／零售</li>
+                      </ul>
+                      <ul class="list-unstyled ps-12">
+                        <li class="fs-5 text-gray-400 fw-bold">資金規模</li>
+                        <li class="fs-2 text-primary-400 fw-bold">3,000,000</li>
+                      </ul>
+                   </div>
+                   <div class="d-flex">
+                       <ul class="list-unstyled">
+                        <li class="fs-5 text-gray-400 fw-bold">經歷</li>
+                        <li class="fs-5 text-primary-400 fw-bold">我在一個貧困的家庭中長大。
+                          年輕時參加過海軍,因此他的全名經常被縮寫為「謝船長」</li>
+                        </ul>
+                    </div>   
+              </div>
+              <!-- 電腦版結束 -->
+
+
+              <!-- 手機版開始 -->
+              <div class="card-body created-form d-lg-none d-block p-4">
+                <div class="d-flex pb-2">
+                  <ul class="list-unstyled">
+                    <li class="fs-5 text-gray-400 fw-bold">偏好領域</li>
+                    <li class="fs-5 text-primary-400 fw-bold">餐飲，一般服務，批發／零售</li>
+                  </ul>
+                </div>
+                <div class="d-flex">
+                    <ul class="list-unstyled">
+                      <li class="fs-5 text-gray-400 fw-bold">經歷</li>
+                      <li class="fs-5 text-primary-400 fw-bold">我在一個貧困的家庭中長大。
+                        年輕時參加過海軍,因此他的全名經常被縮寫為「謝船長」</li>
+                    </ul>
+                </div>
+                <div>
+                  <ul class="list-unstyled">
+                    <li class="fs-5 text-gray-400 fw-bold">資金規模</li>
+                    <li class="fs-2 text-primary-400 fw-bold">3,000,000</li>
+                  </ul>
+                </div>
+              </div>
+              <!-- 手機版結束 -->
+
+             </div>
+           </div>
+          </div>
+
+           <!-- 5 -->
+           <div class="card bg-gray-800 mt-8">
+            <div class="d-flex justify-content-between project-title">              
+                <div>
+                  <a href="Project-introduction.html" class="text-white fs-3 fw-bold">謝阿金</a>
+                </div>
+                <div class="d-flex align-items-center">
+                  <a href="#">
+                    <i class="bi bi-heart text-light fs-5"></i>
+                  </a>
+                </div>
+            </div>
+            <div class="solid border-bottom border-gray-600"></div>
+           <div class="row g-0 created-body">
+             <div class="col-md-4 d-flex align-items-center justify-content-center px-5">
+               <img src="/Dream-Workshop/assets/海綿寶寶-a417dc60.png" class="img-fluid rounded p-4" alt="謝阿金">
+             </div>
+             <div class="col-md-8">
+              <!-- 電腦版開始 -->
+              <div class="card-body created-form d-lg-block d-none">
+                   <div class="d-flex pb-2">
+                     <ul class="list-unstyled">
+                       <li class="fs-5 text-gray-400 fw-bold">偏好領域</li>
+                       <li class="fs-5 text-primary-400 fw-bold">餐飲，一般服務，批發／零售</li>
+                      </ul>
+                      <ul class="list-unstyled ps-12">
+                        <li class="fs-5 text-gray-400 fw-bold">資金規模</li>
+                        <li class="fs-2 text-primary-400 fw-bold">3,000,000</li>
+                      </ul>
+                   </div>
+                   <div class="d-flex">
+                       <ul class="list-unstyled">
+                        <li class="fs-5 text-gray-400 fw-bold">經歷</li>
+                        <li class="fs-5 text-primary-400 fw-bold">我在一個貧困的家庭中長大。
+                          年輕時參加過海軍,因此他的全名經常被縮寫為「謝船長」</li>
+                        </ul>
+                    </div>   
+              </div>
+              <!-- 電腦版結束 -->
+
+
+              <!-- 手機版開始 -->
+              <div class="card-body created-form d-lg-none d-block p-4">
+                <div class="d-flex pb-2">
+                  <ul class="list-unstyled">
+                    <li class="fs-5 text-gray-400 fw-bold">偏好領域</li>
+                    <li class="fs-5 text-primary-400 fw-bold">餐飲，一般服務，批發／零售</li>
+                  </ul>
+                </div>
+                <div class="d-flex">
+                    <ul class="list-unstyled">
+                      <li class="fs-5 text-gray-400 fw-bold">經歷</li>
+                      <li class="fs-5 text-primary-400 fw-bold">我在一個貧困的家庭中長大。
+                        年輕時參加過海軍,因此他的全名經常被縮寫為「謝船長」</li>
+                    </ul>
+                </div>
+                <div>
+                  <ul class="list-unstyled">
+                    <li class="fs-5 text-gray-400 fw-bold">資金規模</li>
+                    <li class="fs-2 text-primary-400 fw-bold">3,000,000</li>
+                  </ul>
+                </div>
+              </div>
+              <!-- 手機版結束 -->
+
+             </div>
+           </div>
+          </div>
+         
+
+          <nav aria-label="Page navigation example">
+            <ul class="pagination pagination-sm pagination-bg-gray-1000 justify-content-center mt-4">
+              <li class="page-item">
+                <a class="page-link bg-transparent border-0 text-gray-400"><i class="bi bi-chevron-left"></i></a>
+              </li>
+              <li class="page-item active"><a class="page-link bg-transparent border-0 text-primary-400" href="#">1</a></li>
+              <li class="page-item"><a class="page-link bg-transparent border-0 text-gray-400" href="#">2</a></li>
+              <li class="page-item"><a class="page-link bg-transparent border-0 text-gray-400" href="#">3</a></li>
+              <li class="page-item"><a class="page-link bg-transparent border-0 text-gray-400" href="#"><i class="bi bi-chevron-right"></i></a></li>
+            </ul>
+          </nav>
 
         </div>
 
@@ -351,18 +685,38 @@
   <!-- Swiper JS -->
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
-  <script>
-    var swiper = new Swiper(".businessSwiper", {
-      //一個畫面顯示幾個內容
-      slidesPerView: 4,
-      //每個內容之間的間隔為 16px
-      spaceBetween: 16,
-      navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-      },
-    });
-  </script>
+   <!-- Swiper JS -->
+   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+   <script>
+     const swiper = new Swiper(".businessSwiper", {
+       //一個畫面顯示幾個內容
+       slidesPerView: 4,
+       //每個內容之間的間隔為 16px
+       spaceBetween: 16,
+       navigation: {
+         nextEl: ".swiper-button-next",
+         prevEl: ".swiper-button-prev",
+       },
+       breakpoints: {
+        1296: {
+       slidesPerView: 4, 
+       slidesPerGroup: 1, 
+       spaceBetween: 16 
+       },
+        768: {
+       slidesPerView: 2, 
+       slidesPerGroup: 1, 
+       spaceBetween: 24 
+       },
+       375: {
+        slidesPerView: 1.5, 
+        slidesPerGroup: 1, 
+        spaceBetween: 16 
+       }
+   }
+     });
+   </script>
 
 
 
