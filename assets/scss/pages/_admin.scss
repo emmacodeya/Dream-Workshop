@@ -89,4 +89,56 @@
       }
     }
   }
+
+  &__input {
+    width: 100%;
+
+    &:focus {
+      border: #43E1BF;
+      box-shadow: 0 0 5px 0 #43E1BF;
+    }
+  }
+
+  &__textarea {
+    &:focus {
+      border: #43E1BF;
+      box-shadow: 0 0 5px 0 #43E1BF;
+    }
+  }
+
+  &-activity {
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+
+    &__label {
+      display: block;
+    }
+
+    &__button {
+      width: 100px;
+      height: 40px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    &__icon {
+      font-size: 20px;
+    }
+  }
+
+  &-table {
+    table-layout: fixed;
+  }
+
+  &-text {
+    &-ellipsis {
+      width: 200px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+  }
+  
 }
