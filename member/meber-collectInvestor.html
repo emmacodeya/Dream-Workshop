@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>會員中心</title>
-  <script type="module" crossorigin src="/Dream-Workshop/assets/bootstrap.bundle.min-bcf1dd1c.js"></script>
-  <link rel="stylesheet" href="/Dream-Workshop/assets/bootstrap.bundle-bbf8e9cc.css">
+  <script type="module" crossorigin src="/Dream-Workshop/assets/bootstrap.bundle.min-452b9699.js"></script>
+  <link rel="stylesheet" href="/Dream-Workshop/assets/bootstrap.bundle-a49adbe0.css">
 </head>
 
 <body>
@@ -13,7 +13,7 @@
     <div class="container d-flex justify-content-center">
         <!-- logo -->
           <div class="d-flex justify-content-between align-items-center me-auto">
-            <a class="navbar-brand" href="/pages/index.html">
+            <a class="navbar-brand" href="index.html">
                 <img src="/Dream-Workshop/assets/創夢工坊-logo-fb8def81.png" alt="創夢工坊" style="width: 56px;">
             </a>
          </div>
@@ -27,7 +27,7 @@
       <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link" href="/Dream-Workshop/project/ProjectList-project.html">找創業項目</a>
+            <a class="nav-link" href="project/ProjectList-project.html">找創業項目</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="investor/ProjectList-investor.html">找投資人</a>
@@ -36,19 +36,20 @@
             <a class="nav-link" href="#">付費方案</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/Dream-Workshop/discuss.html">討論區</a>
+            <a class="nav-link" href="discuss.html">討論區</a>
           </li>
         </ul>
       </div>
 
-       <a href="/pages/login.html" class="btn login-btn btn-primary-600 d-none d-lg-block">
+       <a href="login.html" class="btn login-btn btn-primary-600 d-none d-lg-block">
         註冊/登入
        </a>
     </div>
   </nav>  
-<main class="bg-gray-1000 py-15">
+<main class="bg-halo py-15">
+  
        <!-- 首頁>會員中心>投資人收藏 -->
-    <section class="container pt-8">
+    <section class="container pt-8 d-none d-lg-block">
                 <nav aria-label="breadcrumb">
                     <ol class="breadcrumb">
                       <li class="breadcrumb-item text-white"><a href="index.html">首頁</a></li>
@@ -64,9 +65,9 @@
         <!-- 導覽列+已建創業項目內文 -->
      <section class="container">
          <div class="row">
-            <div class="col-lg-3 col-4">
-                    <div class="d-flex flex-column  p-3 text-white bg-dark sidemenu-link" >
-    <ul class="flex-column fw-bold">
+            <div class="col-lg-3 d-none d-md-block">
+                    <div class="d-flex flex-column  p-3 text-white bg-gray-1000  sidemenu-link d-none d-lg-block" >
+    <ul class="flex-column fw-bold list-unstyled">
       <li class="nav-link text-gray-400 fs-4">我的帳戶</li>
       <li><a href="member.html" class="nav-link text-white fs-5 ps-1 lh-lg pt-2" >個人資料</a></li>
       <li><a href="meber-identity.html" class="nav-link text-white fs-5 ps-1 lh-lg" >身份審核</a></li>
@@ -74,91 +75,154 @@
       <li><a href="meber-points.html" class="nav-link text-white fs-5 ps-1 lh-lg">可用點數</a></li>
       <li><a href="member-settings.html" class="nav-link text-white fs-5 ps-1 lh-lg pb-2">隱私設置</a></li>
     </ul>
-      <ul class="flex-column fw-bold">
+      <ul class="flex-column fw-bold list-unstyled">
         <li  class="nav-link text-gray-400 fs-4 pt-2">創業項目</li>
         <li><a href="meber-newprojects.html" class="nav-link text-white fs-5 ps-1 lh-lg">新增創業項目</a></li>
         <li><a href="meber-createdprojects.html" class="nav-link text-white fs-5 ps-1 lh-lg pb-2">已建創業項目</a></li>
       </ul>
 
-      <ul class="flex-column fw-bold">
+      <ul class="flex-column fw-bold list-unstyled">
         <li class="nav-link text-gray-400 fs-4 pt-2">投資人</li>
         <li><a href="meber-newinvestor.html" class="nav-link text-white fs-5 ps-1 lh-lg pb-2">建立/修改投資人資料</a></li>
       </ul>
 
-      <ul class="flex-column fw-bold">
+      <ul class="flex-column fw-bold list-unstyled">
         <li class="nav-link text-gray-400 fs-4 pt-2">評價紀錄</li>
         <li><a href="meber-evaluateProjects.html" class="nav-link text-white fs-5 ps-1 lh-lg">創業項目評價</a></li>
         <li><a href="meber-evaluateInvestor.html" class="nav-link text-white fs-5 ps-1 lh-lg pb-2">投資人評價</a></li>
       </ul>
-      <ul class="flex-column fw-bold">
+      <ul class="flex-column fw-bold list-unstyled">
       <li class="nav-link text-gray-400 fs-4 pt-2">我的收藏</li>
       <li><a href="meber-collectProjects.html" class="nav-link text-white fs-5 ps-1 lh-lg">創業項目收藏列表</a></li>
       <li><a href="meber-collectInvestor.html" class="nav-link text-white fs-5 ps-1 lh-lg pb-2">投資人收藏列表</a></li>
     </ul>
-    <ul class="flex-column fw-bold">
+    <ul class="flex-column fw-bold list-unstyled">
     <li class="nav-link text-gray-400 fs-4 pt-2">我的活動</li>
     <li><a href="#" class="nav-link text-white fs-5 ps-1 lh-lg">已申請活動</a></li>
     <li><a href="#" class="nav-link text-white fs-5 ps-1 lh-lg pb-2">活動紀錄</a></li>
   </ul>
 
-  <ul class="flex-column fw-bold">
+  <ul class="flex-column fw-bold list-unstyled">
   <li class="nav-link text-gray-400 fs-4 pt-2">我的消息</li>
   <li><a href="#" class="nav-link text-white fs-5 ps-1 lh-lg pb-2">站內消息</a></li>
 </ul>
   
-<ul class="flex-column fw-bold">
+<ul class="flex-column fw-bold list-unstyled">
 <li class="nav-link text-gray-400 fs-4 pt-2">討論區</li>
 <li><a href="#" class="nav-link text-white fs-5 ps-1 lh-lg">新增文章</a></li>
 <li><a href="#" class="nav-link text-white fs-5 ps-1 lh-lg">發文列表</a></li>
 <li><a href="#" class="nav-link text-white fs-5 ps-1 lh-lg pb-2">查看留言</a></li>
 </ul>
+</div> 
 
 
-
-
-  </div> 
             </div>
-            <div class="col-lg-9 col-8">
+            <div class="col-lg-9">
+               <!-- 手機板sidebar -->
+              <div class="d-block d-lg-none border-bottom">
+                <a class="btn" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+                  <div class="d-flex text-gray-100 fs-5 p-1">
+                  <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAEaSURBVHgB7VXtDYIwED1ACPySERzBEXAEJ5ANnMUJ1Al0Ax2BDWQD+4+vAL5LwDSAYij+kPiS5tpy9B29Ox7Rr0OTF1EUebqubzVNc2k4DpZlHeuFLh3u4/ALpp7sXZali+GxpR7AZ4Fx4EBbD9M0vSRJcmvuszP2y86XOgDfexzHZ2p+QRVBSIrA9QYw806Cb2CCBEjmAok6saUR0CKwbVvALLlkxyBpEaAKRJZla0xdwzD2pIi+HKh0dDcBX4tpmidMRZ7na1LEqxwERVGsHMcJSRGz5gbnAEY58hr/Tv6cAH9SgftfkiJYE+T1U9EqNWPBCUEUSj4sOEwcVAXw7nD2c+Hn16rWlEwf3buh4dELlPcO5X2lyeABap1/r58Zr6wAAAAASUVORK5CYII=" alt="sidebar">
+                  <p class=" ps-1 fw-bold">投資人收藏</p>
+                </div>
+                </a>
+                <div class="offcanvas offcanvas-start bg-gray-1000 bg-opacity-75" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+                  <div class="offcanvas-header border-bottom">
+                    <h5 class="offcanvas-title text-primary-600 fw-bold fs-5" id="offcanvasExampleLabel">會員中心</h5>
+                    <button type="button" class="btn-close btn-close-white"  data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                  </div>
+                  <div class="offcanvas-body">
+                    <div class="d-flex flex-column  p-1 text-white bg-gray-1000 bg-opacity-75 sidemenu-link" >
+                      <ul class="flex-column fw-bold list-unstyled">
+                        <li class="nav-link text-gray-400 fs-5">我的帳戶</li>
+                        <li><a href="member.html" class="nav-link text-white  ps-1 lh-lg pt-1" >個人資料</a></li>
+                        <li><a href="meber-identity.html" class="nav-link text-white  ps-1 lh-lg" >身份審核</a></li>
+                        <li><a href="member-changepassword.html" class="nav-link text-white  ps-1 lh-lg" >修改密碼</a></li>
+                        <li><a href="meber-points.html" class="nav-link text-white  ps-1 lh-lg">可用點數</a></li>
+                        <li><a href="member-settings.html" class="nav-link text-white  ps-1 lh-lg pb-1">隱私設置</a></li>
+                      </ul>
+                        <ul class="flex-column fw-bold list-unstyled">
+                          <li  class="nav-link text-gray-400 fs-5 pt-1">創業項目</li>
+                          <li><a href="meber-newprojects.html" class="nav-link text-white  ps-1 lh-lg">新增創業項目</a></li>
+                          <li><a href="meber-createdprojects.html" class="nav-link text-white  ps-1 lh-lg pb-1">已建創業項目</a></li>
+                        </ul>
+                  
+                        <ul class="flex-column fw-bold list-unstyled">
+                          <li class="nav-link text-gray-400 fs-5 pt-1">投資人</li>
+                          <li><a href="meber-newinvestor.html" class="nav-link text-white  ps-1 lh-lg pb-1">建立/修改投資人資料</a></li>
+                        </ul>
+                  
+                        <ul class="flex-column fw-bold list-unstyled">
+                          <li class="nav-link text-gray-400 fs-5 pt-1">評價紀錄</li>
+                          <li><a href="meber-evaluateProjects.html" class="nav-link text-white  ps-1 lh-lg">創業項目評價</a></li>
+                          <li><a href="meber-evaluateInvestor.html" class="nav-link text-white  ps-1 lh-lg pb-1">投資人評價</a></li>
+                        </ul>
+                        <ul class="flex-column fw-bold list-unstyled">
+                        <li class="nav-link text-gray-400 fs-5 pt-1">我的收藏</li>
+                        <li><a href="meber-collectProjects.html" class="nav-link text-white  ps-1 lh-lg">創業項目收藏列表</a></li>
+                        <li><a href="meber-collectInvestor.html" class="nav-link text-primary-600  ps-1 lh-lg pb-1 active">投資人收藏列表</a></li>
+                      </ul>
+                      <ul class="flex-column fw-bold list-unstyled">
+                      <li class="nav-link text-gray-400 fs-5 pt-1">我的活動</li>
+                      <li><a href="#" class="nav-link text-white  ps-1 lh-lg">已申請活動</a></li>
+                      <li><a href="#" class="nav-link text-white  ps-1 lh-lg pb-1">活動紀錄</a></li>
+                    </ul>
+                  
+                    <ul class="flex-column fw-bold list-unstyled">
+                    <li class="nav-link text-gray-400 fs-5 pt-1">我的消息</li>
+                    <li><a href="#" class="nav-link text-white  ps-1 lh-lg pb-1">站內消息</a></li>
+                  </ul>
+                    
+                  <ul class="flex-column fw-bold list-unstyled">
+                  <li class="nav-link text-gray-400 fs-5 pt-1">討論區</li>
+                  <li><a href="#" class="nav-link text-white  ps-1 lh-lg">新增文章</a></li>
+                  <li><a href="#" class="nav-link text-white  ps-1 lh-lg">發文列表</a></li>
+                  <li><a href="#" class="nav-link text-white  ps-1 lh-lg pb-1">查看留言</a></li>
+                  </ul>
+                  </div> 
+                  </div>
+                </div>
+                </div>
                 <!-- 投資人1 -->
-                <div class="card bg-gray-800 mt-8">
-                     <div class="d-flex justify-content-between created-title">
+                <div class="card bg-gray-800 mt-lg-8 mt-5">
+                     <div class="d-flex justify-content-between created-title investor-created-title">
                         <div class="d-flex align-items-center">
-                         <h3 class="text-white fs-3 fw-bold ms-10">謝阿金</h3>
-                         <i class="bi bi-person-check-fill text-primary-400 fs-3 ps-1"></i>
+                         <h3 class="text-white fs-3 fw-bold ms-lg-10">謝阿金</h3>
+                         <i class="bi bi-person-check-fill text-primary-400 fs-lg-3 fs-5 ps-1"></i>
                         </div>
                         <div>
-                            <a href="#">
-                                <img class="favorite" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACIAAAAfCAYAAACCox+xAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAH9SURBVHgBzZfLccIwEIZXggIowSW4g5grlyQVxByZAYIriKmACQzD0U4FyY0j0IFLcAkc4MQr/4LtCWCDxUv5ZmRpbEv6vVqt1oJS8DyvNJvNWmg+oZgoJZQpSiCECAqFwmetVgvT+g4GA2O5XNqqfUWKABfNdzoDBvUxaDseVKUvaDcaDTdVCA80n89Hm83GpPyExWKxzA1YYYTKUOgboE/ZcRy2FhXju/iab9qZUgUjErBtkxomPoLn3H6I5Eu327VRWXQZBqmLiLEwdysRgvX+IE3Ec4ter2ehHpFeymyRJ9IMNsizhGkM0oyUsiTpnyDX6/WUNMMaeGlC0gyWJpAISF+kmcViMZFRiB2TPsbQEMbO2iZNYOu6XG+F4CQckwarQITfbDYniRAGvlKlXd7wKBHharVKViIRwuuEhw49COwUl+c8EsLATD4ql+6PW6/X93arSHsLB6GP6o3uQOQX1cP7IqsDxHDS8kK3FfEDEa9pzzLPmsh5A7odAZyzmvVQnOrZ6XRKSOc4V1FNIY9E/M1PlYXEXOMz7BOwhHNKRG4hl4rJcsw0cucjiL42qW1tN68IpkAKDIfDSaVS4aZ15lUXwpXOLyUhOcUoi2By+8gh/C+EpMrbG0wI+zBi3l0I0+/3TaR5/JtK2Bm8PW8Zd9RArDFQro0z9At4Zemo+hFkGgAAAABJRU5ErkJggg==" alt="heart">
-                              </a>
+                          <a class="btn" role="button">
+                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACIAAAAfCAYAAACCox+xAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAH9SURBVHgBzZfLccIwEIZXggIowSW4g5grlyQVxByZAYIriKmACQzD0U4FyY0j0IFLcAkc4MQr/4LtCWCDxUv5ZmRpbEv6vVqt1oJS8DyvNJvNWmg+oZgoJZQpSiCECAqFwmetVgvT+g4GA2O5XNqqfUWKABfNdzoDBvUxaDseVKUvaDcaDTdVCA80n89Hm83GpPyExWKxzA1YYYTKUOgboE/ZcRy2FhXju/iab9qZUgUjErBtkxomPoLn3H6I5Eu327VRWXQZBqmLiLEwdysRgvX+IE3Ec4ter2ehHpFeymyRJ9IMNsizhGkM0oyUsiTpnyDX6/WUNMMaeGlC0gyWJpAISF+kmcViMZFRiB2TPsbQEMbO2iZNYOu6XG+F4CQckwarQITfbDYniRAGvlKlXd7wKBHharVKViIRwuuEhw49COwUl+c8EsLATD4ql+6PW6/X93arSHsLB6GP6o3uQOQX1cP7IqsDxHDS8kK3FfEDEa9pzzLPmsh5A7odAZyzmvVQnOrZ6XRKSOc4V1FNIY9E/M1PlYXEXOMz7BOwhHNKRG4hl4rJcsw0cucjiL42qW1tN68IpkAKDIfDSaVS4aZ15lUXwpXOLyUhOcUoi2By+8gh/C+EpMrbG0wI+zBi3l0I0+/3TaR5/JtK2Bm8PW8Zd9RArDFQro0z9At4Zemo+hFkGgAAAABJRU5ErkJggg==" alt="heart">
+                          </a>
                         </div> 
                      </div>
-                    <div class="row g-0 created-bady">
+                    <div class="row g-0 created-bady investor-created-bady">
                       <div class="col-md-4 d-flex align-items-center justify-content-center">
                         <img src="/Dream-Workshop/assets/海綿寶寶-a417dc60.png" class="img-fluid rounded-start" alt="謝阿金">
                       </div>
                       <div class="col-md-8">
-                        <div class="card-body created-form">
-                            <div class="d-flex pb-2">
-                              <ul>
+                        <div class="card-body investor-card-body created-form">
+                            <div class="d-lg-flex pb-lg-2">
+                              <ul class="list-unstyled pb-2 pb-lg-0">
                                 <li class="fs-5 text-gray-400 fw-bold">偏好領域</li>
                                 <li class="fs-3 text-primary-400 fw-bold">餐飲</li>
                                 <li class="fs-3 text-primary-400 fw-bold">一般服務</li>
                                 <li class="fs-3 text-primary-400 fw-bold">批發/零售</li>
                                </ul>
-                              <ul>
+                              <ul class="list-unstyled">
                                 <li class="fs-5 text-gray-400 fw-bold">資本規模</li>
                                 <li class="fs-3 text-primary-400 fw-bold">4,000,000</li>
                               </ul>
                             </div>
                         </div>
-                        <div class="d-flex flex-lg-row flex-column align-items-lg-center p-3">
-                            <form class="row g-3">
-                                <div class="col m-0">
+                        <div class="d-flex  align-items-center  p-lg-3">
+                            <form class="row g-lg-3 g-0">
+                                <div class="col m-md-1 m-lg-0 m-0">
                                   <label for="project-Remark" class="form-label text-white fs-5"></label>
                                   <textarea id="project-Remark" rows="3" cols="30" class="bg-transparent text-white">請填寫備註...</textarea>
                                 </div>
                             </form>
-                            <button type="button" class="btn btn-gray-200 text-gray-800 fw-bold ms-lg-5">保存</button>
+                            <button type="button" class="btn btn-gray-200 text-gray-800 fw-bold ms-lg-5 ms-2">保存</button>
                         </div> 
                       </div>
                     </div>
@@ -167,92 +231,93 @@
                     </div>
                 </div>
                 <!-- 投資人2 -->
-                <div class="card bg-gray-800 mt-8">
-                    <div class="d-flex justify-content-between created-title">
-                       <div class="d-flex align-items-center">
-                        <h3 class="text-white fs-3 fw-bold ms-10">曹穎惠</h3>
-                        <i class="bi bi-person-check-fill text-primary-400 fs-3 ps-1"></i>
-                       </div>
-                       <div>
-                           <a href="#">
-                               <img class="favorite" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACIAAAAfCAYAAACCox+xAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAH9SURBVHgBzZfLccIwEIZXggIowSW4g5grlyQVxByZAYIriKmACQzD0U4FyY0j0IFLcAkc4MQr/4LtCWCDxUv5ZmRpbEv6vVqt1oJS8DyvNJvNWmg+oZgoJZQpSiCECAqFwmetVgvT+g4GA2O5XNqqfUWKABfNdzoDBvUxaDseVKUvaDcaDTdVCA80n89Hm83GpPyExWKxzA1YYYTKUOgboE/ZcRy2FhXju/iab9qZUgUjErBtkxomPoLn3H6I5Eu327VRWXQZBqmLiLEwdysRgvX+IE3Ec4ter2ehHpFeymyRJ9IMNsizhGkM0oyUsiTpnyDX6/WUNMMaeGlC0gyWJpAISF+kmcViMZFRiB2TPsbQEMbO2iZNYOu6XG+F4CQckwarQITfbDYniRAGvlKlXd7wKBHharVKViIRwuuEhw49COwUl+c8EsLATD4ql+6PW6/X93arSHsLB6GP6o3uQOQX1cP7IqsDxHDS8kK3FfEDEa9pzzLPmsh5A7odAZyzmvVQnOrZ6XRKSOc4V1FNIY9E/M1PlYXEXOMz7BOwhHNKRG4hl4rJcsw0cucjiL42qW1tN68IpkAKDIfDSaVS4aZ15lUXwpXOLyUhOcUoi2By+8gh/C+EpMrbG0wI+zBi3l0I0+/3TaR5/JtK2Bm8PW8Zd9RArDFQro0z9At4Zemo+hFkGgAAAABJRU5ErkJggg==" alt="heart">
-                             </a>
-                       </div> 
-                    </div>
-                   <div class="row g-0 created-bady">
-                     <div class="col-md-4 d-flex align-items-center justify-content-center">
-                       <img src="/Dream-Workshop/assets/留言頭像1-97c57edc.png" class="img-fluid rounded-start" alt="曹穎惠">
+                <div class="card bg-gray-800 mt-lg-8 mt-5">
+                  <div class="d-flex justify-content-between created-title investor-created-title">
+                     <div class="d-flex align-items-center">
+                      <h3 class="text-white fs-3 fw-bold ms-lg-10">曹穎惠</h3>
+                      <i class="bi bi-person-check-fill text-primary-400 fs-lg-3 fs-5 ps-1"></i>
                      </div>
-                     <div class="col-md-8">
-                       <div class="card-body created-form">
-                           <div class="d-flex pb-2">
-                             <ul>
-                               <li class="fs-5 text-gray-400 fw-bold">偏好領域</li>
-                               <li class="fs-3 text-primary-400 fw-bold">餐飲</li>
-                               <li class="fs-3 text-primary-400 fw-bold">一般服務</li>
-                               <li class="fs-3 text-primary-400 fw-bold">批發/零售</li>
-                              </ul>
-                             <ul>
-                               <li class="fs-5 text-gray-400 fw-bold">資本規模</li>
-                               <li class="fs-3 text-primary-400 fw-bold">3,000,000</li>
-                             </ul>
-                           </div>
-                       </div>
-                       <div class="d-flex flex-lg-row flex-column align-items-lg-center p-3">
-                           <form class="row g-3">
-                               <div class="col m-0">
-                                 <label for="project-Remark" class="form-label text-white fs-5"></label>
-                                 <textarea id="project-Remark" rows="3" cols="30" class="bg-transparent text-white">請填寫備註...</textarea>
-                               </div>
-                           </form>
-                           <button type="button" class="btn btn-gray-200 text-gray-800 fw-bold ms-lg-5">保存</button>
-                       </div> 
+                     <div>
+                       <a class="btn" role="button">
+                         <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACIAAAAfCAYAAACCox+xAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAH9SURBVHgBzZfLccIwEIZXggIowSW4g5grlyQVxByZAYIriKmACQzD0U4FyY0j0IFLcAkc4MQr/4LtCWCDxUv5ZmRpbEv6vVqt1oJS8DyvNJvNWmg+oZgoJZQpSiCECAqFwmetVgvT+g4GA2O5XNqqfUWKABfNdzoDBvUxaDseVKUvaDcaDTdVCA80n89Hm83GpPyExWKxzA1YYYTKUOgboE/ZcRy2FhXju/iab9qZUgUjErBtkxomPoLn3H6I5Eu327VRWXQZBqmLiLEwdysRgvX+IE3Ec4ter2ehHpFeymyRJ9IMNsizhGkM0oyUsiTpnyDX6/WUNMMaeGlC0gyWJpAISF+kmcViMZFRiB2TPsbQEMbO2iZNYOu6XG+F4CQckwarQITfbDYniRAGvlKlXd7wKBHharVKViIRwuuEhw49COwUl+c8EsLATD4ql+6PW6/X93arSHsLB6GP6o3uQOQX1cP7IqsDxHDS8kK3FfEDEa9pzzLPmsh5A7odAZyzmvVQnOrZ6XRKSOc4V1FNIY9E/M1PlYXEXOMz7BOwhHNKRG4hl4rJcsw0cucjiL42qW1tN68IpkAKDIfDSaVS4aZ15lUXwpXOLyUhOcUoi2By+8gh/C+EpMrbG0wI+zBi3l0I0+/3TaR5/JtK2Bm8PW8Zd9RArDFQro0z9At4Zemo+hFkGgAAAABJRU5ErkJggg==" alt="heart">
+                       </a>
+                     </div> 
+                  </div>
+                 <div class="row g-0 created-bady investor-created-bady">
+                   <div class="col-md-4 d-flex align-items-center justify-content-center">
+                     <img src="/Dream-Workshop/assets/留言頭像1-97c57edc.png" class="img-fluid rounded-start" alt="曹穎惠">
+                   </div>
+                   <div class="col-md-8">
+                     <div class="card-body investor-card-body created-form">
+                      <div class="d-lg-flex pb-lg-2">
+                        <ul class="list-unstyled pb-2 pb-lg-0">
+                         <li class="fs-5 text-gray-400 fw-bold">偏好領域</li>
+                         <li class="fs-3 text-primary-400 fw-bold">餐飲</li>
+                         <li class="fs-3 text-primary-400 fw-bold">一般服務</li>
+                         <li class="fs-3 text-primary-400 fw-bold">批發/零售</li>
+                         </ul>
+                        <ul class="list-unstyled">
+                          <li class="fs-5 text-gray-400 fw-bold">資本規模</li>
+                          <li class="fs-3 text-primary-400 fw-bold">3,000,000</li>
+                        </ul>
+                      </div>
                      </div>
+                     <div class="d-flex  align-items-center  p-lg-3">
+                         <form class="row g-lg-3 g-0">
+                             <div class="col m-md-1 m-lg-0 m-0">
+                               <label for="project-Remark" class="form-label text-white fs-5"></label>
+                               <textarea id="project-Remark" rows="3" cols="30" class="bg-transparent text-white">請填寫備註...</textarea>
+                             </div>
+                         </form>
+                         <button type="button" class="btn btn-gray-200 text-gray-800 fw-bold ms-lg-5 ms-2">保存</button>
+                     </div> 
                    </div>
-                   <div>
-                       <a href="/pages/investor/Investor-autobiography.html" type="button" class="btn btn-primary-600 w-100 py-2 bg-gray-600 border-0 text-primary-600 fs-5 fw-bold">查看詳情<i class="bi bi-chevron-right ps-1"></i></a>   
-                   </div>
-               </div>
+                 </div>
+                 <div>
+                     <a href="/pages/investor/Investor-autobiography.html" type="button" class="btn btn-primary-600 w-100 py-2 bg-gray-600 border-0 text-primary-600 fs-5 fw-bold">查看詳情<i class="bi bi-chevron-right ps-1"></i></a>   
+                 </div>
+             </div>
+          
                <!-- 投資人3 -->
-               <div class="card bg-gray-800 mt-8">
-                <div class="d-flex justify-content-between created-title">
+               <div class="card bg-gray-800 mt-lg-8 mt-5">
+                <div class="d-flex justify-content-between created-title investor-created-title">
                    <div class="d-flex align-items-center">
-                    <h3 class="text-white fs-3 fw-bold ms-10">中村修二</h3>
-                    <i class="bi bi-person-check-fill text-primary-400 fs-3 ps-1"></i>
+                    <h3 class="text-white fs-3 fw-bold ms-lg-10">中村修二</h3>
+                    <i class="bi bi-person-check-fill text-primary-400 fs-lg-3 fs-5 ps-1"></i>
                    </div>
                    <div>
-                       <a href="#">
-                           <img class="favorite" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACIAAAAfCAYAAACCox+xAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAH9SURBVHgBzZfLccIwEIZXggIowSW4g5grlyQVxByZAYIriKmACQzD0U4FyY0j0IFLcAkc4MQr/4LtCWCDxUv5ZmRpbEv6vVqt1oJS8DyvNJvNWmg+oZgoJZQpSiCECAqFwmetVgvT+g4GA2O5XNqqfUWKABfNdzoDBvUxaDseVKUvaDcaDTdVCA80n89Hm83GpPyExWKxzA1YYYTKUOgboE/ZcRy2FhXju/iab9qZUgUjErBtkxomPoLn3H6I5Eu327VRWXQZBqmLiLEwdysRgvX+IE3Ec4ter2ehHpFeymyRJ9IMNsizhGkM0oyUsiTpnyDX6/WUNMMaeGlC0gyWJpAISF+kmcViMZFRiB2TPsbQEMbO2iZNYOu6XG+F4CQckwarQITfbDYniRAGvlKlXd7wKBHharVKViIRwuuEhw49COwUl+c8EsLATD4ql+6PW6/X93arSHsLB6GP6o3uQOQX1cP7IqsDxHDS8kK3FfEDEa9pzzLPmsh5A7odAZyzmvVQnOrZ6XRKSOc4V1FNIY9E/M1PlYXEXOMz7BOwhHNKRG4hl4rJcsw0cucjiL42qW1tN68IpkAKDIfDSaVS4aZ15lUXwpXOLyUhOcUoi2By+8gh/C+EpMrbG0wI+zBi3l0I0+/3TaR5/JtK2Bm8PW8Zd9RArDFQro0z9At4Zemo+hFkGgAAAABJRU5ErkJggg==" alt="heart">
-                         </a>
+                     <a class="btn" role="button">
+                       <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACIAAAAfCAYAAACCox+xAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAH9SURBVHgBzZfLccIwEIZXggIowSW4g5grlyQVxByZAYIriKmACQzD0U4FyY0j0IFLcAkc4MQr/4LtCWCDxUv5ZmRpbEv6vVqt1oJS8DyvNJvNWmg+oZgoJZQpSiCECAqFwmetVgvT+g4GA2O5XNqqfUWKABfNdzoDBvUxaDseVKUvaDcaDTdVCA80n89Hm83GpPyExWKxzA1YYYTKUOgboE/ZcRy2FhXju/iab9qZUgUjErBtkxomPoLn3H6I5Eu327VRWXQZBqmLiLEwdysRgvX+IE3Ec4ter2ehHpFeymyRJ9IMNsizhGkM0oyUsiTpnyDX6/WUNMMaeGlC0gyWJpAISF+kmcViMZFRiB2TPsbQEMbO2iZNYOu6XG+F4CQckwarQITfbDYniRAGvlKlXd7wKBHharVKViIRwuuEhw49COwUl+c8EsLATD4ql+6PW6/X93arSHsLB6GP6o3uQOQX1cP7IqsDxHDS8kK3FfEDEa9pzzLPmsh5A7odAZyzmvVQnOrZ6XRKSOc4V1FNIY9E/M1PlYXEXOMz7BOwhHNKRG4hl4rJcsw0cucjiL42qW1tN68IpkAKDIfDSaVS4aZ15lUXwpXOLyUhOcUoi2By+8gh/C+EpMrbG0wI+zBi3l0I0+/3TaR5/JtK2Bm8PW8Zd9RArDFQro0z9At4Zemo+hFkGgAAAABJRU5ErkJggg==" alt="heart">
+                     </a>
                    </div> 
                 </div>
-               <div class="row g-0 created-bady">
+               <div class="row g-0 created-bady investor-created-bady">
                  <div class="col-md-4 d-flex align-items-center justify-content-center">
-                   <img src="/Dream-Workshop/assets/留言頭像2-6ada11f4.png" class="img-fluid rounded-start w-75" alt="中村修二">
+                   <img src="/Dream-Workshop/assets/留言頭像2-6ada11f4.png" class="img-fluid rounded-start" alt="中村修二">
                  </div>
                  <div class="col-md-8">
-                   <div class="card-body created-form">
-                       <div class="d-flex pb-2">
-                         <ul>
-                           <li class="fs-5 text-gray-400 fw-bold">偏好領域</li>
-                           <li class="fs-3 text-primary-400 fw-bold">餐飲</li>
-                           <li class="fs-3 text-primary-400 fw-bold">一般服務</li>
-                           <li class="fs-3 text-primary-400 fw-bold">大眾傳播相關</li>
-                          </ul>
-                         <ul>
-                           <li class="fs-5 text-gray-400 fw-bold">資本規模</li>
-                           <li class="fs-3 text-primary-400 fw-bold">50,000,000</li>
-                         </ul>
-                       </div>
+                   <div class="card-body investor-card-body created-form">
+                    <div class="d-lg-flex pb-lg-2">
+                      <ul class="list-unstyled pb-2 pb-lg-0">
+                        <li class="fs-5 text-gray-400 fw-bold">偏好領域</li>
+                        <li class="fs-3 text-primary-400 fw-bold">餐飲</li>
+                        <li class="fs-3 text-primary-400 fw-bold">一般服務</li>
+                        <li class="fs-3 text-primary-400 fw-bold">大眾傳播相關</li>
+                       </ul>
+                      <ul class="list-unstyled">
+                        <li class="fs-5 text-gray-400 fw-bold">資本規模</li>
+                        <li class="fs-3 text-primary-400 fw-bold">50,000,000</li>
+                      </ul>
+                    </div>
                    </div>
-                   <div class="d-flex flex-lg-row flex-column align-items-lg-center p-3">
-                       <form class="row g-3">
-                           <div class="col m-0">
+                   <div class="d-flex  align-items-center  p-lg-3">
+                       <form class="row g-lg-3 g-0">
+                           <div class="col m-md-1 m-lg-0 m-0">
                              <label for="project-Remark" class="form-label text-white fs-5"></label>
                              <textarea id="project-Remark" rows="3" cols="30" class="bg-transparent text-white">請填寫備註...</textarea>
                            </div>
                        </form>
-                       <button type="button" class="btn btn-gray-200 text-gray-800 fw-bold ms-lg-5">保存</button>
+                       <button type="button" class="btn btn-gray-200 text-gray-800 fw-bold ms-lg-5 ms-2">保存</button>
                    </div> 
                  </div>
                </div>
@@ -260,6 +325,7 @@
                    <a href="/pages/investor/Investor-autobiography.html" type="button" class="btn btn-primary-600 w-100 py-2 bg-gray-600 border-0 text-primary-600 fs-5 fw-bold">查看詳情<i class="bi bi-chevron-right ps-1"></i></a>   
                </div>
            </div>
+             
             
             
 
