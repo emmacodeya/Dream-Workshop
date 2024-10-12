@@ -1,0 +1,144 @@
+<button id="chatButton" class="btn fixed-chat-button" aria-label="開啟聊天室">
+ <img class="chat-img" src="/assets/images/icons/chat-room.png" alt="聊天室">    
+</button>
+
+
+<!-- 聊天室視窗 -->
+<div id="chatWindow" class="chat-window " aria-hidden="true" role="dialog" aria-labelledby="chatTitle">
+    <div class="chat-header d-flex justify-content-between align-items-center border-bottom p-1">
+      <h5 id="chatTitle" class="text-gray-200">聊聊</h5>
+      <button id="closeChat" class="btn close-chat-button" aria-label="關閉聊天室">
+        <i class="bi bi-caret-down-fill text-gray-200"></i>
+      </button>
+    </div>
+
+    <div class="row g-0">
+        <div class="col-6">
+          <div class="message-list" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+            <button class="border message-item" id="v-pills-alcohol-tab" data-bs-toggle="pill" data-bs-target="#v-pills-alcohol" type="button" role="tab" aria-controls="v-pills-alcohol" aria-selected="true">
+                <div class="d-flex align-items-center justify-content-between">
+                    <div class="p-1">
+                        <img src="/assets/images/logo/green-logo.png" alt="" style="width: 30px; height: 30px; object-fit: contain;">
+                    </div>          
+                    <div class="p-1">
+                        <h6 class="fw-bold text-gray-200 mb-1 chat-text-ellipsis">綠能創新股份有限公司</h6>
+                        <p class="chat-text-ellipsis">非常感謝你對本公司的關注和認可...</p>
+                    </div>
+                    <div class="d-flex flex-column p-1">
+                        <small class="mb-1">6 / 10</small>
+                        <span class="message-num badge bg-primary-600 rounded-pill">5</span>
+                    </div>
+                </div>    
+            </button>
+            <button class="border message-item" id="v-pills-noodle-tab" data-bs-toggle="pill" data-bs-target="#v-pills-noodle" type="button" role="tab" aria-controls="v-pills-noodle" aria-selected="false">
+                <div class="d-flex align-items-center justify-content-between">
+                    <div class="p-1">
+                        <img src="/assets/images/logo/legally-logo.png" alt="" style="width: 30px; height: 30px; object-fit: contain;">
+                    </div>          
+                    <div class="p-1">
+                        <h6 class="fw-bold mb-1 chat-text-ellipsis">尚品生活股份有限公司</h6>
+                        <p class="chat-text-ellipsis">我們很樂意與您進一步探討合作的...</p>
+                    </div>
+                    <div class="d-flex flex-column p-1">
+                        <small class="mb-1">6 / 12</small>
+                        <span class="message-num badge bg-primary-600 rounded-pill">2</span>
+                    </div>
+                </div>  
+            </button>
+            <button class="border message-item" id="v-pills-island-tab" data-bs-toggle="pill" data-bs-target="#v-pills-island" type="button" role="tab" aria-controls="v-pills-island" aria-selected="false">
+                <div class="d-flex align-items-center justify-content-between">
+                    <div class="p-1">
+                        <img src="/assets/images/logo/higger-logo.png" alt="" style="width: 30px; height: 30px; object-fit: contain;">
+                    </div>          
+                    <div class="p-1">
+                        <h6 class="fw-bold mb-1 chat-text-ellipsis">林媽媽中式餐館</h6>
+                        <p class="chat-text-ellipsis">目前還在積極討論中，還請等候佳音...</p>
+                    </div>
+                    <div class="d-flex flex-column p-1">
+                        <small class="mb-1">6 / 15</small>
+                        <span class="message-num badge bg-primary-600 rounded-pill">1</span>
+                    </div>
+                </div>    
+            </button>
+          </div>
+        </div>
+        <div class="col-6">
+          <div class="tab-content bg-gray-600" id="v-pills-tabContent">
+            <div class="tab-pane fade show active alcohol" id="v-pills-alcohol" role="tabpanel" aria-labelledby="v-pills-alcohol-tab"
+            style="height: 300px;">
+                <div class="bg-gray-800 p-1 mb-2">
+                    <p>綠能創新股份有限公司</p>
+                </div>  
+                <div class="mx-1 p-1 bg-primary-600">
+                    <span class="p-1">非常感謝你對本公司的關注和認可，期待與您約談</span>
+                </div>
+            </div>
+            <div class="tab-pane fade show" 
+            id="v-pills-noodle" role="tabpanel" aria-labelledby="v-pills-noodle-tab"
+            style="height: 300px;">
+                <div class="bg-gray-800 p-1 mb-2">
+                    <p>尚品生活股份有限公司</p>
+                </div>  
+                <div class="mx-1 p-1 bg-primary-600">
+                    <span class="p-1">非常感謝你對本公司的關注和認可，期待與您約談</span>
+                </div>
+            </div>
+            <div class="tab-pane fade show" 
+            id="v-pills-island" role="tabpanel" aria-labelledby="v-pills-island-tab"
+            style="height: 300px;">
+                <div class="bg-gray-800 p-1 mb-2">
+                    <p>林媽媽中式餐館</p>
+                </div>  
+                <div class="mx-1 p-1 bg-primary-600">
+                    <span class="p-1">非常感謝你對本公司的關注和認可，期待與您約談</span>
+                </div>
+            </div>
+          </div>
+          <div class="chat-footer input-group">
+            <input type="text" id="chatInput" class="form-control" placeholder="輸入訊息..." aria-label="輸入訊息">
+            <button type="button" id="sendButton" class="btn btn-gray-200">送出</button>
+          </div>
+        </div>
+      </div>
+</div>
+
+
+<script>
+   // 開啟聊天室
+   chatButton.addEventListener('click', function() {
+        const isHidden = chatWindow.getAttribute('aria-hidden') === 'true';
+        if (isHidden) {
+          chatWindow.style.display = 'block';
+          chatWindow.setAttribute('aria-hidden', 'false');
+          chatButton.setAttribute('aria-label', '關閉聊天室');
+          chatInput.focus(); // 聚焦輸入框
+        } else {
+          chatWindow.style.display = 'none';
+          chatWindow.setAttribute('aria-hidden', 'true');
+          chatButton.setAttribute('aria-label', '開啟聊天室');
+        }
+      });
+
+      // 關閉聊天室
+      closeChat.addEventListener('click', function() {
+        chatWindow.style.display = 'none';
+        chatWindow.setAttribute('aria-hidden', 'true');
+        chatButton.setAttribute('aria-label', '開啟聊天室');
+      });
+
+      // 發送訊息
+      sendButton.addEventListener('click', function() {
+        const message = chatInput.value.trim();
+        if (message !== "") {
+          const messageElement = document.createElement('p');
+          messageElement.textContent = message;
+          chatBody.appendChild(messageElement);
+          chatInput.value = '';
+          chatBody.scrollTop = chatBody.scrollHeight; 
+        }
+      });
+
+</script>
+
+
+

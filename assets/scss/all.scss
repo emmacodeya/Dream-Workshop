@@ -8,20 +8,36 @@
 
 @import "./mixin/mixin.scss";
 
+
+@import './layout/header.scss';
+@import './layout/footer.scss';
+
+@import './pages/index.scss';
+@import './pages/activity.scss';
+@import './pages/ProjectList-project.scss';
+@import './pages/_about-us.scss';
+@import './pages/activity-casper.scss';
+@import './pages/discuss.scss';
+@import './pages/post-article.scss';
+@import './pages/Project-evaluate';
 @import "./utils/universal.scss";
+
 
 @import "./layout/header.scss";
 @import "./layout/footer.scss";
+@import "./layout/chat-room.scss";
 
 
 @import "./pages/index.scss";
 @import "./pages/activity.scss";
 @import "./pages/ProjectList-project.scss";
+@import "./pages/ProjectList-investor.scss";
 @import "./pages/_about-us.scss";
 @import "./pages/activity-casper.scss";
 @import "./pages/discuss.scss";
 @import "./pages/post-article.scss";
 @import "./pages/admin.scss";
+@import "./pages/login.scss";
 @import "./pages/meber-createdprojects.scss";
 @import "./pages/member-sidebar.scss";
 @import "./pages/article-content.scss";
