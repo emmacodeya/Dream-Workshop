@@ -1,0 +1,123 @@
+<h1 class="fs-2 fw-bold">活動管理</h1>
+<div class="d-flex justify-content-end">
+  <button class="btn btn-primary-600 fw-bold rounded mb-2 d-flex align-items-center" type="button" data-bs-toggle="modal" data-bs-target="#activityEditModal">
+    <i class=" bi bi-plus-lg fw-bold admin-activity__icon me-1"></i>
+    新增活動
+  </button>
+</div>
+
+<form class="form-inline w-100 d-flex align-items-center">
+  <input class="admin__input form-control me-2 flex-grow-1 admin-search" type="search" placeholder="搜尋活動編號 / 活動名稱">
+  <button class="btn btn-primary-600 fw-bold rounded text-nowrap" type="submit">搜尋</button>
+</form>
+
+<div class="admin-account">
+  <table class="table mt-4">
+    <thead class="table-light">
+      <tr>
+        <th width="80">活動編號</th>
+        <th width="100">活動發起者</th>
+        <th width="130">活動名稱</th>
+        <th width="90">活動日期</th>
+        <th width="30" class="text-center">編輯</th>
+        <th width="30" class="text-center">刪除</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>1</td>
+        <td>卡斯柏</td>
+        <td>卡斯柏創業分享會</td>
+        <td>2024 / 9 / 15</td>
+        <td class="text-center">
+          <button class="btn btn-outline-primary btn-sm" type="button" data-bs-toggle="modal" data-bs-target="#activityEditModal">
+            編輯
+          </button>
+        </td>
+        <td class="text-center">
+          <button class="btn btn-outline-danger btn-sm" type="button" data-bs-toggle="modal" data-bs-target="#delActivityModal">
+            刪除
+          </button>
+        </td>
+      </tr>
+      
+    </tbody>
+  </table>
+</div>
+<!-- 新增/編輯 -->
+<div class="modal fade" id="activityEditModal" tabindex="-1">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header bg-primary-600">
+        <h5 class="fs-3 modal-title fw-bold">活動管理</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body admin-modal-body">
+        <div class="row">
+          <div class="col-4">
+            <label class="admin-activity__label mb-1" for="initiator">活動發起者</label>
+            <input class="admin__input form-control mb-5" type="text" id="initiator">
+
+            <label class="admin-activity__label mb-1" for="img">活動照片</label>
+            <div class="d-flex">
+              <input class="admin__input form-control mb-5" type="text" id="img">
+              <button class="admin-activity__button btn btn-primary-600 rounded ms-2" type="button">新增</button>
+            </div>
+
+            <label class="admin-activity__label mb-1" for="date">活動日期</label>
+            <input class="admin__input form-control mb-5" type="text" id="date">
+
+            <label class="admin-activity__label mb-1" for="time">活動時間</label>
+            <input class="admin__input form-control mb-5" type="text" id="time">
+          </div>
+          <div class="col-8">
+            <label class="admin-activity__label mb-1" for="title">活動標題</label>
+            <input class="admin__input form-control mb-5" type="text" id="title">
+
+            <label class="admin-activity__label mb-1" for="location">活動地點</label>
+            <input class="admin__input form-control mb-5" type="text" id="location">
+
+            <label for="content" class="form-label">活動內容</label>
+            <textarea class="form-control admin__textarea" id="content" rows="5"></textarea>
+          </div>
+        </div>
+        
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary rounded" data-bs-dismiss="modal">取消</button>
+        <button type="button" class="btn btn-primary-600 rounded">確認</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- 刪除 -->
+<div id="delActivityModal"
+ref="delCommentModal"
+class="modal fade"
+tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content border-0">
+      <div class="modal-header bg-danger text-white">
+        <h5 class="modal-title fw-bold">
+          <span>刪除活動</span>
+        </h5>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="modal"
+        ></button>
+      </div>
+      <div class="modal-body">
+        是否刪除ID為
+        <strong class="text-danger">1</strong>
+        之活動(刪除後將無法恢復)。
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-outline-secondary rounded" data-bs-dismiss="modal">
+          取消
+        </button>
+        <button type="button" class="btn btn-danger rounded">確認刪除</button>
+      </div>
+    </div>
+  </div>
+</div>

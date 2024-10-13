@@ -7,17 +7,18 @@
     <title>創夢工坊</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="shortcut icon" href="../assets/images/icons/favicon.ico" rel="shortcut icon" />
   </head>
   <body>
     <%- include('./layout/header'); -%>
-    <div class="container py-5">
-      <h1 class="mb-2">關於創夢工坊</h1>
-      <h4 class="mb-5">創造可能 ，追尋夢想。</h4>
+    <div class="container py-5 mt-14">
+      <h1 class="mb-2 fs-2">關於創夢工坊</h1>
+      <h5 class="mb-7 fs-5 text-white">創造可能 ，追尋夢想。</h5>
       <img class="about-us__img-banner mb-4" src="../assets/images/about_us_banner.jpg" alt="about us">
-      <h5 class="mb-2">平台理念：</h5>
+      <h5 class="text-light mb-2">平台理念：</h5>
       <p class="mb-4">在創業的旅途中,許多人擁有創新的想法,卻因資金短缺或缺乏資源而難以實現夢想。傳統尋求資源的方法往往是向親友求助,這種方式效率低下,且可利用的資源有限。另一方面,對於手中有資金但缺乏合適投資機會的人來說,找到具有潛力的項目也是一個挑戰。現有的創業媒合平台大多面向大型企業,對中小型創業者和個人投資者的支持有限。因此,我們致力於建立一個專注於創業和投資的媒合平台,讓所有有需求的用戶都能夠在這裡找到合適的合作夥伴和籌措所需的資金。  願景: 我們的願景是打破規模和資金的限制,為所有創業者和投資者提供平等的機會,促進創新和經濟發展。</p>
 
-      <h5>核心價值：</h5>
+      <h5 class="text-light mb-2">核心價值：</h5>
       <ol class="mb-4">
         <li>1. 包容性: 我們歡迎各行各業、各種規模的創業項目和投資者,無論資金多寡,都能在這裡找到支持。</li>
         <li>2. 連接: 我們的平台旨在高效連接創業者和投資者,通過直觀及精確的篩選條件,促進雙方的交流和合作。</li>
@@ -26,7 +27,7 @@
         <li>5. 創新驅動: 我們鼓勵創新,無論是技術、商業模式還是服務創新,都在這裡得到應有的重視和支持。</li>
       </ol>
 
-      <h5>平台特色：</h5>
+      <h5 class="text-light mb-2">平台特色：</h5>
       <ol class="mb-4">
         <li>1. 高效的對接機制: 通過直觀及精確的篩選條件,我們確保創業者和投資者能夠快速找到彼此最合適的合作夥伴。</li>
         <li>2. 豐富的資源支持: 我們提供包括法律、財務、營銷等多方面的專業指導和資源,幫助創業者提升項目成功率。</li>
@@ -36,23 +37,29 @@
 
       <p class="mb-10">我們相信,無論創業者的項目規模大小,無論投資者的資金多寡,每一個有創新精神和投資潛力的人都應該得到平等的機會和資源支持。通過創夢工坊,我們將共同推動創新,實現夢想,創造更美好的未來。</p>
 
-      <h3 class="mb-2">核心價值</h3>
+      <h3 class="mb-5">核心價值</h3>
       <div class="row mb-10">
         <div class="col">
-          <img class="mb-2" src="../assets/images/search.jpg" alt="search">
+          <div class="about-us__img-container mb-2">
+            <img class="about-us__img" src="../assets/images/search.jpg" alt="search">
+          </div>
           <p class="text-center">方便的搜尋</p>
         </div>
         <div class="col">
-          <img class="mb-2" src="../assets/images/discuss.jpg" alt="discuss">
+          <div class="about-us__img-container mb-2">
+            <img class="about-us__img" src="../assets/images/discuss.jpg" alt="discuss">
+          </div>
           <p class="text-center">獨創的討論區</p>
         </div>
         <div class="col">
-          <img class="mb-2" src="../assets/images/seminar.jpg" alt="seminar">
-          <p class="text-center">對外的活動</p> 
+          <div class="about-us__img-container mb-2">
+            <img class="about-us__img" src="../assets/images/seminar.jpg" alt="seminar">
+          </div>
+          <p class="text-center">對外的活動</p>
         </div>
       </div>
 
-      <h3 class="mb-2">常見問題</h3>
+      <h3 class="mb-5">常見問題</h3>
       <div class="accordion" id="accordionExample">
         <div class="accordion-item">
           <h2 class="accordion-header" id="headingOne">
@@ -76,9 +83,9 @@
             <div class="accordion-body">
               在創業媒合平台上，以下情況可能會導致用戶被列入拒絕往來戶，限制或禁止使用平台服務：
               <ol>
-                <li>1. 提供虛假資訊：創業者或投資者提供不實的個人、公司或項目資料，欺騙其他用戶，可能導致嚴重的信任問題。</li>
-                <li>2. 詐騙或欺詐行為：涉及任何形式的金錢詐騙、欺騙投資或故意誤導創業者/投資者等行為，會被平台嚴格處理。</li>
-                <li>3. 違反平台規則：如未遵守平台的使用條款與規定，包括但不限於不當言論、濫用功能或違法行為。</li>
+                <li class="text-dark">1. 提供虛假資訊：創業者或投資者提供不實的個人、公司或項目資料，欺騙其他用戶，可能導致嚴重的信任問題。</li>
+                <li class="text-dark">2. 詐騙或欺詐行為：涉及任何形式的金錢詐騙、欺騙投資或故意誤導創業者/投資者等行為，會被平台嚴格處理。</li>
+                <li class="text-dark">3. 違反平台規則：如未遵守平台的使用條款與規定，包括但不限於不當言論、濫用功能或違法行為。</li>
               </ol>
             </div>
           </div>
@@ -92,9 +99,9 @@
           <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
             <div class="accordion-body">
               <ol>
-                <li>1. 登入後，找到「個人設定」的選項。</li>
-                <li>2. 填寫基本資料。</li>
-                <li>3. 設置專業背景。</li>
+                <li class="text-dark">1. 登入後，找到「個人設定」的選項。</li>
+                <li class="text-dark">2. 填寫基本資料。</li>
+                <li class="text-dark">3. 設置專業背景。</li>
               </ol>
             </div>
           </div>
