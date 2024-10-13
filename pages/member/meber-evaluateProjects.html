@@ -9,8 +9,8 @@
 <body>
     <%- include('./layout/header'); -%>
   
-  <main class="bg-gray-1000 py-15">
-    <!-- 首頁>會員中心 -->
+  <main class="bg-green py-15">
+    <!-- 首頁>會員中心>創業項目評價 -->
     <section class="container pt-8">
       <nav aria-label="breadcrumb">
         <ol class="breadcrumb">
@@ -28,11 +28,77 @@
     <section class="container">
       <div class="row">
         <!-- sidebar -->
-        <div class="col-lg-3 col-4">
+        <div class="col-lg-3 d-none d-lg-block">
           <%- include('./components/member-sidebar'); %>
         </div>
         <!-- 評價內容 -->
-        <div class="col-lg-9 col-8">  
+        <div class="col-lg-9">  
+           <!-- 手機板sidebar -->
+    <div class="d-block d-lg-none border-bottom">
+      <a class="btn" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+        <div class="d-flex text-gray-100 fs-5 p-1">
+        <img src="/assets/images/icons/sidebar.png" alt="sidebar">
+        <p class=" ps-1 fw-bold">創業項目評價</p>
+      </div>
+      </a>
+      <div class="offcanvas offcanvas-start bg-gray-1000 bg-opacity-75" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-header border-bottom">
+          <h5 class="offcanvas-title text-primary-600 fw-bold fs-5" id="offcanvasExampleLabel">會員中心</h5>
+          <button type="button" class="btn-close btn-close-white"  data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <div class="d-flex flex-column  p-1 text-white bg-gray-1000 bg-opacity-75 sidemenu-link" >
+            <ul class="flex-column fw-bold list-unstyled">
+              <li class="nav-link text-gray-400 fs-5">我的帳戶</li>
+              <li><a href="member.html" class="nav-link text-white ps-1 lh-lg pt-1 " >個人資料</a></li>
+              <li><a href="meber-identity.html" class="nav-link text-white  ps-1 lh-lg" >身份審核</a></li>
+              <li><a href="member-changepassword.html" class="nav-link text-white  ps-1 lh-lg" >修改密碼</a></li>
+              <li><a href="meber-points.html" class="nav-link text-white  ps-1 lh-lg">可用點數</a></li>
+              <li><a href="member-settings.html" class="nav-link text-white  ps-1 lh-lg pb-1">隱私設置</a></li>
+            </ul>
+              <ul class="flex-column fw-bold list-unstyled">
+                <li  class="nav-link text-gray-400 fs-5 pt-1">創業項目</li>
+                <li><a href="meber-newprojects.html" class="nav-link text-white  ps-1 lh-lg">新增創業項目</a></li>
+                <li><a href="meber-createdprojects.html" class="nav-link text-white  ps-1 lh-lg pb-1">已建創業項目</a></li>
+              </ul>
+        
+              <ul class="flex-column fw-bold list-unstyled">
+                <li class="nav-link text-gray-400 fs-5 pt-1">投資人</li>
+                <li><a href="meber-newinvestor.html" class="nav-link text-white  ps-1 lh-lg pb-1">建立/修改投資人資料</a></li>
+              </ul>
+        
+              <ul class="flex-column fw-bold list-unstyled">
+                <li class="nav-link text-gray-400 fs-5 pt-1">評價紀錄</li>
+                <li><a href="meber-evaluateProjects.html" class="nav-link text-primary-600  ps-1 lh-lg" active>創業項目評價</a></li>
+                <li><a href="meber-evaluateInvestor.html" class="nav-link text-white  ps-1 lh-lg pb-1">投資人評價</a></li>
+              </ul>
+              <ul class="flex-column fw-bold list-unstyled">
+              <li class="nav-link text-gray-400 fs-5 pt-1">我的收藏</li>
+              <li><a href="meber-collectProjects.html" class="nav-link text-white  ps-1 lh-lg">創業項目收藏列表</a></li>
+              <li><a href="meber-collectInvestor.html" class="nav-link text-white ps-1 lh-lg pb-1">投資人收藏列表</a></li>
+            </ul>
+            <ul class="flex-column fw-bold list-unstyled">
+            <li class="nav-link text-gray-400 fs-5 pt-1">我的活動</li>
+            <li><a href="#" class="nav-link text-white  ps-1 lh-lg">已申請活動</a></li>
+            <li><a href="#" class="nav-link text-white  ps-1 lh-lg pb-1">活動紀錄</a></li>
+          </ul>
+        
+          <ul class="flex-column fw-bold list-unstyled">
+          <li class="nav-link text-gray-400 fs-5 pt-1">我的消息</li>
+          <li><a href="#" class="nav-link text-white  ps-1 lh-lg pb-1">站內消息</a></li>
+        </ul>
+          
+        <ul class="flex-column fw-bold list-unstyled">
+        <li class="nav-link text-gray-400 fs-5 pt-1">討論區</li>
+        <li><a href="#" class="nav-link text-white  ps-1 lh-lg">新增文章</a></li>
+        <li><a href="#" class="nav-link text-white  ps-1 lh-lg">發文列表</a></li>
+        <li><a href="#" class="nav-link text-white  ps-1 lh-lg pb-1">查看留言</a></li>
+        </ul>
+        </div> 
+        </div>
+      </div>
+</div>
+
             <div class="pt-8">
               <table class="table table-dark table-hover table-bordered border-gray-600">
                 <thead class="text-center fs-4">
@@ -62,7 +128,7 @@
                             此外,食材成本波動可能會影響其利潤。<br>
                             總體而言,這個項目具備良好的成長機會,<br>
                             但需要強化市場策略和成本控制來應對潛在的挑戰。	</td>
-                        <td><button class="btn btn-primary-600 text-center" data-bs-toggle="modal" data-bs-target="#exampleModal-reply" role="button">回覆</button>
+                        <td><button class="btn btn-outline-primary-600 text-center" data-bs-toggle="modal" data-bs-target="#exampleModal-reply" role="button">回覆</button>
                         </td>
                     </tr>
                 </tbody>
@@ -79,9 +145,9 @@
                 <h5 class="modal-title text-primary-600" id="exampleModalToggleLabel">回覆內容</h5>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
-            <div class="modal-body">
+            <div class="modal-body text-center">
                 <label for="project-replycontent" class="form-label text-white fs-5"></label>
-                <textarea id="project-replycontent" rows="3" cols="50" class="bg-transparent text-white inputField text-white"></textarea>
+                <textarea id="project-replycontent" rows="3" cols="30" class="bg-transparent text-white inputField text-white"></textarea>
                 <div class="modal-footer border-0 d-flex justify-content-between">
                     <button type="button" class="btn btn-lg btn-gray-600 fw-bolder" id="clearButton">清除</button>
                     <button class="btn btn-lg btn-primary-600 fw-bolder" data-bs-toggle="modal" data-bs-target="#modal2" role="button">送出</button>
