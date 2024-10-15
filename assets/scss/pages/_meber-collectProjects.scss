@@ -16,10 +16,14 @@
   z-index: -1; 
 }
 
+.investor-created-title {
+  padding: 28px 28px 16px 28px;
+}
+
 
 @media (max-width: 768px) {
   .investor-created-title {
-    padding: 20px;
+    padding: 20px 20px 8px 20px;
   }
 
   .investor-created-bady {
