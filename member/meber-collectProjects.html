@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>會員中心</title>
-  <script type="module" crossorigin src="/Dream-Workshop/assets/bootstrap.bundle.min-452b9699.js"></script>
-  <link rel="stylesheet" href="/Dream-Workshop/assets/bootstrap.bundle-a49adbe0.css">
+  <script type="module" crossorigin src="/Dream-Workshop/assets/bootstrap.bundle.min-dcb83003.js"></script>
+  <link rel="stylesheet" href="/Dream-Workshop/assets/bootstrap.bundle-e5845128.css">
 </head>
 
 <body>
@@ -46,7 +46,7 @@
        </a>
     </div>
   </nav>  
-<main class="bg-halo py-15">
+<main class="bg-green py-15">
        <!-- 首頁>會員中心>創業項目收藏 -->
     <section class="container pt-8 d-none d-lg-block">
                 <nav aria-label="breadcrumb">
@@ -61,14 +61,15 @@
               <h2 class="text-primary-600 py-1 fw-bold border-bottom pb-8">會員中心</h2>
         </section>
 
-        <!-- 導覽列+已建創業項目內文 -->
+       
      <section class="container">
          <div class="row">
+           <!-- 電腦板sidebar -->
             <div class="col-lg-3 d-none d-md-block">
-                    <div class="d-flex flex-column  p-3 text-white bg-gray-1000  sidemenu-link d-none d-lg-block" >
+                    <div class="d-flex flex-column  p-3 text-white sidemenu-link d-none d-lg-block bg-gray-1000 bg-opacity-75" >
     <ul class="flex-column fw-bold list-unstyled">
       <li class="nav-link text-gray-400 fs-4">我的帳戶</li>
-      <li><a href="member.html" class="nav-link text-white fs-5 ps-1 lh-lg pt-2" >個人資料</a></li>
+      <li><a href="member.html" class="nav-link text-white fs-5 ps-1 lh-lg pt-2" data-content="member">個人資料</a></li>
       <li><a href="meber-identity.html" class="nav-link text-white fs-5 ps-1 lh-lg" >身份審核</a></li>
       <li><a href="member-changepassword.html" class="nav-link text-white fs-5 ps-1 lh-lg" >修改密碼</a></li>
       <li><a href="meber-points.html" class="nav-link text-white fs-5 ps-1 lh-lg">可用點數</a></li>
@@ -97,13 +98,13 @@
     </ul>
     <ul class="flex-column fw-bold list-unstyled">
     <li class="nav-link text-gray-400 fs-4 pt-2">我的活動</li>
-    <li><a href="#" class="nav-link text-white fs-5 ps-1 lh-lg">已申請活動</a></li>
-    <li><a href="#" class="nav-link text-white fs-5 ps-1 lh-lg pb-2">活動紀錄</a></li>
+    <li><a href="meber-applyActivity.html" class="nav-link text-white fs-5 ps-1 lh-lg">已申請活動</a></li>
+    <li><a href="member-activityrecord.html" class="nav-link text-white fs-5 ps-1 lh-lg pb-2">活動紀錄</a></li>
   </ul>
 
   <ul class="flex-column fw-bold list-unstyled">
   <li class="nav-link text-gray-400 fs-4 pt-2">我的消息</li>
-  <li><a href="#" class="nav-link text-white fs-5 ps-1 lh-lg pb-2">站內消息</a></li>
+  <li><a href="member-sitenews.html" class="nav-link text-white fs-5 ps-1 lh-lg pb-2">站內消息</a></li>
 </ul>
   
 <ul class="flex-column fw-bold list-unstyled">
@@ -158,12 +159,12 @@
                           </ul>
                           <ul class="flex-column fw-bold list-unstyled">
                           <li class="nav-link text-gray-400 fs-5 pt-1">我的收藏</li>
-                          <li><a href="meber-collectProjects.html" class="nav-link text-primary-600  ps-1 lh-lg active">創業項目收藏列表</a></li>
+                          <li><a href="meber-collectProjects.html" class="nav-link text-primary-600  ps-1 lh-lg " active>創業項目收藏列表</a></li>
                           <li><a href="meber-collectInvestor.html" class="nav-link  text-white   ps-1 lh-lg pb-1 ">投資人收藏列表</a></li>
                         </ul>
                         <ul class="flex-column fw-bold list-unstyled">
                         <li class="nav-link text-gray-400 fs-5 pt-1">我的活動</li>
-                        <li><a href="#" class="nav-link text-white  ps-1 lh-lg">已申請活動</a></li>
+                        <li><a href="meber-applyActivity.html" class="nav-link text-white  ps-1 lh-lg">已申請活動</a></li>
                         <li><a href="#" class="nav-link text-white  ps-1 lh-lg pb-1">活動紀錄</a></li>
                       </ul>
                     
@@ -196,43 +197,43 @@
                      </div> 
                   </div>
                  <div class="row g-0 created-bady investor-created-bady">
-                   <div class="col-md-4 d-flex align-items-center justify-content-center">
+                   <div class="col-md-6  d-flex align-items-center justify-content-center">
                      <img src="/Dream-Workshop/assets/mamacook-a216e22e.png" class="img-fluid rounded-start" alt="林媽媽">
                    </div>
-                   <div class="col-md-8">
+                   <div class="col-md-6">
                      <div class="card-body investor-card-body created-form">
-                        <div class="d-lg-flex pb-2">
-                          <ul class="list-unstyled pb-lg-0 pb-2">
+                        <div class="d-md-flex pb-md-2">
+                          <ul class="list-unstyled pb-md-0 pb-1">
                             <li class="fs-5 text-gray-400 fw-bold">公司成立狀態</li>
                             <li class="fs-3 text-primary-400 fw-bold">未設立</li>
                            </ul>
-                          <ul class="list-unstyled">
+                          <ul class="list-unstyled pb-md-0 pb-1">
                             <li class="fs-5 text-gray-400 fw-bold">產業分類</li>
                             <li class="fs-3 text-primary-400 fw-bold">餐飲</li>
                           </ul>
                         </div>
-                        <div class="d-lg-flex pb-2">
-                            <ul class="list-unstyled pb-lg-0 pb-2">
+                        <div class="d-md-flex pb-md-2">
+                            <ul class="list-unstyled pb-md-0 pb-1">
                               <li class="fs-5 text-gray-400 fw-bold">規模</li>
                               <li class="fs-3 text-primary-400 fw-bold">10人以下</li>
                              </ul>
-                            <ul class="list-unstyled">
+                            <ul class="list-unstyled pb-md-0 pb-1">
                               <li class="fs-5 text-gray-400 fw-bold">資本額</li>
                               <li class="fs-3 text-primary-400 fw-bold">3,000,000</li>
                             </ul>
                           </div>
-                        <div class="d-lg-flex align-items-center">
-                            <ul class="list-unstyled">
+                        <div class="d-md-flex align-items-center">
+                            <ul class="list-unstyled w-50 pb-md-0 pb-1">
                               <li class="fs-5 text-gray-400 fw-bold">募資金額</li>
                               <li class="fs-3 text-primary-400 fw-bold">50,000,000</li>
                             </ul>
                         </div>
                      </div>
-                     <div class="d-flex  align-items-center  p-lg-3">
+                     <div class="d-flex  align-items-center p-md-3">
                          <form class="row g-lg-3 g-0">
-                             <div class="col m-md-1 m-lg-0 m-0">
+                             <div class="col">
                                <label for="project-Remark" class="form-label text-white fs-5"></label>
-                               <textarea id="project-Remark" rows="3" cols="30" class="bg-transparent text-white">請填寫備註...</textarea>
+                               <textarea id="project-Remark" rows="3"  class="w-100 bg-transparent text-white">請填寫備註...</textarea>
                              </div>
                          </form>
                          <button type="button" class="btn btn-gray-200 text-gray-800 fw-bold ms-lg-5 ms-2">保存</button>
@@ -257,43 +258,43 @@
                      </div> 
                   </div>
                  <div class="row g-0 created-bady investor-created-bady">
-                   <div class="col-md-4 d-flex align-items-center justify-content-center">
+                   <div class="col-md-6 d-flex align-items-center justify-content-center">
                      <img src="/Dream-Workshop/assets/come-47fe869c.png" class="img-fluid rounded-start" alt="come寵物美容">
                    </div>
-                   <div class="col-md-8">
+                   <div class="col-md-6">
                      <div class="card-body investor-card-body created-form">
-                        <div class="d-lg-flex pb-2">
-                          <ul class="list-unstyled pb-lg-0 pb-2">
+                        <div class="d-md-flex pb-md-2">
+                          <ul class="list-unstyled pb-md-0 pb-1">
                             <li class="fs-5 text-gray-400 fw-bold">公司成立狀態</li>
                             <li class="fs-3 text-primary-400 fw-bold">未設立</li>
                            </ul>
-                          <ul class="list-unstyled">
+                          <ul class="list-unstyled pb-md-0 pb-1">
                             <li class="fs-5 text-gray-400 fw-bold">產業分類</li>
                             <li class="fs-3 text-primary-400 fw-bold">餐飲</li>
                           </ul>
                         </div>
-                        <div class="d-lg-flex pb-2">
-                            <ul class="list-unstyled pb-lg-0 pb-2">
+                        <div class="d-md-flex pb-md-2">
+                            <ul class="list-unstyled pb-md-0 pb-1">
                               <li class="fs-5 text-gray-400 fw-bold">規模</li>
                               <li class="fs-3 text-primary-400 fw-bold">10人以下</li>
                              </ul>
-                            <ul class="list-unstyled">
+                            <ul class="list-unstyled pb-md-0 pb-1">
                               <li class="fs-5 text-gray-400 fw-bold">資本額</li>
                               <li class="fs-3 text-primary-400 fw-bold">3,000,000</li>
                             </ul>
                           </div>
-                        <div class="d-lg-flex align-items-center">
-                            <ul class="list-unstyled">
+                        <div class="d-md-flex align-items-center">
+                            <ul class="list-unstyled pb-md-0 pb-1">
                               <li class="fs-5 text-gray-400 fw-bold">募資金額</li>
                               <li class="fs-3 text-primary-400 fw-bold">800,000</li>
                             </ul>
                         </div>
                      </div>
-                     <div class="d-flex  align-items-center  p-lg-3">
+                     <div class="d-flex  align-items-center  p-md-3">
                          <form class="row g-lg-3 g-0">
-                             <div class="col m-md-1 m-lg-0 m-0">
+                             <div class="col ">
                                <label for="project-Remark" class="form-label text-white fs-5"></label>
-                               <textarea id="project-Remark" rows="3" cols="30" class="bg-transparent text-white">請填寫備註...</textarea>
+                               <textarea id="project-Remark" rows="3" class="w-100 bg-transparent text-white">請填寫備註...</textarea>
                              </div>
                          </form>
                          <button type="button" class="btn btn-gray-200 text-gray-800 fw-bold ms-lg-5 ms-2">保存</button>
@@ -306,6 +307,7 @@
              </div>
                
                <!-- 猛毒創意有限公司 -->
+
                <div class="card bg-gray-800 mt-lg-8 mt-5">
                 <div class="d-flex justify-content-between created-title investor-created-title">
                    <div class="d-flex align-items-center">
@@ -319,43 +321,43 @@
                    </div> 
                 </div>
                <div class="row g-0 created-bady investor-created-bady">
-                 <div class="col-md-4 d-flex align-items-center justify-content-center">
+                 <div class="col-md-6 d-flex align-items-center justify-content-center">
                    <img src="/Dream-Workshop/assets/猛毒-0ef3f8c5.png" class="img-fluid rounded-start" alt="猛毒創意有限公司">
                  </div>
-                 <div class="col-md-8">
+                 <div class="col-md-6">
                    <div class="card-body investor-card-body created-form">
-                      <div class="d-lg-flex pb-2">
-                        <ul class="list-unstyled pb-lg-0 pb-2">
+                      <div class="d-md-flex pb-md-2">
+                        <ul class="list-unstyled pb-md-0 pb-1">
                           <li class="fs-5 text-gray-400 fw-bold">公司成立狀態</li>
                           <li class="fs-3 text-primary-400 fw-bold">未設立</li>
                          </ul>
-                        <ul class="list-unstyled">
+                        <ul class="list-unstyled pb-md-0 pb-1">
                           <li class="fs-5 text-gray-400 fw-bold">產業分類</li>
                           <li class="fs-3 text-primary-400 fw-bold">餐飲</li>
                         </ul>
                       </div>
-                      <div class="d-lg-flex pb-2">
-                          <ul class="list-unstyled pb-lg-0 pb-2">
+                      <div class="d-md-flex pb-md-2">
+                          <ul class="list-unstyled pb-md-0 pb-1">
                             <li class="fs-5 text-gray-400 fw-bold">規模</li>
                             <li class="fs-3 text-primary-400 fw-bold">10人以下</li>
                            </ul>
-                          <ul class="list-unstyled">
+                          <ul class="list-unstyled pb-md-0 pb-1">
                             <li class="fs-5 text-gray-400 fw-bold">資本額</li>
                             <li class="fs-3 text-primary-400 fw-bold">3,000,000</li>
                           </ul>
                         </div>
-                      <div class="d-lg-flex align-items-center">
-                          <ul class="list-unstyled">
+                      <div class="d-md-flex align-items-center">
+                          <ul class="list-unstyled pb-md-0 pb-1">
                             <li class="fs-5 text-gray-400 fw-bold">募資金額</li>
-                            <li class="fs-3 text-primary-400 fw-bold">50,000,000</li>
+                            <li class="fs-3 text-primary-400 fw-bold">800,000</li>
                           </ul>
                       </div>
                    </div>
-                   <div class="d-flex  align-items-center  p-lg-3">
+                   <div class="d-flex  align-items-center  p-md-3">
                        <form class="row g-lg-3 g-0">
-                           <div class="col m-md-1 m-lg-0 m-0">
+                           <div class="col ">
                              <label for="project-Remark" class="form-label text-white fs-5"></label>
-                             <textarea id="project-Remark" rows="3" cols="30" class="bg-transparent text-white">請填寫備註...</textarea>
+                             <textarea id="project-Remark" rows="3" class="w-100 bg-transparent text-white">請填寫備註...</textarea>
                            </div>
                        </form>
                        <button type="button" class="btn btn-gray-200 text-gray-800 fw-bold ms-lg-5 ms-2">保存</button>
@@ -366,13 +368,7 @@
                    <a href="/pages/investor/Investor-autobiography.html" type="button" class="btn btn-primary-600 w-100 py-2 bg-gray-600 border-0 text-primary-600 fs-5 fw-bold">查看詳情<i class="bi bi-chevron-right ps-1"></i></a>   
                </div>
            </div>
-          
-            
-            
 
-            
-           
-                
             </div>
             
 

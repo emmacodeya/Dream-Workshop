@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>會員中心</title>
-  <script type="module" crossorigin src="/Dream-Workshop/assets/bootstrap.bundle.min-452b9699.js"></script>
-  <link rel="stylesheet" href="/Dream-Workshop/assets/bootstrap.bundle-a49adbe0.css">
+  <script type="module" crossorigin src="/Dream-Workshop/assets/bootstrap.bundle.min-dcb83003.js"></script>
+  <link rel="stylesheet" href="/Dream-Workshop/assets/bootstrap.bundle-e5845128.css">
 </head>
 
 <body>
@@ -46,8 +46,8 @@
        </a>
     </div>
   </nav>  
-<main class="bg-gray-1000 py-15">
-       <!-- 首頁>會員中心>創業項目收藏 -->
+<main class="bg-green py-15">
+       <!-- 首頁>會員中心>已申請活動 -->
     <section class="container pt-8">
                 <nav aria-label="breadcrumb">
                     <ol class="breadcrumb">
@@ -55,20 +55,21 @@
                       <i class="bi bi-caret-right-fill text-white"></i>
                       <li class="breadcrumb-item text-white"><a href="member.html">會員中心</a></li>
                       <i class="bi bi-caret-right-fill text-white"></i>
-                      <li class="breadcrumb-item text-white fw-bold active" aria-current="page"></li>
+                      <li class="breadcrumb-item text-white fw-bold active" aria-current="page">已申請活動</li>
                     </ol>
                 </nav>
               <h2 class="text-primary-600 py-1 fw-bold border-bottom pb-8">會員中心</h2>
         </section>
 
-        <!-- 導覽列+已建創業項目內文 -->
+
      <section class="container">
          <div class="row">
-            <div class="col-lg-3 col-4">
-                    <div class="d-flex flex-column  p-3 text-white bg-gray-1000  sidemenu-link d-none d-lg-block" >
+           <!-- 電腦板sidebar -->
+            <div class="col-lg-3 d-none d-md-block">
+                    <div class="d-flex flex-column  p-3 text-white sidemenu-link d-none d-lg-block bg-gray-1000 bg-opacity-75" >
     <ul class="flex-column fw-bold list-unstyled">
       <li class="nav-link text-gray-400 fs-4">我的帳戶</li>
-      <li><a href="member.html" class="nav-link text-white fs-5 ps-1 lh-lg pt-2" >個人資料</a></li>
+      <li><a href="member.html" class="nav-link text-white fs-5 ps-1 lh-lg pt-2" data-content="member">個人資料</a></li>
       <li><a href="meber-identity.html" class="nav-link text-white fs-5 ps-1 lh-lg" >身份審核</a></li>
       <li><a href="member-changepassword.html" class="nav-link text-white fs-5 ps-1 lh-lg" >修改密碼</a></li>
       <li><a href="meber-points.html" class="nav-link text-white fs-5 ps-1 lh-lg">可用點數</a></li>
@@ -97,13 +98,13 @@
     </ul>
     <ul class="flex-column fw-bold list-unstyled">
     <li class="nav-link text-gray-400 fs-4 pt-2">我的活動</li>
-    <li><a href="#" class="nav-link text-white fs-5 ps-1 lh-lg">已申請活動</a></li>
-    <li><a href="#" class="nav-link text-white fs-5 ps-1 lh-lg pb-2">活動紀錄</a></li>
+    <li><a href="meber-applyActivity.html" class="nav-link text-white fs-5 ps-1 lh-lg">已申請活動</a></li>
+    <li><a href="member-activityrecord.html" class="nav-link text-white fs-5 ps-1 lh-lg pb-2">活動紀錄</a></li>
   </ul>
 
   <ul class="flex-column fw-bold list-unstyled">
   <li class="nav-link text-gray-400 fs-4 pt-2">我的消息</li>
-  <li><a href="#" class="nav-link text-white fs-5 ps-1 lh-lg pb-2">站內消息</a></li>
+  <li><a href="member-sitenews.html" class="nav-link text-white fs-5 ps-1 lh-lg pb-2">站內消息</a></li>
 </ul>
   
 <ul class="flex-column fw-bold list-unstyled">
@@ -116,191 +117,98 @@
 
 
             </div>
-            <div class="col-lg-9 col-8">
-                <!-- 林媽媽中式餐館 -->
-                <div class="card bg-gray-800 mt-8">
-                     <div class="d-flex justify-content-between created-title">
-                        <div class="d-flex align-items-center">
-                         <h3 class="text-white fs-3 fw-bold">林媽媽中式餐館</h3>
-                         <i class="bi bi-clipboard-check text-primary-400 fs-3 ps-1"></i>
-                        </div>
-                        <div>
-                            <a href="#">
-                                <img class="favorite" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACIAAAAfCAYAAACCox+xAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAH9SURBVHgBzZfLccIwEIZXggIowSW4g5grlyQVxByZAYIriKmACQzD0U4FyY0j0IFLcAkc4MQr/4LtCWCDxUv5ZmRpbEv6vVqt1oJS8DyvNJvNWmg+oZgoJZQpSiCECAqFwmetVgvT+g4GA2O5XNqqfUWKABfNdzoDBvUxaDseVKUvaDcaDTdVCA80n89Hm83GpPyExWKxzA1YYYTKUOgboE/ZcRy2FhXju/iab9qZUgUjErBtkxomPoLn3H6I5Eu327VRWXQZBqmLiLEwdysRgvX+IE3Ec4ter2ehHpFeymyRJ9IMNsizhGkM0oyUsiTpnyDX6/WUNMMaeGlC0gyWJpAISF+kmcViMZFRiB2TPsbQEMbO2iZNYOu6XG+F4CQckwarQITfbDYniRAGvlKlXd7wKBHharVKViIRwuuEhw49COwUl+c8EsLATD4ql+6PW6/X93arSHsLB6GP6o3uQOQX1cP7IqsDxHDS8kK3FfEDEa9pzzLPmsh5A7odAZyzmvVQnOrZ6XRKSOc4V1FNIY9E/M1PlYXEXOMz7BOwhHNKRG4hl4rJcsw0cucjiL42qW1tN68IpkAKDIfDSaVS4aZ15lUXwpXOLyUhOcUoi2By+8gh/C+EpMrbG0wI+zBi3l0I0+/3TaR5/JtK2Bm8PW8Zd9RArDFQro0z9At4Zemo+hFkGgAAAABJRU5ErkJggg==" alt="heart">
-                              </a>
-                        </div> 
-                     </div>
-                    <div class="row g-0 created-bady">
-                      <div class="col-md-4 d-flex align-items-center justify-content-center">
-                        <img src="/Dream-Workshop/assets/mamacook-a216e22e.png" class="img-fluid rounded-start" alt="林媽媽">
-                      </div>
-                      <div class="col-md-8">
-                        <div class="card-body created-form">
-                            <div class="d-flex pb-2">
-                              <ul>
-                                <li class="fs-5 text-gray-400 fw-bold">公司成立狀態</li>
-                                <li class="fs-3 text-primary-400 fw-bold">未設立</li>
-                               </ul>
-                              <ul>
-                                <li class="fs-5 text-gray-400 fw-bold">產業分類</li>
-                                <li class="fs-3 text-primary-400 fw-bold">餐飲</li>
-                              </ul>
-                            </div>
-                            <div class="d-flex pb-2">
-                                <ul>
-                                  <li class="fs-5 text-gray-400 fw-bold">規模</li>
-                                  <li class="fs-3 text-primary-400 fw-bold">10人以下</li>
-                                 </ul>
-                                <ul>
-                                  <li class="fs-5 text-gray-400 fw-bold">資本額</li>
-                                  <li class="fs-3 text-primary-400 fw-bold">3,000,000</li>
-                                </ul>
-                              </div>
-                            <div class="d-flex align-items-center">
-                                <ul>
-                                  <li class="fs-5 text-gray-400 fw-bold">募資金額</li>
-                                  <li class="fs-3 text-primary-400 fw-bold">50,000,000</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="d-flex flex-lg-row flex-column align-items-lg-center p-3">
-                            <form class="row g-3">
-                                <div class="col m-0">
-                                  <label for="project-Remark" class="form-label text-white fs-5"></label>
-                                  <textarea id="project-Remark" rows="3" cols="30" class="bg-transparent text-white">請填寫備註...</textarea>
-                                </div>
-                            </form>
-                            <button type="button" class="btn btn-gray-200 text-gray-800 fw-bold ms-lg-5">保存</button>
-                        </div> 
-                      </div>
-                    </div>
-                    <div>
-                        <a href="/pages/project/Project-introduction.html" type="button" class="btn btn-primary-600 w-100 py-2 bg-gray-600 border-0 text-primary-600 fs-5 fw-bold">查看詳情<i class="bi bi-chevron-right ps-1"></i></a>   
-                    </div>
+            <div class="col-lg-9">
+              <!-- 手機板sidebar -->
+              <div class="d-block d-lg-none border-bottom">
+                <a class="btn" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+                  <div class="d-flex text-gray-100 fs-5 p-1">
+                  <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAEaSURBVHgB7VXtDYIwED1ACPySERzBEXAEJ5ANnMUJ1Al0Ax2BDWQD+4+vAL5LwDSAYij+kPiS5tpy9B29Ox7Rr0OTF1EUebqubzVNc2k4DpZlHeuFLh3u4/ALpp7sXZali+GxpR7AZ4Fx4EBbD9M0vSRJcmvuszP2y86XOgDfexzHZ2p+QRVBSIrA9QYw806Cb2CCBEjmAok6saUR0CKwbVvALLlkxyBpEaAKRJZla0xdwzD2pIi+HKh0dDcBX4tpmidMRZ7na1LEqxwERVGsHMcJSRGz5gbnAEY58hr/Tv6cAH9SgftfkiJYE+T1U9EqNWPBCUEUSj4sOEwcVAXw7nD2c+Hn16rWlEwf3buh4dELlPcO5X2lyeABap1/r58Zr6wAAAAASUVORK5CYII=" alt="sidebar">
+                  <p class=" ps-1 fw-bold">已申請活動</p>
                 </div>
-                <!-- come寵物美容 -->
-                <div class="card bg-gray-800 my-6">
-                    <div class="d-flex justify-content-between created-title">
-                       <div class="d-flex align-items-center">
-                        <h3 class="text-white fs-3 fw-bold">come寵物美容</h3>
-                        <i class="bi bi-clipboard-check text-primary-400 fs-3 ps-1"></i>
-                       </div>
-                       <div>
-                        <a href="#">
-                            <img class="favorite" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACIAAAAfCAYAAACCox+xAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAH9SURBVHgBzZfLccIwEIZXggIowSW4g5grlyQVxByZAYIriKmACQzD0U4FyY0j0IFLcAkc4MQr/4LtCWCDxUv5ZmRpbEv6vVqt1oJS8DyvNJvNWmg+oZgoJZQpSiCECAqFwmetVgvT+g4GA2O5XNqqfUWKABfNdzoDBvUxaDseVKUvaDcaDTdVCA80n89Hm83GpPyExWKxzA1YYYTKUOgboE/ZcRy2FhXju/iab9qZUgUjErBtkxomPoLn3H6I5Eu327VRWXQZBqmLiLEwdysRgvX+IE3Ec4ter2ehHpFeymyRJ9IMNsizhGkM0oyUsiTpnyDX6/WUNMMaeGlC0gyWJpAISF+kmcViMZFRiB2TPsbQEMbO2iZNYOu6XG+F4CQckwarQITfbDYniRAGvlKlXd7wKBHharVKViIRwuuEhw49COwUl+c8EsLATD4ql+6PW6/X93arSHsLB6GP6o3uQOQX1cP7IqsDxHDS8kK3FfEDEa9pzzLPmsh5A7odAZyzmvVQnOrZ6XRKSOc4V1FNIY9E/M1PlYXEXOMz7BOwhHNKRG4hl4rJcsw0cucjiL42qW1tN68IpkAKDIfDSaVS4aZ15lUXwpXOLyUhOcUoi2By+8gh/C+EpMrbG0wI+zBi3l0I0+/3TaR5/JtK2Bm8PW8Zd9RArDFQro0z9At4Zemo+hFkGgAAAABJRU5ErkJggg==" alt="heart">
-                          </a>
-                    </div> 
-                    </div>
-                   <div class="row g-0 created-bady">
-                        <div class="col-md-4 d-flex align-items-center justify-content-center">
-                       <img src="/Dream-Workshop/assets/come-47fe869c.png" class="img-fluid rounded-start" alt="come寵物美容">
-                       </div>
-                     <div class="col-md-8">
-                       <div class="card-body created-form">
-                           <div class="d-flex pb-2">
-                             <ul>
-                               <li class="fs-5 text-gray-400 fw-bold">公司成立狀態</li>
-                               <li class="fs-3 text-primary-400 fw-bold">未設立</li>
-                              </ul>
-                             <ul>
-                               <li class="fs-5 text-gray-400 fw-bold">產業分類</li>
-                               <li class="fs-3 text-primary-400 fw-bold">餐飲</li>
-                             </ul>
-                           </div>
-                           <div class="d-flex pb-2">
-                               <ul>
-                                 <li class="fs-5 text-gray-400 fw-bold">規模</li>
-                                 <li class="fs-3 text-primary-400 fw-bold">10人以下</li>
-                                </ul>
-                               <ul>
-                                 <li class="fs-5 text-gray-400 fw-bold">資本額</li>
-                                 <li class="fs-3 text-primary-400 fw-bold">3,000,000</li>
-                               </ul>
-                             </div>
-                           <div class="d-flex align-items-center">
-                               <ul>
-                                 <li class="fs-5 text-gray-400 fw-bold">募資金額</li>
-                                 <li class="fs-3 text-primary-400 fw-bold">800,000</li>
-                               </ul>
-                           </div>
-                       </div>
-                       <div class="d-flex flex-lg-row flex-column align-items-lg-center p-3">
-                        <form class="row g-3">
-                            <div class="col m-0">
-                              <label for="project-Remark" class="form-label text-white fs-5"></label>
-                              <textarea id="project-Remark" rows="3" cols="30" class="bg-transparent text-white">請填寫備註...</textarea>
-                            </div>
-                        </form>
-                        <button type="button" class="btn btn-gray-200 text-gray-800 fw-bold ms-lg-5">保存</button>
-                    </div> 
-                     </div>
-                   </div>
-                   <div>
-                       <a href="#" type="button" class="btn btn-primary-600 w-100 py-2 bg-gray-600 border-0 text-primary-600 fs-5 fw-bold">查看詳情<i class="bi bi-chevron-right ps-1"></i></a>   
-                   </div>
-               </div>
-               <!-- 猛毒創意有限公司 -->
-               <div class="card bg-gray-800 my-6">
-                <div class="d-flex justify-content-between created-title">
-                   <div class="d-flex align-items-center">
-                    <h3 class="text-white fs-3 fw-bold">猛毒創意有限公司</h3>
-                    <i class="bi bi-clipboard-check text-primary-400 fs-3 ps-1"></i>
-                   </div>
-                   <div>
-                    <a href="#">
-                        <img class="favorite" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACIAAAAfCAYAAACCox+xAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAH9SURBVHgBzZfLccIwEIZXggIowSW4g5grlyQVxByZAYIriKmACQzD0U4FyY0j0IFLcAkc4MQr/4LtCWCDxUv5ZmRpbEv6vVqt1oJS8DyvNJvNWmg+oZgoJZQpSiCECAqFwmetVgvT+g4GA2O5XNqqfUWKABfNdzoDBvUxaDseVKUvaDcaDTdVCA80n89Hm83GpPyExWKxzA1YYYTKUOgboE/ZcRy2FhXju/iab9qZUgUjErBtkxomPoLn3H6I5Eu327VRWXQZBqmLiLEwdysRgvX+IE3Ec4ter2ehHpFeymyRJ9IMNsizhGkM0oyUsiTpnyDX6/WUNMMaeGlC0gyWJpAISF+kmcViMZFRiB2TPsbQEMbO2iZNYOu6XG+F4CQckwarQITfbDYniRAGvlKlXd7wKBHharVKViIRwuuEhw49COwUl+c8EsLATD4ql+6PW6/X93arSHsLB6GP6o3uQOQX1cP7IqsDxHDS8kK3FfEDEa9pzzLPmsh5A7odAZyzmvVQnOrZ6XRKSOc4V1FNIY9E/M1PlYXEXOMz7BOwhHNKRG4hl4rJcsw0cucjiL42qW1tN68IpkAKDIfDSaVS4aZ15lUXwpXOLyUhOcUoi2By+8gh/C+EpMrbG0wI+zBi3l0I0+/3TaR5/JtK2Bm8PW8Zd9RArDFQro0z9At4Zemo+hFkGgAAAABJRU5ErkJggg==" alt="heart">
-                      </a>
-                </div> 
+                </a>
+                <div class="offcanvas offcanvas-start bg-gray-1000 bg-opacity-75" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+                  <div class="offcanvas-header border-bottom">
+                    <h5 class="offcanvas-title text-primary-600 fw-bold fs-5" id="offcanvasExampleLabel">會員中心</h5>
+                    <button type="button" class="btn-close btn-close-white"  data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                  </div>
+                  <div class="offcanvas-body">
+                    <div class="d-flex flex-column  p-1 text-white bg-gray-1000 bg-opacity-75 sidemenu-link" >
+                      <ul class="flex-column fw-bold list-unstyled">
+                        <li class="nav-link text-gray-400 fs-5">我的帳戶</li>
+                        <li><a href="member.html" class="nav-link text-white  ps-1 lh-lg pt-1" >個人資料</a></li>
+                        <li><a href="meber-identity.html" class="nav-link text-white  ps-1 lh-lg" >身份審核</a></li>
+                        <li><a href="member-changepassword.html" class="nav-link text-white  ps-1 lh-lg" >修改密碼</a></li>
+                        <li><a href="meber-points.html" class="nav-link text-white  ps-1 lh-lg">可用點數</a></li>
+                        <li><a href="member-settings.html" class="nav-link text-white  ps-1 lh-lg pb-1">隱私設置</a></li>
+                      </ul>
+                        <ul class="flex-column fw-bold list-unstyled">
+                          <li  class="nav-link text-gray-400 fs-5 pt-1">創業項目</li>
+                          <li><a href="meber-newprojects.html" class="nav-link text-white  ps-1 lh-lg">新增創業項目</a></li>
+                          <li><a href="meber-createdprojects.html" class="nav-link text-white  ps-1 lh-lg pb-1">已建創業項目</a></li>
+                        </ul>
+                  
+                        <ul class="flex-column fw-bold list-unstyled">
+                          <li class="nav-link text-gray-400 fs-5 pt-1">投資人</li>
+                          <li><a href="meber-newinvestor.html" class="nav-link text-white  ps-1 lh-lg pb-1">建立/修改投資人資料</a></li>
+                        </ul>
+                  
+                        <ul class="flex-column fw-bold list-unstyled">
+                          <li class="nav-link text-gray-400 fs-5 pt-1">評價紀錄</li>
+                          <li><a href="meber-evaluateProjects.html" class="nav-link text-white  ps-1 lh-lg">創業項目評價</a></li>
+                          <li><a href="meber-evaluateInvestor.html" class="nav-link text-white  ps-1 lh-lg pb-1">投資人評價</a></li>
+                        </ul>
+                        <ul class="flex-column fw-bold list-unstyled">
+                        <li class="nav-link text-gray-400 fs-5 pt-1">我的收藏</li>
+                        <li><a href="meber-collectProjects.html" class="nav-link text-white  ps-1 lh-lg">創業項目收藏列表</a></li>
+                        <li><a href="meber-collectInvestor.html" class="nav-link text-white  ps-1 lh-lg pb-1 active">投資人收藏列表</a></li>
+                      </ul>
+                      <ul class="flex-column fw-bold list-unstyled">
+                      <li class="nav-link text-gray-400 fs-5 pt-1">我的活動</li>
+                      <li><a href="meber-applyActivity.html" class="nav-link text-primary-600  ps-1 lh-lg" active>已申請活動</a></li>
+                      <li><a href="#" class="nav-link text-white  ps-1 lh-lg pb-1">活動紀錄</a></li>
+                    </ul>
+                  
+                    <ul class="flex-column fw-bold list-unstyled">
+                    <li class="nav-link text-gray-400 fs-5 pt-1">我的消息</li>
+                    <li><a href="#" class="nav-link text-white  ps-1 lh-lg pb-1">站內消息</a></li>
+                  </ul>
+                    
+                  <ul class="flex-column fw-bold list-unstyled">
+                  <li class="nav-link text-gray-400 fs-5 pt-1">討論區</li>
+                  <li><a href="#" class="nav-link text-white  ps-1 lh-lg">新增文章</a></li>
+                  <li><a href="#" class="nav-link text-white  ps-1 lh-lg">發文列表</a></li>
+                  <li><a href="#" class="nav-link text-white  ps-1 lh-lg pb-1">查看留言</a></li>
+                  </ul>
+                  </div> 
+                  </div>
                 </div>
-               <div class="row g-0 created-bady">
-                    <div class="col-md-4 d-flex align-items-center justify-content-center">
-                   <img src="/Dream-Workshop/assets/猛毒-0ef3f8c5.png" class="img-fluid rounded-start" alt="come寵物美容">
-                   </div>
-                 <div class="col-md-8">
-                   <div class="card-body created-form">
-                       <div class="d-flex pb-2">
-                         <ul>
-                           <li class="fs-5 text-gray-400 fw-bold">公司成立狀態</li>
-                           <li class="fs-3 text-primary-400 fw-bold">未設立</li>
-                          </ul>
-                         <ul>
-                           <li class="fs-5 text-gray-400 fw-bold">產業分類</li>
-                           <li class="fs-3 text-primary-400 fw-bold">餐飲</li>
-                         </ul>
-                       </div>
-                       <div class="d-flex pb-2">
-                           <ul>
-                             <li class="fs-5 text-gray-400 fw-bold">規模</li>
-                             <li class="fs-3 text-primary-400 fw-bold">10人以下</li>
-                            </ul>
-                           <ul>
-                             <li class="fs-5 text-gray-400 fw-bold">資本額</li>
-                             <li class="fs-3 text-primary-400 fw-bold">3,000,000</li>
-                           </ul>
-                         </div>
-                       <div class="d-flex align-items-center">
-                           <ul>
-                             <li class="fs-5 text-gray-400 fw-bold">募資金額</li>
-                             <li class="fs-3 text-primary-400 fw-bold">800,000</li>
-                           </ul>
-                       </div>
-                   </div>
-                   <div class="d-flex flex-lg-row flex-column align-items-lg-center p-3">
-                    <form class="row g-3">
-                        <div class="col m-0">
-                          <label for="project-Remark" class="form-label text-white fs-5"></label>
-                          <textarea id="project-Remark" rows="3" cols="30" class="bg-transparent text-white">請填寫備註...</textarea>
-                        </div>
-                    </form>
-                    <button type="button" class="btn btn-gray-200 text-gray-800 fw-bold ms-lg-5">保存</button>
-                </div> 
-                 </div>
-               </div>
-               <div>
-                   <a href="#" type="button" class="btn btn-primary-600 w-100 py-2 bg-gray-600 border-0 text-primary-600 fs-5 fw-bold">查看詳情<i class="bi bi-chevron-right ps-1"></i></a>   
-               </div>
-           </div>
-            
+                </div>
+                <!-- 卡斯柏創業分享會r -->
+                <div class="card my-4 border-0">
+                  <div class="row g-0 d-flex align-items-center bg-gray-800 ">
+                    <div class="col-md-3">
+                      <img src="/Dream-Workshop/assets/卡斯柏分享會-10b39b37.png" class="img-fluid rounded-start w-100" alt="分享會">
+                    </div>
+                    <div class="col-md-9">
+                      <div class="card-body text-white bd-gray-800">
+                        <h2 class="card-title text-primary-1000 fw-bold">卡斯柏創業分享會</h2>
+                        <ul class="fs-5 list-unstyled">
+                          <li>日期：2024年9月15日</li>
+                          <li>時間：14:00-17:00</li>
+                          <li>地點：高雄市鹽埕區七賢三路123號2樓</li>
+                        </ul>
+                        <div class="text-end">
+                        <button   type="button"  class="btn  btn-outline-danger fw-bold " id="clearButton" data-bs-toggle="modal" data-bs-target="#exampleModal">取消申請</button>
+                      </div>
+                      </div>
+          
+                    </div>
+                  </div>
+                  <div>
+                    <a href="activity-casper.html" type="button" class="btn btn-primary-600 w-100 py-2 bg-gray-600 border-0 text-primary-600 fs-5 fw-bold">查看詳情<i class="bi bi-chevron-right ps-1"></i></a>   
+                </div>
+                </div>  
+              
             
 
             
@@ -308,7 +216,23 @@
                 
             </div>
             
-
+        <!-- modal 刪除 -->
+   <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content bg-gray-1000">
+        <div class="modal-header border-0">
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+        <div class="modal-body text-center text-primary-600 fs-3 fw-bold">
+           是否刪除?
+        </div>
+        <div class="border-0 text-center mt-15 mb-14">
+            <button type="button" class="btn btn-lg btn-gray-600 fw-bolder px-9" data-bs-dismiss="modal">取消</button>
+            <a href="meber-applyActivity.html" class="btn btn-lg btn-primary-600 fw-bolder ms-9 px-9">確認</a>
+        </div>
+      </div>
+    </div>
+  </div>
 
                    
         
