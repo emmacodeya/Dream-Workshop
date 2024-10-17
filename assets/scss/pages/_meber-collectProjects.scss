@@ -1,0 +1,44 @@
+.bg-green {
+  position: relative;
+}
+
+.bg-green::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(/assets/images/bg-halo.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.3; 
+  z-index: -1; 
+}
+
+.investor-created-title {
+  padding: 28px 28px 16px 28px;
+}
+
+
+@media (max-width: 768px) {
+  .investor-created-title {
+    padding: 20px 20px 8px 20px;
+  }
+
+  .investor-created-bady {
+    padding: 0 20px 20px 20px;
+  }
+
+  .investor-card-body{
+    padding: 20px 0;
+  }
+}
+  
+  
+  @media (max-width: 768px) {
+    #project-Remark {
+      max-width: 20ch; 
+    }
+  }
+

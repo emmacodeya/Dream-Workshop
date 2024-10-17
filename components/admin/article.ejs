@@ -1,0 +1,91 @@
+<h1 class="fs-2 fw-bold mb-7">文章管理</h1>
+
+<form class="form-inline w-100 d-flex align-items-center">
+  <input class="admin__input form-control me-2 flex-grow-1 admin-search" type="search" placeholder="搜尋文章編號 / 文章名稱">
+  <button class="btn btn-primary-600 fw-bold rounded text-nowrap" type="submit">搜尋</button>
+</form>
+
+<div class="admin-account">
+  <table class="admin-table table mt-4">
+    <thead class="table-light">
+      <tr>
+        <th width="50">文章編號</th>
+        <th width="40">作者</th>
+        <th width="120">標題</th>
+        <th width="70">日期</th>
+        <th width="30" class="text-center">查看</th>
+        <th width="30" class="text-center">刪除</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>1</td>
+        <td>王曉明</td>
+        <td class="admin-text-ellipsis">是否該放棄年薪7百萬的工作轉去創業?是否該放棄年薪7百萬的工作轉去創業?是否該放棄年薪7百萬的工作轉去創業?</td>
+        <td>2024 / 9 / 15</td>
+        <td class="text-center">
+          <button class="btn btn-outline-primary btn-sm" type="button" data-bs-toggle="modal" data-bs-target="#articleViewModal">
+            查看
+          </button>
+        </td>
+        <td class="text-center">
+          <button class="btn btn-outline-danger btn-sm" type="button" data-bs-toggle="modal" data-bs-target="#delArticleModal">
+            刪除
+          </button>
+        </td>
+      </tr>
+      
+    </tbody>
+  </table>
+</div>
+<!-- 新增/編輯 -->
+<div class="modal fade" id="articleViewModal" tabindex="-1">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header bg-primary-600">
+        <h5 class="fs-3 modal-title fw-bold">文章管理</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body admin-modal-body">
+        <p>標題：是否該放棄年薪7百萬的工作轉去創業?</p>
+        <p>作者：王曉明</p>
+        <p>內文：我35歲男性,外商科技業務,目前本業 年薪700萬,資產大概累積2000萬,已婚,未買房,預計會買房也想生小孩(最多兩胎) 。除了本業,同時有經營副業,副業年收入大概160萬,不過完全是自由業接案子為主, 很吃市場狀況。但是最近本業做到身心靈都快爆了,很想辭職去努力衝刺副業,也可以多 陪陪家人,不知道這樣會不會很衝動?</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary rounded" data-bs-dismiss="modal">取消</button>
+        <button type="button" class="btn btn-primary-600 rounded">確認</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- 刪除 -->
+<div id="delArticleModal"
+ref="delCommentModal"
+class="modal fade"
+tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content border-0">
+      <div class="modal-header bg-danger text-white">
+        <h5 class="modal-title fw-bold">
+          <span>刪除文章</span>
+        </h5>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="modal"
+        ></button>
+      </div>
+      <div class="modal-body">
+        是否刪除ID為
+        <strong class="text-danger">1</strong>
+        之文章(刪除後將無法恢復)。
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-outline-secondary rounded" data-bs-dismiss="modal">
+          取消
+        </button>
+        <button type="button" class="btn btn-danger rounded">確認刪除</button>
+      </div>
+    </div>
+  </div>
+</div>
