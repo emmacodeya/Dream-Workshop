@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>會員登入</title>
+</head>
+<body>
+    <%- include('./layout/header'); -%>
+    
+    <div class="container">
+        <div class="login">
+            <h1 class="mb-8">會員登入</h1>
+            <form class="row needs-validation" novalidate>
+                <div class="mx-auto mb-4">
+                    <label for="email" class="text-gray-100 fs-5 mb-2">電子郵件</label>
+                    <input id="email" type="text" class="login-input form-control me-lg-3 me-1 flex-grow-1" placeholder="請輸入電子郵件" required>
+                </div>
+                <div class="mb-3">
+                    <label for="password" class="text-gray-100 fs-5 mb-2">密碼</label>
+                    <input id="password" type="text" class="login-input form-control me-lg-3 me-1 flex-grow-1" placeholder="請輸入密碼">
+                </div>
+                <div class="text-end">
+                    <a href="/pages/login/fotget-password/fotget-password-step1.html" class="text-gray-100 text-end mb-4">忘記密碼</a>
+                </div>
+                
+                <div class="mb-4">
+                    <a href="/pages/index.html" class="btn btn-primary-600 w-100">登入</a>
+                </div>
+                <div>
+                    <a href="/pages/login/register-member/create-account.html " class="step-link btn btn-outline-primary-600 w-100"
+                    data-content="register-account">註冊會員</a>
+                </div>
+            </form>    
+        </div>  
+    </div>
+    <%- include('./layout/footer'); -%>
+    <script type="module" src="/main.js"></script>
+</body>
+</html>
