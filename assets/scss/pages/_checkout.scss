@@ -1,0 +1,13 @@
+.checkout-form {
+    border:0.5px solid $gray-400;
+    backdrop-filter: blur(10px);
+    color: $gray-200;
+}
+
+.pay-btn {
+    border: 2px solid $gray-100;
+    color: $primary-600;
+    &:hover {
+        border : 2px solid $primary-600;
+    }
+}
