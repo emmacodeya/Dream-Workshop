@@ -8,17 +8,24 @@
 <body>
     <%- include('./layout/header'); -%>
   
-    <%- include('./components/Investor-information'); -%>
-    <div class="bg-gray-1000">
+    
+    <div class="bg-green">
+        <%- include('./components/Investor-information'); -%>
         <div class="container">
-            <div class="row">
-                <div class="col-1"></div>
-                <div class="col-10">
-                    <p class="pb-15"> 
-                        123
-                    </p>
-                </div>
-            </div>         
+            <p class="pb-5 fs-2 text-primary-600 text-center d-lg-none d-block">創業者評價</p>
+                <div class="d-flex border-bottom border-gray-600 ms-lg-3">
+                    <img src="/assets/images/留言頭像1.png" alt="曹穎惠" class="rounded-circle me-2" style="width: 40px; height: 40px;">
+                    <div>
+                        <p class="fs-5 fw-bold pb-2">章魚歌</p>
+                        <p class="fs-4 message-board">小氣鬼</p>
+                        <div class="d-flex align-items-center fs-5 mb-7">
+                            <p class="fw-bold pe-1">B1</p>
+                            <time datetime="2024-09-20T22:20" class="text-gray-400">2024/09/20 22:20</time>
+                            <span class="text-gray-400 px-1">•</span>
+                            <a href="#" class="text-primary-600">回覆</a>
+                        </div>
+                    </div>
+                </div>        
         </div>
     </div>
 

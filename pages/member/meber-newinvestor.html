@@ -9,7 +9,7 @@
 <body>
     <%- include('./layout/header'); -%>
   
-    <main class="bg-gray-1000 py-15">
+    <main class="bg-green py-15">
        <!-- 首頁>會員中心>已創投資人 -->
         <section class="container pt-8">
                 <nav aria-label="breadcrumb">
@@ -24,24 +24,93 @@
               <h2 class="text-primary-600 py-1 fw-bold border-bottom pb-8">會員中心</h2>
         </section>
 
-        <!-- 導覽列+新增投資人 -->
         <section class="container">
             <div class="row">
-             <div class="col-lg-3 col-4">
+                <!-- 電腦板sidebar -->
+             <div class="col-lg-3 d-none d-lg-block">
                     <%- include('./components/member-sidebar'); %>
                 </div>
-            <div class="col-lg-9 col-8">
-                
+            <div class="col-lg-9">
+               <!-- 手機板sidebar -->
+               <div class="d-block d-lg-none border-bottom">
+                <a class="btn" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+                  <div class="d-flex text-gray-100 fs-5 p-1">
+                  <img src="/assets/images/icons/sidebar.png" alt="sidebar">
+                  <p class=" ps-1 fw-bold">建立/修改投資人資料</p>
+                </div>
+                </a>
+                <div class="offcanvas offcanvas-start bg-gray-1000 bg-opacity-75" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+                  <div class="offcanvas-header border-bottom">
+                    <h5 class="offcanvas-title text-primary-600 fw-bold fs-5" id="offcanvasExampleLabel">會員中心</h5>
+                    <button type="button" class="btn-close btn-close-white"  data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                  </div>
+                  <div class="offcanvas-body">
+                    <div class="d-flex flex-column  p-1 text-white bg-gray-1000 bg-opacity-75 sidemenu-link" >
+                      <ul class="flex-column fw-bold list-unstyled">
+                        <li class="nav-link text-gray-400 fs-5">我的帳戶</li>
+                        <li><a href="member.html" class="nav-link text-white ps-1 lh-lg pt-1 " >個人資料</a></li>
+                        <li><a href="meber-identity.html" class="nav-link text-white  ps-1 lh-lg" >身份審核</a></li>
+                        <li><a href="member-changepassword.html" class="nav-link text-white  ps-1 lh-lg" >修改密碼</a></li>
+                        <li><a href="meber-points.html" class="nav-link text-white  ps-1 lh-lg">可用點數</a></li>
+                        <li><a href="member-settings.html" class="nav-link text-white  ps-1 lh-lg pb-1">隱私設置</a></li>
+                      </ul>
+                        <ul class="flex-column fw-bold list-unstyled">
+                          <li  class="nav-link text-gray-400 fs-5 pt-1">創業項目</li>
+                          <li><a href="meber-newprojects.html" class="nav-link text-white  ps-1 lh-lg" active>新增創業項目</a></li>
+                          <li><a href="meber-createdprojects.html" class="nav-link text-white  ps-1 lh-lg pb-1">已建創業項目</a></li>
+                        </ul>
+                  
+                        <ul class="flex-column fw-bold list-unstyled">
+                          <li class="nav-link text-gray-400 fs-5 pt-1">投資人</li>
+                          <li><a href="meber-newinvestor.html" class="nav-link text-primary-600  ps-1 lh-lg pb-1" active>建立/修改投資人資料</a></li>
+                        </ul>
+                  
+                        <ul class="flex-column fw-bold list-unstyled">
+                          <li class="nav-link text-gray-400 fs-5 pt-1">評價紀錄</li>
+                          <li><a href="meber-evaluateProjects.html" class="nav-link text-white  ps-1 lh-lg">創業項目評價</a></li>
+                          <li><a href="meber-evaluateInvestor.html" class="nav-link text-white  ps-1 lh-lg pb-1">投資人評價</a></li>
+                        </ul>
+                        <ul class="flex-column fw-bold list-unstyled">
+                        <li class="nav-link text-gray-400 fs-5 pt-1">我的收藏</li>
+                        <li><a href="meber-collectProjects.html" class="nav-link text-white  ps-1 lh-lg">創業項目收藏列表</a></li>
+                        <li><a href="meber-collectInvestor.html" class="nav-link text-white ps-1 lh-lg pb-1">投資人收藏列表</a></li>
+                      </ul>
+                      <ul class="flex-column fw-bold list-unstyled">
+                      <li class="nav-link text-gray-400 fs-5 pt-1">我的活動</li>
+                      <li><a href="meber-applyActivity.html" class="nav-link text-white  ps-1 lh-lg">已申請活動</a></li>
+                      <li><a href="#" class="nav-link text-white  ps-1 lh-lg pb-1">活動紀錄</a></li>
+                    </ul>
+                  
+                    <ul class="flex-column fw-bold list-unstyled">
+                    <li class="nav-link text-gray-400 fs-5 pt-1">我的消息</li>
+                    <li><a href="#" class="nav-link text-white  ps-1 lh-lg pb-1">站內消息</a></li>
+                  </ul>
+                    
+                  <ul class="flex-column fw-bold list-unstyled">
+                  <li class="nav-link text-gray-400 fs-5 pt-1">討論區</li>
+                  <li><a href="#" class="nav-link text-white  ps-1 lh-lg">新增文章</a></li>
+                  <li><a href="#" class="nav-link text-white  ps-1 lh-lg">發文列表</a></li>
+                  <li><a href="#" class="nav-link text-white  ps-1 lh-lg pb-1">查看留言</a></li>
+                  </ul>
+                  </div> 
+                  </div>
+                </div>
+        </div>              
                 <div>
                     <h3 class="text-gray-400 py-8 fw-bolder ">基本資料</h3>
               
-                <div class="d-flex pb-8">
-                    <div class="w-50">
-                        <h5 class="text-white">投資人頭像:</h5>
-                        <a href="#" class="upload text-end text-white">上傳圖片</a>
+                <div class="d-md-flex pb-8">
+                   <!-- 頭像 -->
+                    <div>
+                        <h5 class="text-white mb-3">投資人頭像:</h5>
+                        <div id="custom-avatar-upload1" class="custom-upload-image mt-5 mt-md-0" style="width: 250px; height: 250px; border: 2px solid #ccc; cursor: pointer; background-image: url(/assets/images/頭像1.png); background-size: contain; background-position: center; background-repeat: no-repeat; position: relative;">
+                            <label for="avatar1" class="form-label text-white" style="position: absolute; top: 10px; right: 10px; background-color: rgba(0, 0, 0, 0.5); padding: 5px; border-radius: 5px;">上傳圖片</label>
+                            <input class="form-control" type="file" id="avatar1" name="avatar" accept="image/*" style="display: none;">
+                            <img id="previewImage1" src="" alt="預覽圖片" style="width: 100%; height: 100%; display: none;">
+                          </div>
                     </div>
-                  
-                    <form class="row g-3 ms-2">
+                  <!-- form表單-表格框 -->
+                    <form class="row g-3 ms-md-2">
                         <div class="col-md-6 ">
                             <label for="project-name" class="form-label text-white fs-5">姓名</label>
                             <input type="text" class="form-control text-center inputField" id="project-name" value="夢天天">
@@ -50,15 +119,15 @@
                             <label for="project-phone" class="form-label text-white fs-5">聯絡電話</label>
                             <input type="tel" class="form-control text-center inputField" id="project-phone" value="0912-123-456">
                         </div>
-                        <div class="col-md-4">
+                        <div class="col-md-6">
                             <label for="project-website" class="form-label text-white fs-5">電子郵箱</label>
                             <input type="email" class="form-control text-center inputField" id="project-website" value="qwer@gmail.com">
                         </div>
-                        <div class="col-md-4">
+                        <div class="col-md-6 ">
                             <label for="project-capital" class="form-label text-white fs-5">資本額</label>
                             <input type="text" class="form-control text-center inputField" id="project-capital" value="3,000,000">
                         </div>
-                        <div class="col-md-4">
+                        <div class="col-12 pt-md-0 pt-3">
                             <label for="industry" class="form-label text-white fs-5">偏好領域</label>
                             <select id="industry" name="industry" class="fs-6 p-1">
                               <option value="" selected >請選擇</option>
@@ -87,63 +156,76 @@
                          
                 </div>
             </div>
-
+                <!-- form表單-文字框 -->
             <form class="row g-3">
-                <div class="col">
+                <div class="col-md-10">
                   <label for="project-Introduction" class="form-label text-white fs-5">自傳</label>
-                  <textarea id="project-Introduction" rows="15" cols="120"  class="bg-transparent text-white inputField">
-                    經歷:
+                  <textarea id="project-Introduction" rows="15" class="w-100 bg-transparent text-white inputField ">
+經歷:
 
-                    我在一個貧困的家庭中長大。
-                    年輕時參加過海軍,因此他的全名經常被縮寫為「謝船長」。
-                    在海軍服役期間,學到了許多關於紀律和金錢的重要教訓。
-                    
-                    退役後,開辦了蟹堡王餐廳。
-                    蟹堡王以其招牌菜「蟹堡」而聞名,
-                    而這個漢堡的秘方是嚴格保守的秘密。
-                    餐廳迅速成為比奇堡(Bikini Bottom)最受歡迎的餐飲場所之一。
-                    
-                    經營風格非常嚴格且注重成本控制。
-                    座右銘是「省錢就是賺錢」。儘管如此,他對餐廳的成功和顧客的滿意度也有高度的重視。</textarea>
+我在一個貧困的家庭中長大。
+年輕時參加過海軍,因此他的全名經常被縮寫為「謝船長」。
+在海軍服役期間,學到了許多關於紀律和金錢的重要教訓。
+
+退役後,開辦了蟹堡王餐廳。
+蟹堡王以其招牌菜「蟹堡」而聞名,
+而這個漢堡的秘方是嚴格保守的秘密。
+餐廳迅速成為比奇堡(Bikini Bottom)最受歡迎的餐飲場所之一。
+
+經營風格非常嚴格且注重成本控制。
+座右銘是「省錢就是賺錢」。儘管如此,他對餐廳的成功和顧客的滿意度也有高度的重視。</textarea>
                 </div>
-                <div class="col">
+                <div class="col-md-10">
                     <label for="project-illustrate" class="form-label text-white fs-5 me-15 ">投資經歷</label>
-                    <textarea id="project-illustrate" rows="6" cols="120" class="bg-transparent text-white inputField">
-                        開辦蟹堡王餐廳。
-                        現任蟹堡王餐廳老闆,至今約20餘年
-                        
-                        具備豐富企業營運管理、商業開發等專業經驗</textarea>
+                    <textarea id="project-illustrate" rows="6" class="w-100 bg-transparent text-white inputField">
+開辦蟹堡王餐廳。
+現任蟹堡王餐廳老闆,至今約20餘年
+
+具備豐富企業營運管理、商業開發等專業經驗</textarea>
                 </div>
-                <div class="col">
+                <div class="col-md-10">
                     <label for="project-advantages" class="form-label text-white fs-5 me-8 ">具體相關資源</label>
-                    <textarea id="project-advantages" rows="6" cols="120" class="bg-transparent text-white inputField">
-                        人脈和關係網
-                        本人在比奇堡擁有廣泛的人脈和關係網,從食材供應商乃至設備廠商,
-                        這些資源對於他的生意發展和問題解決至關重要。
-                        
-                        創新能力
-                        本人能夠適應市場變化,發想新的產品和促銷活動,以滿足顧客需求並吸引新顧客。</textarea>
+                    <textarea id="project-advantages" rows="6" class="w-100 bg-transparent text-white inputField">
+人脈和關係網
+本人在比奇堡擁有廣泛的人脈和關係網,從食材供應商乃至設備廠商,
+這些資源對於他的生意發展和問題解決至關重要。
+
+創新能力
+本人能夠適應市場變化,發想新的產品和促銷活動,以滿足顧客需求並吸引新顧客。</textarea>
                 </div>
             </form>
             <div class="py-8">
                 <h5 class="text-white">上傳照片參考</h5>
-                <div class="d-flex align-items-center justify-content-between pt-5">
-                    
-                        <a href="#" class="upload text-end text-white">上傳圖片</a>
-                 
-                    
-                        <a href="#" class="upload text-end text-white">上傳圖片</a>
-                 
+                <div class="d-flex flex-md-row  flex-column align-items-center justify-content-between pt-5">
+                    <div class="d-flex flex-lg-row flex-column">
+                    <div id="custom-avatar-upload2" class="custom-upload-image mt-5 mt-lg-0" style="width: 250px; height: 250px; border: 2px solid #ccc; cursor: pointer; background-image: url(/assets/images/頭像1.png); background-size: contain; background-position: center; background-repeat: no-repeat; position: relative;">
+                        <label for="avatar2" class="form-label text-white" style="position: absolute; top: 10px; right: 10px; background-color: rgba(0, 0, 0, 0.5); padding: 5px; border-radius: 5px;">上傳圖片</label>
+                        <input class="form-control" type="file" id="avatar2" name="avatar" accept="image/*" style="display: none;">
+                        <img id="previewImage2" src="" alt="預覽圖片" style="width: 100%; height: 100%; display: none;">
+                      </div>
 
-                        <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal"><button type="button" class="btn btn-primary-600 fw-bold">申請財力證明審核</button></a>                
+                      <div id="custom-avatar-upload3" class="custom-upload-image mt-5 mt-lg-0 ms-lg-3 ms-0" style="width: 250px; height: 250px; border: 2px solid #ccc; cursor: pointer; background-image: url(/assets/images/頭像1.png); background-size: contain; background-position: center; background-repeat: no-repeat; position: relative;">
+                        <label for="avatar3" class="form-label text-white" style="position: absolute; top: 10px; right: 10px; background-color: rgba(0, 0, 0, 0.5); padding: 5px; border-radius: 5px;">上傳圖片</label>
+                        <input class="form-control" type="file" id="avatar3" name="avatar" accept="image/*" style="display: none;">
+                        <img id="previewImage3" src="" alt="預覽圖片" style="width: 100%; height: 100%; display: none;">
+                      </div>
+                 
+                    </div>
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal"><button type="button" class="btn btn-primary-600 fw-bold mt-md-0 mt-5">申請財力證明審核</button></a>                
                 </div> 
             </div>
 
 
-                    <div class="d-flex justify-content-around pt-8">
-                        <button   type="button"  class="btn btn-lg btn-gray-600 fw-bolder" id="clearButton">清除</button>
-                        <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal-store"><button class="btn btn-lg btn-primary-600 fw-bolder">儲存變更</button></a>
-                    </div>
+                    <!-- Buttons -->
+  <div class="d-flex justify-content-around pt-8">
+    <button   type="button"  class="btn btn-lg btn-outline-danger fw-bold" id="clearButton"><i class="bi bi-x-circle "></i> 清除
+  </button>
+    <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal-store">
+      <button class="btn btn-lg btn-outline-primary-600 fw-bold">
+          <i class="bi bi-save "></i> 儲存變更
+      </button>
+  </a>
+</div>
                 
                 </div>
 
@@ -159,16 +241,19 @@
         <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered">
               <div class="modal-content bg-gray-1000">
-                <div class="modal-header border-0">
-                    <div class="d-flex flex-column align-items-center">
+                <div class="modal-header border-0 ">
+                    <div class="d-flex flex-column justify-content-center">
                     <h5 class="modal-title text-white fs-4" id="exampleModalLabel">財力證明</h5>
                     <p class="text-gray-400 mt-3">財力證明（此照片僅供審核用，不會公開至頁面上）</p>
                     </div>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                   </div>
-                <div class="modal-body text-center mt-3">
-                    <a href="#" class="upload text-end text-white me-8">上傳圖片</a>
-                    <a href="#" class="upload text-end text-white">上傳圖片</a>
+                <div class="modal-body d-flex justify-content-center">
+                  <div id="custom-avatar-upload4" class="custom-upload-image" style="width: 250px; height: 250px; border: 2px solid #ccc; cursor: pointer; background-image: url(/assets/images/頭像1.png); background-size: contain; background-position: center; background-repeat: no-repeat; position: relative;">
+                    <label for="avatar4" class="form-label text-white" style="position: absolute; top: 10px; right: 10px; background-color: rgba(0, 0, 0, 0.5); padding: 5px; border-radius: 5px;">上傳圖片</label>
+                    <input class="form-control" type="file" id="avatar4" name="avatar" accept="image/*" style="display: none;">
+                    <img id="previewImage4" src="" alt="預覽圖片" style="width: 100%; height: 100%; display: none;">
+                  </div>
                 </div>
                 <div class="border-0 text-center my-5">
                     <button type="button" class="btn btn-lg btn-primary-600 fw-bolder mb-5">審核</button>
@@ -183,7 +268,7 @@
             <div class="modal-dialog modal-dialog-centered">
                 <div class="modal-content bg-gray-1000">
                     <div class="modal-header border-0">
-                        <!-- <h5 class="modal-title text-primary-600" id="exampleModalLabel">林媽媽中式餐館</h5> -->
+                       
                         <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
                       </div>
                     <div class="modal-body text-center text-primary-600 fs-3 fw-bold">
@@ -205,6 +290,35 @@
       input.value = ''; 
     });
   });
+
+   //圖片
+   function setupUpload(avatarId, uploadId, previewImageId) {
+    const avatar = document.getElementById(avatarId);
+    const customUpload = document.getElementById(uploadId);
+    const previewImage = document.getElementById(previewImageId);
+
+    customUpload.addEventListener('click', function() {
+        avatar.click();
+    });
+
+    avatar.addEventListener('change', function(event) {
+        const file = this.files[0];
+        const reader = new FileReader();
+
+        reader.onload = function(e) {
+            previewImage.src = e.target.result;
+            previewImage.style.display = 'block';
+            customUpload.style.backgroundImage = 'none';
+        };
+
+        reader.readAsDataURL(file);
+    });
+}
+
+    setupUpload('avatar1', 'custom-avatar-upload1', 'previewImage1');
+    setupUpload('avatar2', 'custom-avatar-upload2', 'previewImage2');
+    setupUpload('avatar3', 'custom-avatar-upload3', 'previewImage3');
+    setupUpload('avatar4', 'custom-avatar-upload4', 'previewImage4');
 
     </script>
     <%- include('./layout/footer'); -%>

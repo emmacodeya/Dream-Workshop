@@ -1,0 +1,83 @@
+<h1 class="fs-2 fw-bold mb-7">交易紀錄</h1>
+
+<form class="form-inline w-100 d-flex align-items-center">
+  <input class="admin__input form-control me-2 flex-grow-1 admin-search" type="search" placeholder="搜尋紀錄編號 / 會員名稱">
+  <button class="btn btn-primary-600 fw-bold rounded text-nowrap" type="submit">搜尋</button>
+</form>
+
+<div class="admin-account">
+  <table class="table mt-4">
+    <thead class="table-light">
+      <tr>
+        <th width="100">紀錄編號</th>
+        <th width="100">會員名稱</th>
+        <th width="130">點數</th>
+        <th width="130">價格</th>
+        <th width="120">日期</th>
+        <th width="30" class="text-center">詳細資訊</th>
+        <th width="30" class="text-center">退款審核</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>1</td>
+        <td>John</td>
+        <td>200點</td>
+        <td>99 NTD</td>
+        <td>2024 / 9 / 15</td>
+        <td class="text-center">
+          <button class="btn btn-outline-primary btn-sm" type="button" data-bs-toggle="modal" data-bs-target="#transactionViewModal">
+            查看
+          </button>
+        </td>
+        <td class="text-center">
+          <button class="btn btn-outline-primary btn-sm" type="button" data-bs-toggle="modal" data-bs-target="#refundModal">
+            審核
+          </button>
+        </td>
+        
+      </tr>
+      
+    </tbody>
+  </table>
+</div>
+<!-- 新增/編輯 -->
+<div class="modal fade" id="transactionViewModal" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header bg-primary-600">
+        <h5 class="fs-3 modal-title fw-bold">交易紀錄</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body admin-modal-body">
+        <p>購買人：John</p>
+        <p>購買點數：1000點</p>
+        <p>價格：900 NTD</p>
+        <p>購買日期：2024 / 9 / 15</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary rounded" data-bs-dismiss="modal">取消</button>
+        <button type="button" class="btn btn-primary-600 rounded">確認</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- 退款審核 -->
+<div class="modal fade" id="refundModal" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header bg-primary-600">
+        <h5 class="fs-3 modal-title fw-bold">退款審核</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body admin-modal-body">
+        <p>退款申請人：John</p>
+        <p>退款金額：900 NTD</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary rounded">否決</button>
+        <button type="button" class="btn btn-primary-600 rounded">確認</button>
+      </div>
+    </div>
+  </div>
+</div>
