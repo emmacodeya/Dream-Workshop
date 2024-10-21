@@ -27,6 +27,8 @@
 
 ## [Demo](https://emmacodeya.github.io/Dream-Workshop/)
 
+![image](https://github.com/emmacodeya/Dream-Workshop/raw/main/assets/images/demo-lg.jpg)
+
 ## Node.js 版本
 
 - 專案的 Node.js 版本需為 v16 以上
