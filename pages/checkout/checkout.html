@@ -68,31 +68,50 @@
                 
             </form>
         </div>
-        <div class="checkout-form p-5">
+        <div class="checkout-form p-5 mb-4">
             <h4 class="mb-2">發票類型</h4>
             <form>
-                <ul class="nav nav-tabs">
-                    <li class="nav-item">
-                      <a class="nav-link active" aria-current="page" href="#">個人雲端發票</a>
+                <!-- <ul class="nav nav-tabs id="myTab" role="tablist" mb-2">
+                    <li class="nav-item invoice-tab" role="presentation">
+                      <a class="nav-link text-gray-100 active" aria-current="page" id="home-tab" data-bs-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">個人雲端發票</a>
                     </li>
-                    <!-- <li class="nav-item">
-                      <a class="nav-link" href="#">個人雲端發票</a>
-                    </li> -->
-                    <li class="nav-item">
-                      <a class="nav-link" href="#">公司發票</a>
+                    <li class="nav-item" role="presentation">
+                      <a class="nav-link text-gray-100" id="profile-tab" data-bs-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">公司發票</a>
                     </li>
-                </ul>
-                <div class="p-2">
-                    <label for="">載具</label>
-                    <input type="text" placeholder="/ xxxxxx">
+                </ul> -->
+                <!-- <div class="p-2">
+                    <label class="me-1" for="">載具</label>
+                    <input class="p-1" type="text" placeholder="/ xxxxxx">
+                </div> -->
+                <ul class="nav nav-tabs invoice-tab" id="myTab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                      <a class="nav-link" id="home-tab" data-bs-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">個人雲端發票</a>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <a class="nav-link" id="profile-tab" data-bs-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">公司發票</a>
+                    </li>
+                  </ul>
+                <div class="tab-content pt-5" id="myTabContent">
+                    <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                      <div>
+                       <label class="me-1" for="">載具</label>
+                       <input class="checkout-input p-1" type="text" placeholder="/ xxxxxx">
+                      </div>
+                    </div>
+                    <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                        <div>
+                                <label class="me-1" for="">公司名稱</label>
+                                <input class="checkout-input p-1 me-4" type="text" placeholder="請輸入公司名稱">
+                                <label class="me-1" for="">公司統編</label>
+                                <input class="checkout-input p-1" type="text" placeholder="請輸入公司統編">
+                        </div>
+                    </div>
                 </div>
             </form>
         </div>
-        <div>
-            <a href="#">取消</a>
-        </div>
-        <div>
-            <a href="#">確認</a>
+        <div class="text-end">
+            <a href="#" class="btn btn-outline-primary-600 px-5 me-2">取消</a>
+            <a href="/pages/checkout/info-confirm.html" class="btn btn-primary-600 px-5">確認</a>
         </div>
     </div>
 
