@@ -1,0 +1,45 @@
+  <!-- 電腦版導覽列 -->
+  <div class=" bg-gray-600 d-none d-lg-block">
+    <ul class="list-unstyled d-flex justify-content-around text-center  fw-bold">
+    <li><a href="#" class="m-1 nav-link text-white" data-content="investor-autobiography" data-title="自傳" onclick="updateTitle('自傳')">自傳</a></li>
+    <li><a href="#" class="m-1 nav-link text-white" data-content="investor-experience" data-title="投資經歷" onclick="updateTitle('投資經歷')">投資經歷</a></li>
+    <li><a href="#" class="m-1 nav-link text-white" data-content="investor-resource" data-title="具體相關資源" onclick="updateTitle('具體相關資源')">具體相關資源</a></li>
+    <li><a href="#" class="m-1 nav-link text-white" data-content="investor-photo" data-title="照片參考" onclick="updateTitle('照片參考')">照片參考</a></li>
+    <li><a href="#" class="m-1 nav-link text-white" data-content="investor-evaluate" data-title="投資人評價" onclick="updateTitle('投資人評價')">投資人評價</a></li>
+</ul>
+</div>
+
+<!-- 手機版導覽列 -->
+<div class="d-block d-lg-none">
+  <a class="btn border-bottom w-100 px-0" data-bs-toggle="offcanvas" href="#offcanvasSidebar" role="button" aria-controls="offcanvasSidebar">
+    <div class="d-flex align-items-center text-gray-100 fs-5">
+        <img src="/assets/images/icons/sidebar.png" alt="sidebar" style="width: 40px; height: 40px;">
+        <p class="ps-1 fw-bold" id="current-page-title3">自傳</p>
+    </div>
+</a>
+<div class="offcanvas offcanvas-start bg-gray-1000 opacity-75" tabindex="-1" id="offcanvasSidebar" aria-labelledby="offcanvasSidebarLabel">
+  <div class="offcanvas-header border-bottom">
+      <h5 id="offcanvasSidebarLabel" class="text-primary-600 fw-bold fs-5" >謝阿金</h5>
+      <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    <ul class="flex-column fw-bold list-unstyled">
+      <li><a href="#" class="m-1 nav-link text-white" data-content="investor-autobiography" data-title="自傳" onclick="updateTitle('自傳')">自傳</a></li>
+    <li><a href="#" class="m-1 nav-link text-white" data-content="investor-experience" data-title="投資經歷" onclick="updateTitle('投資經歷')">投資經歷</a></li>
+    <li><a href="#" class="m-1 nav-link text-white" data-content="investor-resource" data-title="具體相關資源" onclick="updateTitle('具體相關資源')">具體相關資源</a></li>
+    <li><a href="#" class="m-1 nav-link text-white" data-content="investor-photo" data-title="照片參考" onclick="updateTitle('照片參考')">照片參考</a></li>
+    <li><a href="#" class="m-1 nav-link text-white" data-content="investor-evaluate" data-title="投資人評價" onclick="updateTitle('投資人評價')">投資人評價</a></li>
+  </ul>
+  </div>
+</div>
+
+
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+      window.updateTitle = function(title) {
+          document.getElementById('current-page-title3').innerText = title;
+      };
+  });
+
+</script>
