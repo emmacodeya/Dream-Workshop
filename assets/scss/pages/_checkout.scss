@@ -13,5 +13,18 @@
 }
 
 .invoice-tab {
-    // background-color: $gray-1000;
+    .nav-link {
+        color: $gray-100;
+        &:hover {
+            color: $gray-100;
+        }
+    }
+}
+
+.checkout-input {
+  background-color: #333333b2;
+  color: $gray-100;
+  padding: 13px 24px;
+  border: 2px solid $gray-100;
+  border-radius: 0%;
 }
