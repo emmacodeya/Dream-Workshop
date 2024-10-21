@@ -37,7 +37,7 @@
 
 ### 管理者後台頁面
 
-![image](https://github.com/emmacodeya/Dream-Workshop/raw/main/assets/images/demo-admin.jpg)
+![管理者後台截圖](https://raw.githubusercontent.com/emmacodeya/Dream-Workshop/main/assets/images/demo-admin.jpg)
 
 ## Node.js 版本
 
