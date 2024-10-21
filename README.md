@@ -27,7 +27,17 @@
 
 ## [Demo](https://emmacodeya.github.io/Dream-Workshop/)
 
+### 電腦版首頁
+
 ![image](https://github.com/emmacodeya/Dream-Workshop/raw/main/assets/images/demo-lg.jpg)
+
+### 手機版首頁
+
+![image](https://github.com/emmacodeya/Dream-Workshop/raw/main/assets/images/demo-sm.jpg)
+
+### 管理者後台頁面
+
+![image](https://github.com/emmacodeya/Dream-Workshop/raw/main/assets/images/demo-後台.jpg)
 
 ## Node.js 版本
 
