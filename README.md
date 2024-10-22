@@ -65,8 +65,8 @@
 ├── assets/ # 靜態資源
 |── images/ # 圖片與資源文件
 | └── scss/ # SCSS 的樣式放置處
+| └──   js/ # 頁面 JavaScript 檔案
 ├── components/ # 頁面 ejs 模板放置處
-├── js/ # 頁面 JavaScript 檔案
 ├── pages/ # 頁面放置處
 ├── main.js # 入口文件
 ├── package.json # 相依套件與腳本
