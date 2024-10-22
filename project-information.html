@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>林媽媽中式餐館</title>
+  <script type="module" crossorigin src="/Dream-Workshop/assets/bootstrap.bundle.min-62e75eae.js"></script>
+  <link rel="stylesheet" href="/Dream-Workshop/assets/bootstrap.bundle-ed147dc8.css">
+</head>
+<body>
+    
+<nav class="header navbar navbar-expand-lg fixed-top">
+<div class="container d-flex justify-content-center">
+    <div class="d-flex justify-content-between align-items-center me-auto">
+      <a class="navbar-brand" href="/pages/index.html">
+        <img
+          src="/Dream-Workshop/assets/創夢工坊-logo-fb8def81.png"
+          alt="創夢工坊"
+          style="width: 56px"
+        />
+      </a>
+    </div>
+    <button
+      class="navbar-toggler btn-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarNav"
+      aria-controls="navbarNav"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span
+        class="navbar-toggler-icon d-flex align-items-center justify-content-center"
+      >
+        <i class="bi bi-list list-icon"></i>
+      </span>
+    </button>
+
+    <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="projectList-project.html"
+            >找創業項目</a
+          >
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="projectList-investor.html"
+            >找投資人</a
+          >
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="pay-plan.html">付費方案</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="discuss.html">討論區</a>
+        </li>
+      </ul>
+    </div>
+
+    <a
+      href="/pages/login/login.html"
+      class="btn login-btn btn-primary-600 d-none d-lg-block"
+    >
+      註冊/登入
+    </a>
+  </div>
+</nav>
+
+  
+    
+<!-- 基本資訊 -->
+<div class="bg-green">
+    <div class="container py-10">
+        <div class="row g-0 py-10">
+            <div class="border border-2">
+                    <div class="d-lg-flex">
+                            <div class="col-lg-4 d-flex justify-content-center align-items-center mt-4">
+                                <img src="/Dream-Workshop/assets/mamacook-a216e22e.png" class="img-fluid rounded" alt="mamacook">
+                            </div>
+                            <div class="col-lg-8">
+                                    <div class="card-body ps-5">
+                                                    <div class="d-flex align-items-center">
+                                                        <a href="#" class="fs-1 text-primary-600 fw-bold m-1">林媽媽中式餐館<i class="bi bi-clipboard-check fs-3"></i></a>
+                                                    </div>
+                                                <h5 class="fs-5 text-light m-1">公司成立狀態：未設立</h5>
+                                                <h5 class="fs-5 text-light m-1">產業分類：餐飲</h5>
+                                                <h5 class="fs-5 text-light m-1">規模：10人以下</h5>
+                                                <h5 class="fs-5 text-light m-1">資本額：30,00,000</h5>
+                                        <h1 class="fs-2 m-1 text-light">募資金額：50,000,000</h1>
+                                        <p class="m-1 fs-6 text-gray-400">開始募資時間：2024/7/25</p>
+                                    </div>
+                            </div>
+                    </div>
+                    <div class="d-flex justify-content-center">
+                        <a href="#" class="btn btn-primary-600 mb-5 mx-3 rounded-2">合作聯繫<i class="bi bi-unlock ps-1"></i>
+                        </a>
+                        <a href="#" class="btn btn-primary-600 mb-5 mx-3 rounded-2">內容解鎖<i class="bi bi-unlock ps-1"></i>
+                        </a>
+                    </div>
+            </div>
+        </div>
+        <!-- 導覽列 -->
+         <div>
+           <!-- 電腦版導覽列 -->
+  <div class=" bg-gray-600 d-none d-lg-block">
+    <ul class="list-unstyled d-flex justify-content-between text-center  fw-bold">
+    <li><a href="#" class="m-1 nav-link text-white" data-content="project-introduction" data-title="項目簡介" onclick="updateTitle('項目簡介')">項目簡介</a></li>
+    <li><a href="#" class="m-1 nav-link text-white" data-content="project-team" data-title="團隊" onclick="updateTitle('團隊')">團隊</a></li>
+    <li><a href="#" class="m-1 nav-link text-white" data-content="project-swot" data-title="SWOT分析" onclick="updateTitle('SWOT分析')">SWOT分析</a></li>
+    <li><a href="#" class="m-1 nav-link text-white" data-content="project-market" data-title="市場規模" onclick="updateTitle('市場規模')">市場規模</a></li>
+    <li><a href="#" class="m-1 nav-link text-white" data-content="project-product" data-title="產品" onclick="updateTitle('產品')">產品</a></li>
+    <li><a href="#" class="m-1 nav-link text-white" data-content="project-compete" data-title="競爭產品" onclick="updateTitle('競爭產品')">競爭產品</a></li>
+    <li><a href="#" class="m-1 nav-link text-white" data-content="project-model" data-title="商業模式" onclick="updateTitle('商業模式')">商業模式</a></li>
+    <li><a href="#" class="m-1 nav-link text-white" data-content="project-entrepreneur" data-title="創業者資訊" onclick="updateTitle('創業者資訊')">創業者資訊</a></li>
+    <li><a href="#" class="m-1 nav-link text-white" data-content="project-photo" data-title="照片參考" onclick="updateTitle('照片參考')">照片參考</a></li>
+    <li><a href="#" class="m-1 nav-link text-white" data-content="project-evaluate" data-title="創業者評價" onclick="updateTitle('創業者評價')">創業者評價</a></li>
+</ul>
+</div>
+
+<!-- 手機版導覽列 -->
+<div class="d-block d-lg-none">
+  <a class="btn border-bottom w-100 px-0" data-bs-toggle="offcanvas" href="#offcanvasSidebar" role="button" aria-controls="offcanvasSidebar">
+    <div class="d-flex align-items-center text-gray-100 fs-5">
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAEaSURBVHgB7VXtDYIwED1ACPySERzBEXAEJ5ANnMUJ1Al0Ax2BDWQD+4+vAL5LwDSAYij+kPiS5tpy9B29Ox7Rr0OTF1EUebqubzVNc2k4DpZlHeuFLh3u4/ALpp7sXZali+GxpR7AZ4Fx4EBbD9M0vSRJcmvuszP2y86XOgDfexzHZ2p+QRVBSIrA9QYw806Cb2CCBEjmAok6saUR0CKwbVvALLlkxyBpEaAKRJZla0xdwzD2pIi+HKh0dDcBX4tpmidMRZ7na1LEqxwERVGsHMcJSRGz5gbnAEY58hr/Tv6cAH9SgftfkiJYE+T1U9EqNWPBCUEUSj4sOEwcVAXw7nD2c+Hn16rWlEwf3buh4dELlPcO5X2lyeABap1/r58Zr6wAAAAASUVORK5CYII=" alt="sidebar" style="width: 40px; height: 40px;">
+        <p class="ps-1 fw-bold" id="current-page-title3">項目簡介</p>
+    </div>
+</a>
+<div class="offcanvas offcanvas-start bg-gray-1000 opacity-75" tabindex="-1" id="offcanvasSidebar" aria-labelledby="offcanvasSidebarLabel">
+  <div class="offcanvas-header border-bottom">
+      <h5 id="offcanvasSidebarLabel" class="text-primary-600 fw-bold fs-5" >林媽媽中式餐館</h5>
+      <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    <ul class="flex-column fw-bold list-unstyled">
+      <li><a href="#" class="nav-link text-white  ps-1 lh-lg pt-2" data-content="project-introduction" data-title="項目簡介" onclick="updateTitle('項目簡介')">項目簡介</a></li>
+      <li><a href="#" class="nav-link text-white  ps-1 lh-lg" data-content="project-team" data-title="團隊" onclick="updateTitle('團隊')">團隊</a></li>
+      <li><a href="#" class="nav-link text-white  ps-1 lh-lg" data-content="project-swot" data-title="SWOT分析" onclick="updateTitle('SWOT分析')">SWOT分析</a></li>
+      <li><a href="#" class="nav-link text-white  ps-1 lh-lg" data-content="project-market" data-title="市場規模" onclick="updateTitle('市場規模')">市場規模</a></li>
+      <li><a href="#" class="nav-link text-white  ps-1 lh-lg " data-content="project-product" data-title="產品" onclick="updateTitle('產品')">產品</a></li>
+      <li><a href="#" class="nav-link text-white  ps-1 lh-lg " data-content="project-compete" data-title="競爭產品" onclick="updateTitle('競爭產品')">競爭產品</a></li>
+      <li><a href="#" class="nav-link text-white  ps-1 lh-lg " data-content="project-model" data-title="商業模式" onclick="updateTitle('商業模式')">商業模式</a></li>
+      <li><a href="#" class="nav-link text-white  ps-1 lh-lg " data-content="project-entrepreneur" data-title="創業者資訊" onclick="updateTitle('創業者資訊')">創業者資訊</a></li>
+      <li><a href="#" class="nav-link text-white  ps-1 lh-lg " data-content="project-photo" data-title="照片參考" onclick="updateTitle('照片參考')">照片參考</a></li>
+      <li><a href="#" class="nav-link text-white  ps-1 lh-lg " data-content="project-evaluate" data-title="創業者評價" onclick="updateTitle('創業者評價')">創業者評價</a></li>
+  </ul>
+  </div>
+</div>
+
+
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+      window.updateTitle = function(title) {
+          document.getElementById('current-page-title3').innerText = title;
+      };
+  });
+
+</script>
+         </div>
+        <!-- 資料內文 -->
+        <div class="row">
+            <div class="col">
+                <div id="project-introduction" class="content-section" style="display: none;">
+                    <div class="py-10">
+<p class="fs-2">項目名稱： 林媽媽中式餐館</p>
+<p> 
+     公司簡介： 專注於提供正宗的中國美食體驗。
+     我們的餐廳擁有豐富多樣的菜單，包括粤菜、川菜、湘菜等多種地方菜系，
+     每道菜品均由經驗豐富的廚師團隊精心烹製，保證品質與口感的卓越一致性。
+     我們的使命是在現代化和溫馨的環境中，將傳統中國烹飪藝術與當地食材完美結合，
+     為客人提供一場無與倫比的美食之旅。
+     不僅如此，我們還致力於通過使用可持續的食材和烹飪技術，
+     減少我們的環境影響，以及提升社區的社會責任感。
+     我們的餐廳不僅提供優質的食物和服務，
+     還力求營造一個溫馨和舒適的用餐環境，讓客人能夠放鬆身心，
+     享受美好時光。我們歡迎投資人的加入與支持，共同創造成功的未來。
+</p> 
+</div>                </div>
+                <div id="project-team" class="content-section" style="display: none;">
+                    <div class="py-10">
+    <p> 
+        創始人及經營者：<br>
+        林小姐：擁有十年以上的餐飲業經驗，曾在多家知名餐廳擔任高級管理職位。憑藉對中國菜文化的深刻理解和熱愛，致力於打造正宗的中華風味餐廳。<br><br>
+        廚藝團隊：<br>
+        主廚 李師傅：來自廣東，擁有豐富的粤菜烹飪經驗，精通粤式烹調技巧，對於食材選擇和烹調方法有獨到見解。
+        副廚 王師傅：專攻川菜，擅長於麻辣風味的川菜烹調，有多年的川菜廚藝經驗，保證每道川菜的正宗口味。<br><br>
+        前台服務團隊：<br>
+        客戶服務經理 陳先生：負責協調和管理前台服務，具有良好的溝通能力和顧客服務經驗，確保每位顧客都能享受到優質的用餐體驗。<br><br>
+        後勤及行政支持：<br>
+        行政總監 張小姐：負責餐廳的日常運營和行政管理，擁有出色的組織能力和管理技巧，確保餐廳運作高效且符合標準。
+    </p> 
+    </div>                </div>
+                <div id="project-swot" class="content-section" style="display: none;">
+                    <div class="py-10">
+    <ul class="list-unstyled pb-5">
+        <li>優勢：</li>
+        <li>提供多樣性的菜系，滿足各類顧客的需求。</li>
+        <li>經驗豐富的廚師團隊，保證高品質的食物。</li>
+        <li>注重環保和可持續發展。</li>
+    </ul>
+    <ul class="list-unstyled pb-5">
+        <li>劣勢：</li>
+        <li>市場競爭激烈，需要有效的市場定位和品牌建設。</li>
+        <li>食材成本波動可能影響成本控制和利潤率。</li>
+    </ul>
+    <ul class="list-unstyled pb-5">
+        <li>機會：</li>
+        <li>市場上對高品質食物和文化體驗的需求增加，有擴展和增長的良好機會。</li>
+        <li>外賣和送餐服務的擴展，吸引更多顧客，提升銷售。</li>
+    </ul>
+    <ul class="list-unstyled">
+        <li>威脅：</li>
+        <li>市場競爭激烈，需要有效的市場策略來突出競爭優勢。</li>
+        <li>經濟波動和食材成本的不穩定性可能對業務運營造成影響。</li>
+    </ul>
+</div>                </div>
+                <div id="project-market" class="content-section" style="display: none;">
+                    <div class="py-10">
+    <p> 
+        台灣中式餐飲市場在2019年的市場規模達到約1,500億台幣，
+        並預計每年以約5%的年增長率穩定增長。
+        其中，高品質、正宗的中國美食顯示出強勁的消費者需求，
+        特別是在大城市和觀光熱點。
+    </p>
+</div>                </div>
+                <div id="project-product" class="content-section" style="display: none;">
+                    <div class="py-10">
+<p>
+    我們的主打產品包括：<br><br>
+
+    粤菜系列：如清蒸魚、白切雞等典型的粤式烹飪佳餚，保證新鮮和風味豐富。<br><br>
+    川菜系列：以麻辣風味聞名，如水煮魚、口水雞等，將正宗的川菜風味帶入每一道菜品。<br><br>
+    湘菜系列：具有酸辣口味特色，如紅燒肉、剁椒魚頭等，展現湘菜獨特的地方風味。<br><br>
+
+    此外，我們還提供各種小吃、熱炒和點心，如小籠包、炒米粉、炸醬麵等，以滿足顧客對於輕鬆、愉快用餐體驗的需求。
+</p>
+</div>                </div>
+                <div id="project-compete" class="content-section" style="display: none;">
+                    <div class="py-10">
+    <p> 
+        在台灣市場，一些知名的競爭品牌可以包括：<br><br>
+
+        鼎泰豐（Din Tai Fung）：以其精緻的小籠包和台灣菜系聞名全球，是台灣最具代表性的餐廳之一。<br>
+        滿福樓（Man Fu Lou）：專注於粤菜和中式點心，以高品質的食材和烹飪技術聞名。<br>
+        霜玉（Shuang Yu）：提供現代創新的中華料理，結合台灣本土食材和烹飪風格。<br>
+        南京三兄弟：以其多樣化的菜單和實惠的價格吸引大眾，是台灣家庭常去的中式餐廳之一。<br>
+        金車（Jin Che）：以其創新的川菜和湘菜菜式聞名，提供多樣化的選擇和風味。<br><br>
+
+        這些品牌在台灣市場享有良好的知名度和顧客基礎，競爭激烈。我們將透過其獨特的菜品組合、優質的服務和競爭力的價格策略，以及在本地市場的市場定位來區隔自己。
+    </p>
+</div>                </div>
+                <div id="project-model" class="content-section" style="display: none;">
+                    <div class="py-10">
+    <p> 
+        採用傳統的餐飲業商業模式，注重提供高品質的中國美食體驗，並通過以下方式來實現商業目標：<br><br>
+
+        產品與服務提供： 提供多樣化的正宗中國菜系，包括粤菜、川菜、湘菜等地方特色菜式，並注重菜品的原汁原味和烹調技巧。同時，提供優質的服務體驗，包括舒適的用餐環境和專業的客戶服務。<br><br>
+
+        市場定位與目標客戶： 瞄準尋求高品質、正宗中國美食體驗的本地居民和遊客。中華風味餐廳將在提供優質菜品和服務的基礎上，建立強大的品牌形象和顧客忠誠度。<br><br>
+
+        收入來源： 主要收入來自於菜品銷售，包括餐廳內用餐和外賣服務。此外，也可以通過舉辦特別活動、提供外燴服務等方式增加額外收入。<br><br>
+
+        成本結構： 成本主要包括食材採購成本、人力成本（包括廚師、服務人員和管理人員）、租金和設備維護成本等。中華風味餐廳將通過精準的成本控制和效率化管理來確保業務運營的穩定性和可持續性。<br><br>
+
+        競爭優勢： 中華風味餐廳的競爭優勢包括提供多樣性的正宗中國菜系、高品質的食材和烹飪技巧、舒適的用餐環境以及優質的客戶服務。此外，餐廳還將注重環保和社會責任，符合現代消費者對於可持續性和健康飲食的需求。
+    </p>
+</div>                </div>
+                <div id="project-entrepreneur" class="content-section" style="display: none;">
+                    <div class="py-10">
+   <h5 class="text-white pb-5">林美鳳</h5>
+   <ul class="list-unstyled pb-5">
+    <li>教育背景：</li>
+    <li>中山大學 商學院</li>
+    <li>工商管理學士學位（BBA）</li>
+    <li>主修：餐飲管理</li>
+    <li>專業：企業策略和行銷</li>
+   </ul>
+   <ul class="list-unstyled pb-5">
+    <li>1.頂太瘋餐廳集團</li>
+    <li>餐飲經理</li>
+    <li>2010年至今</li>
+    <li>負責管理日常餐廳運營，包括人員管理、供應鏈和成本控制。</li>
+    <li>領導團隊以確保卓越的客戶服務和餐飲體驗。</li>
+    <li>開發和實施市場推廣策略，提高餐廳的知名度和業績。</li>
+   </ul>
+   <ul class="list-unstyled pb-5">
+    <li>2.抬碩國際餐飲公司</li>
+    <li>餐飲經理</li>
+    <li>2005年 - 2010年</li>
+    <li>負責多個餐飲項目的開發和管理，包括菜單設計和廚房運作管理。</li>
+    <li>管理客戶關係，確保客戶滿意度和忠誠度。</li>
+   </ul>
+   <ul class="list-unstyled pb-5">
+    <li>技能與特質：</li>
+    <li>擁有豐富的餐飲業經驗和企業管理技能。</li>
+    <li>出色的溝通能力和領導才能，能有效帶領團隊達成目標。</li>
+    <li>對中國菜文化和食品衛生安全有深入的理解和關注。</li>
+   </ul>
+   <ul class="list-unstyled pb-5">
+    <li>語言能力：</li>
+    <li>中文（母語）</li>
+    <li>英文（流利）</li>
+   </ul>
+</div>                </div>
+                <div id="project-photo" class="content-section" style="display: none;">
+                    <div class="py-10">
+    <img src="/Dream-Workshop/assets/廚師-eb46f0e7.png" class="pb-15 d-block w-50 mx-auto" alt="chef">
+</div>                </div>
+                <div id="project-evaluate" class="content-section" style="display: none;">
+                    <div class="py-10">
+<div class="d-flex border-bottom border-gray-600 ms-lg-3">
+    <img src="/Dream-Workshop/assets/留言頭像1-97c57edc.png" alt="曹穎惠" class="rounded-circle me-2" style="width: 40px; height: 40px;">
+    <div>
+        <p class="fs-5 fw-bold pb-2">曹穎惠</p>
+        <p class="fs-4 message-board">想創就創，反正工作隨時都有</p>
+        <div class="d-flex align-items-center fs-5 mb-7">
+            <p class="fw-bold pe-1">B1</p>
+            <time datetime="2024-09-20T22:20" class="text-gray-400">2024/09/20 22:20</time>
+            <span class="text-gray-400 px-1">•</span>
+            <a href="#" class="text-primary-600" data-bs-toggle="modal" data-bs-target="#exampleModal-reply-Investor" role="button">回覆</a>
+        </div>
+    </div>
+</div> 
+</div>
+
+ <!-- modal 回覆 -->
+
+ <div class="modal fade" id="exampleModal-reply-Investor" tabindex="-1" aria-labelledby="exampleModalToggleLabel-Investor" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content bg-gray-1000">
+            <div class="modal-header border-0">
+              <h5 class="modal-title text-primary-600" id="exampleModalToggleLabel-Investor">回覆內容</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+            <div class="modal-body text-center">
+              <label for="Investor-replycontent" class="form-label text-white fs-5"></label>
+                <textarea id="Investor-replycontent" rows="4"  class="w-100 bg-transparent text-white inputField text-white"></textarea>
+                <div class="modal-footer border-0 d-flex justify-content-between">
+                    <button type="button" class="btn btn-lg btn-gray-600 fw-bolder" id="clearButton4">清除</button>
+                    <button class="btn btn-lg btn-primary-600 fw-bolder" role="button" data-bs-dismiss="modal" >送出</button>
+                </div>
+            </div>
+          </div>
+    </div>
+  </div>
+
+  <script>
+    // 清除文字
+    document.getElementById('clearButton4')?.addEventListener('click', function() {
+        document.querySelectorAll('.inputField').forEach(function(input) {
+            input.value = ''; 
+        });
+    });
+    </script>                </div>
+                
+                
+                
+            </div>
+        </div> 
+
+    </div>
+</div>
+
+    <footer class="footer">
+    <img class="bg-field" src="/Dream-Workshop/assets/bg-field-c52487a8.png"></img>
+    <div class="mask"></div>
+    <div class="container">
+        <div class="row py-8">
+            <div class="col-lg-3 community-wrap mb-5">
+                <div class="community">
+                    <a href="index.html">
+                        <img class="mb-1" src="/Dream-Workshop/assets/創夢工坊-logo-fb8def81.png" alt="創夢工坊" style="width: 60px;">
+                    </a>
+                    
+                    <h3 class="fw-bold mb-5">Dream Workshop</h3>
+                    <ul class="d-flex justify-content-center justify-content-lg-start">
+                        <li><a href="#"><i class="icons bi bi-facebook me-3"></i></a></li>
+                        <li><a href="#"><i class="icons bi bi-instagram me-3"></i></a></li>
+                        <li><a href="#"><i class="icons bi bi-line"></i></a></li>
+                    </ul>
+                </div>     
+            </div>
+            <div class="col-lg-9 d-flex">
+                <ul class="footer-navbar me-5">
+                    <li class="fs-5 fw-bold text-gray-400 mb-3"><a href="about-us.html">關於我們</a></li>
+                    <li><a class="fw-bold text-primary-600 mb-2" href="about-us.html">網站理念</a></li>
+                    <li><a class="fw-bold text-primary-600 mb-2" href="about-us.html">常見問題</a></li>
+                    <li><a class="fw-bold text-primary-600" href="privacy-policy.html">隱私權政策</a></li>
+                </ul>
+                <ul class="footer-navbar me-5">
+                    <li class="fs-5 fw-bold text-gray-400 mb-3"><a href="pay-plan.html">付費方案</a></li>
+                    <li class="fw-bold text-primary-600 mb-2"><a href="pay-plan.html">購點方案</a></li>
+                    <li class="fw-bold text-primary-600"><a href="pay-plan.html">購點專區</a></li>
+                </ul>
+                <ul class="footer-navbar">
+                    <li class="fs-5 fw-bold text-gray-400 mb-3">特色服務</li>
+                    <li class="fw-bold text-primary-600 mb-2"><a href="activity.html">平台對接活動</a></li>
+                    <li class="fw-bold text-primary-600"><a href="discuss.html">討論區</a></li>
+                </ul>
+            </div>
+        </div>
+        <small class="px-3 px-lg-0 text-gray-400">© Dream Workshop 2024 Copyright. All Rights Reserved.</small>
+    </div>   
+</footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/js/project.js"></script>
+    
+
+
+</body>
+</html>

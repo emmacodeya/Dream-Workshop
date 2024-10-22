@@ -1,0 +1,2162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>會員中心</title>
+  <script type="module" crossorigin src="/Dream-Workshop/assets/bootstrap.bundle.min-62e75eae.js"></script>
+  <script type="module" crossorigin src="/Dream-Workshop/assets/editor-e5fc7c61.js"></script>
+  <link rel="stylesheet" href="/Dream-Workshop/assets/bootstrap.bundle-ed147dc8.css">
+</head>
+
+<body>
+    
+<nav class="header navbar navbar-expand-lg fixed-top">
+<div class="container d-flex justify-content-center">
+    <div class="d-flex justify-content-between align-items-center me-auto">
+      <a class="navbar-brand" href="/pages/index.html">
+        <img
+          src="/Dream-Workshop/assets/創夢工坊-logo-fb8def81.png"
+          alt="創夢工坊"
+          style="width: 56px"
+        />
+      </a>
+    </div>
+    <button
+      class="navbar-toggler btn-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarNav"
+      aria-controls="navbarNav"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span
+        class="navbar-toggler-icon d-flex align-items-center justify-content-center"
+      >
+        <i class="bi bi-list list-icon"></i>
+      </span>
+    </button>
+
+    <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="projectList-project.html"
+            >找創業項目</a
+          >
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="projectList-investor.html"
+            >找投資人</a
+          >
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="pay-plan.html">付費方案</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="discuss.html">討論區</a>
+        </li>
+      </ul>
+    </div>
+
+    <a
+      href="/pages/login/login.html"
+      class="btn login-btn btn-primary-600 d-none d-lg-block"
+    >
+      註冊/登入
+    </a>
+  </div>
+</nav>
+
+  
+<main class="bg-green py-15">
+       <!-- 頁籤 -->
+       <section class="container pt-8 d-lg-block d-none"> 
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item text-white"><a href="index.html">首頁</a></li>
+                <i class="bi bi-caret-right-fill text-white"></i>
+                <li class="breadcrumb-item text-white"><a href="member-pages.html">會員中心</a></li>
+                <i class="bi bi-caret-right-fill text-white"></i>
+                <li class="breadcrumb-item text-white fw-bold active" id="current-page-title"><a href="#">個人資料</a></li>
+            </ol>
+        </nav>
+        <h2 class="text-primary-600 py-1 fw-bold border-bottom pb-8">會員中心</h2>
+    </section>
+
+<!-- 電腦板sidebar -->
+<section class="container">
+   <div class="row">
+       <div class="col-lg-3 ">
+         <!-- 電腦版Sidebar -->
+<div class="d-flex flex-column p-3 text-white sidemenu-link d-none d-lg-block bg-gray-1000 bg-opacity-75">
+  <ul class="flex-column fw-bold list-unstyled">
+      <li class="nav-link text-gray-400 fs-4">我的帳戶</li>
+      <li><a href="#" class="nav-link text-white fs-5 ps-1 lh-lg pt-2" data-content="member" data-title="個人資料" onclick="updateTitle('個人資料')">個人資料</a></li>
+      <li><a href="#" class="nav-link text-white fs-5 ps-1 lh-lg" data-content="member-identity" data-title="身分審核" onclick="updateTitle('身分審核')">身分審核</a></li>
+      <li><a href="#" class="nav-link text-white fs-5 ps-1 lh-lg" data-content="member-changepassword" data-title="修改密碼" onclick="updateTitle('修改密碼')">修改密碼</a></li>
+      <li><a href="#" class="nav-link text-white fs-5 ps-1 lh-lg" data-content="member-points" data-title="可用點數" onclick="updateTitle('可用點數')">可用點數</a></li>
+      <li><a href="#" class="nav-link text-white fs-5 ps-1 lh-lg pb-2" data-content="member-settings" data-title="隱私設置" onclick="updateTitle('隱私設置')">隱私設置</a></li>
+  </ul>
+  <ul class="flex-column fw-bold list-unstyled">
+    <li  class="nav-link text-gray-400 fs-4 pt-2">創業項目</li>
+    <li><a href="#" class="nav-link text-white fs-5 ps-1 lh-lg" data-content="member-newprojects" data-title="新增創業項目" onclick="updateTitle('新增創業項目')">新增創業項目</a></li>
+    <li><a href="#" class="nav-link text-white fs-5 ps-1 lh-lg pb-2" data-content="member-createdprojects" data-title="已建創業項目" onclick="updateTitle('已建創業項目')">已建創業項目</a></li>
+  </ul>
+
+  <ul class="flex-column fw-bold list-unstyled">
+    <li class="nav-link text-gray-400 fs-4 pt-2">投資人</li>
+    <li><a href="#" class="nav-link text-white fs-5 ps-1 lh-lg pb-2" data-content="member-newinvestor" data-title="建立/修改投資人資料" onclick="updateTitle('建立/修改投資人資料')">建立/修改投資人資料</a></li>
+  </ul>
+
+  <ul class="flex-column fw-bold list-unstyled">
+    <li class="nav-link text-gray-400 fs-4 pt-2">評價紀錄</li>
+    <li><a href="#" class="nav-link text-white fs-5 ps-1 lh-lg" data-content="member-evaluateProjects" data-title="創業項目評價" onclick="updateTitle('創業項目評價')">創業項目評價</a></li>
+    <li><a href="#" class="nav-link text-white fs-5 ps-1 lh-lg pb-2" data-content="member-evaluateInvestor" data-title="投資人評價" onclick="updateTitle('投資人評價')">投資人評價</a></li>
+  </ul>
+  <ul class="flex-column fw-bold list-unstyled">
+  <li class="nav-link text-gray-400 fs-4 pt-2">我的收藏</li>
+  <li><a href="#" class="nav-link text-white fs-5 ps-1 lh-lg" data-content="member-collectProjects" data-title="創業項目收藏列表" onclick="updateTitle('創業項目收藏列表')">創業項目收藏列表</a></li>
+  <li><a href="#" class="nav-link text-white fs-5 ps-1 lh-lg pb-2" data-content="member-collectInvestor" data-title="投資人收藏列表" onclick="updateTitle('投資人收藏列表')">投資人收藏列表</a></li>
+</ul>
+<ul class="flex-column fw-bold list-unstyled">
+<li class="nav-link text-gray-400 fs-4 pt-2">我的活動</li>
+<li><a href="#" class="nav-link text-white fs-5 ps-1 lh-lg"  data-content="member-applyActivity" data-title="已申請活動" onclick="updateTitle('已申請活動')">已申請活動</a></li>
+<li><a href="#" class="nav-link text-white fs-5 ps-1 lh-lg pb-2" data-content="member-activityrecord" data-title="活動紀錄" onclick="updateTitle('活動紀錄')">活動紀錄</a></li>
+</ul>
+
+<ul class="flex-column fw-bold list-unstyled">
+<li class="nav-link text-gray-400 fs-4 pt-2">我的消息</li>
+<li><a href="#" class="nav-link text-white fs-5 ps-1 lh-lg pb-2" data-content="member-sitenews" data-title="站內消息" onclick="updateTitle('站內消息')">站內消息</a></li>
+</ul>
+
+<ul class="flex-column fw-bold list-unstyled">
+<li class="nav-link text-gray-400 fs-4 pt-2">討論區</li>
+<li><a href="#" class="nav-link text-white fs-5 ps-1 lh-lg" data-content="member-postarticle" data-title="新增文章" onclick="updateTitle('新增文章')">新增文章</a></li>
+<li><a href="#" class="nav-link text-white fs-5 ps-1 lh-lg" data-content="member-postlist" data-title="發文列表" onclick="updateTitle('發文列表')">發文列表</a></li>
+<li><a href="#" class="nav-link text-white fs-5 ps-1 lh-lg pb-2"  data-content="member-articlemessage" data-title="查看留言" onclick="updateTitle('查看留言')" >查看留言</a></li>
+</ul>
+  
+</div>
+<!-- 手機版Sidebar -->
+<div class="d-block d-lg-none">
+  <a class="btn border-bottom w-100 px-0" data-bs-toggle="offcanvas" href="#offcanvasSidebar" role="button" aria-controls="offcanvasSidebar">
+    <div class="d-flex align-items-center text-gray-100 fs-5">
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAEaSURBVHgB7VXtDYIwED1ACPySERzBEXAEJ5ANnMUJ1Al0Ax2BDWQD+4+vAL5LwDSAYij+kPiS5tpy9B29Ox7Rr0OTF1EUebqubzVNc2k4DpZlHeuFLh3u4/ALpp7sXZali+GxpR7AZ4Fx4EBbD9M0vSRJcmvuszP2y86XOgDfexzHZ2p+QRVBSIrA9QYw806Cb2CCBEjmAok6saUR0CKwbVvALLlkxyBpEaAKRJZla0xdwzD2pIi+HKh0dDcBX4tpmidMRZ7na1LEqxwERVGsHMcJSRGz5gbnAEY58hr/Tv6cAH9SgftfkiJYE+T1U9EqNWPBCUEUSj4sOEwcVAXw7nD2c+Hn16rWlEwf3buh4dELlPcO5X2lyeABap1/r58Zr6wAAAAASUVORK5CYII=" alt="sidebar" style="width: 40px; height: 40px;">
+        <p class="ps-1 fw-bold" id="current-page-title2">個人資料</p>
+    </div>
+</a>
+
+
+  <div class="offcanvas offcanvas-start bg-gray-1000 opacity-75" tabindex="-1" id="offcanvasSidebar" aria-labelledby="offcanvasSidebarLabel">
+      <div class="offcanvas-header border-bottom">
+          <h5 id="offcanvasSidebarLabel" class="text-primary-600 fw-bold fs-5" >會員中心</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+          <ul class="flex-column fw-bold list-unstyled">
+              <li class="nav-link text-gray-400 fs-5">我的帳戶</li>
+              <li><a href="#" class="nav-link text-white  ps-1 lh-lg pt-2" data-content="member" data-title="個人資料" onclick="updateTitle('個人資料')">個人資料</a></li>
+              <li><a href="#" class="nav-link text-white  ps-1 lh-lg" data-content="member-identity" data-title="身分審核" onclick="updateTitle('身分審核')">身分審核</a></li>
+              <li><a href="#" class="nav-link text-white  ps-1 lh-lg" data-content="member-changepassword" data-title="修改密碼" onclick="updateTitle('修改密碼')">修改密碼</a></li>
+              <li><a href="#" class="nav-link text-white  ps-1 lh-lg" data-content="member-points" data-title="可用點數" onclick="updateTitle('可用點數')">可用點數</a></li>
+              <li><a href="#" class="nav-link text-white  ps-1 lh-lg pb-2" data-content="member-settings" data-title="隱私設置" onclick="updateTitle('隱私設置')">隱私設置</a></li>
+          </ul>
+          <ul class="flex-column fw-bold list-unstyled">
+            <li  class="nav-link text-gray-400 fs-5 pt-1">創業項目</li>
+            <li><a href="#" class="nav-link text-white  ps-1 lh-lg" data-content="member-newprojects" data-title="新增創業項目" onclick="updateTitle('新增創業項目')">新增創業項目</a></li>
+            <li><a href="#" class="nav-link text-white  ps-1 lh-lg pb-1" data-content="member-createdprojects" data-title="已建創業項目" onclick="updateTitle('已建創業項目')">已建創業項目</a></li>
+          </ul>
+    
+          <ul class="flex-column fw-bold list-unstyled">
+            <li class="nav-link text-gray-400 fs-5 pt-1">投資人</li>
+            <li><a href="#" class="nav-link text-white  ps-1 lh-lg pb-1" data-content="member-newinvestor" data-title="建立/修改投資人資料" onclick="updateTitle('建立/修改投資人資料')">建立/修改投資人資料</a></li>
+          </ul>
+    
+          <ul class="flex-column fw-bold list-unstyled">
+            <li class="nav-link text-gray-400 fs-5 pt-1">評價紀錄</li>
+            <li><a href="#" class="nav-link text-white  ps-1 lh-lg" data-content="member-evaluateProjects" data-title="創業項目評價" onclick="updateTitle('創業項目評價')">創業項目評價</a></li>
+            <li><a href="#" class="nav-link text-white  ps-1 lh-lg pb-1" data-content="member-evaluateInvestor" data-title="投資人評價" onclick="updateTitle('投資人評價')">投資人評價</a></li>
+          </ul>
+          <ul class="flex-column fw-bold list-unstyled">
+          <li class="nav-link text-gray-400 fs-5 pt-1">我的收藏</li>
+          <li><a href="#" class="nav-link text-white  ps-1 lh-lg" data-content="member-collectProjects" data-title="創業項目收藏列表" onclick="updateTitle('創業項目收藏列表')">創業項目收藏列表</a></li>
+          <li><a href="#" class="nav-link text-white ps-1 lh-lg pb-1" data-content="member-collectInvestor" data-title="投資人收藏列表" onclick="updateTitle('投資人收藏列表')">投資人收藏列表</a></li>
+        </ul>
+        <ul class="flex-column fw-bold list-unstyled">
+        <li class="nav-link text-gray-400 fs-5 pt-1">我的活動</li>
+        <li><a href="#" class="nav-link text-white  ps-1 lh-lg" data-content="member-applyActivity" data-title="已申請活動" onclick="updateTitle('已申請活動')">已申請活動</a></li>
+        <li><a href="#" class="nav-link text-white  ps-1 lh-lg pb-1" data-content="member-activityrecord" data-title="活動紀錄" onclick="updateTitle('活動紀錄')">活動紀錄</a></li>
+      </ul>
+    
+      <ul class="flex-column fw-bold list-unstyled">
+      <li class="nav-link text-gray-400 fs-5 pt-1">我的消息</li>
+      <li><a href="#" class="nav-link text-white  ps-1 lh-lg pb-1" data-content="member-sitenews" data-title="站內消息" onclick="updateTitle('站內消息')">站內消息</a></li>
+    </ul>
+      
+    <ul class="flex-column fw-bold list-unstyled">
+    <li class="nav-link text-gray-400 fs-5 pt-1">討論區</li>
+    <li><a href="#" class="nav-link text-white  ps-1 lh-lg" data-content="member-postarticle" data-title="新增文章" onclick="updateTitle('新增文章')">新增文章</a></li>
+    <li><a href="#" class="nav-link text-white  ps-1 lh-lg" data-content="member-postlist" data-title="發文列表" onclick="updateTitle('發文列表')">發文列表</a></li>
+    <li><a href="#" class="nav-link text-white  ps-1 lh-lg pb-1" data-content="member-articlemessage" data-title="查看留言" onclick="updateTitle('查看留言')" >查看留言</a></li>
+    </ul>
+      </div>
+  </div>
+</div>
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+      window.updateTitle = function(title) {
+          document.getElementById('current-page-title2').innerText = title;
+      };
+  });
+
+</script>
+        </div>
+<!-- 個人資料內文 -->
+<div class="col-lg-9">
+  <div id="member" class="content-section" style="display: none;">
+    <!-- Form and avatar upload -->
+<div class="d-flex flex-lg-row flex-column mt-3">
+<div class=" d-block d-lg-none">
+<div id="custom-avatar-upload1" class="custom-upload-image mt-5 mt-md-0" style="width: 250px; height: 250px; border: 2px solid #ccc; cursor: pointer; background-image: url(/Dream-Workshop/assets/頭像1-c76aa235.png); background-size: contain; background-position: center; background-repeat: no-repeat; position: relative;">
+<label for="avatar1" class="form-label text-white" style="position: absolute; top: 10px; right: 10px; background-color: rgba(0, 0, 0, 0.5); padding: 5px; border-radius: 5px;">編輯頭像</label>
+<input class="form-control" type="file" id="avatar1" name="avatar" accept="image/*" style="display: none;">
+<img id="previewImage1" src="" alt="預覽圖片" style="width: 100%; height: 100%; display: none;">
+</div>
+</div>
+<form class="w-100 me-2">
+<div class="mb-3 row mt-lg-0 mt-3">
+<label for="useraccount" class="col-md-2  col-4 col-form-label text-white">使用者帳號:</label>
+<div class="col-md-10 col-8">
+  <input type="text" readonly class="form-control-plaintext text-white " id="useraccount" value="happy1234">
+</div>
+</div>
+
+<div class="mb-3 row">
+<label for="name" class="col-lg-2 col-form-label text-white">姓名:</label>
+<div class="col-lg-10">
+  <input type="text" class="form-control inputField" id="name" value="開開心">
+</div>
+</div>
+
+<div class="mb-3 row">
+<label for="email" class="col-lg-2 col-form-label text-white">電子郵箱:</label>
+<div class="col-lg-10">
+  <input type="email" class="form-control inputField" id="email" value="happy5678@gmail.com">
+</div>
+</div>
+
+<div class="mb-3 row">
+<label for="mobile" class="col-lg-2 col-form-label text-white">手機:</label>
+<div class="col-lg-10">
+  <input type="tel" class="form-control inputField" id="mobile" value="0912-131-456" pattern="[0-9]{4}-[0-9]{3}-[0-9]{3}">
+</div>
+</div>
+
+<div class="mb-3 row">
+<label class="col-lg-2 col-form-label text-white">性別:</label>
+<div class="col-lg-10 d-flex align-items-center">
+  <div class="form-check me-3">
+      <input class="form-check-input inputField" type="radio" name="gender" id="male" value="male" checked>
+      <label class="form-check-label text-white" for="male">男</label>
+  </div>
+  <div class="form-check me-3">
+      <input class="form-check-input inputField" type="radio" name="gender" id="female" value="female">
+      <label class="form-check-label text-white" for="female">女</label>
+  </div>
+</div>
+</div>
+</form>
+
+<!-- Upload avatar section -->
+<div class="d-none d-lg-block">
+<div id="custom-avatar-upload2" class="custom-upload-image mt-5 mt-md-0" style="width: 250px; height: 250px; border: 2px solid #ccc; cursor: pointer; background-image: url(/Dream-Workshop/assets/頭像1-c76aa235.png); background-size: contain; background-position: center; background-repeat: no-repeat; position: relative;">
+<label for="avatar2" class="form-label text-white" style="position: absolute; top: 10px; right: 10px; background-color: rgba(0, 0, 0, 0.5); padding: 5px; border-radius: 5px;">編輯頭像</label>
+<input class="form-control" type="file" id="avatar2" name="avatar" accept="image/*" style="display: none;">
+<img id="previewImage2" src="" alt="預覽圖片" style="width: 100%; height: 100%; display: none;">
+</div>
+
+</div>
+</div>
+
+<!-- Buttons -->
+<div class="d-flex justify-content-around pt-8">
+<button   type="button"  class="btn btn-lg btn-outline-danger fw-bold" id="clearButton"><i class="bi bi-x-circle "></i> 清除
+</button>
+<button class="btn btn-lg btn-outline-primary-600 fw-bold" data-bs-toggle="modal" data-bs-target="#member-modal">
+  <i class="bi bi-save"></i> 儲存變更
+</button>
+</div>
+
+
+ <!-- modal 儲存變更 -->
+ <div class="modal fade" id="member-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content bg-gray-1000">
+          <div class="modal-header border-0">
+              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+          <div class="modal-body text-center text-primary-600 fs-3 fw-bold">
+             儲存成功
+          </div>
+          <div class="border-0 text-center mt-15 mb-14">
+              <button type="button" class="btn btn-lg btn-primary-600 fw-bolder  px-9" data-bs-dismiss="modal" aria-label="Close">確認</button>
+          </div>
+        </div>
+  </div>
+</div>
+
+    
+
+  </div>
+  <div id="member-identity" class="content-section" style="display: none;">
+    
+             <form class="my-8">
+              <div class="mb-3 row fs-4">
+                  <label for="name" class="col-md-2  col-4 col-form-label text-white ">姓名:</label>
+                  <div class="col-md-10 col-8">
+                    <input type="text" readonly class="form-control-plaintext text-white" id="name" value="開開心">
+                  </div>
+                </div>
+           </form>
+          
+        <div class="d-flex flex-column flex-md-row  align-items-md-center">
+          <!-- 身分證正面 -->
+          <div id="custom-avatar-upload3" class="custom-upload-image me-o me-md-5" style="width: 250px; height: 250px; border: 2px solid #ccc; cursor: pointer; background-image: url(/Dream-Workshop/assets/身分證正面樣本-9a8b8528.jpg); background-size: contain; background-position: center; background-repeat: no-repeat; position: relative;">
+              <label for="avatar3" class="form-label text-white" style="position: absolute; top: 10px; right: 10px; background-color: rgba(0, 0, 0, 0.5); padding: 5px; border-radius: 5px;">上傳身分證正面</label>
+              <input class="form-control" type="file" id="avatar3" name="avatar" accept="image/*" style="display: none;">
+              <img id="previewImage3" src="" alt="預覽圖片" style="width: 100%; height: 100%; display: none;">
+          </div>
+           <!-- 身分證背面 -->
+          <div id="custom-avatar-upload4" class="custom-upload-image mt-5 mt-md-0" style="width: 250px; height: 250px; border: 2px solid #ccc; cursor: pointer; background-image: url(/Dream-Workshop/assets/身分證背面樣本-b8a86402.jpg); background-size: contain; background-position: center; background-repeat: no-repeat; position: relative;">
+            <label for="avatar4" class="form-label text-white" style="position: absolute; top: 10px; right: 10px; background-color: rgba(0, 0, 0, 0.5); padding: 5px; border-radius: 5px;">上傳身分證背面</label>
+            <input class="form-control" type="file" id="avatar4" name="avatar" accept="image/*" style="display: none;">
+            <img id="previewImage4" src="" alt="預覽圖片" style="width: 100%; height: 100%; display: none;">
+        </div>
+      </div>
+
+        <!-- 第二張證件照 -->
+        <div class="d-flex flex-column flex-lg-row justify-content-around align-items-lg-center mt-5">
+          <div id="custom-avatar-upload5" class="custom-upload-image" style="width: 250px; height: 250px; border: 2px solid #ccc; cursor: pointer; background-image: url(/Dream-Workshop/assets/第二張證件樣本-17484554.jpg); background-size: contain; background-position: center; background-repeat: no-repeat; position: relative;">
+              <label for="avatar5" class="form-label text-white" style="position: absolute; top: 10px; right: 10px; background-color: rgba(0, 0, 0, 0.5); padding: 5px; border-radius: 5px;">上傳第二張證件</label>
+              <input class="form-control" type="file" id="avatar5" name="avatar" accept="image/*" style="display: none;">
+              <img id="previewImage5" src="" alt="預覽圖片" style="width: 100%; height: 100%; display: none;">
+          </div>
+          <div class="mt-3 mt-mt-lg-0">
+              <button type="button" class="btn btn-lg fw-bold  btn-gray-600">審核通過</button>
+          </div>
+      </div>
+
+         
+        <div class="my-8 row d-flex fs-4">
+          <label for="email" class="col-sm-2 col-form-label text-white">電子郵箱:</label>
+          <div class="col-sm-6">
+            <input type="text" readonly class="form-control-plaintext text-white" id="email" value="happy5678@gmail.com">
+          </div>
+          <div class="col-sm-4">
+          <button type="button" class="btn btn-lg fw-bold btn-primary-600">驗證</button>
+        </div>
+        </div>
+       
+
+        <div class="row  d-flex fs-4">
+          <label for="mobile" class="col-sm-2 col-form-label text-white">手機:</label>
+          <div class="col-sm-6">
+            <input type="tel" readonly class="form-control-plaintext text-white" id="mobile"  value="0912-131-456" 
+            pattern="[0-9]{4}-[0-9]{3}-[0-9]{3}">
+          </div>
+          <div class="col-sm-4">
+            <button type="button" class="btn btn-lg fw-bold btn-primary-600">變更</button>
+          </div>
+        </div>
+>
+      </div>
+  <div id="member-changepassword" class="content-section" style="display: none;">
+    
+<form class="my-8" id="passwordForm">
+    <div class="mb-3 row">
+        <label for="currentPassword" class="col-lg-2 col-form-label text-white">輸入舊密碼</label>
+        <div class="col-lg-9">
+            <input type="password" class="form-control" id="currentPassword" value="******" required>
+        </div>
+    </div>
+    <div class="mb-3 row">
+        <label for="newPassword" class="col-lg-2 col-form-label text-white">輸入新密碼</label>
+        <div class="col-lg-9">
+            <input type="password" class="form-control" id="newPassword"  value="******" required>
+        </div>
+    </div>
+    <div class="mb-3 row">
+        <label for="confirmPassword" class="col-lg-2 col-form-label text-white">確認新密碼</label>
+        <div class="col-lg-9">
+            <input type="password" class="form-control" id="confirmPassword" value="******" required>
+        </div>
+    </div>
+    <div class="text-danger" id="errorMessage" style="display: none;">新密碼與確認密碼不匹配</div>
+</form>
+
+<div class="d-flex justify-content-around pt-8">
+    <button id="cancelUpload1" type="button" class="btn btn-lg btn-outline-danger">
+        <i class="bi bi-x-circle"></i> 取消
+    </button>
+    <button class="btn btn-lg btn-outline-primary-600 fw-bolder" data-bs-toggle="modal" data-bs-target="#password-modal">
+        <i class="bi bi-save"></i> 儲存變更
+    </button>
+</div>
+
+  <!-- modal 儲存變更 -->
+  <div class="modal fade" id="password-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content bg-gray-1000">
+            <div class="modal-header border-0">
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+            <div class="modal-body text-center text-primary-600 fs-3 fw-bold">
+               儲存成功
+            </div>
+            <div class="border-0 text-center mt-15 mb-14">
+                <button type="button" class="btn btn-lg btn-primary-600 fw-bolder  px-9" data-bs-dismiss="modal" aria-label="Close">確認</button>
+            </div>
+          </div>
+    </div>
+</div>
+  </div>
+  <div id="member-points" class="content-section" style="display: none;">
+    
+          <!-- 目前可用點數 -->
+          <div class="row mt-8">
+            <div class="row mb-3">
+              <label for="points" class="col-md-3 col-form-label text-white fs-4">目前可用點數:</label>
+              <div class="col-md-5">
+                  <input type="text" class="form-control text-center fs-4" id="points" value="32點" readonly>
+              </div>
+          
+              <div class="col-md-4 text-md-end mt-md-0 mt-3">
+                  <button onclick="window.location.href='index.html'" class="btn btn-lg btn-outline-primary-600 fw-bolder">
+                      <i class="bi bi-cash"></i> 前往儲值
+                  </button>
+              </div>
+          </div>
+            
+            <div class="pt-8">
+              <h4 class="text-white fw-bolder pb-2">點數紀錄</h4>
+              <table class="table table-dark table-hover table-bordered border-gray-600">
+                <thead class="text-center fs-4 ">
+                  <tr>
+                    <th scope="col" class="text-primary-1000">時間</th>
+                    <th scope="col" class="text-primary-1000">購買點數</th>
+                    <th scope="col" class="text-primary-1000">花費金額</th>
+                    <th scope="col" class="text-primary-1000">已使用點數</th>
+                  </tr>
+                </thead>
+                <tbody class="text-center">
+                  <tr>
+                    <td>2024/09/22</td>
+                    <td></td>
+                    <td></td>
+                    <td>46</td>
+                  </tr>
+                  <tr>
+                    <td>2024/09/08</td>
+                    <td></td>
+                    <td></td>
+                    <td>22</td>
+                  </tr>
+                  <tr>
+                    <td>2024/08/22</td>
+                    <td>100</td>
+                    <td>399</td>
+                    <td>0</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+         </div>
+  </div>
+  <div id="member-settings" class="content-section" style="display: none;">
+    <!-- 申請刪除帳號 -->
+          <div class="pt-8 d-flex justify-content-between">
+          <p class="fs-3 fw-bolder text-danger">申請刪除帳號</p>
+          <button class="btn btn-lg btn-outline-primary-600 fw-bolder">申請</button>
+          </div>
+  </div>
+  <div id="member-newprojects" class="content-section" style="display: none;">
+    
+<!-- 基本資料 -->
+<div>
+<h3 class="text-gray-400 py-8 fw-bolder ">基本資料</h3>
+  <div class="d-sm-flex">
+
+   <div>
+     <h6 class="text-white mb-3">公司商標:</h6>
+     <div id="custom-avatar-upload6" class="custom-upload-image mt-5 mt-md-0" style="width: 250px; height: 250px; border: 2px solid #ccc; cursor: pointer; background-image: url(/Dream-Workshop/assets/頭像1-c76aa235.png); background-size: contain; background-position: center; background-repeat: no-repeat; position: relative;">
+     <label for="avatar6" class="form-label text-white" style="position: absolute; top: 10px; right: 10px; background-color: rgba(0, 0, 0, 0.5); padding: 5px; border-radius: 5px;">上傳圖片</label>
+     <input class="form-control" type="file" id="avatar6" name="avatar" accept="image/*" style="display: none;">
+     <img id="previewImage6" src="" alt="預覽圖片" style="width: 100%; height: 100%; display: none;">
+   </div>
+                   
+                   
+                  
+   <h6 class="text-white my-3">公司形象照:</h6>
+   <div id="custom-avatar-upload7" class="custom-upload-image mt-5 mt-md-0" style="width: 250px; height: 250px; border: 2px solid #ccc; cursor: pointer; background-image: url(/Dream-Workshop/assets/頭像1-c76aa235.png); background-size: contain; background-position: center; background-repeat: no-repeat; position: relative;">
+   <label for="avatar7" class="form-label text-white" style="position: absolute; top: 10px; right: 10px; background-color: rgba(0, 0, 0, 0.5); padding: 5px; border-radius: 5px;">上傳圖片</label>
+   <input class="form-control" type="file" id="avatar7" name="avatar" accept="image/*" style="display: none;">
+   <img id="previewImage7" src="" alt="預覽圖片" style="width: 100%; height: 100%; display: none;">
+ </div>
+</div>
+               
+            <!-- form表單 - 表格區 -->
+                    <form class="row g-3 ms-md-2 ms-0">
+                        <div class="col-xl-6 pt-md-0 pt-3">
+                          <label for="project-projectname" class="form-label text-white fs-5">項目名稱/公司行號<br><span class="fs-6 text-gray-400">若公司尚未設立，請填入完整的項目名稱</span></label>
+                          <input type="text" class="form-control inputField" id="project-projectname">
+                        </div>
+                        <div class="col-xl-3 ">
+                            <label for="project-name" class="form-label text-white fs-5 ">聯絡人</label>
+                            <input type="text" class="form-control inputField" id="project-name">
+                        </div>
+                        <div class="col-xl-3">
+                            <label for="project-phone" class="form-label text-white fs-5">聯絡電話</label>
+                            <input type="tel" class="form-control inputField" id="project-phone">
+                        </div>
+                        <div class="col-xl-6">
+                            <label for="project-website" class="form-label text-white fs-5">公司網址<span class="fs-6 text-gray-400 ps-1">填寫公司官網網址</span></label>
+                            <input type="email" class="form-control inputField" id="project-website">
+                        </div>
+                        <div class="col-xl-6">
+                            <label for="project-address" class="form-label text-white fs-5">公司地址<span class="fs-6 text-gray-400 ps-1">填寫公司主要營運地址</span></label>
+                            <input type="text" class="form-control inputField" id="project-address">
+                        </div>
+                        <div class="col-xl-4">
+                            <label for="country" class="form-label text-white fs-5">公司成立狀態<span class="fs-6 text-gray-400 ps-1">如為已設立公司,需再填寫公司統一編號。</span></label>
+                            <select id="country" name="country" class="fs-6 p-1">
+                              <option value="" selected >請選擇狀態</option>
+                              <option value="notestablished">未成立</option>
+                              <option value="established">已成立</option>
+                            </select>
+                        </div>
+                        <div class="col-xl-6 pt-xl-6">
+                            <label for="project-number" class="form-label text-white fs-5">統一編號<span class="fs-6 text-gray-400 ps-1">我們將會審核此統編,請正確填寫</span></label>
+                            <input type="number" class="form-control inputField" id="project-number">
+                        </div>
+                        <div class="col-xl-4">
+                            <label for="industry" class="form-label text-white fs-5">產業分類</label>
+                            <select id="industry" name="industry" class="fs-6 p-1">
+                              <option value="" selected >請選擇產業</option>
+                              <option value="wholesale-retail">批發/零售</option>
+                              <option value="biotechnology">生物科技</option>
+                              <option value="internet">網際網路相關</option>
+                              <option value="established">文教相關</option>
+                              <option value="spread">大眾傳播相關</option>
+                              <option value="travel">旅遊/休閒/運動</option>
+                              <option value="serve">一般服務</option>
+                              <option value="electronic">電子資訊/軟體/半導體相關</option>
+                              <option value="manufacturing">一般製造</option>
+                              <option value="logistics">物流/倉儲</option>
+                              <option value="politics">政治宗教及社福相關</option>
+                              <option value="finance">金融投顧/保險</option>
+                              <option value="accounting">法律/會計/顧問/研發</option>
+                              <option value="design">設計相關</option>
+                              <option value="architecture">建築營造/不動產相關</option>
+                              <option value="healthcare">醫療保健/環境衛生</option>
+                              <option value="ore">礦石及土石採取</option>
+                              <option value="stay">住宿相關</option>
+                              <option value="food">餐飲</option>
+                            </select>
+                        </div>
+                        <div class="col-xl-3">
+                            <label for="scale" class="form-label text-white fs-5">人數規模</label>
+                            <select id="scale" name="country" class="fs-6 p-1">
+                              <option value="" selected >請選擇規模</option>
+                              <option value="one">10 人以下</option>
+                              <option value="two">11-50 人</option>
+                              <option value="three">51-100 人</option>
+                              <option value="four">101-200 人</option>
+                              <option value="five">201-500 人</option>
+                              <option value="six">501-1000 人</option>
+                              <option value="seven">1001-5000 人</option>
+                              <option value="eight">5001-10,000 人</option>
+                              <option value="nine">10,001 人以上</option>
+                            </select>
+                        </div>
+                        <div class="col-xl-2">
+                            <label for="project-capital" class="form-label text-white fs-5">資本額</label>
+                            <input type="text" class="form-control inputField" id="project-capital">
+                        </div>
+                        <div class="col-xl-2">
+                            <label for="project-fundraising" class="form-label text-white fs-5">募資金額</label>
+                            <input type="text" class="form-control inputField" id="project-fundraising">
+                        </div>
+                      </form>
+                         
+                </div>
+            </div>
+            <!-- form表單 - 文字框區 -->
+            <form class="row g-3">
+                <div class="col-md-8 mt-8">
+                  <label for="project-Introduction" class="form-label text-white fs-5">項目簡介</label>
+                  <textarea id="project-Introduction" rows="5"   class="w-100 bg-transparent  inputField text-white"></textarea>
+                </div>
+                <div class="col-md-8">
+                    <label for="project-illustrate" class="form-label text-white fs-5">團隊說明</label>
+                    <textarea id="project-illustrate" rows="5"  class="w-100 bg-transparent  inputField text-white"></textarea>
+                </div>
+                <div class="col-md-8">
+                    <h4 class="text-gray-400 py-8 fw-bolder">SWOT分析</h4>
+                    <label for="project-advantages" class="form-label text-white fs-5 me-8">優勢</label>
+                    <textarea id="project-advantages" rows="3"  class="w-100 bg-transparent  inputField text-white"></textarea>
+                </div>
+                <div class="col-md-8">
+                    <label for="project-disadvantages" class="form-label text-white fs-5 me-8">劣勢</label>
+                    <textarea id="project-disadvantages" rows="3"  class="w-100 bg-transparent  inputField text-white"></textarea>
+                </div>   
+                <div class="col-md-8">  
+                    <label for="project-chance" class="form-label text-white fs-5 me-8">機會</label>
+                    <textarea id="project-chance" rows="3"  class="w-100 bg-transparent  inputField text-white" ></textarea>
+                </div>   
+                <div class="col-md-8">   
+                    <label for="project-threaten" class="form-label text-white fs-5 me-8">威脅</label>
+                    <textarea id="project-threaten" rows="3"  class="w-100 bg-transparent  inputField text-white"></textarea>
+                </div>
+                <div class="col-md-8">
+                    <label for="project-marketsize" class="form-label text-white fs-5">市場規模</label>
+                    <textarea id="project-marketsize" rows="5"  class="w-100 bg-transparent  inputField text-white"></textarea>
+                </div>
+                <div class="col-md-8">
+                    <label for="project-product" class="form-label text-white fs-5 me-8">產品</label>
+                    <textarea id="project-product" rows="5"  class="w-100 bg-transparent  inputField text-white"></textarea>
+                </div>
+                <div class="col-md-8">
+                    <label for="project-competitiveproducts" class="form-label text-white fs-5">競爭產品</label>
+                    <textarea id="project-competitiveproducts" rows="5"  class="w-100 bg-transparent  inputField text-white"></textarea>
+                </div>
+                <div class="col-md-8">
+                    <label for="project-business" class="form-label text-white fs-5">商業模式</label>
+                    <textarea id="project-business" rows="5"  class="w-100 bg-transparent  inputField text-white"></textarea>
+                </div>
+                <div class="col-md-8">
+                    <label for="project-information" class="form-label text-white fs-5">創業者資訊</label>
+                    <textarea id="project-information" rows="5"  class="w-100 bg-transparent  inputField text-white"></textarea>
+                </div>
+            </form>
+
+            <div>
+                <h4 class="text-gray-400 py-8 fw-bolder">其他相關訊息</h4>
+            <h5 class="text-white mb-3">目前財務狀況</h5>
+            <div class="d-flex  align-items-center">
+             <div id="custom-avatar-upload8" class="custom-upload-image mt-5 mt-md-0" style="width: 250px; height: 250px; border: 2px solid #ccc; cursor: pointer; background-image: url(/Dream-Workshop/assets/頭像1-c76aa235.png); background-size: contain; background-position: center; background-repeat: no-repeat; position: relative;">
+                        <label for="avatar8" class="form-label text-white" style="position: absolute; top: 10px; right: 10px; background-color: rgba(0, 0, 0, 0.5); padding: 5px; border-radius: 5px;">上傳圖片</label>
+                        <input class="form-control" type="file" id="avatar8" name="avatar" accept="image/*" style="display: none;">
+                        <img id="previewImage8" src="" alt="預覽圖片" style="width: 100%; height: 100%; display: none;">
+                      </div>
+              <p class="text-gray-400 w-50 ms-3">目前公司營運財報資料或是個人請提供財力證明，也是讓投資人評估募資的重要資訊。</p>
+            </div>
+              <h5 class="text-white mt-5 mb-3">上傳照片參考</h5>
+            <div class="d-flex align-items-center">
+                <div id="custom-avatar-upload9" class="custom-upload-image mt-5 mt-md-0" style="width: 250px; height: 250px; border: 2px solid #ccc; cursor: pointer; background-image: url(/Dream-Workshop/assets/頭像1-c76aa235.png); background-size: contain; background-position: center; background-repeat: no-repeat; position: relative;">
+                    <label for="avatar9" class="form-label text-white" style="position: absolute; top: 10px; right: 10px; background-color: rgba(0, 0, 0, 0.5); padding: 5px; border-radius: 5px;">上傳圖片</label>
+                    <input class="form-control" type="file" id="avatar9" name="avatar" accept="image/*" style="display: none;">
+                    <img id="previewImage9" src="" alt="預覽圖片" style="width: 100%; height: 100%; display: none;">
+                  </div>
+              <p class="text-gray-400 w-50 ms-3">目前公司營運財報資料或是個人請提供財力證明，也是讓投資人評估募資的重要資訊。</p>
+            </div>
+        </div>
+
+
+<!-- Buttons -->
+  <div class="d-flex justify-content-around pt-8">
+    <button   type="button"  class="btn btn-lg btn-outline-danger fw-bold" id="clearButton"><i class="bi bi-x-circle "></i> 清除
+  </button>
+  <button class="btn btn-lg btn-outline-primary-600 fw-bold" data-bs-toggle="modal" data-bs-target="#newprojects-modal">
+    <i class="bi bi-save"></i> 儲存變更
+</button>
+</div>
+                
+
+ <!-- modal 儲存變更 -->
+ <div class="modal fade" id="newprojects-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content bg-gray-1000">
+            <div class="modal-header border-0">
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+            <div class="modal-body text-center text-primary-600 fs-3 fw-bold">
+               儲存成功
+            </div>
+            <div class="border-0 text-center mt-15 mb-14">
+                <button type="button" class="btn btn-lg btn-primary-600 fw-bolder  px-9" data-bs-dismiss="modal" aria-label="Close">確認</button>
+            </div>
+          </div>
+    </div>
+</div>
+
+
+   
+
+     </div>
+  <div id="member-createdprojects" class="content-section" style="display: none;">
+    <!-- 林媽媽 -->
+<div class="card bg-gray-800 mt-lg-8 mt-5">
+  <div class="d-flex justify-content-between created-title investor-created-title">
+     <div class="d-flex align-items-center">
+      <h3 class="text-white fs-3 fw-bold ms-lg-10">林媽媽中式餐館</h3>
+      <i class="bi bi-clipboard-check text-primary-400 fs-lg-3 fs-5 ps-1"></i>
+     </div>
+     <div>
+         <a href="#" data-bs-toggle="modal" data-bs-target="#createdprojects-Modal">
+             <i class="bi bi-pencil-square fs-3 text-primary-600 pe-2"></i>
+           </a>
+         <a href="#" data-bs-toggle="modal" data-bs-target="#createdprojects-exampleModal"><i class="bi bi-trash3 fs-3 text-danger"></i></a>
+     </div> 
+  </div>
+ <div class="row g-0 created-bady investor-created-bady">
+   <div class="col-md-6 d-flex align-items-center justify-content-center">
+     <img src="/Dream-Workshop/assets/mamacook-a216e22e.png" class="img-fluid rounded-start" alt="林媽媽">
+   </div>
+   <div class="col-md-6">
+     <div class="card-body created-form investor-card-body">
+         <div class="d-md-flex pb-md-2 ">
+           <ul class="list-unstyled pb-md-0 pb-1">
+             <li class="fs-5 text-gray-400 fw-bold">公司成立狀態</li>
+             <li class="fs-3 text-primary-400 fw-bold">未設立</li>
+            </ul>
+           <ul class="list-unstyled pb-md-0 pb-1">
+             <li class="fs-5 text-gray-400 fw-bold">產業分類</li>
+             <li class="fs-3 text-primary-400 fw-bold">餐飲</li>
+           </ul>
+         </div>
+         <div class="d-md-flex pb-md-2">
+             <ul class="list-unstyled pb-md-0 pb-1">
+               <li class="fs-5 text-gray-400 fw-bold">規模</li>
+               <li class="fs-3 text-primary-400 fw-bold">10人以下</li>
+              </ul>
+             <ul class="list-unstyled pb-md-0 pb-1">
+               <li class="fs-5 text-gray-400 fw-bold">資本額</li>
+               <li class="fs-3 text-primary-400 fw-bold">3,000,000</li>
+             </ul>
+           </div>
+         <div class="d-md-flex align-items-center">
+             <ul class="list-unstyled w-50 pb-md-0 pb-1">
+               <li class="fs-5 text-gray-400 fw-bold">募資金額</li>
+               <li class="fs-3 text-primary-400 fw-bold">50,000,000</li>
+             </ul>
+             <div>
+                 <button type="button" class="btn btn-gray-200 text-gray-400 fw-bold">統一編號未審核</button>
+             </div> 
+         </div>
+       
+     </div>
+   </div>
+ </div>
+ <div>
+     <a href="#" type="button" class="btn btn-primary-600 w-100 py-2 bg-gray-600 border-0 text-primary-600 fs-5 fw-bold">查看詳情<i class="bi bi-chevron-right ps-1"></i></a>   
+ </div>
+</div>
+
+<!-- COME-->
+<div class="card bg-gray-800 mt-lg-8 mt-5">
+  <div class="d-flex justify-content-between created-title investor-created-title">
+     <div class="d-flex align-items-center">
+      <h3 class="text-white fs-3 fw-bold ms-lg-10">come寵物美容</h3>
+      <i class="bi bi-clipboard-check text-primary-400 fs-lg-3 fs-5 ps-1"></i>
+     </div>
+     <div>
+         <a href="#" data-bs-toggle="modal" data-bs-target="#createdprojects-Modal">
+             <i class="bi bi-pencil-square fs-3 text-primary-600 pe-2"></i>
+           </a>
+         <a href="#" data-bs-toggle="modal" data-bs-target="#createdprojects-exampleModal"><i class="bi bi-trash3 fs-3 text-danger"></i></a>
+     </div> 
+  </div>
+ <div class="row g-0 created-bady investor-created-bady">
+   <div class="col-md-6 d-flex align-items-center justify-content-center">
+     <img src="/Dream-Workshop/assets/come-47fe869c.png" class="img-fluid rounded-start" alt="come寵物美容">
+   </div>
+   <div class="col-md-6">
+     <div class="card-body created-form investor-card-body">
+         <div class="d-md-flex pb-md-2 ">
+           <ul class="list-unstyled pb-md-0 pb-1">
+             <li class="fs-5 text-gray-400 fw-bold">公司成立狀態</li>
+             <li class="fs-3 text-primary-400 fw-bold">未設立</li>
+            </ul>
+           <ul class="list-unstyled pb-md-0 pb-1">
+             <li class="fs-5 text-gray-400 fw-bold">產業分類</li>
+             <li class="fs-3 text-primary-400 fw-bold">餐飲</li>
+           </ul>
+         </div>
+         <div class="d-md-flex pb-md-2">
+             <ul class="list-unstyled pb-md-0 pb-1">
+               <li class="fs-5 text-gray-400 fw-bold">規模</li>
+               <li class="fs-3 text-primary-400 fw-bold">10人以下</li>
+              </ul>
+             <ul class="list-unstyled pb-md-0 pb-1">
+               <li class="fs-5 text-gray-400 fw-bold">資本額</li>
+               <li class="fs-3 text-primary-400 fw-bold">3,000,000</li>
+             </ul>
+           </div>
+         <div class="d-md-flex align-items-center">
+             <ul class="list-unstyled w-50 pb-md-0 pb-1">
+               <li class="fs-5 text-gray-400 fw-bold">募資金額</li>
+               <li class="fs-3 text-primary-400 fw-bold">800,000</li>
+             </ul>
+             <div>
+              <button type="button" class="btn btn-primary-200 text-primary-800 fw-bold">統一編號已審核</button>
+             </div> 
+         </div>
+       
+     </div>
+   </div>
+ </div>
+ <div>
+     <a href="#" type="button" class="btn btn-primary-600 w-100 py-2 bg-gray-600 border-0 text-primary-600 fs-5 fw-bold">查看詳情<i class="bi bi-chevron-right ps-1"></i></a>   
+ </div>
+</div>
+<!-- 猛毒-->
+<div class="card bg-gray-800 mt-lg-8 mt-5">
+<div class="d-flex justify-content-between created-title investor-created-title">
+ <div class="d-flex align-items-center">
+  <h3 class="text-white fs-3 fw-bold ms-lg-10">猛毒創意有限公司</h3>
+  <i class="bi bi-clipboard-check text-primary-400 fs-lg-3 fs-5 ps-1"></i>
+ </div>
+ <div>
+     <a href="#" data-bs-toggle="modal" data-bs-target="#createdprojects-Modal">
+         <i class="bi bi-pencil-square fs-3 text-primary-600 pe-2"></i>
+       </a>
+     <a href="#" data-bs-toggle="modal" data-bs-target="#createdprojects-exampleModal"><i class="bi bi-trash3 fs-3 text-danger"></i></a>
+ </div> 
+</div>
+<div class="row g-0 created-bady investor-created-bady">
+<div class="col-md-6 d-flex align-items-center justify-content-center">
+ <img src="/Dream-Workshop/assets/猛毒-0ef3f8c5.png" class="img-fluid rounded-start" alt="猛毒">
+</div>
+<div class="col-md-6">
+ <div class="card-body created-form investor-card-body">
+     <div class="d-md-flex pb-md-2 ">
+       <ul class="list-unstyled pb-md-0 pb-1">
+         <li class="fs-5 text-gray-400 fw-bold">公司成立狀態</li>
+         <li class="fs-3 text-primary-400 fw-bold">未設立</li>
+        </ul>
+       <ul class="list-unstyled pb-md-0 pb-1">
+         <li class="fs-5 text-gray-400 fw-bold">產業分類</li>
+         <li class="fs-3 text-primary-400 fw-bold">餐飲</li>
+       </ul>
+     </div>
+     <div class="d-md-flex pb-md-2">
+         <ul class="list-unstyled pb-md-0 pb-1">
+           <li class="fs-5 text-gray-400 fw-bold">規模</li>
+           <li class="fs-3 text-primary-400 fw-bold">10人以下</li>
+          </ul>
+         <ul class="list-unstyled pb-md-0 pb-1">
+           <li class="fs-5 text-gray-400 fw-bold">資本額</li>
+           <li class="fs-3 text-primary-400 fw-bold">3,000,000</li>
+         </ul>
+       </div>
+     <div class="d-md-flex align-items-center">
+         <ul class="list-unstyled w-50 pb-md-0 pb-1">
+           <li class="fs-5 text-gray-400 fw-bold">募資金額</li>
+           <li class="fs-3 text-primary-400 fw-bold">800,000</li>
+         </ul>
+         <div>
+          <button type="button" class="btn btn-danger-200 text-danger fw-bold">統一編號未通過</button>
+         </div> 
+     </div>
+   
+ </div>
+</div>
+</div>
+<div>
+ <a href="#" type="button" class="btn btn-primary-600 w-100 py-2 bg-gray-600 border-0 text-primary-600 fs-5 fw-bold">查看詳情<i class="bi bi-chevron-right ps-1"></i></a>   
+</div>
+</div>
+
+
+
+ <!-- modal 編輯 -->
+ <div class="modal fade" id="createdprojects-Modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-xl">
+    <div class="modal-content bg-gray-1000">
+      <div class="modal-header">
+        <h5 class="modal-title text-primary-600" id="exampleModalLabel">林媽媽中式餐館</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+          
+<!-- 基本資料 -->
+<div>
+  <h3 class="text-gray-400 py-8 fw-bolder ">基本資料</h3>
+<div class="d-lg-flex">
+  
+    <div>
+    <h6 class="text-white mb-3">公司商標:</h6>
+    <div id="custom-avatar-upload10" class="custom-upload-image mt-5 mt-md-0" style="width: 250px; height: 250px; border: 2px solid #ccc; cursor: pointer; background-image: url(/Dream-Workshop/assets/頭像1-c76aa235.png); background-size: contain; background-position: center; background-repeat: no-repeat; position: relative;">
+      <label for="avatar10" class="form-label text-white" style="position: absolute; top: 10px; right: 10px; background-color: rgba(0, 0, 0, 0.5); padding: 5px; border-radius: 5px;">上傳圖片</label>
+      <input class="form-control" type="file" id="avatar10" name="avatar" accept="image/*" style="display: none;">
+      <img id="previewImage10" src="" alt="預覽圖片" style="width: 100%; height: 100%; display: none;">
+   </div>
+ 
+ 
+
+    <h6 class="text-white my-3">公司形象照:</h6>
+    <div id="custom-avatar-upload11" class="custom-upload-image mt-5 mt-md-0" style="width: 250px; height: 250px; border: 2px solid #ccc; cursor: pointer; background-image: url(/Dream-Workshop/assets/頭像1-c76aa235.png); background-size: contain; background-position: center; background-repeat: no-repeat; position: relative;">
+      <label for="avatar11" class="form-label text-white" style="position: absolute; top: 10px; right: 10px; background-color: rgba(0, 0, 0, 0.5); padding: 5px; border-radius: 5px;">上傳圖片</label>
+      <input class="form-control" type="file" id="avatar11" name="avatar" accept="image/*" style="display: none;">
+      <img id="previewImage11" src="" alt="預覽圖片" style="width: 100%; height: 100%; display: none;">
+   </div>
+  </div>
+
+<!-- form表單 - 表格區 -->
+  <form class="row g-3 ms-lg-2 mx-0">
+      <div class="col-xl-6 pt-lg-0 pt-3 px-xl-1 px-0">
+        <label for="project-projectname" class="form-label text-white fs-5">項目名稱/公司行號<br><span class="fs-6 text-gray-400">若公司尚未設立，請填入完整的項目名稱</span></label>
+        <input type="text" class="form-control inputField" id="project-projectname" value="林媽媽中式餐館">
+      </div>
+      <div class="col-xl-3 pt-lg-0 px-xl-1 px-0">
+          <label for="project-name" class="form-label text-white fs-5 ">聯絡人</label>
+          <input type="text" class="form-control inputField" id="project-name" value="林媽媽">
+      </div>
+      <div class="col-xl-3 pt-lg-0 px-xl-1 px-0">
+          <label for="project-phone" class="form-label text-white fs-5">聯絡電話</label>
+          <input type="tel" class="form-control inputField" id="project-phone" value="0912-123-456">
+      </div>
+      <div class="col-xl-6 pt-lg-0 px-xl-1 px-0">
+          <label for="project-website" class="form-label text-white fs-5">公司網址<span class="fs-6 text-gray-400 ps-1">填寫公司官網網址</span></label>
+          <input type="email" class="form-control inputField" id="project-website" value="www.happy.com">
+      </div>
+      <div class="col-xl-6 pt-lg-0 px-xl-1 px-0">
+          <label for="project-address" class="form-label text-white fs-5">公司地址<span class="fs-6 text-gray-400 ps-1">填寫公司主要營運地址</span></label>
+          <input type="text" class="form-control inputField" id="project-address" value="新北市新北大道一段25號">
+      </div>
+      <div class="col-xl-4 pt-lg-0 px-xl-1 px-0">
+          <label for="country" class="form-label text-white fs-5">公司成立狀態<span class="fs-6 text-gray-400 ps-1">如為已設立公司,需再填寫公司統一編號。</span></label>
+          <select id="country" name="country" class="fs-6 p-1">
+            <option value=""  >請選擇狀態</option>
+            <option value="notestablished" selected>未成立</option>
+            <option value="established">已成立</option>
+          </select>
+      </div>
+      <div class="col-xl-6 pt-xl-6  px-xl-1 px-0">
+          <label for="project-number" class="form-label text-white fs-5">統一編號<span class="fs-6 text-gray-400 ps-1">我們將會審核此統編,請正確填寫</span></label>
+          <input type="number" class="form-control inputField" id="project-number">
+      </div>
+      <div class="col-xl-4 pt-lg-0 px-xl-1 px-0">
+          <label for="industry" class="form-label text-white fs-5">產業分類</label>
+          <select id="industry" name="industry" class="fs-6 p-1">
+            <option value="" selected >請選擇產業</option>
+            <option value="wholesale-retail">批發/零售</option>
+            <option value="biotechnology">生物科技</option>
+            <option value="internet">網際網路相關</option>
+            <option value="established">文教相關</option>
+            <option value="spread">大眾傳播相關</option>
+            <option value="travel">旅遊/休閒/運動</option>
+            <option value="serve">一般服務</option>
+            <option value="electronic">電子資訊/軟體/半導體相關</option>
+            <option value="manufacturing">一般製造</option>
+            <option value="logistics">物流/倉儲</option>
+            <option value="politics">政治宗教及社福相關</option>
+            <option value="finance">金融投顧/保險</option>
+            <option value="accounting">法律/會計/顧問/研發</option>
+            <option value="design">設計相關</option>
+            <option value="architecture">建築營造/不動產相關</option>
+            <option value="healthcare">醫療保健/環境衛生</option>
+            <option value="ore">礦石及土石採取</option>
+            <option value="stay">住宿相關</option>
+            <option value="food" selected>餐飲</option>
+          </select>
+      </div>
+      <div class="col-xl-3 pt-lg-0 px-xl-1 px-0">
+          <label for="scale" class="form-label text-white fs-5">人數規模</label>
+          <select id="scale" name="country" class="fs-6 p-1">
+            <option value="" >請選擇規模</option>
+            <option value="one" selected>10 人以下</option>
+            <option value="two">11-50 人</option>
+            <option value="three">51-100 人</option>
+            <option value="four">101-200 人</option>
+            <option value="five">201-500 人</option>
+            <option value="six">501-1000 人</option>
+            <option value="seven">1001-5000 人</option>
+            <option value="eight">5001-10,000 人</option>
+            <option value="nine">10,001 人以上</option>
+          </select>
+      </div>
+      <div class="col-xl-2 pt-lg-0 px-xl-1 px-0">
+          <label for="project-capital" class="form-label text-white fs-5">資本額</label>
+          <input type="text" class="form-control inputField" id="project-capital" value="3,000,000">
+      </div>
+      <div class="col-xl-2 pt-lg-0 px-xl-1 px-0">
+          <label for="project-fundraising" class="form-label text-white fs-5">募資金額</label>
+          <input type="text" class="form-control inputField" id="project-fundraising" value="50,000,000">
+      </div>
+    </form>
+       
+</div>
+</div>
+<!-- form表單 - 文字區 -->
+          <form class="row g-3 mt-5">
+              <div class="col-md-10">
+                <label for="project-Introduction" class="form-label w-100 text-white fs-5">項目簡介</label>
+                <textarea id="project-Introduction" rows="10"   class="w-100 bg-transparent text-white inputField">專注於提供正宗的中國美食體驗。我們的餐廳擁有豐富多樣的菜單，包括粤菜、川菜、湘菜等多種地方菜系，每道菜品均由經驗豐富的廚師團隊精心烹製，保證品質與口感的卓越一致性。我們的使命是在現代化和溫馨的環境中，將傳統中國烹飪藝術與當地食材完美結合，為客人提供一場無與倫比的美食之旅。不僅如此，我們還致力於通過使用可持續的食材和烹飪技術，減少我們的環境影響，以及提升社區的社會責任感。我們的餐廳不僅提供優質的食物和服務，還力求營造一個溫馨和舒適的用餐環境，讓客人能夠放鬆身心，享受美好時光。我們歡迎投資人的加入與支持，共同創造成功的未來。</textarea>
+              </div>
+              <div class="col-md-10">
+                  <label for="project-illustrate" class="form-label  text-white fs-5">團隊說明</label>
+                  <textarea id="project-illustrate" rows="15"  class="w-100 bg-transparent text-white inputField">
+創始人及經營者:
+林小姐:擁有十年以上的餐飲業經驗,曾在多家知名餐廳擔任高級管理職位。憑藉對中國菜文化的深刻理解和熱愛,致力於打造正宗的中華風味餐廳。
+廚藝團隊:
+主廚 李師傅:來自廣東,擁有豐富的粤菜烹飪經驗,精通粤式烹調技巧,對於食材選擇和烹調方法有獨到見解。
+副廚 王師傅:專攻川菜,擅長於麻辣風味的川菜烹調,有多年的川菜廚藝經驗,保證每道川菜的正宗口味。
+前台服務團隊:
+客戶服務經理 陳先生:負責協調和管理前台服務,具有良好的溝通能力和顧客服務經驗,確保每位顧客都能享受到優質的用餐體驗。
+後勤及行政支持:
+行政總監 張小姐:負責餐廳的日常運營和行政管理,擁有出色的組織能力和管理技巧,確保餐廳運作高效且符合標準。</textarea>
+              </div>
+              <div class="col-md-10">
+                  <h4 class="text-gray-400 py-8 fw-bolder">SWOT分析</h4>
+                  <label for="project-advantages" class="form-label  text-white fs-5 me-8">優勢</label>
+                  <textarea id="project-advantages" rows="5"  class="w-100 bg-transparent text-white inputField">
+1.提供多樣性的菜系,滿足各類顧客的需求。
+2.經驗豐富的廚師團隊,保證高品質的食物。
+3.注重環保和可持續發展。
+                  </textarea>
+              </div>
+              <div class="col-md-10">
+                  <label for="project-disadvantages" class="form-label  text-white fs-5 me-8">劣勢</label>
+                  <textarea id="project-disadvantages" rows="3"  class="w-100 bg-transparent text-white inputField">
+1.市場競爭激烈,需要有效的市場定位和品牌建設。
+2.食材成本波動可能影響成本控制和利潤率。
+                  </textarea>
+              </div>   
+              <div class="col-md-10">  
+                  <label for="project-chance" class="form-label  text-white fs-5 me-8">機會</label>
+                  <textarea id="project-chance" rows="3"  class="w-100 bg-transparent text-white inputField" >
+1.市場上對高品質食物和文化體驗的需求增加,有擴展和增長的良好機會。
+2.外賣和送餐服務的擴展,吸引更多顧客,提升銷售。
+                  </textarea>
+              </div>   
+              <div class="col-md-10">   
+                  <label for="project-threaten" class="form-label  text-white fs-5 me-8">威脅</label>
+                  <textarea id="project-threaten" rows="3"  class="w-100 bg-transparent text-white inputField">
+1.市場競爭激烈,需要有效的市場策略來突出競爭優勢。
+2.經濟波動和食材成本的不穩定性可能對業務運營造成影響。
+                  </textarea>
+              </div>
+              <div class="col-md-10">
+                  <label for="project-marketsize" class="form-label  text-white fs-5">市場規模</label>
+                  <textarea id="project-marketsize" rows="10"  class="w-100 bg-transparent text-white inputField">
+台灣中式餐飲市場在2019年的市場規模達到約1,500億台幣,
+並預計每年以約5%的年增長率穩定增長。
+其中,高品質、正宗的中國美食顯示出強勁的消費者需求,
+特別是在大城市和觀光熱點。 </textarea>
+              </div>
+              <div class="col-md-10">
+                  <label for="project-product" class="form-label  text-white fs-5 me-8">產品</label>
+                  <textarea id="project-product" rows="15"  class="w-100 bg-transparent text-white inputField">
+我們的主打產品包括:
+粤菜系列:如清蒸魚、白切雞等典型的粤式烹飪佳餚,保證新鮮和風味豐富。
+川菜系列:以麻辣風味聞名,如水煮魚、口水雞等,將正宗的川菜風味帶入每一道菜品。
+湘菜系列:具有酸辣口味特色,如紅燒肉、剁椒魚頭等,展現湘菜獨特的地方風味。
+此外,我們還提供各種小吃、熱炒和點心,如小籠包、炒米粉、炸醬麵等,以滿足顧客對於輕鬆、愉快用餐體驗的需求。
+                  </textarea>
+              </div>
+              <div class="col-md-10">
+                  <label for="project-competitiveproducts" class="form-label  text-white fs-5">競爭產品</label>
+                  <textarea id="project-competitiveproducts" rows="15"  class="w-100 bg-transparent text-white inputField">
+在台灣市場,一些知名的競爭品牌可以包括:
+鼎泰豐(Din Tai Fung):以其精緻的小籠包和台灣菜系聞名全球,是台灣最具代表性的餐廳之一。
+滿福樓(Man Fu Lou):專注於粤菜和中式點心,以高品質的食材和烹飪技術聞名。
+霜玉(Shuang Yu):提供現代創新的中華料理,結合台灣本土食材和烹飪風格。
+南京三兄弟:以其多樣化的菜單和實惠的價格吸引大眾,是台灣家庭常去的中式餐廳之一。
+金車(Jin Che):以其創新的川菜和湘菜菜式聞名,提供多樣化的選擇和風味
+                  </textarea>
+              </div>
+              <div class="col-md-10">
+                  <label for="project-business" class="form-label  text-white fs-5">商業模式</label>
+                  <textarea id="project-business" rows="20"  class="w-100 bg-transparent text-white inputField">
+採用傳統的餐飲業商業模式,注重提供高品質的中國美食體驗,並通過以下方式來實現商業目標:
+產品與服務提供: 提供多樣化的正宗中國菜系,包括粤菜、川菜、湘菜等地方特色菜式,並注重菜品的原汁原味和烹調技巧。同時,提供優質的服務體驗,包括舒適的用餐環境和專業的客戶服務。
+市場定位與目標客戶: 瞄準尋求高品質、正宗中國美食體驗的本地居民和遊客。中華風味餐廳將在提供優質菜品和服務的基礎上,建立強大的品牌形象和顧客忠誠度。
+收入來源: 主要收入來自於菜品銷售,包括餐廳內用餐和外賣服務。此外,也可以通過舉辦特別活動、提供外燴服務等方式增加額外收入。
+成本結構: 成本主要包括食材採購成本、人力成本(包括廚師、服務人員和管理人員)、租金和設備維護成本等。中華風味餐廳將通過精準的成本控制和效率化管理來確保業務運營的穩定性和可持續性。
+競爭優勢: 中華風味餐廳的競爭優勢包括提供多樣性的正宗中國菜系、高品質的食材和烹飪技巧、舒適的用餐環境以及優質的客戶服務。此外,餐廳還將注重環保和社會責任,符合現代消費者對於可持續性和健康飲食的需求。
+這些品牌在台灣市場享有良好的知名度和顧客基礎,競爭激烈。中華風味餐廳將透過其獨特的菜品組合、優質的服務和競爭力的價格策略,以及在本地市場的市場定位來區隔自己。
+                  </textarea>
+              </div>
+              <div class="col-md-10">
+                  <label for="project-information" class="form-label text-white fs-5">創業者資訊</label>
+                  <textarea id="project-information" rows="30"  class=" w-100 bg-transparent text-white inputField">
+林媽媽
+教育背景:
+中山大學 商學院
+工商管理學士學位(BBA)
+主修:餐飲管理
+專業:企業策略和行銷
+工作經驗:
+1.頂太瘋餐廳集團
+餐飲經理
+2010年至今
+負責管理日常餐廳運營,包括人員管理、供應鏈和成本控制。
+領導團隊以確保卓越的客戶服務和餐飲體驗。
+開發和實施市場推廣策略,提高餐廳的知名度和業績。
+2.抬碩國際餐飲公司
+餐飲部經理
+2005年 - 2010年
+負責多個餐飲項目的開發和管理,包括菜單設計和廚房運作管理。
+管理客戶關係,確保客戶滿意度和忠誠度。
+技能與特質:
+擁有豐富的餐飲業經驗和企業管理技能。
+出色的溝通能力和領導才能,能有效帶領團隊達成目標。
+對中國菜文化和食品衛生安全有深入的理解和關注。
+語言能力:
+中文(母語)
+英文(流利)
+</textarea>
+              </div>
+          </form>
+
+          <div>
+          <h4 class="text-gray-400 py-8 fw-bolder">其他相關訊息</h4>
+          <h5 class="text-white">目前財務狀況</h5>
+
+          <div id="custom-avatar-upload12" class="custom-upload-image mt-5 mt-md-0" style="width: 250px; height: 250px; border: 2px solid #ccc; cursor: pointer; background-image: url(/Dream-Workshop/assets/頭像1-c76aa235.png); background-size: contain; background-position: center; background-repeat: no-repeat; position: relative;">
+            <label for="avatar12" class="form-label text-white" style="position: absolute; top: 10px; right: 10px; background-color: rgba(0, 0, 0, 0.5); padding: 5px; border-radius: 5px;">上傳圖片</label>
+            <input class="form-control" type="file" id="avatar12" name="avatar" accept="image/*" style="display: none;">
+            <img id="previewImage12" src="" alt="預覽圖片" style="width: 100%; height: 100%; display: none;">
+         </div>
+         
+          <h5 class="text-white pt-5">上傳照片參考</h5>
+          <div id="custom-avatar-upload13" class="custom-upload-image mt-5 mt-md-0" style="width: 250px; height: 250px; border: 2px solid #ccc; cursor: pointer; background-image: url(/Dream-Workshop/assets/頭像1-c76aa235.png); background-size: contain; background-position: center; background-repeat: no-repeat; position: relative;">
+            <label for="avatar13" class="form-label text-white" style="position: absolute; top: 10px; right: 10px; background-color: rgba(0, 0, 0, 0.5); padding: 5px; border-radius: 5px;">上傳圖片</label>
+            <input class="form-control" type="file" id="avatar13" name="avatar" accept="image/*" style="display: none;">
+            <img id="previewImage13" src="" alt="預覽圖片" style="width: 100%; height: 100%; display: none;">
+         </div>
+          
+      </div>
+
+
+              
+           
+      </div>
+<!-- Buttons -->
+<div class="d-flex justify-content-around pb-8">
+<button   type="button"  class="btn btn-lg btn-outline-danger fw-bold" id="clearButton2"><i class="bi bi-x-circle "></i> 清除
+</button>
+<button class="btn btn-lg btn-outline-primary-600 fw-bold" data-bs-dismiss="modal">
+    <i class="bi bi-save"></i> 儲存變更
+</button>
+</a>
+</div>
+    </div>
+  </div>
+</div>
+
+<!-- modal 刪除 -->
+<div class="modal fade" id="createdprojects-exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal-dialog modal-dialog-centered">
+<div class="modal-content bg-gray-1000">
+  <div class="modal-header border-0">
+      <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+    </div>
+  <div class="modal-body text-center text-primary-600 fs-3 fw-bold">
+     是否確認刪除?
+  </div>
+  <div class="border-0 text-center mt-15 mb-14">
+      <button type="button" class="btn btn-lg btn-gray-600 fw-bolder px-9" data-bs-dismiss="modal">取消</button>
+      <button type="button" class="btn btn-lg btn-primary-600 fw-bolder ms-9 px-9" data-bs-dismiss="modal">確認</button>
+  </div>
+</div>
+</div>
+</div>
+
+<script>
+// 清除文字
+document.getElementById('clearButton2')?.addEventListener('click', function() {
+    document.querySelectorAll('.inputField').forEach(function(input) {
+        input.value = ''; 
+    });
+});
+</script>
+
+  </div>
+  <div id="member-newinvestor" class="content-section" style="display: none;">
+    <!-- 基本資料 -->
+<div>
+  <h3 class="text-gray-400 py-8 fw-bolder ">基本資料</h3>
+
+<div class="d-md-flex pb-8">
+ <!-- 頭像 -->
+  <div>
+      <h5 class="text-white mb-3">投資人頭像:</h5>
+      <div id="custom-avatar-upload16" class="custom-upload-image mt-5 mt-md-0" style="width: 250px; height: 250px; border: 2px solid #ccc; cursor: pointer; background-image: url(/Dream-Workshop/assets/頭像1-c76aa235.png); background-size: contain; background-position: center; background-repeat: no-repeat; position: relative;">
+          <label for="avatar16" class="form-label text-white" style="position: absolute; top: 10px; right: 10px; background-color: rgba(0, 0, 0, 0.5); padding: 5px; border-radius: 5px;">上傳圖片</label>
+          <input class="form-control" type="file" id="avatar16" name="avatar" accept="image/*" style="display: none;">
+          <img id="previewImage16" src="" alt="預覽圖片" style="width: 100%; height: 100%; display: none;">
+        </div>
+  </div>
+<!-- form表單-表格框 -->
+  <form class="row g-3 ms-md-2">
+      <div class="col-md-6 ">
+          <label for="project-name" class="form-label text-white fs-5">姓名</label>
+          <input type="text" class="form-control text-center inputField" id="project-name" value="夢天天">
+      </div>
+      <div class="col-md-6">
+          <label for="project-phone" class="form-label text-white fs-5">聯絡電話</label>
+          <input type="tel" class="form-control text-center inputField" id="project-phone" value="0912-123-456">
+      </div>
+      <div class="col-md-6">
+          <label for="project-website" class="form-label text-white fs-5">電子郵箱</label>
+          <input type="email" class="form-control text-center inputField" id="project-website" value="qwer@gmail.com">
+      </div>
+      <div class="col-md-6 ">
+          <label for="project-capital" class="form-label text-white fs-5">資本額</label>
+          <input type="text" class="form-control text-center inputField" id="project-capital" value="3,000,000">
+      </div>
+      <div class="col-12 pt-md-0 pt-3">
+          <label for="industry" class="form-label text-white fs-5">偏好領域</label>
+          <select id="industry" name="industry" class="fs-6 p-1">
+            <option value="" selected >請選擇</option>
+            <option value="wholesale-retail">批發/零售</option>
+            <option value="biotechnology">生物科技</option>
+            <option value="internet">網際網路相關</option>
+            <option value="established">文教相關</option>
+            <option value="spread">大眾傳播相關</option>
+            <option value="travel">旅遊/休閒/運動</option>
+            <option value="serve">一般服務</option>
+            <option value="electronic">電子資訊/軟體/半導體相關</option>
+            <option value="manufacturing">一般製造</option>
+            <option value="logistics">物流/倉儲</option>
+            <option value="politics">政治宗教及社福相關</option>
+            <option value="finance">金融投顧/保險</option>
+            <option value="accounting">法律/會計/顧問/研發</option>
+            <option value="design">設計相關</option>
+            <option value="architecture">建築營造/不動產相關</option>
+            <option value="healthcare">醫療保健/環境衛生</option>
+            <option value="ore">礦石及土石採取</option>
+            <option value="stay">住宿相關</option>
+            <option value="food" selected>餐飲</option>
+          </select>
+      </div>
+    </form>
+       
+</div>
+</div>
+
+<!-- form表單-文字框 -->
+<form class="row g-3">
+  <div class="col-md-10">
+    <label for="project-Introduction" class="form-label text-white fs-5">自傳</label>
+    <textarea id="project-Introduction" rows="15" class="w-100 bg-transparent text-white inputField ">
+經歷:
+
+我在一個貧困的家庭中長大。
+年輕時參加過海軍,因此他的全名經常被縮寫為「謝船長」。
+在海軍服役期間,學到了許多關於紀律和金錢的重要教訓。
+
+退役後,開辦了蟹堡王餐廳。
+蟹堡王以其招牌菜「蟹堡」而聞名,
+而這個漢堡的秘方是嚴格保守的秘密。
+餐廳迅速成為比奇堡(Bikini Bottom)最受歡迎的餐飲場所之一。
+
+經營風格非常嚴格且注重成本控制。
+座右銘是「省錢就是賺錢」。儘管如此,他對餐廳的成功和顧客的滿意度也有高度的重視。</textarea>
+  </div>
+  <div class="col-md-10">
+      <label for="project-illustrate" class="form-label text-white fs-5 me-15 ">投資經歷</label>
+      <textarea id="project-illustrate" rows="6" class="w-100 bg-transparent text-white inputField">
+開辦蟹堡王餐廳。
+現任蟹堡王餐廳老闆,至今約20餘年
+
+具備豐富企業營運管理、商業開發等專業經驗</textarea>
+  </div>
+  <div class="col-md-10">
+      <label for="project-advantages" class="form-label text-white fs-5 me-8 ">具體相關資源</label>
+      <textarea id="project-advantages" rows="6" class="w-100 bg-transparent text-white inputField">
+人脈和關係網
+本人在比奇堡擁有廣泛的人脈和關係網,從食材供應商乃至設備廠商,
+這些資源對於他的生意發展和問題解決至關重要。
+
+創新能力
+本人能夠適應市場變化,發想新的產品和促銷活動,以滿足顧客需求並吸引新顧客。</textarea>
+  </div>
+</form>
+
+<!-- 照片區 -->
+<div class="py-8">
+  <h5 class="text-white">上傳照片參考</h5>
+  <div class="d-flex flex-md-row  flex-column align-items-center justify-content-between pt-5">
+      <div class="d-flex flex-lg-row flex-column">
+      <div id="custom-avatar-upload14" class="custom-upload-image mt-5 mt-lg-0" style="width: 250px; height: 250px; border: 2px solid #ccc; cursor: pointer; background-image: url(/Dream-Workshop/assets/頭像1-c76aa235.png); background-size: contain; background-position: center; background-repeat: no-repeat; position: relative;">
+          <label for="avatar14" class="form-label text-white" style="position: absolute; top: 10px; right: 10px; background-color: rgba(0, 0, 0, 0.5); padding: 5px; border-radius: 5px;">上傳圖片</label>
+          <input class="form-control" type="file" id="avatar14" name="avatar" accept="image/*" style="display: none;">
+          <img id="previewImage14" src="" alt="預覽圖片" style="width: 100%; height: 100%; display: none;">
+        </div>
+
+        <div id="custom-avatar-upload15" class="custom-upload-image mt-5 mt-lg-0 ms-lg-3 ms-0" style="width: 250px; height: 250px; border: 2px solid #ccc; cursor: pointer; background-image: url(/Dream-Workshop/assets/頭像1-c76aa235.png); background-size: contain; background-position: center; background-repeat: no-repeat; position: relative;">
+          <label for="avatar15" class="form-label text-white" style="position: absolute; top: 10px; right: 10px; background-color: rgba(0, 0, 0, 0.5); padding: 5px; border-radius: 5px;">上傳圖片</label>
+          <input class="form-control" type="file" id="avatar15" name="avatar" accept="image/*" style="display: none;">
+          <img id="previewImage15" src="" alt="預覽圖片" style="width: 100%; height: 100%; display: none;">
+        </div>
+   
+      </div>  
+          <button type="button" class="btn btn-primary-600 fw-bold mt-md-0 mt-5" data-bs-toggle="modal" data-bs-target="#exampleModal">申請財力證明審核</button>
+             
+  </div> 
+</div>
+
+<!-- Buttons -->
+<div class="d-flex justify-content-around pt-8">
+  <button   type="button"  class="btn btn-lg btn-outline-danger fw-bold" id="clearButton"><i class="bi bi-x-circle "></i> 清除
+</button>
+<button class="btn btn-lg btn-outline-primary-600 fw-bold" data-bs-toggle="modal" data-bs-target="#newinvestor-modal">
+  <i class="bi bi-save"></i> 儲存變更
+</button>
+</div>
+              
+
+<!-- modal 儲存變更 -->
+<div class="modal fade" id="newinvestor-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content bg-gray-1000">
+          <div class="modal-header border-0">
+              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+          <div class="modal-body text-center text-primary-600 fs-3 fw-bold">
+             儲存成功
+          </div>
+          <div class="border-0 text-center mt-15 mb-14">
+              <button type="button" class="btn btn-lg btn-primary-600 fw-bolder  px-9" data-bs-dismiss="modal" aria-label="Close">確認</button>
+          </div>
+        </div>
+  </div>
+</div>
+
+ <!-- modal 申請財力證明審核 -->
+ <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content bg-gray-1000">
+      <div class="modal-header border-0 ">
+          <div class="d-flex flex-column justify-content-center">
+          <h5 class="modal-title text-white fs-4" id="exampleModalLabel">財力證明</h5>
+          <p class="text-gray-400 mt-3">財力證明（此照片僅供審核用，不會公開至頁面上）</p>
+          </div>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+      <div class="modal-body d-flex justify-content-center">
+        <div id="custom-avatar-upload17" class="custom-upload-image" style="width: 250px; height: 250px; border: 2px solid #ccc; cursor: pointer; background-image: url(/Dream-Workshop/assets/頭像1-c76aa235.png); background-size: contain; background-position: center; background-repeat: no-repeat; position: relative;">
+          <label for="avatar17" class="form-label text-white" style="position: absolute; top: 10px; right: 10px; background-color: rgba(0, 0, 0, 0.5); padding: 5px; border-radius: 5px;">上傳圖片</label>
+          <input class="form-control" type="file" id="avatar17" name="avatar" accept="image/*" style="display: none;">
+          <img id="previewImage17" src="" alt="預覽圖片" style="width: 100%; height: 100%; display: none;">
+        </div>
+      </div>
+      <div class="border-0 text-center my-5">
+          <button type="button" class="btn btn-lg btn-primary-600 fw-bolder mb-5">審核</button>
+          <p class="text-gray-400">審核需3-5個工作天</p>
+      </div>
+    </div>
+  </div>
+</div>
+  </div>
+  <div id="member-evaluateProjects" class="content-section" style="display: none;">
+    <div class="pt-8">
+  <table class="table table-dark table-hover table-bordered border-gray-600">
+    <thead class="text-center fs-4">
+      <tr>
+        <th class="text-primary-600" scope="col">創業項目</th>
+        <th class="text-primary-600" scope="col">評價內容</th>
+        <th class="text-primary-600" scope="col">操作</th>
+      </tr>
+    </thead>
+    <tbody class="text-center">
+        <tr>
+            <td>
+              <ul class="list-unstyled">
+                <li class="text-white fs-4">林媽媽中式餐館</li>
+                <li class="text-white">公司成立狀態：未設立</li>
+                <li class="text-white">產業分類：餐飲</li>
+                <li class="text-white">規模：10人以下</li>
+                <li class="text-white">資本額：3,000,000</li>
+                <li class="text-white">募資金額：50,000,000</li>
+              </ul>
+            </td>
+            <td>
+                林媽媽中式餐館專注於提供多樣化和高品質的中國美食,<br>
+                擁有經驗豐富的廚師團隊和強調可持續發展的理念,<br>
+                這些都是其主要優勢。然而,在競爭激烈的市場中,<br>
+                餐館需要有效的市場定位和品牌建設來脫穎而出。<br>
+                此外,食材成本波動可能會影響其利潤。<br>
+                總體而言,這個項目具備良好的成長機會,<br>
+                但需要強化市場策略和成本控制來應對潛在的挑戰。	</td>
+            <td><button class="btn btn-outline-primary-600 text-center" data-bs-toggle="modal" data-bs-target="#exampleModal-reply-Projects" role="button">回覆</button>
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+</div>
+
+ <!-- modal 回覆 -->
+
+<div class="modal fade" id="exampleModal-reply-Projects" tabindex="-1" aria-labelledby="exampleModalToggleLabel-Projects" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content bg-gray-1000">
+          <div class="modal-header border-0">
+            <h5 class="modal-title text-primary-600" id="exampleModalToggleLabel-Projects">回覆內容</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+          <div class="modal-body text-center">
+            <label for="project-replycontent" class="form-label text-white fs-5"></label>
+              <textarea id="project-replycontent" rows="4"  class="w-100 bg-transparent text-white inputField text-white"></textarea>
+              <div class="modal-footer border-0 d-flex justify-content-between">
+                  <button type="button" class="btn btn-lg btn-gray-600 fw-bolder" id="clearButton3">清除</button>
+                  <button class="btn btn-lg btn-primary-600 fw-bolder" role="button" >送出</button>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+
+
+<script>
+  // 清除文字
+  document.getElementById('clearButton3')?.addEventListener('click', function() {
+      document.querySelectorAll('.inputField').forEach(function(input) {
+          input.value = ''; 
+      });
+  });
+  </script>
+
+  </div>
+  <div id="member-evaluateInvestor" class="content-section" style="display: none;">
+    <div class="pt-8">
+  <table class="table table-dark table-hover table-bordered border-gray-600">
+    <thead class="text-center fs-4">
+      <tr>
+        <th class="text-primary-600" scope="col">創業項目</th>
+        <th class="text-primary-600" scope="col">評價內容</th>
+        <th class="text-primary-600" scope="col">操作</th>
+      </tr>
+    </thead>
+    <tbody class="text-center">
+        <tr>
+            <td>
+              <ul class="list-unstyled">
+                <li class="text-white fs-4">謝阿金</li>
+                <li class="text-white">偏好領域:餐飲,一般服務,批發/零售</li>
+                <li class="text-white">資金規模:30,000,000</li>
+              </ul>
+            </td>
+            <td>口氣有點差</td>
+            <td><button class="btn btn-outline-primary-600 text-center" data-bs-toggle="modal" data-bs-target="#exampleModal-reply-Investor" role="button">回覆</button>
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+</div>
+
+
+
+ <!-- modal 回覆 -->
+
+ <div class="modal fade" id="exampleModal-reply-Investor" tabindex="-1" aria-labelledby="exampleModalToggleLabel-Investor" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content bg-gray-1000">
+          <div class="modal-header border-0">
+            <h5 class="modal-title text-primary-600" id="exampleModalToggleLabel-Investor">回覆內容</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+          <div class="modal-body text-center">
+            <label for="Investor-replycontent" class="form-label text-white fs-5"></label>
+              <textarea id="Investor-replycontent" rows="4"  class="w-100 bg-transparent text-white inputField text-white"></textarea>
+              <div class="modal-footer border-0 d-flex justify-content-between">
+                  <button type="button" class="btn btn-lg btn-gray-600 fw-bolder" id="clearButton4">清除</button>
+                  <button class="btn btn-lg btn-primary-600 fw-bolder" role="button" >送出</button>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+
+
+<script>
+  // 清除文字
+  document.getElementById('clearButton4')?.addEventListener('click', function() {
+      document.querySelectorAll('.inputField').forEach(function(input) {
+          input.value = ''; 
+      });
+  });
+  </script>
+  </div>
+  <div id="member-collectProjects" class="content-section" style="display: none;">
+     <!-- 林媽媽中式餐館 -->
+ <div class="card bg-gray-800 mt-lg-8 mt-5">
+  <div class="d-flex justify-content-between created-title investor-created-title">
+     <div class="d-flex align-items-center">
+      <h3 class="text-white fs-3 fw-bold ms-lg-10">林媽媽中式餐館</h3>
+      <i class="bi bi-person-check-fill text-primary-400 fs-lg-3 fs-5 ps-1"></i>
+     </div>
+     <div>
+       <a class="btn" role="button">
+         <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACIAAAAfCAYAAACCox+xAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAH9SURBVHgBzZfLccIwEIZXggIowSW4g5grlyQVxByZAYIriKmACQzD0U4FyY0j0IFLcAkc4MQr/4LtCWCDxUv5ZmRpbEv6vVqt1oJS8DyvNJvNWmg+oZgoJZQpSiCECAqFwmetVgvT+g4GA2O5XNqqfUWKABfNdzoDBvUxaDseVKUvaDcaDTdVCA80n89Hm83GpPyExWKxzA1YYYTKUOgboE/ZcRy2FhXju/iab9qZUgUjErBtkxomPoLn3H6I5Eu327VRWXQZBqmLiLEwdysRgvX+IE3Ec4ter2ehHpFeymyRJ9IMNsizhGkM0oyUsiTpnyDX6/WUNMMaeGlC0gyWJpAISF+kmcViMZFRiB2TPsbQEMbO2iZNYOu6XG+F4CQckwarQITfbDYniRAGvlKlXd7wKBHharVKViIRwuuEhw49COwUl+c8EsLATD4ql+6PW6/X93arSHsLB6GP6o3uQOQX1cP7IqsDxHDS8kK3FfEDEa9pzzLPmsh5A7odAZyzmvVQnOrZ6XRKSOc4V1FNIY9E/M1PlYXEXOMz7BOwhHNKRG4hl4rJcsw0cucjiL42qW1tN68IpkAKDIfDSaVS4aZ15lUXwpXOLyUhOcUoi2By+8gh/C+EpMrbG0wI+zBi3l0I0+/3TaR5/JtK2Bm8PW8Zd9RArDFQro0z9At4Zemo+hFkGgAAAABJRU5ErkJggg==" alt="heart">
+       </a>
+     </div> 
+  </div>
+ <div class="row g-0 created-bady investor-created-bady">
+   <div class="col-md-6  d-flex align-items-center justify-content-center">
+     <img src="/Dream-Workshop/assets/mamacook-a216e22e.png" class="img-fluid rounded-start" alt="林媽媽">
+   </div>
+   <div class="col-md-6">
+     <div class="card-body investor-card-body created-form">
+        <div class="d-md-flex pb-md-2">
+          <ul class="list-unstyled pb-md-0 pb-1">
+            <li class="fs-5 text-gray-400 fw-bold">公司成立狀態</li>
+            <li class="fs-3 text-primary-400 fw-bold">未設立</li>
+           </ul>
+          <ul class="list-unstyled pb-md-0 pb-1">
+            <li class="fs-5 text-gray-400 fw-bold">產業分類</li>
+            <li class="fs-3 text-primary-400 fw-bold">餐飲</li>
+          </ul>
+        </div>
+        <div class="d-md-flex pb-md-2">
+            <ul class="list-unstyled pb-md-0 pb-1">
+              <li class="fs-5 text-gray-400 fw-bold">規模</li>
+              <li class="fs-3 text-primary-400 fw-bold">10人以下</li>
+             </ul>
+            <ul class="list-unstyled pb-md-0 pb-1">
+              <li class="fs-5 text-gray-400 fw-bold">資本額</li>
+              <li class="fs-3 text-primary-400 fw-bold">3,000,000</li>
+            </ul>
+          </div>
+        <div class="d-md-flex align-items-center">
+            <ul class="list-unstyled w-50 pb-md-0 pb-1">
+              <li class="fs-5 text-gray-400 fw-bold">募資金額</li>
+              <li class="fs-3 text-primary-400 fw-bold">50,000,000</li>
+            </ul>
+        </div>
+     </div>
+     <div class="d-flex  align-items-center p-md-3">
+         <form class="row g-lg-3 g-0">
+             <div class="col">
+               <label for="project-Remark" class="form-label text-white fs-5"></label>
+               <textarea id="project-Remark" rows="3"  class="w-100 bg-transparent text-white">請填寫備註...</textarea>
+             </div>
+         </form>
+         <button type="button" class="btn btn-gray-200 text-gray-800 fw-bold ms-lg-5 ms-2">保存</button>
+     </div> 
+   </div>
+ </div>
+ <div>
+     <a href="/pages/investor/Investor-autobiography.html" type="button" class="btn btn-primary-600 w-100 py-2 bg-gray-600 border-0 text-primary-600 fs-5 fw-bold">查看詳情<i class="bi bi-chevron-right ps-1"></i></a>   
+ </div>
+</div>
+<!-- come寵物美容 -->
+<div class="card bg-gray-800 mt-lg-8 mt-5">
+  <div class="d-flex justify-content-between created-title investor-created-title">
+     <div class="d-flex align-items-center">
+      <h3 class="text-white fs-3 fw-bold ms-lg-10">come寵物美容</h3>
+      <i class="bi bi-person-check-fill text-primary-400 fs-lg-3 fs-5 ps-1"></i>
+     </div>
+     <div>
+       <a class="btn" role="button">
+         <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACIAAAAfCAYAAACCox+xAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAH9SURBVHgBzZfLccIwEIZXggIowSW4g5grlyQVxByZAYIriKmACQzD0U4FyY0j0IFLcAkc4MQr/4LtCWCDxUv5ZmRpbEv6vVqt1oJS8DyvNJvNWmg+oZgoJZQpSiCECAqFwmetVgvT+g4GA2O5XNqqfUWKABfNdzoDBvUxaDseVKUvaDcaDTdVCA80n89Hm83GpPyExWKxzA1YYYTKUOgboE/ZcRy2FhXju/iab9qZUgUjErBtkxomPoLn3H6I5Eu327VRWXQZBqmLiLEwdysRgvX+IE3Ec4ter2ehHpFeymyRJ9IMNsizhGkM0oyUsiTpnyDX6/WUNMMaeGlC0gyWJpAISF+kmcViMZFRiB2TPsbQEMbO2iZNYOu6XG+F4CQckwarQITfbDYniRAGvlKlXd7wKBHharVKViIRwuuEhw49COwUl+c8EsLATD4ql+6PW6/X93arSHsLB6GP6o3uQOQX1cP7IqsDxHDS8kK3FfEDEa9pzzLPmsh5A7odAZyzmvVQnOrZ6XRKSOc4V1FNIY9E/M1PlYXEXOMz7BOwhHNKRG4hl4rJcsw0cucjiL42qW1tN68IpkAKDIfDSaVS4aZ15lUXwpXOLyUhOcUoi2By+8gh/C+EpMrbG0wI+zBi3l0I0+/3TaR5/JtK2Bm8PW8Zd9RArDFQro0z9At4Zemo+hFkGgAAAABJRU5ErkJggg==" alt="heart">
+       </a>
+     </div> 
+  </div>
+ <div class="row g-0 created-bady investor-created-bady">
+   <div class="col-md-6 d-flex align-items-center justify-content-center">
+     <img src="/Dream-Workshop/assets/come-47fe869c.png" class="img-fluid rounded-start" alt="come寵物美容">
+   </div>
+   <div class="col-md-6">
+     <div class="card-body investor-card-body created-form">
+        <div class="d-md-flex pb-md-2">
+          <ul class="list-unstyled pb-md-0 pb-1">
+            <li class="fs-5 text-gray-400 fw-bold">公司成立狀態</li>
+            <li class="fs-3 text-primary-400 fw-bold">未設立</li>
+           </ul>
+          <ul class="list-unstyled pb-md-0 pb-1">
+            <li class="fs-5 text-gray-400 fw-bold">產業分類</li>
+            <li class="fs-3 text-primary-400 fw-bold">餐飲</li>
+          </ul>
+        </div>
+        <div class="d-md-flex pb-md-2">
+            <ul class="list-unstyled pb-md-0 pb-1">
+              <li class="fs-5 text-gray-400 fw-bold">規模</li>
+              <li class="fs-3 text-primary-400 fw-bold">10人以下</li>
+             </ul>
+            <ul class="list-unstyled pb-md-0 pb-1">
+              <li class="fs-5 text-gray-400 fw-bold">資本額</li>
+              <li class="fs-3 text-primary-400 fw-bold">3,000,000</li>
+            </ul>
+          </div>
+        <div class="d-md-flex align-items-center">
+            <ul class="list-unstyled pb-md-0 pb-1">
+              <li class="fs-5 text-gray-400 fw-bold">募資金額</li>
+              <li class="fs-3 text-primary-400 fw-bold">800,000</li>
+            </ul>
+        </div>
+     </div>
+     <div class="d-flex  align-items-center  p-md-3">
+         <form class="row g-lg-3 g-0">
+             <div class="col ">
+               <label for="project-Remark" class="form-label text-white fs-5"></label>
+               <textarea id="project-Remark" rows="3" class="w-100 bg-transparent text-white">請填寫備註...</textarea>
+             </div>
+         </form>
+         <button type="button" class="btn btn-gray-200 text-gray-800 fw-bold ms-lg-5 ms-2">保存</button>
+     </div> 
+   </div>
+ </div>
+ <div>
+     <a href="/pages/investor/Investor-autobiography.html" type="button" class="btn btn-primary-600 w-100 py-2 bg-gray-600 border-0 text-primary-600 fs-5 fw-bold">查看詳情<i class="bi bi-chevron-right ps-1"></i></a>   
+ </div>
+</div>
+
+<!-- 猛毒創意有限公司 -->
+
+<div class="card bg-gray-800 mt-lg-8 mt-5">
+<div class="d-flex justify-content-between created-title investor-created-title">
+   <div class="d-flex align-items-center">
+    <h3 class="text-white fs-3 fw-bold ms-lg-10">猛毒創意有限公司</h3>
+    <i class="bi bi-person-check-fill text-primary-400 fs-lg-3 fs-5 ps-1"></i>
+   </div>
+   <div>
+     <a class="btn" role="button">
+       <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACIAAAAfCAYAAACCox+xAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAH9SURBVHgBzZfLccIwEIZXggIowSW4g5grlyQVxByZAYIriKmACQzD0U4FyY0j0IFLcAkc4MQr/4LtCWCDxUv5ZmRpbEv6vVqt1oJS8DyvNJvNWmg+oZgoJZQpSiCECAqFwmetVgvT+g4GA2O5XNqqfUWKABfNdzoDBvUxaDseVKUvaDcaDTdVCA80n89Hm83GpPyExWKxzA1YYYTKUOgboE/ZcRy2FhXju/iab9qZUgUjErBtkxomPoLn3H6I5Eu327VRWXQZBqmLiLEwdysRgvX+IE3Ec4ter2ehHpFeymyRJ9IMNsizhGkM0oyUsiTpnyDX6/WUNMMaeGlC0gyWJpAISF+kmcViMZFRiB2TPsbQEMbO2iZNYOu6XG+F4CQckwarQITfbDYniRAGvlKlXd7wKBHharVKViIRwuuEhw49COwUl+c8EsLATD4ql+6PW6/X93arSHsLB6GP6o3uQOQX1cP7IqsDxHDS8kK3FfEDEa9pzzLPmsh5A7odAZyzmvVQnOrZ6XRKSOc4V1FNIY9E/M1PlYXEXOMz7BOwhHNKRG4hl4rJcsw0cucjiL42qW1tN68IpkAKDIfDSaVS4aZ15lUXwpXOLyUhOcUoi2By+8gh/C+EpMrbG0wI+zBi3l0I0+/3TaR5/JtK2Bm8PW8Zd9RArDFQro0z9At4Zemo+hFkGgAAAABJRU5ErkJggg==" alt="heart">
+     </a>
+   </div> 
+</div>
+<div class="row g-0 created-bady investor-created-bady">
+ <div class="col-md-6 d-flex align-items-center justify-content-center">
+   <img src="/Dream-Workshop/assets/猛毒-0ef3f8c5.png" class="img-fluid rounded-start" alt="猛毒創意有限公司">
+ </div>
+ <div class="col-md-6">
+   <div class="card-body investor-card-body created-form">
+      <div class="d-md-flex pb-md-2">
+        <ul class="list-unstyled pb-md-0 pb-1">
+          <li class="fs-5 text-gray-400 fw-bold">公司成立狀態</li>
+          <li class="fs-3 text-primary-400 fw-bold">未設立</li>
+         </ul>
+        <ul class="list-unstyled pb-md-0 pb-1">
+          <li class="fs-5 text-gray-400 fw-bold">產業分類</li>
+          <li class="fs-3 text-primary-400 fw-bold">餐飲</li>
+        </ul>
+      </div>
+      <div class="d-md-flex pb-md-2">
+          <ul class="list-unstyled pb-md-0 pb-1">
+            <li class="fs-5 text-gray-400 fw-bold">規模</li>
+            <li class="fs-3 text-primary-400 fw-bold">10人以下</li>
+           </ul>
+          <ul class="list-unstyled pb-md-0 pb-1">
+            <li class="fs-5 text-gray-400 fw-bold">資本額</li>
+            <li class="fs-3 text-primary-400 fw-bold">3,000,000</li>
+          </ul>
+        </div>
+      <div class="d-md-flex align-items-center">
+          <ul class="list-unstyled pb-md-0 pb-1">
+            <li class="fs-5 text-gray-400 fw-bold">募資金額</li>
+            <li class="fs-3 text-primary-400 fw-bold">800,000</li>
+          </ul>
+      </div>
+   </div>
+   <div class="d-flex  align-items-center  p-md-3">
+       <form class="row g-lg-3 g-0">
+           <div class="col ">
+             <label for="project-Remark" class="form-label text-white fs-5"></label>
+             <textarea id="project-Remark" rows="3" class="w-100 bg-transparent text-white">請填寫備註...</textarea>
+           </div>
+       </form>
+       <button type="button" class="btn btn-gray-200 text-gray-800 fw-bold ms-lg-5 ms-2">保存</button>
+   </div> 
+ </div>
+</div>
+<div>
+   <a href="/pages/investor/Investor-autobiography.html" type="button" class="btn btn-primary-600 w-100 py-2 bg-gray-600 border-0 text-primary-600 fs-5 fw-bold">查看詳情<i class="bi bi-chevron-right ps-1"></i></a>   
+</div>
+</div>  </div>
+  <div id="member-collectInvestor" class="content-section" style="display: none;">
+     <!-- 投資人1 -->
+ <div class="card bg-gray-800 mt-lg-8 mt-5">
+  <div class="d-flex justify-content-between created-title investor-created-title">
+     <div class="d-flex align-items-center">
+      <h3 class="text-white fs-3 fw-bold ms-lg-10">謝阿金</h3>
+      <i class="bi bi-person-check-fill text-primary-400 fs-lg-3 fs-5 ps-1"></i>
+     </div>
+     <div>
+       <a class="btn" role="button">
+         <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACIAAAAfCAYAAACCox+xAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAH9SURBVHgBzZfLccIwEIZXggIowSW4g5grlyQVxByZAYIriKmACQzD0U4FyY0j0IFLcAkc4MQr/4LtCWCDxUv5ZmRpbEv6vVqt1oJS8DyvNJvNWmg+oZgoJZQpSiCECAqFwmetVgvT+g4GA2O5XNqqfUWKABfNdzoDBvUxaDseVKUvaDcaDTdVCA80n89Hm83GpPyExWKxzA1YYYTKUOgboE/ZcRy2FhXju/iab9qZUgUjErBtkxomPoLn3H6I5Eu327VRWXQZBqmLiLEwdysRgvX+IE3Ec4ter2ehHpFeymyRJ9IMNsizhGkM0oyUsiTpnyDX6/WUNMMaeGlC0gyWJpAISF+kmcViMZFRiB2TPsbQEMbO2iZNYOu6XG+F4CQckwarQITfbDYniRAGvlKlXd7wKBHharVKViIRwuuEhw49COwUl+c8EsLATD4ql+6PW6/X93arSHsLB6GP6o3uQOQX1cP7IqsDxHDS8kK3FfEDEa9pzzLPmsh5A7odAZyzmvVQnOrZ6XRKSOc4V1FNIY9E/M1PlYXEXOMz7BOwhHNKRG4hl4rJcsw0cucjiL42qW1tN68IpkAKDIfDSaVS4aZ15lUXwpXOLyUhOcUoi2By+8gh/C+EpMrbG0wI+zBi3l0I0+/3TaR5/JtK2Bm8PW8Zd9RArDFQro0z9At4Zemo+hFkGgAAAABJRU5ErkJggg==" alt="heart">
+       </a>
+     </div> 
+  </div>
+ <div class="row g-0 created-bady investor-created-bady">
+   <div class="col-md-6 d-flex align-items-center justify-content-center">
+     <img src="/Dream-Workshop/assets/海綿寶寶-a417dc60.png" class="img-fluid rounded-start" alt="謝阿金">
+   </div>
+   <div class="col-md-6">
+     <div class="card-body investor-card-body created-form">
+         <div class="d-md-flex pb-md-2">
+           <ul class="list-unstyled pb-md-0 pb-1">
+             <li class="fs-5 text-gray-400 fw-bold">偏好領域</li>
+             <li class="fs-3 text-primary-400 fw-bold">餐飲</li>
+             <li class="fs-3 text-primary-400 fw-bold">一般服務</li>
+             <li class="fs-3 text-primary-400 fw-bold">批發/零售</li>
+            </ul>
+           <ul class="list-unstyled pb-md-0 pb-1">
+             <li class="fs-5 text-gray-400 fw-bold">資本規模</li>
+             <li class="fs-3 text-primary-400 fw-bold">4,000,000</li>
+           </ul>
+         </div>
+     </div>
+     <div class="d-flex  align-items-center  p-md-3">
+         <form class="row g-lg-3 g-0">
+             <div class="col">
+               <label for="project-Remark" class="form-label text-white fs-5"></label>
+               <textarea id="project-Remark" rows="3" class="w-100 bg-transparent text-white">請填寫備註...</textarea>
+             </div>
+         </form>
+         <button type="button" class="btn btn-gray-200 text-gray-800 fw-bold ms-lg-5 ms-2">保存</button>
+     </div> 
+   </div>
+ </div>
+ <div>
+     <a href="/pages/investor/Investor-autobiography.html" type="button" class="btn btn-primary-600 w-100 py-2 bg-gray-600 border-0 text-primary-600 fs-5 fw-bold">查看詳情<i class="bi bi-chevron-right ps-1"></i></a>   
+ </div>
+</div>
+<!-- 投資人2 -->
+<div class="card bg-gray-800 mt-lg-8 mt-5">
+<div class="d-flex justify-content-between created-title investor-created-title">
+  <div class="d-flex align-items-center">
+   <h3 class="text-white fs-3 fw-bold ms-lg-10">曹穎惠</h3>
+   <i class="bi bi-person-check-fill text-primary-400 fs-lg-3 fs-5 ps-1"></i>
+  </div>
+  <div>
+    <a class="btn" role="button">
+      <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACIAAAAfCAYAAACCox+xAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAH9SURBVHgBzZfLccIwEIZXggIowSW4g5grlyQVxByZAYIriKmACQzD0U4FyY0j0IFLcAkc4MQr/4LtCWCDxUv5ZmRpbEv6vVqt1oJS8DyvNJvNWmg+oZgoJZQpSiCECAqFwmetVgvT+g4GA2O5XNqqfUWKABfNdzoDBvUxaDseVKUvaDcaDTdVCA80n89Hm83GpPyExWKxzA1YYYTKUOgboE/ZcRy2FhXju/iab9qZUgUjErBtkxomPoLn3H6I5Eu327VRWXQZBqmLiLEwdysRgvX+IE3Ec4ter2ehHpFeymyRJ9IMNsizhGkM0oyUsiTpnyDX6/WUNMMaeGlC0gyWJpAISF+kmcViMZFRiB2TPsbQEMbO2iZNYOu6XG+F4CQckwarQITfbDYniRAGvlKlXd7wKBHharVKViIRwuuEhw49COwUl+c8EsLATD4ql+6PW6/X93arSHsLB6GP6o3uQOQX1cP7IqsDxHDS8kK3FfEDEa9pzzLPmsh5A7odAZyzmvVQnOrZ6XRKSOc4V1FNIY9E/M1PlYXEXOMz7BOwhHNKRG4hl4rJcsw0cucjiL42qW1tN68IpkAKDIfDSaVS4aZ15lUXwpXOLyUhOcUoi2By+8gh/C+EpMrbG0wI+zBi3l0I0+/3TaR5/JtK2Bm8PW8Zd9RArDFQro0z9At4Zemo+hFkGgAAAABJRU5ErkJggg==" alt="heart">
+    </a>
+  </div> 
+</div>
+<div class="row g-0 created-bady investor-created-bady">
+<div class="col-md-6 d-flex align-items-center justify-content-center">
+  <img src="/Dream-Workshop/assets/留言頭像1-97c57edc.png" class="img-fluid rounded-start" alt="曹穎惠">
+</div>
+<div class="col-md-6">
+  <div class="card-body investor-card-body created-form">
+      <div class="d-md-flex pb-md-2">
+        <ul class="list-unstyled pb-md-0 pb-1">
+          <li class="fs-5 text-gray-400 fw-bold">偏好領域</li>
+          <li class="fs-3 text-primary-400 fw-bold">餐飲</li>
+          <li class="fs-3 text-primary-400 fw-bold">一般服務</li>
+          <li class="fs-3 text-primary-400 fw-bold">批發/零售</li>
+         </ul>
+        <ul class="list-unstyled pb-md-0 pb-1">
+          <li class="fs-5 text-gray-400 fw-bold">資本規模</li>
+          <li class="fs-3 text-primary-400 fw-bold">3,000,000</li>
+        </ul>
+      </div>
+  </div>
+  <div class="d-flex  align-items-center  p-md-3">
+      <form class="row g-lg-3 g-0">
+          <div class="col">
+            <label for="project-Remark" class="form-label text-white fs-5"></label>
+            <textarea id="project-Remark" rows="3" class="w-100 bg-transparent text-white">請填寫備註...</textarea>
+          </div>
+      </form>
+      <button type="button" class="btn btn-gray-200 text-gray-800 fw-bold ms-lg-5 ms-2">保存</button>
+  </div> 
+</div>
+</div>
+<div>
+  <a href="/pages/investor/Investor-autobiography.html" type="button" class="btn btn-primary-600 w-100 py-2 bg-gray-600 border-0 text-primary-600 fs-5 fw-bold">查看詳情<i class="bi bi-chevron-right ps-1"></i></a>   
+</div>
+</div>
+<!-- 投資人3 -->
+<div class="card bg-gray-800 mt-lg-8 mt-5">
+<div class="d-flex justify-content-between created-title investor-created-title">
+<div class="d-flex align-items-center">
+ <h3 class="text-white fs-3 fw-bold ms-lg-10">中村修二</h3>
+ <i class="bi bi-person-check-fill text-primary-400 fs-lg-3 fs-5 ps-1"></i>
+</div>
+<div>
+  <a class="btn" role="button">
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACIAAAAfCAYAAACCox+xAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAH9SURBVHgBzZfLccIwEIZXggIowSW4g5grlyQVxByZAYIriKmACQzD0U4FyY0j0IFLcAkc4MQr/4LtCWCDxUv5ZmRpbEv6vVqt1oJS8DyvNJvNWmg+oZgoJZQpSiCECAqFwmetVgvT+g4GA2O5XNqqfUWKABfNdzoDBvUxaDseVKUvaDcaDTdVCA80n89Hm83GpPyExWKxzA1YYYTKUOgboE/ZcRy2FhXju/iab9qZUgUjErBtkxomPoLn3H6I5Eu327VRWXQZBqmLiLEwdysRgvX+IE3Ec4ter2ehHpFeymyRJ9IMNsizhGkM0oyUsiTpnyDX6/WUNMMaeGlC0gyWJpAISF+kmcViMZFRiB2TPsbQEMbO2iZNYOu6XG+F4CQckwarQITfbDYniRAGvlKlXd7wKBHharVKViIRwuuEhw49COwUl+c8EsLATD4ql+6PW6/X93arSHsLB6GP6o3uQOQX1cP7IqsDxHDS8kK3FfEDEa9pzzLPmsh5A7odAZyzmvVQnOrZ6XRKSOc4V1FNIY9E/M1PlYXEXOMz7BOwhHNKRG4hl4rJcsw0cucjiL42qW1tN68IpkAKDIfDSaVS4aZ15lUXwpXOLyUhOcUoi2By+8gh/C+EpMrbG0wI+zBi3l0I0+/3TaR5/JtK2Bm8PW8Zd9RArDFQro0z9At4Zemo+hFkGgAAAABJRU5ErkJggg==" alt="heart">
+  </a>
+</div> 
+</div>
+<div class="row g-0 created-bady investor-created-bady">
+<div class="col-md-6 d-flex align-items-center justify-content-center">
+<img src="/Dream-Workshop/assets/留言頭像2-6ada11f4.png" class="img-fluid rounded-start" alt="中村修二">
+</div>
+<div class="col-md-6">
+<div class="card-body investor-card-body created-form">
+    <div class="d-md-flex pb-md-2">
+      <ul class="list-unstyled pb-md-0 pb-1">
+        <li class="fs-5 text-gray-400 fw-bold">偏好領域</li>
+        <li class="fs-3 text-primary-400 fw-bold">餐飲</li>
+        <li class="fs-3 text-primary-400 fw-bold">一般服務</li>
+        <li class="fs-3 text-primary-400 fw-bold">大眾傳播相關</li>
+       </ul>
+      <ul class="list-unstyled pb-md-0 pb-1">
+        <li class="fs-5 text-gray-400 fw-bold">資本規模</li>
+        <li class="fs-3 text-primary-400 fw-bold">50,000,000</li>
+      </ul>
+    </div>
+</div>
+<div class="d-flex  align-items-center  p-md-3">
+    <form class="row g-lg-3 g-0">
+        <div class="col">
+          <label for="project-Remark" class="form-label text-white fs-5"></label>
+          <textarea id="project-Remark" rows="3" class="w-100 bg-transparent text-white">請填寫備註...</textarea>
+        </div>
+    </form>
+    <button type="button" class="btn btn-gray-200 text-gray-800 fw-bold ms-lg-5 ms-2">保存</button>
+</div> 
+</div>
+</div>
+<div>
+<a href="/pages/investor/Investor-autobiography.html" type="button" class="btn btn-primary-600 w-100 py-2 bg-gray-600 border-0 text-primary-600 fs-5 fw-bold">查看詳情<i class="bi bi-chevron-right ps-1"></i></a>   
+</div>
+</div>  </div>
+  <div id="member-applyActivity" class="content-section" style="display: none;">
+     <!-- 卡斯柏創業分享會r -->
+ <div class="card my-4 border-0">
+  <div class="row g-0 d-flex align-items-center bg-gray-800 ">
+    <div class="col-md-3">
+      <img src="/Dream-Workshop/assets/卡斯柏分享會-10b39b37.png" class="img-fluid rounded-start w-100" alt="分享會">
+    </div>
+    <div class="col-md-9">
+      <div class="card-body text-white bd-gray-800">
+        <h2 class="card-title text-primary-1000 fw-bold">卡斯柏創業分享會</h2>
+        <ul class="fs-5 list-unstyled">
+          <li>日期：2024年9月15日</li>
+          <li>時間：14:00-17:00</li>
+          <li>地點：高雄市鹽埕區七賢三路123號2樓</li>
+        </ul>
+        <div class="text-end">
+        <button   type="button"  class="btn  btn-outline-danger fw-bold " data-bs-toggle="modal" data-bs-target="#applyactivity-exampleModal">取消申請</button>
+      </div>
+      </div>
+
+    </div>
+  </div>
+  <div>
+    <a href="activity-casper.html" type="button" class="btn btn-primary-600 w-100 py-2 bg-gray-600 border-0 text-primary-600 fs-5 fw-bold">查看詳情<i class="bi bi-chevron-right ps-1"></i></a>   
+</div>
+</div>  
+
+    <!-- modal 刪除 -->
+    <div class="modal fade" id="applyactivity-exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content bg-gray-1000">
+          <div class="modal-header border-0">
+              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+          <div class="modal-body text-center text-primary-600 fs-3 fw-bold">
+             是否刪除?
+          </div>
+          <div class="border-0 text-center mt-15 mb-14">
+              <button type="button" class="btn btn-lg btn-gray-600 fw-bolder px-9" data-bs-dismiss="modal">取消</button>
+              <button type="button" class="btn btn-lg btn-primary-600 fw-bolder ms-9 px-9" data-bs-dismiss="modal">確認</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+   </div>
+  <div id="member-activityrecord" class="content-section" style="display: none;">
+       <!-- 活動紀錄 -->
+   <div class="pt-lg-8 pt-5">
+    <table class="table table-dark table-hover table-bordered border-gray-600">
+      <thead class="text-center fs-4 ">
+        <tr>
+          <th scope="col" class="text-primary-1000">活動名稱</th>
+          <th scope="col" class="text-primary-1000">活動日期</th>
+          <th scope="col" class="text-primary-1000">狀態</th>
+        </tr>
+      </thead>
+      <tbody class="text-center">
+        <tr>
+          <td>卡斯柏創業分享會</td>
+          <td>2024年9月15日</td>
+          <td class="text-danger">已申請參加</td>
+        </tr>
+        <tr>
+          <td>創新資本對接會 - 投資者與創業者的完美邂逅</td>
+          <td>2023年10月20日</td>
+          <td class="text-gray-400">活動已過期</td>
+        </tr>
+        <tr>
+          <td>創業夢想會 - 創業者的聯誼交流</td>
+          <td>2023年1月28日</td>
+          <td class="text-gray-400">活動已過期</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>  </div>
+  <div id="member-sitenews" class="content-section" style="display: none;">
+     <!-- 站內消息 -->
+ <div class="pt-lg-8 pt-5">
+  <div class="card mb-3 border-0">
+      <div class="card-header text-white bg-primary-600 d-flex justify-content-between align-items-center">
+        <span class="text-gray-1000 fw-bold">維護更新</span>
+        <span class="text-gray-1000 fw-bold">5 分鐘前</span>
+      </div>
+      <div class="card-body bg-gray-800">
+        <h5 class="card-title text-danger">系統更新通知</h5>
+        <p class="card-text">我們的系統已經升級，請重新登入以應用最新的功能。</p>
+      </div>
+    </div>
+</div>  </div>
+  <div id="member-postarticle" class="content-section" style="display: none;">
+            <div class="row my-8">
+          <label for="colFormLabelLg" class="col-sm-2 col-form-label col-form-label-lg text-lg-end fw-bolder text-gray-400">標題</label>
+          <div class="col-sm-10">
+            <input type="text" class="form-control form-control-lg bg-gray-800 bg-opacity-50 text-white" id="colFormLabelLg" >
+          </div>
+        </div>
+
+
+<div class="row my-8">
+    <label for="editor" class="col-sm-2 col-form-label col-form-label-lg text-lg-end fw-bolder text-gray-400">內容</label>
+    <div class="col-sm-10">
+        <textarea type="text" id="editor" class="form-control"></textarea>
+    </div>
+</div>
+
+
+
+<div class="d-flex justify-content-center">
+<div class="form-check">
+    <input class="form-check-input bg-gray-1000" type="checkbox" value="" id="flexCheckDefault">
+    <label class="form-check-label text-white " for="flexCheckDefault">
+        我已閱讀過並同意遵守討論區規則、本站服務條款與個人資料保護法。
+    </label>
+</div>
+</div>
+<div class="d-flex justify-content-center mt-8">
+<div class="me-5">
+<button class="btn btn-lg btn-outline-primary-600 fw-bolder" data-bs-toggle="modal" data-bs-target="#member-postarticle-modal">
+    <i class="bi bi-save"></i> 發表文章
+</button>
+</div>
+<div>
+    <button id="cancelUpload1" type="button" class="btn btn-lg btn-outline-danger">
+        <i class="bi bi-x-circle"></i> 取消
+    </button>
+</div>
+</div>
+
+
+
+<!-- modal 儲存變更 -->
+<div class="modal fade" id="member-postarticle-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content bg-gray-1000">
+            <div class="modal-header border-0">
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+            <div class="modal-body text-center text-primary-600 fs-3 fw-bold">
+               已發表文章
+            </div>
+            <div class="border-0 text-center mt-15 mb-14">
+                <button type="button" class="btn btn-lg btn-primary-600 fw-bolder  px-9" data-bs-dismiss="modal" >確認</button>
+            </div>
+          </div>
+    </div>
+</div>  </div>
+  <div id="member-postlist" class="content-section" style="display: none;">
+    <!-- 表格 -->
+<table class="table table-striped table-hover mt-8 ">
+  <thead class="table-gray-800 table-bordered">
+    <tr class="text-center fs-4">
+      <th scope="col" class="text-primary-1000">標題</th>
+      <th scope="col" class="text-primary-1000">發佈時間</th>
+      <th scope="col" class="text-primary-1000">編輯</th>
+      <th scope="col" class="text-primary-1000">刪除</th>
+    </tr>
+  </thead>
+  <tbody class="text-center table table-sm table-gray-800">
+    <tr class="tbody-text-hover align-middle">
+      <th scope="row"><a href="article-content.html">是否該放棄年薪7百萬的工作轉去創業?</a></th>
+      <td>2023/7/2  22:04</td>
+      <td><a href="editarticle.html" >
+          <i class="bi bi-pencil-square fs-3 text-primary-600 pe-2"></i>
+        </a>
+     </td>
+      <td> <a href="#" data-bs-toggle="modal" data-bs-target="#postlist-exampleModal"><i class="bi bi-trash3 fs-3 text-danger"></i></a></td>
+    </tr>
+    <tr class="tbody-text-hover align-middle">
+      <th scope="row"><a href="article-content.html">是否該放棄年薪7百萬的工作轉去創業?</a></th>
+      <td>2023/7/2  22:04</td>
+      <td><a href="editarticle.html" >
+          <i class="bi bi-pencil-square fs-3 text-primary-600 pe-2"></i>
+        </a>
+     </td>
+      <td> <a href="#" data-bs-toggle="modal" data-bs-target="#postlist-exampleModal"><i class="bi bi-trash3 fs-3 text-danger"></i></a></td>
+    </tr>
+    <tr class="tbody-text-hover align-middle">
+      <th scope="row"><a href="article-content.html">是否該放棄年薪7百萬的工作轉去創業?</a></th>
+      <td>2023/7/2  22:04</td>
+      <td><a href="editarticle.html" >
+          <i class="bi bi-pencil-square fs-3 text-primary-600 pe-2"></i>
+        </a>
+     </td>
+      <td> <a href="#" data-bs-toggle="modal" data-bs-target="#postlist-exampleModal"><i class="bi bi-trash3 fs-3 text-danger"></i></a></td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="modal fade" id="postlist-exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+  <div class="modal-content bg-gray-1000">
+    <div class="modal-header border-0">
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+    <div class="modal-body text-center text-primary-600 fs-3 fw-bold">
+       是否確認刪除?
+    </div>
+    <div class="border-0 text-center mt-15 mb-14">
+        <button type="button" class="btn btn-lg btn-gray-600 fw-bolder px-9" data-bs-dismiss="modal">取消</button>
+        <button type="button" class="btn btn-lg btn-primary-600 fw-bolder ms-9 px-9" data-bs-dismiss="modal">確認</button>
+    </div>
+  </div>
+  </div>
+  </div>
+  </div>
+  <div id="member-articlemessage" class="content-section" style="display: none;">
+    <div class="pt-8">
+  <table class="table table-dark table-hover table-bordered border-gray-600">
+    <thead class="text-center fs-4">
+      <tr>
+        <th class="text-primary-600" scope="col">標題</th>
+        <th class="text-primary-600" scope="col">留言人</th>
+        <th class="text-primary-600" scope="col">留言內容</th>
+        <th class="text-primary-600" scope="col">操作</th>
+      </tr>
+    </thead>
+    <tbody class="text-center">
+        <tr class="align-middle">
+            <td>是否該放棄年薪7百萬的工作轉去創業?</td>
+            <td>曹穎惠</td>
+            <td>想創就創，反正工作隨時都有</td>
+            <td><button class="btn btn-outline-primary-600 text-center" data-bs-toggle="modal" data-bs-target="#exampleModal-reply-articlemessage" role="button">回覆</button>
+            </td>
+        </tr>
+        <tr class="align-middle">
+          <td>是否該放棄年薪7百萬的工作轉去創業?</td>
+          <td>中村修二</td>
+          <td>創失敗了回去工作也會甘願一點 至少試過了</td>
+          <td><button class="btn btn-outline-primary-600 text-center" data-bs-toggle="modal" data-bs-target="#exampleModal-reply-articlemessage" role="button">回覆</button>
+          </td>
+      </tr>
+      <tr class="align-middle">
+        <td>是否該放棄年薪7百萬的工作轉去創業?</td>
+        <td>三島由紀夫</td>
+        <td>你的副業，老婆能夠幫忙嗎？讓它變老婆主業試試看</td>
+        <td><button class="btn btn-outline-primary-600 text-center" data-bs-toggle="modal" data-bs-target="#exampleModal-reply-articlemessage" role="button">回覆</button>
+        </td>
+    </tr>
+    <tr class="align-middle">
+      <td>是否該放棄年薪7百萬的工作轉去創業?</td>
+      <td>戴琪</td>
+      <td>再多幹幾年就退休了，何必想不開去創業</td>
+      <td><button class="btn btn-outline-primary-600 text-center" data-bs-toggle="modal" data-bs-target="#exampleModal-reply-articlemessage" role="button">回覆</button>
+      </td>
+  </tr>
+  <tr class="align-middle">
+    <td>是否該放棄年薪7百萬的工作轉去創業?</td>
+    <td>丁肇中</td>
+    <td>副業目前跟你本業比差太多，你本業都說很累了，幹嘛還要花時間處理副業阿？</td>
+    <td><button class="btn btn-outline-primary-600 text-center" data-bs-toggle="modal" data-bs-target="#exampleModal-reply-articlemessage" role="button">回覆</button>
+    </td>
+</tr>
+    </tbody>
+  </table>
+
+</div>
+
+ <!-- modal 回覆 -->
+
+<div class="modal fade" id="exampleModal-reply-articlemessage" tabindex="-1" aria-labelledby="exampleModalToggleLabel-Projects" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content bg-gray-1000">
+          <div class="modal-header border-0">
+            <h5 class="modal-title text-primary-600" id="exampleModalToggleLabel-Projects">回覆內容</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+          <div class="modal-body text-center">
+            <label for="project-replycontent" class="form-label text-white fs-5"></label>
+              <textarea id="project-replycontent" rows="4"  class="w-100 bg-transparent text-white inputField text-white"></textarea>
+              <div class="modal-footer border-0 d-flex justify-content-between">
+                  <button type="button" class="btn btn-lg btn-gray-600 fw-bolder" id="clearButton6">清除</button>
+                  <button class="btn btn-lg btn-primary-600 fw-bolder" role="button"  data-bs-dismiss="modal">送出</button>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+
+
+<script>
+  // 清除文字
+  document.getElementById('clearButton6')?.addEventListener('click', function() {
+      document.querySelectorAll('.inputField').forEach(function(input) {
+          input.value = ''; 
+      });
+  });
+  </script>
+
+  </div>
+
+  
+
+ 
+</div>
+
+</div>
+</section>
+</main>
+
+  
+    <footer class="footer">
+    <img class="bg-field" src="/Dream-Workshop/assets/bg-field-c52487a8.png"></img>
+    <div class="mask"></div>
+    <div class="container">
+        <div class="row py-8">
+            <div class="col-lg-3 community-wrap mb-5">
+                <div class="community">
+                    <a href="index.html">
+                        <img class="mb-1" src="/Dream-Workshop/assets/創夢工坊-logo-fb8def81.png" alt="創夢工坊" style="width: 60px;">
+                    </a>
+                    
+                    <h3 class="fw-bold mb-5">Dream Workshop</h3>
+                    <ul class="d-flex justify-content-center justify-content-lg-start">
+                        <li><a href="#"><i class="icons bi bi-facebook me-3"></i></a></li>
+                        <li><a href="#"><i class="icons bi bi-instagram me-3"></i></a></li>
+                        <li><a href="#"><i class="icons bi bi-line"></i></a></li>
+                    </ul>
+                </div>     
+            </div>
+            <div class="col-lg-9 d-flex">
+                <ul class="footer-navbar me-5">
+                    <li class="fs-5 fw-bold text-gray-400 mb-3"><a href="about-us.html">關於我們</a></li>
+                    <li><a class="fw-bold text-primary-600 mb-2" href="about-us.html">網站理念</a></li>
+                    <li><a class="fw-bold text-primary-600 mb-2" href="about-us.html">常見問題</a></li>
+                    <li><a class="fw-bold text-primary-600" href="privacy-policy.html">隱私權政策</a></li>
+                </ul>
+                <ul class="footer-navbar me-5">
+                    <li class="fs-5 fw-bold text-gray-400 mb-3"><a href="pay-plan.html">付費方案</a></li>
+                    <li class="fw-bold text-primary-600 mb-2"><a href="pay-plan.html">購點方案</a></li>
+                    <li class="fw-bold text-primary-600"><a href="pay-plan.html">購點專區</a></li>
+                </ul>
+                <ul class="footer-navbar">
+                    <li class="fs-5 fw-bold text-gray-400 mb-3">特色服務</li>
+                    <li class="fw-bold text-primary-600 mb-2"><a href="activity.html">平台對接活動</a></li>
+                    <li class="fw-bold text-primary-600"><a href="discuss.html">討論區</a></li>
+                </ul>
+            </div>
+        </div>
+        <small class="px-3 px-lg-0 text-gray-400">© Dream Workshop 2024 Copyright. All Rights Reserved.</small>
+    </div>   
+</footer>    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/js/member.js"></script>
+    
+
+</body>
+</html>

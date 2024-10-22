@@ -5,48 +5,70 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>文章頁面</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
-  <script type="module" crossorigin src="/Dream-Workshop/assets/bootstrap.bundle.min-dcb83003.js"></script>
-  <link rel="stylesheet" href="/Dream-Workshop/assets/bootstrap.bundle-e5845128.css">
+  <script type="module" crossorigin src="/Dream-Workshop/assets/bootstrap.bundle.min-62e75eae.js"></script>
+  <link rel="stylesheet" href="/Dream-Workshop/assets/bootstrap.bundle-ed147dc8.css">
 </head>
 
 <body>
-    <nav class="header navbar navbar-expand-lg fixed-top">
-    <div class="container d-flex justify-content-center">
-        <!-- logo -->
-          <div class="d-flex justify-content-between align-items-center me-auto">
-            <a class="navbar-brand" href="index.html">
-                <img src="/Dream-Workshop/assets/創夢工坊-logo-fb8def81.png" alt="創夢工坊" style="width: 56px;">
-            </a>
-         </div>
-         <button class="navbar-toggler btn-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon d-flex align-items-center justify-content-center">
-            <i class="bi bi-list list-icon"></i>
-          </span>
-        </button>
-      
-      <!-- nav -->
-      <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link" href="project/ProjectList-project.html">找創業項目</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="investor/ProjectList-investor.html">找投資人</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">付費方案</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="discuss.html">討論區</a>
-          </li>
-        </ul>
-      </div>
-
-       <a href="login.html" class="btn login-btn btn-primary-600 d-none d-lg-block">
-        註冊/登入
-       </a>
+    
+<nav class="header navbar navbar-expand-lg fixed-top">
+<div class="container d-flex justify-content-center">
+    <div class="d-flex justify-content-between align-items-center me-auto">
+      <a class="navbar-brand" href="/pages/index.html">
+        <img
+          src="/Dream-Workshop/assets/創夢工坊-logo-fb8def81.png"
+          alt="創夢工坊"
+          style="width: 56px"
+        />
+      </a>
     </div>
-  </nav>  
+    <button
+      class="navbar-toggler btn-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarNav"
+      aria-controls="navbarNav"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span
+        class="navbar-toggler-icon d-flex align-items-center justify-content-center"
+      >
+        <i class="bi bi-list list-icon"></i>
+      </span>
+    </button>
+
+    <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="projectList-project.html"
+            >找創業項目</a
+          >
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="projectList-investor.html"
+            >找投資人</a
+          >
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="pay-plan.html">付費方案</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="discuss.html">討論區</a>
+        </li>
+      </ul>
+    </div>
+
+    <a
+      href="/pages/login/login.html"
+      class="btn login-btn btn-primary-600 d-none d-lg-block"
+    >
+      註冊/登入
+    </a>
+  </div>
+</nav>
+
+  
     <main class="bg-green py-15">
         <!-- 首頁>討論區>文章頁面 -->
         <section class="container py-8 d-lg-block d-none">
@@ -126,7 +148,7 @@
                             <p class="fw-bold pe-1">B1</p>
                             <time datetime="2024-09-20T22:20" class="text-gray-400">2024/09/20 22:20</time>
                             <span class="text-gray-400 px-1">•</span>
-                            <a href="#" class="text-primary-600">回覆</a>
+                            <a href="#" class="text-primary-600" data-bs-toggle="modal" data-bs-target="#exampleModal-reply-article" role="button">回覆</a>
                         </div>
                     </div>
                 </div>
@@ -141,7 +163,7 @@
                             <p class="fw-bold pe-1">B2</p>
                             <time datetime="2024-09-21T00:20" class="text-gray-400">2024/09/21 00:20</time>
                             <span class="text-gray-400 px-1">•</span>
-                            <a href="#" class="text-primary-600">回覆</a>
+                            <a href="#" class="text-primary-600" data-bs-toggle="modal" data-bs-target="#exampleModal-reply-article" role="button">回覆</a>
                         </div>
                     </div>
                 </div>
@@ -156,7 +178,7 @@
                             <p class="fw-bold pe-1">B3</p>
                             <time datetime="2024-09-21T04:20" class="text-gray-400">2024/09/21 04:20</time>
                             <span class="text-gray-400 px-1">•</span>
-                            <a href="#" class="text-primary-600">回覆</a>
+                            <a href="#" class="text-primary-600" data-bs-toggle="modal" data-bs-target="#exampleModal-reply-article" role="button">回覆</a>
                         </div>
                     <div class="d-flex">
                         <img src="/Dream-Workshop/assets/留言頭像4-17e6a905.png" alt="戴琪" class="rounded-circle me-2" style="width: 40px; height: 40px;">
@@ -167,7 +189,7 @@
                             <p class="fw-bold pe-1">B3-1</p>
                             <time class="text-gray-400">今天 22:20</time>
                             <span class="text-gray-400 px-1">•</span>
-                            <a href="#" class="text-primary-600">回覆</a>
+                            <a href="#" class="text-primary-600" data-bs-toggle="modal" data-bs-target="#exampleModal-reply-article" role="button">回覆</a>
                         </div>
                        </div>
                     </div>
@@ -184,7 +206,7 @@
                             <p class="fw-bold pe-1">B4</p>
                             <time class="text-gray-400">昨天 22:20</time>
                             <span class="text-gray-400 px-1">•</span>
-                            <a href="#" class="text-primary-600">回覆</a>
+                            <a href="#" class="text-primary-600" data-bs-toggle="modal" data-bs-target="#exampleModal-reply-article" role="button">回覆</a>
                         </div>
                     </div>
                 </div>
@@ -199,7 +221,7 @@
                             <p class="fw-bold pe-1">B5</p>
                             <time class="text-gray-400">今天 22:20</time>
                             <span class="text-gray-400 px-1">•</span>
-                            <a href="#" class="text-primary-600">回覆</a>
+                            <a href="#" class="text-primary-600" data-bs-toggle="modal" data-bs-target="#exampleModal-reply-article" role="button">回覆</a>
                         </div>
                     </div>
                 </div>
@@ -238,7 +260,26 @@
 
     </main>
    
+ <!-- modal 回覆 -->
 
+ <div class="modal fade" id="exampleModal-reply-article" tabindex="-1" aria-labelledby="exampleModalToggleLabel-article" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content bg-gray-1000">
+            <div class="modal-header border-0">
+              <h5 class="modal-title text-primary-600" id="exampleModalToggleLabel-article">回覆內容</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+            <div class="modal-body text-center">
+              <label for="article-replycontent" class="form-label text-white fs-5"></label>
+                <textarea id="article-replycontent" rows="4"  class="w-100 bg-transparent text-white inputField text-white"></textarea>
+                <div class="modal-footer border-0 d-flex justify-content-between">
+                    <button type="button" class="btn btn-lg btn-gray-600 fw-bolder" id="clearButton4">清除</button>
+                    <button class="btn btn-lg btn-primary-600 fw-bolder" role="button" data-bs-dismiss="modal" >送出</button>
+                </div>
+            </div>
+          </div>
+    </div>
+  </div>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script>
@@ -258,6 +299,12 @@
             effect: 'slide', 
             speed: 600, 
         });
+      // 清除文字
+    document.getElementById('clearButton4')?.addEventListener('click', function() {
+        document.querySelectorAll('.inputField').forEach(function(input) {
+            input.value = ''; 
+        });
+    });
     </script>
         <footer class="footer">
     <img class="bg-field" src="/Dream-Workshop/assets/bg-field-c52487a8.png"></img>
@@ -281,14 +328,14 @@
             <div class="col-lg-9 d-flex">
                 <ul class="footer-navbar me-5">
                     <li class="fs-5 fw-bold text-gray-400 mb-3"><a href="about-us.html">關於我們</a></li>
-                    <li><a class="fw-bold text-primary-600 mb-2" href="#">網站理念</a></li>
-                    <li><a class="fw-bold text-primary-600 mb-2" href="#">常見問題</a></li>
-                    <li><a class="fw-bold text-primary-600" href="#">隱私權政策</a></li>
+                    <li><a class="fw-bold text-primary-600 mb-2" href="about-us.html">網站理念</a></li>
+                    <li><a class="fw-bold text-primary-600 mb-2" href="about-us.html">常見問題</a></li>
+                    <li><a class="fw-bold text-primary-600" href="privacy-policy.html">隱私權政策</a></li>
                 </ul>
                 <ul class="footer-navbar me-5">
-                    <li class="fs-5 fw-bold text-gray-400 mb-3"><a href="#">付費方案</a></li>
-                    <li class="fw-bold text-primary-600 mb-2"><a href="#">購點方案</a></li>
-                    <li class="fw-bold text-primary-600"><a href="#">購點專區</a></li>
+                    <li class="fs-5 fw-bold text-gray-400 mb-3"><a href="pay-plan.html">付費方案</a></li>
+                    <li class="fw-bold text-primary-600 mb-2"><a href="pay-plan.html">購點方案</a></li>
+                    <li class="fw-bold text-primary-600"><a href="pay-plan.html">購點專區</a></li>
                 </ul>
                 <ul class="footer-navbar">
                     <li class="fs-5 fw-bold text-gray-400 mb-3">特色服務</li>
