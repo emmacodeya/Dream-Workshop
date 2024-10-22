@@ -3,7 +3,6 @@ import { ViteEjsPlugin } from 'vite-plugin-ejs';
 import { fileURLToPath } from 'node:url';
 import path from 'node:path';
 import { glob } from 'glob';
-
 import liveReload from 'vite-plugin-live-reload';
 
 function moveOutputPlugin() {
@@ -23,9 +22,6 @@ function moveOutputPlugin() {
 }
 
 export default defineConfig({
-  // base 的寫法：
-  // base: '/Repository 的名稱/'
-  // base: '/Dream-Workshop/',
   base: '/Dream-Workshop/',
   plugins: [
     liveReload(['./layout/**/*.ejs', './pages/**/*.ejs', './pages/**/*.html']),
@@ -33,19 +29,30 @@ export default defineConfig({
     moveOutputPlugin(),
   ],
   server: {
-    // 啟動 server 時預設開啟的頁面
     open: 'pages/index.html',
   },
   build: {
     rollupOptions: {
-      input: Object.fromEntries(
-        glob
-          .sync('pages/**/*.html')
-          .map((file) => [
-            path.relative('pages', file.slice(0, file.length - path.extname(file).length)),
-            fileURLToPath(new URL(file, import.meta.url)),
-          ])
-      ),
+      input: {
+        // 添加所有的 HTML 文件作為輸入
+        ...Object.fromEntries(
+          glob
+            .sync('pages/**/*.html')
+            .map((file) => [
+              path.relative('pages', file.slice(0, file.length - path.extname(file).length)),
+              fileURLToPath(new URL(file, import.meta.url)),
+            ])
+        ),
+        // 添加所有的 JavaScript 文件作為輸入
+        ...Object.fromEntries(
+          glob
+            .sync('assets/js/**/*.js')
+            .map((file) => [
+              path.relative('assets/js', file.slice(0, file.length - path.extname(file).length)),
+              fileURLToPath(new URL(file, import.meta.url)),
+            ])
+        ),
+      },
     },
     outDir: 'dist',
   },
