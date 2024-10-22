@@ -23,25 +23,27 @@ document.addEventListener("DOMContentLoaded", function () {
             // 獲取內容區域 ID 並顯示對應的內容
             const contentId = this.getAttribute('data-content');
             const contentSection = document.getElementById(contentId);
-            contentSection.style.display = 'block';
-
-            // 更新頁籤的標題
-            pageTitleElement.querySelector('a').textContent = this.getAttribute('data-title');
-
-            // 滾動到內容區域
-            contentSection.scrollIntoView({ behavior: 'smooth' });
+            
+            if (contentSection) {
+                contentSection.style.display = 'block';
+                // 更新頁籤的標題
+                pageTitleElement.querySelector('a').textContent = this.getAttribute('data-title');
+                // 滾動到內容區域
+                contentSection.scrollIntoView({ behavior: 'smooth' });
+            }
 
             // 關閉 Offcanvas
             bootstrapOffcanvas.hide();
         });
     });
-    
-    // 預設顯示第一個內容區塊
-    document.getElementById('member').style.display = 'block';
-    pageTitleElement.querySelector('a').textContent = navLinks[0].getAttribute('data-title');
 
-    // 設置初始激活樣式
-    navLinks[0].classList.add('active-link');
+    // 預設顯示第一個內容區塊
+    const firstContentSection = document.getElementById('member');
+    if (firstContentSection) {
+        firstContentSection.style.display = 'block';
+        pageTitleElement.querySelector('a').textContent = navLinks[0].getAttribute('data-title');
+        navLinks[0].classList.add('active-link');
+    }
 
     // 手動隱藏遮罩
     offcanvasElement.addEventListener('hidden.bs.offcanvas', function () {
@@ -53,11 +55,14 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 // 清除文字
-document.getElementById('clearButton')?.addEventListener('click', function() {
-    document.querySelectorAll('.inputField').forEach(function(input) {
-        input.value = ''; 
+const clearButton = document.getElementById('clearButton');
+if (clearButton) {
+    clearButton.addEventListener('click', function () {
+        document.querySelectorAll('.inputField').forEach(function (input) {
+            input.value = '';
+        });
     });
-});
+}
 
 // 圖片上傳功能
 function setupUpload(avatarId, uploadId, previewImageId) {
@@ -65,33 +70,36 @@ function setupUpload(avatarId, uploadId, previewImageId) {
     const customUpload = document.getElementById(uploadId);
     const previewImage = document.getElementById(previewImageId);
 
-    customUpload.addEventListener('click', function() {
-        avatar.click();
-    });
+    if (avatar && customUpload && previewImage) {
+        customUpload.addEventListener('click', function () {
+            avatar.click();
+        });
 
-    avatar.addEventListener('change', function(event) {
-        const file = this.files[0];
+        avatar.addEventListener('change', function () {
+            const file = this.files[0];
 
-        // 檢查文件類型
-        if (!file.type.startsWith('image/')) {
-            alert('請上傳有效的圖片文件');
-            return;
-        }
+            // 檢查文件類型
+            if (file && file.type.startsWith('image/')) {
+                const reader = new FileReader();
 
-        const reader = new FileReader();
+                reader.onload = function (e) {
+                    previewImage.src = e.target.result;
+                    previewImage.style.display = 'block';
+                    customUpload.style.backgroundImage = 'none';
+                };
 
-        reader.onload = function(e) {
-            previewImage.src = e.target.result;
-            previewImage.style.display = 'block';
-            customUpload.style.backgroundImage = 'none';
-        };
-
-        reader.readAsDataURL(file);
-    });
+                reader.readAsDataURL(file);
+            } else {
+                alert('請上傳有效的圖片文件');
+            }
+        });
+    } else {
+        console.error(`Element not found: avatarId = ${avatarId}, uploadId = ${uploadId}, previewImageId = ${previewImageId}`);
+    }
 }
 
 // 設定上傳功能的數量
-const totalUploads = 20;
+const totalUploads = 17;
 
 // 使用循環來設置每個上傳功能
 for (let i = 1; i <= totalUploads; i++) {
