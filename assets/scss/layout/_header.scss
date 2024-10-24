@@ -2,6 +2,12 @@
   color: $gray-100;
   backdrop-filter: blur(10px);
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  .container {
+    @include pad {
+      display: none;
+    }
+  }
+  
 }
 
 .btn-toggler {
@@ -26,6 +32,9 @@
     &:hover {
       color: $primary-600;
     }
+  }
+  @include pad {
+    gap: 16px;
   }
   @include mobile {
     gap: 8px;
