@@ -2,6 +2,11 @@
     border:0.5px solid $gray-400;
     backdrop-filter: blur(10px);
     color: $gray-200;
+    form {
+        @include mobile {
+            max-width: 100%;
+        }
+    }   
 }
 
 .pay-btn {
