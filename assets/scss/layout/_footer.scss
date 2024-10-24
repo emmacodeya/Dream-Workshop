@@ -14,6 +14,9 @@
 .community {
   color: $gray-200;
   @include mobile {
+    flex-direction: column;
+  }
+  @include mobile {
     text-align: center;
   }
 }
@@ -49,8 +52,13 @@
   height: 405px;
   z-index: -1;
   background: #212121b2;
+  @include pad {
+    height: 500px;
+    background-position: center;
+    background-size: cover;
+  }
   @include mobile {
-    height: 458px;
+    height: 480px;
     background-position: center;
     background-size: cover;
   }

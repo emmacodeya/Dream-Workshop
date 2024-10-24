@@ -8,70 +8,99 @@
   <body>
     <%- include('./layout/header'); -%>
 
-    <div class="container" style="margin-top: 150px;">
-        <h2 class="mb-1">填寫個人資料</h2>
-        <div class="checkout-form p-8 mb-8">
-            <form style="width: 500px; margin: 0 auto;">
-                <div class="mb-3">
-                  <label for="name" class="form-label">姓名</label>
-                  <input type="text" class="form-control" id="name" aria-describedby="emailHelp">
+    <div class="container" style="margin-top: 150px">
+      <h2 class="mb-1">填寫個人資料</h2>
+      <div class="checkout-form p-8 mb-8">
+        <form style="width: 500px; margin: 0 auto">
+          <div class="mb-3">
+            <label for="name" class="form-label">姓名</label>
+            <input
+              type="text"
+              class="form-control"
+              id="name"
+              aria-describedby="emailHelp"
+            />
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" class="form-control" id="email" />
+          </div>
+          <div class="mb-3">
+            <label for="address" class="form-label">地址</label>
+            <input type="text" class="form-control" id="address" />
+          </div>
+          <div class="mb-3">
+            <label for="tel" class="form-label">電話</label>
+            <input type="tel" class="form-control" id="tel" />
+          </div>
+          <div class="mb-3">
+            <label for="text" class="form-label">留言</label>
+            <textarea name="message" id="message" class="w-100"></textarea>
+          </div>
+        </form>
+      </div>
+      <h2 class="mb-1">付款資訊</h2>
+      <div class="checkout-form p-lg-8 p-md-4 p-2">
+        <form>
+          <div class="row">
+            <div class="col-lg-4 mb-lg-0 mb-4">
+              <div
+                class="border p-1 p-lg-5 d-flex justify-content-between align-items-center flex-md-column py-md-5 h-100 fs-lg-5"
+              >
+                <h4>300 點</h4>
+                <h4 class="text-primary-1000">300 NTD</h4>
+              </div>
+            </div>
+            <div class="col-lg-8">
+              <div class="row mb-5">
+                <div class="col-4">
+                  <button
+                    type="button"
+                    class="btn pay-btn text-gray-200 py-3 w-100"
+                  >
+                    現金付款
+                  </button>
                 </div>
-                <div class="mb-3">
-                  <label for="email" class="form-label">Email</label>
-                  <input type="email" class="form-control" id="email">
+                <div class="col-4">
+                  <button
+                    type="button"
+                    class="btn pay-btn text-gray-200 py-3 w-100"
+                  >
+                    信用卡
+                  </button>
                 </div>
-                <div class="mb-3">
-                    <label for="address" class="form-label">地址</label>
-                    <input type="text" class="form-control" id="address">
+                <div class="col-4">
+                  <button
+                    type="button"
+                    class="btn pay-btn text-gray-200 py-3 w-100"
+                  >
+                    轉帳
+                  </button>
                 </div>
-                <div class="mb-3">
-                    <label for="tel" class="form-label">電話</label>
-                    <input type="tel" class="form-control" id="tel">
+              </div>
+              <div class="mb-3 row">
+                <label for="staticEmail" class="col-sm-3 col-form-label"
+                  >付款方式 :</label
+                >
+                <div class="col-sm-9">
+                  <input
+                    class="form-control"
+                    type="text"
+                    value="現金付款"
+                    aria-label="Disabled input example"
+                    disabled
+                    readonly
+                  />
                 </div>
-                <div class="mb-3">
-                    <label for="text" class="form-label">留言</label>
-                    <textarea name="message" id="message" class="w-100"></textarea>
-                </div>
-            </form>
-        </div>
-        <h2 class="mb-1">付款資訊</h2>
-        <div class="checkout-form p-8">
-            <form>
-                <div class="row">
-                    <div class="col-4">
-                    <div class="border p-5 d-flex justify-content-between align-items-center h-100">
-                            <h4>300 點</h4>
-                            <h4 class="text-primary-1000">300 NTD</h4>
-                        </div>
-                    </div>
-                    <div class="col-8">
-                        <div class="row mb-5">
-                            <div class="col-4">
-                                <button type="button" class="btn pay-btn text-gray-200 py-3 w-100">現金付款</button>
-                            </div>
-                            <div class="col-4">
-                                <button type="button" class="btn pay-btn text-gray-200 py-3 w-100">信用卡</button>
-                            </div>
-                            <div class="col-4">
-                                <button type="button" class="btn pay-btn text-gray-200 py-3 w-100">轉帳</button>
-                            </div>
-                        </div>
-                        <div class="mb-3 row">
-                            <label for="staticEmail" class="col-sm-2 col-form-label">付款方式 :</label>
-                            <div class="col-sm-10">
-                                <input class="form-control" type="text" value="現金付款" aria-label="Disabled input example" disabled readonly>
-                            </div>
-                        </div>
-                        
-                    </div>
-                </div>
-                
-            </form>
-        </div>
-        <div class="checkout-form p-5 mb-4">
-            <h4 class="mb-2">發票類型</h4>
-            <form>
-                <!-- <ul class="nav nav-tabs id="myTab" role="tablist" mb-2">
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="checkout-form p-5 mb-4">
+        <h4 class="mb-2">發票類型</h4>
+        <form>
+          <!-- <ul class="nav nav-tabs id="myTab" role="tablist" mb-2">
                     <li class="nav-item invoice-tab" role="presentation">
                       <a class="nav-link text-gray-100 active" aria-current="page" id="home-tab" data-bs-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">個人雲端發票</a>
                     </li>
@@ -79,41 +108,81 @@
                       <a class="nav-link text-gray-100" id="profile-tab" data-bs-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">公司發票</a>
                     </li>
                 </ul> -->
-                <!-- <div class="p-2">
+          <!-- <div class="p-2">
                     <label class="me-1" for="">載具</label>
                     <input class="p-1" type="text" placeholder="/ xxxxxx">
                 </div> -->
-                <ul class="nav nav-tabs invoice-tab" id="myTab" role="tablist">
-                    <li class="nav-item" role="presentation">
-                      <a class="nav-link" id="home-tab" data-bs-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">個人雲端發票</a>
-                    </li>
-                    <li class="nav-item" role="presentation">
-                      <a class="nav-link" id="profile-tab" data-bs-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">公司發票</a>
-                    </li>
-                  </ul>
-                <div class="tab-content pt-5" id="myTabContent">
-                    <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
-                      <div>
-                       <label class="me-1" for="">載具</label>
-                       <input class="checkout-input p-1" type="text" placeholder="/ xxxxxx">
-                      </div>
-                    </div>
-                    <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
-                        <div>
-                                <label class="me-1" for="">公司名稱</label>
-                                <input class="checkout-input p-1 me-4" type="text" placeholder="請輸入公司名稱">
-                                <label class="me-1" for="">公司統編</label>
-                                <input class="checkout-input p-1" type="text" placeholder="請輸入公司統編">
-                        </div>
-                    </div>
-                </div>
-            </form>
-        </div>
-        <div class="text-end">
-            <a href="#" class="btn btn-outline-primary-600 px-5 me-2">取消</a>
-            <a href="info-confirm.html" class="btn btn-primary-600 px-5">確認</a>
-        </div>
-        <a href="member-pages.html">12313</a>
+          <ul class="nav nav-tabs invoice-tab" id="myTab" role="tablist">
+            <li class="nav-item" role="presentation">
+              <a
+                class="nav-link"
+                id="home-tab"
+                data-bs-toggle="tab"
+                href="#home"
+                role="tab"
+                aria-controls="home"
+                aria-selected="true"
+                >個人雲端發票</a
+              >
+            </li>
+            <li class="nav-item" role="presentation">
+              <a
+                class="nav-link"
+                id="profile-tab"
+                data-bs-toggle="tab"
+                href="#profile"
+                role="tab"
+                aria-controls="profile"
+                aria-selected="false"
+                >公司發票</a
+              >
+            </li>
+          </ul>
+          <div class="tab-content pt-5" id="myTabContent">
+            <div
+              class="tab-pane fade show active"
+              id="home"
+              role="tabpanel"
+              aria-labelledby="home-tab"
+            >
+              <div>
+                <label class="me-1" for="">載具</label>
+                <input
+                  class="checkout-input p-1"
+                  type="text"
+                  placeholder="/ xxxxxx"
+                />
+              </div>
+            </div>
+            <div
+              class="tab-pane fade"
+              id="profile"
+              role="tabpanel"
+              aria-labelledby="profile-tab"
+            >
+              <div>
+                <label class="me-1" for="">公司名稱</label>
+                <input
+                  class="checkout-input p-1 me-4"
+                  type="text"
+                  placeholder="請輸入公司名稱"
+                />
+                <label class="me-1" for="">公司統編</label>
+                <input
+                  class="checkout-input p-1"
+                  type="text"
+                  placeholder="請輸入公司統編"
+                />
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="text-end">
+        <a href="#" class="btn btn-outline-primary-600 px-5 me-2">取消</a>
+        <a href="info-confirm.html" class="btn btn-primary-600 px-5">確認</a>
+      </div>
+      <a href="member-pages.html">12313</a>
     </div>
 
     <%- include('./layout/footer'); -%>

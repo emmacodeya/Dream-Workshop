@@ -4,6 +4,9 @@
   background-repeat: none;
   background-size: cover;
   height: 100vh;
+  @include pad {
+    padding-inline: 24px;
+  }
   @include mobile {
     padding-inline: 12px;
   }
@@ -30,6 +33,9 @@
 
 //  banner-input
 .banner-search {
+  @include pad {
+    flex-direction: column;
+  }
   @include mobile {
     flex-direction: column;
   }
