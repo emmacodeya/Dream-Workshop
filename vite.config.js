@@ -14,7 +14,7 @@ function moveOutputPlugin() {
       for (const fileName in bundle) {
         if (fileName.startsWith('pages/')) {
           const newFileName = fileName.slice('pages/'.length);
-          bundle[fileName].fileName = newFileName; // 確保 HTML 檔案直接輸出到 dist 根目錄
+          bundle[fileName].fileName = newFileName; 
         }
       }
     },
@@ -29,12 +29,11 @@ export default defineConfig({
     moveOutputPlugin(),
   ],
   server: {
-    open: 'pages/index.html', // 預設開啟的頁面
+    open: 'pages/index.html', 
   },
   build: {
     rollupOptions: {
       input: {
-        // 添加所有的 HTML 文件作為輸入
         ...Object.fromEntries(
           glob
             .sync('pages/**/*.html')
@@ -43,12 +42,12 @@ export default defineConfig({
               fileURLToPath(new URL(file, import.meta.url)),
             ])
         ),
-        // 添加所有的 JS 文件作為輸入
+       
         ...Object.fromEntries(
           glob
             .sync('assets/js/**/*.js')
             .map((file) => [
-              path.relative('assets/js', file), // 相對路徑保持一致
+              path.relative('assets/js', file), 
               fileURLToPath(new URL(file, import.meta.url)),
             ])
         ),
@@ -56,11 +55,11 @@ export default defineConfig({
       output: {
         entryFileNames: (chunkInfo) => {
           if (chunkInfo.name.endsWith('.html')) {
-            return `${chunkInfo.name}`; // 直接使用原檔名
+            return `${chunkInfo.name}`; 
           }
-          // 確保 JS 檔案輸出到 assets 資料夾下
+          
           const filePath = chunkInfo.name.split('/');
-          return `assets/js/${filePath[filePath.length - 1]}`; // 只取檔名，不取路徑
+          return `assets/js/${filePath[filePath.length - 1]}`; 
         },
       },
     },
