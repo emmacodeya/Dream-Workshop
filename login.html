@@ -3,19 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>註冊會員</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-9ndCyUaTioPzWJ0h8cCw2WLLQpG2L1z4lg3FL2jvoLIweDvffp8EGFKzGpqp1E0i" crossorigin="anonymous">
+    <title>會員登入</title>
   <script type="module" crossorigin src="/Dream-Workshop/assets/_commonjsHelpers-725317a4.js"></script>
-  <script type="module" crossorigin src="/Dream-Workshop/assets/bootstrap.bundle.min-bf5094f6.js"></script>
-  <link rel="stylesheet" href="/Dream-Workshop/assets/bootstrap.bundle-c3c2cf05.css">
+  <script type="module" crossorigin src="/Dream-Workshop/assets/bootstrap.bundle.min-82050cca.js"></script>
+  <link rel="stylesheet" href="/Dream-Workshop/assets/bootstrap.bundle-804e097b.css">
 </head>
 <body>
     
 <nav class="header navbar navbar-expand-lg fixed-top">
 <div class="container d-flex justify-content-center">
     <div class="d-flex justify-content-between align-items-center me-auto">
-      <a class="navbar-brand" href="/pages/index.html">
+      <a class="navbar-brand" href="index.html">
         <img
           src="/Dream-Workshop/assets/創夢工坊-logo-fb8def81.png"
           alt="創夢工坊"
@@ -59,8 +57,8 @@
         </li>
         <li class="nav-item text-end">
           <a
-      href="/pages/login/login.html"
-      class="btn login-btn btn-primary-600 d-lg-none mt-8">
+      href="login.html"
+      class="btn login-btn btn-primary-600 d-lg-none mt-8 mt-lg">
       註冊/登入
     </a>
         </li>
@@ -68,7 +66,7 @@
     </div>
 
     <a
-      href="/pages/login/login.html"
+      href="login/login.html"
       class="btn login-btn btn-primary-600 d-none d-lg-block"
     >
       註冊/登入
@@ -78,41 +76,29 @@
 
     
     <div class="container">
-        <div class="login bg-gray-1000">
-            <div class="position-relative mb-6">
-                <div class="progress" style="height: 1px;">
-                  <div class="progress-bar bg-primary-600" role="progressbar" style="width: 50%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
-                </div>
-                <button type="button" class="position-absolute top-0 start-0 translate-middle btn btn-sm btn-primary-600 rounded-pill" style="width: 3rem; height:3rem;">1</button>
-                <button type="button" class="position-absolute top-0 start-50 translate-middle btn btn-sm btn-gray-600 rounded-pill" style="width: 2rem; height:2rem;">2</button>
-                <button type="button" class="position-absolute top-0 start-100 translate-middle btn btn-sm btn-gray-600 rounded-pill" style="width: 2rem; height:2rem;">3</button>
-            </div>
-            <h2 class="mt-8 mb-8">創建帳號</h2>
+        <div class="login">
+            <h1 class="mb-8">會員登入</h1>
             <form class="row needs-validation" novalidate>
                 <div class="mx-auto mb-4">
                     <label for="email" class="text-gray-100 fs-5 mb-2">電子郵件</label>
                     <input id="email" type="text" class="login-input form-control me-lg-3 me-1 flex-grow-1" placeholder="請輸入電子郵件" required>
-                    <div class="valid-feedback">
-                        尚未填寫電子信箱
-                    </div>
                 </div>
                 <div class="mb-3">
-                    <label for="password" class="text-gray-100 fs-5 mb-2">使用者帳號</label>
+                    <label for="password" class="text-gray-100 fs-5 mb-2">密碼</label>
                     <input id="password" type="text" class="login-input form-control me-lg-3 me-1 flex-grow-1" placeholder="請輸入密碼">
                 </div>
-                <div class="mb-6">
-                    <label for="password" class="text-gray-100 fs-5 mb-2">密碼</label>
-                    <input id="password" type="text" class="login-input form-control me-lg-3 me-1 mb-2 flex-grow-1" placeholder="請輸入密碼">
-                    <input id="password" type="text" class="login-input form-control me-lg-3 me-1 flex-grow-1" placeholder="請再輸入一次密碼">
+                <div class="text-end">
+                    <a href="fotget-password-step1.html" class="text-gray-100 text-end mb-4">忘記密碼</a>
                 </div>
-                <div class="mb-5">
-                    <a href="/pages/login/register-member/email-verify.html" class="btn btn-primary-600 w-100 p-2">註冊會員</a>
+                
+                <div class="mb-4">
+                    <a href="index.html" class="btn btn-primary-600 w-100">登入</a>
                 </div>
                 <div>
-                    <a href="/pages/login/login.html" class="btn btn-outline-primary-600 w-100 p-2">回前頁</a>
+                    <a href="create-account.html " class="step-link btn btn-outline-primary-600 w-100"
+                    data-content="register-account">註冊會員</a>
                 </div>
-            </form> 
-            
+            </form>    
         </div>  
     </div>
     <footer class="footer">
@@ -127,7 +113,7 @@
                     </a>
                     
                     <h3 class="fw-bold mb-5">Dream Workshop</h3>
-                    <ul class="d-flex justify-content-center justify-content-lg-start">
+                    <ul class="d-flex justify-content-center justify-content-sm-start justify-content-md-start">
                         <li><a href="#"><i class="icons bi bi-facebook me-3"></i></a></li>
                         <li><a href="#"><i class="icons bi bi-instagram me-3"></i></a></li>
                         <li><a href="#"><i class="icons bi bi-line"></i></a></li>
@@ -155,9 +141,6 @@
         </div>
         <small class="px-3 px-lg-0 text-gray-400">© Dream Workshop 2024 Copyright. All Rights Reserved.</small>
     </div>   
-</footer>    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ENjdO4Dr2bkBIFxQpeo5v4Mw5dldwbg6GPHa1w6ZT6tztFIdSTwBKxULy5hG9ANk"
-        crossorigin="anonymous"></script>
-    
+</footer>    
 </body>
 </html>
