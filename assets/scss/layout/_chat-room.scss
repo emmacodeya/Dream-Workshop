@@ -7,6 +7,7 @@
     position: fixed;
     right: 20px;
     bottom: 50%;
+    z-index: 9999!important;
     &:hover {
         background-color: $primary-400;
     }
