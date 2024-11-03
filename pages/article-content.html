@@ -89,7 +89,7 @@
                             <p class="fw-bold pe-1">B1</p>
                             <time datetime="2024-09-20T22:20" class="text-gray-400">2024/09/20 22:20</time>
                             <span class="text-gray-400 px-1">•</span>
-                            <a href="#" class="text-primary-600">回覆</a>
+                            <a href="#" class="text-primary-600" data-bs-toggle="modal" data-bs-target="#exampleModal-reply-article" role="button">回覆</a>
                         </div>
                     </div>
                 </div>
@@ -104,7 +104,7 @@
                             <p class="fw-bold pe-1">B2</p>
                             <time datetime="2024-09-21T00:20" class="text-gray-400">2024/09/21 00:20</time>
                             <span class="text-gray-400 px-1">•</span>
-                            <a href="#" class="text-primary-600">回覆</a>
+                            <a href="#" class="text-primary-600" data-bs-toggle="modal" data-bs-target="#exampleModal-reply-article" role="button">回覆</a>
                         </div>
                     </div>
                 </div>
@@ -119,7 +119,7 @@
                             <p class="fw-bold pe-1">B3</p>
                             <time datetime="2024-09-21T04:20" class="text-gray-400">2024/09/21 04:20</time>
                             <span class="text-gray-400 px-1">•</span>
-                            <a href="#" class="text-primary-600">回覆</a>
+                            <a href="#" class="text-primary-600" data-bs-toggle="modal" data-bs-target="#exampleModal-reply-article" role="button">回覆</a>
                         </div>
                     <div class="d-flex">
                         <img src="/assets/images/留言頭像4.png" alt="戴琪" class="rounded-circle me-2" style="width: 40px; height: 40px;">
@@ -130,7 +130,7 @@
                             <p class="fw-bold pe-1">B3-1</p>
                             <time class="text-gray-400">今天 22:20</time>
                             <span class="text-gray-400 px-1">•</span>
-                            <a href="#" class="text-primary-600">回覆</a>
+                            <a href="#" class="text-primary-600" data-bs-toggle="modal" data-bs-target="#exampleModal-reply-article" role="button">回覆</a>
                         </div>
                        </div>
                     </div>
@@ -147,7 +147,7 @@
                             <p class="fw-bold pe-1">B4</p>
                             <time class="text-gray-400">昨天 22:20</time>
                             <span class="text-gray-400 px-1">•</span>
-                            <a href="#" class="text-primary-600">回覆</a>
+                            <a href="#" class="text-primary-600" data-bs-toggle="modal" data-bs-target="#exampleModal-reply-article" role="button">回覆</a>
                         </div>
                     </div>
                 </div>
@@ -162,7 +162,7 @@
                             <p class="fw-bold pe-1">B5</p>
                             <time class="text-gray-400">今天 22:20</time>
                             <span class="text-gray-400 px-1">•</span>
-                            <a href="#" class="text-primary-600">回覆</a>
+                            <a href="#" class="text-primary-600" data-bs-toggle="modal" data-bs-target="#exampleModal-reply-article" role="button">回覆</a>
                         </div>
                     </div>
                 </div>
@@ -195,13 +195,32 @@
                 </label>
             </div>
             <div class="text-end">
-            <button class="btn btn-primary-600 fw-bolder py-lg-3 py-2 px-4">發表回應</button>
+            <button class="btn btn-primary-600  py-lg-3 py-2 px-4">發表回應</button>
              </div>
           </section>
 
     </main>
    
+ <!-- modal 回覆 -->
 
+ <div class="modal fade" id="exampleModal-reply-article" tabindex="-1" aria-labelledby="exampleModalToggleLabel-article" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content bg-gray-1000">
+            <div class="modal-header border-0">
+              <h5 class="modal-title text-primary-600" id="exampleModalToggleLabel-article">回覆內容</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+            <div class="modal-body text-center">
+              <label for="article-replycontent" class="form-label text-white fs-5"></label>
+                <textarea id="article-replycontent" rows="4"  class="w-100 bg-transparent text-white inputField text-white"></textarea>
+                <div class="modal-footer border-0 d-flex justify-content-between">
+                    <button type="button" class="btn btn-lg btn-gray-600 fw-bolder" id="clearButton4">清除</button>
+                    <button class="btn btn-lg btn-primary-600 fw-bolder" role="button" data-bs-dismiss="modal" >送出</button>
+                </div>
+            </div>
+          </div>
+    </div>
+  </div>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script>
@@ -221,6 +240,12 @@
             effect: 'slide', 
             speed: 600, 
         });
+      // 清除文字
+    document.getElementById('clearButton4')?.addEventListener('click', function() {
+        document.querySelectorAll('.inputField').forEach(function(input) {
+            input.value = ''; 
+        });
+    });
     </script>
         <%- include('./layout/footer'); -%>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>

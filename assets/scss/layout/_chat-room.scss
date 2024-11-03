@@ -7,15 +7,22 @@
     position: fixed;
     right: 20px;
     bottom: 50%;
+    z-index: 9999!important;
     &:hover {
         background-color: $primary-400;
     }
     .chat-img {
         width: 40px;
     }
+    @include pad {
+        padding: 12px;
+        right: 10px;
+        top: 100px;
+        bottom: auto;
+      }
     @include mobile {
-        padding: 16px;
-        right: 20px;
+        padding: 8px;
+        right: 10px;
         top: 100px;
         bottom: auto;
       }
@@ -27,14 +34,17 @@
     position: fixed;
     bottom:0px;
     right:20px;
-    z-index: 10;
     background-color: $gray-1000;
     border: 1px solid $gray-200;
-    height: 400px;
+    max-height: 400px;
     width: 640px;
+    overflow: hidden;
+    z-index: 9999;
+    // transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+    // opacity: 0;
     @include mobile {
         right:0px;
-        display: none;
+        width: 100%;
       }
 }
 

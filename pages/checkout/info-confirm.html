@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>付費方案</title>
+  </head>
+  <body>
+    <%- include('./layout/header'); -%>
+
+    <div class="container" style="margin-top: 150px;">
+        <h2 class="mb-1">確認結帳資訊</h2>
+        <div class="checkout-form p-8 mb-8">
+            <table class="table table-hover table-dark">
+                <thead>
+                    <tr>
+                        <th width="100">
+                          點數
+                        </th>
+                        <th width="100">
+                          價格
+                        </th>
+                        <th width="100">
+                          數量
+                        </th>
+                        <th width="100">
+                          總價
+                        </th>
+                      </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>300點</td>
+                    <td>299 NTD</td>
+                    <td>1</td>
+                    <td>299 NTD</td>
+                  </tr>
+                </tbody>
+            </table>
+            <div class="d-flex justify-content-between align-items-center">
+                <h6>付款方式 : 中國信託</h6>
+                <!-- <div class="search-dropdown navbar-expand-lg me-lg-3">
+                    <div class="dropdown">
+                      <button class="btn dropdown-btn dropdown-toggle n-icon d-flex justify-content-between align-items-center"
+                        type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+                        請選擇分期期數<span class="material-icons-outlined text-gray-100 p-0">
+                        </span>
+                      </button>
+                      <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <li class="dropdown-hover"><button class="dropdown-item text-gray-100" type="button">3期</button></li>
+                        <li class="dropdown-hover"><button class="dropdown-item text-gray-100" type="button">6期</button></li>
+                        <li class="dropdown-hover"><button class="dropdown-item text-gray-100" type="button">9期</button></li>
+                        <li class="dropdown-hover"><button class="dropdown-item text-gray-100" type="button">12期</button></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div> -->
+            </div>
+        </div>
+        <h2 class="mb-1">聯絡人資訊</h2>
+        <div class="checkout-form p-8 mb-4">
+            <table class="table table-hover table-dark">
+                <thead>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td width="1">
+                      姓名
+                    </td>
+                    <td width="100">
+                        Aimyon
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>信箱</td>
+                    <td>aimyon520@gmail.com</td>
+                  </tr>
+                  <tr>
+                    <td>地址</td>
+                    <td>兵庫縣西宮市</td>
+                  </tr>
+                  <tr>
+                    <td>電話</td>
+                    <td>080-9875-5200</td>
+                  </tr>
+                </tbody>
+            </table>
+        </div>
+        
+        <div class="text-end">
+            <a href="checkout.html" class="btn btn-outline-primary-600 px-5 me-2">回前頁</a>
+            <a href="order-finish.html" class="btn btn-primary-600 px-5">確認購買</a>
+        </div>
+    </div>
+
+    <%- include('./layout/footer'); -%>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>

@@ -27,6 +27,18 @@
 
 ## [Demo](https://emmacodeya.github.io/Dream-Workshop/)
 
+### 電腦版首頁
+
+![image](https://github.com/emmacodeya/Dream-Workshop/raw/main/assets/images/demo-lg.jpg)
+
+### 手機版首頁
+
+![image](https://github.com/emmacodeya/Dream-Workshop/raw/main/assets/images/demo-sm.jpg)
+
+### 管理者後台頁面
+
+![image](https://github.com/emmacodeya/Dream-Workshop/raw/main/assets/images/demo-admin.jpg)
+
 ## Node.js 版本
 
 - 專案的 Node.js 版本需為 v16 以上
@@ -53,8 +65,8 @@
 ├── assets/ # 靜態資源
 |── images/ # 圖片與資源文件
 | └── scss/ # SCSS 的樣式放置處
+| └──   js/ # 頁面 JavaScript 檔案
 ├── components/ # 頁面 ejs 模板放置處
-├── js/ # 頁面 JavaScript 檔案
 ├── pages/ # 頁面放置處
 ├── main.js # 入口文件
 ├── package.json # 相依套件與腳本

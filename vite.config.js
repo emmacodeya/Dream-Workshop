@@ -3,7 +3,6 @@ import { ViteEjsPlugin } from 'vite-plugin-ejs';
 import { fileURLToPath } from 'node:url';
 import path from 'node:path';
 import { glob } from 'glob';
-
 import liveReload from 'vite-plugin-live-reload';
 
 function moveOutputPlugin() {
@@ -15,7 +14,7 @@ function moveOutputPlugin() {
       for (const fileName in bundle) {
         if (fileName.startsWith('pages/')) {
           const newFileName = fileName.slice('pages/'.length);
-          bundle[fileName].fileName = newFileName;
+          bundle[fileName].fileName = newFileName; 
         }
       }
     },
@@ -23,9 +22,6 @@ function moveOutputPlugin() {
 }
 
 export default defineConfig({
-  // base 的寫法：
-  // base: '/Repository 的名稱/'
-  // base: '/Dream-Workshop/',
   base: '/Dream-Workshop/',
   plugins: [
     liveReload(['./layout/**/*.ejs', './pages/**/*.ejs', './pages/**/*.html']),
@@ -33,19 +29,39 @@ export default defineConfig({
     moveOutputPlugin(),
   ],
   server: {
-    // 啟動 server 時預設開啟的頁面
-    open: 'pages/index.html',
+    open: 'pages/index.html', 
   },
   build: {
     rollupOptions: {
-      input: Object.fromEntries(
-        glob
-          .sync('pages/**/*.html')
-          .map((file) => [
-            path.relative('pages', file.slice(0, file.length - path.extname(file).length)),
-            fileURLToPath(new URL(file, import.meta.url)),
-          ])
-      ),
+      input: {
+        ...Object.fromEntries(
+          glob
+            .sync('pages/**/*.html')
+            .map((file) => [
+              path.relative('pages', file.slice(0, file.length - path.extname(file).length)),
+              fileURLToPath(new URL(file, import.meta.url)),
+            ])
+        ),
+       
+        ...Object.fromEntries(
+          glob
+            .sync('assets/js/**/*.js')
+            .map((file) => [
+              path.relative('assets/js', file), 
+              fileURLToPath(new URL(file, import.meta.url)),
+            ])
+        ),
+      },
+      output: {
+        entryFileNames: (chunkInfo) => {
+          if (chunkInfo.name.endsWith('.html')) {
+            return `${chunkInfo.name}`; 
+          }
+          
+          const filePath = chunkInfo.name.split('/');
+          return `assets/js/${filePath[filePath.length - 1]}`; 
+        },
+      },
     },
     outDir: 'dist',
   },

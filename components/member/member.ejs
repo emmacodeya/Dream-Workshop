@@ -1,0 +1,93 @@
+<!-- Form and avatar upload -->
+<div class="d-flex flex-lg-row flex-column mt-3">
+<div class=" d-block d-lg-none">
+<div id="custom-avatar-upload1" class="custom-upload-image mt-5 mt-md-0" style="width: 250px; height: 250px; border: 2px solid #ccc; cursor: pointer; background-image: url(/assets/images/頭像1.png); background-size: contain; background-position: center; background-repeat: no-repeat; position: relative;">
+<label for="avatar1" class="form-label text-white" style="position: absolute; top: 10px; right: 10px; background-color: rgba(0, 0, 0, 0.5); padding: 5px; border-radius: 5px;">編輯頭像</label>
+<input class="form-control" type="file" id="avatar1" name="avatar" accept="image/*" style="display: none;">
+<img id="previewImage1" src="" alt="預覽圖片" style="width: 100%; height: 100%; display: none;">
+</div>
+</div>
+<form class="w-100 me-2">
+<div class="mb-3 row mt-lg-0 mt-3">
+<label for="useraccount" class="col-md-2  col-4 col-form-label text-white">使用者帳號:</label>
+<div class="col-md-10 col-8">
+  <input type="text" readonly class="form-control-plaintext text-white " id="useraccount" value="happy1234">
+</div>
+</div>
+
+<div class="mb-3 row">
+<label for="name" class="col-lg-2 col-form-label text-white">姓名:</label>
+<div class="col-lg-10">
+  <input type="text" class="form-control inputField" id="name" value="開開心">
+</div>
+</div>
+
+<div class="mb-3 row">
+<label for="email" class="col-lg-2 col-form-label text-white">電子郵箱:</label>
+<div class="col-lg-10">
+  <input type="email" class="form-control inputField" id="email" value="happy5678@gmail.com">
+</div>
+</div>
+
+<div class="mb-3 row">
+<label for="mobile" class="col-lg-2 col-form-label text-white">手機:</label>
+<div class="col-lg-10">
+  <input type="tel" class="form-control inputField" id="mobile" value="0912-131-456" pattern="[0-9]{4}-[0-9]{3}-[0-9]{3}">
+</div>
+</div>
+
+<div class="mb-3 row">
+<label class="col-lg-2 col-form-label text-white">性別:</label>
+<div class="col-lg-10 d-flex align-items-center">
+  <div class="form-check me-3">
+      <input class="form-check-input inputField" type="radio" name="gender" id="male" value="male" checked>
+      <label class="form-check-label text-white" for="male">男</label>
+  </div>
+  <div class="form-check me-3">
+      <input class="form-check-input inputField" type="radio" name="gender" id="female" value="female">
+      <label class="form-check-label text-white" for="female">女</label>
+  </div>
+</div>
+</div>
+</form>
+
+<!-- Upload avatar section -->
+<div class="d-none d-lg-block">
+<div id="custom-avatar-upload2" class="custom-upload-image mt-5 mt-md-0" style="width: 250px; height: 250px; border: 2px solid #ccc; cursor: pointer; background-image: url(/assets/images/頭像1.png); background-size: contain; background-position: center; background-repeat: no-repeat; position: relative;">
+<label for="avatar2" class="form-label text-white" style="position: absolute; top: 10px; right: 10px; background-color: rgba(0, 0, 0, 0.5); padding: 5px; border-radius: 5px;">編輯頭像</label>
+<input class="form-control" type="file" id="avatar2" name="avatar" accept="image/*" style="display: none;">
+<img id="previewImage2" src="" alt="預覽圖片" style="width: 100%; height: 100%; display: none;">
+</div>
+
+</div>
+</div>
+
+<!-- Buttons -->
+<div class="d-flex justify-content-around pt-8">
+<button   type="button"  class="btn btn-lg btn-outline-danger fw-bold" id="clearButton"><i class="bi bi-x-circle "></i> 清除
+</button>
+<button class="btn btn-lg btn-outline-primary-600 fw-bold" data-bs-toggle="modal" data-bs-target="#member-modal">
+  <i class="bi bi-save"></i> 儲存變更
+</button>
+</div>
+
+
+ <!-- modal 儲存變更 -->
+ <div class="modal fade" id="member-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content bg-gray-1000">
+          <div class="modal-header border-0">
+              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+          <div class="modal-body text-center text-primary-600 fs-3 fw-bold">
+             儲存成功
+          </div>
+          <div class="border-0 text-center mt-15 mb-14">
+              <button type="button" class="btn btn-lg btn-primary-600 fw-bolder  px-9" data-bs-dismiss="modal" aria-label="Close">確認</button>
+          </div>
+        </div>
+  </div>
+</div>
+
+    
+

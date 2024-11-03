@@ -1,0 +1,213 @@
+
+<!-- 基本資料 -->
+<div>
+<h3 class="text-gray-400 py-8 fw-bolder ">基本資料</h3>
+  <div class="d-sm-flex">
+
+   <div>
+     <h6 class="text-white mb-3">公司商標:</h6>
+     <div id="custom-avatar-upload6" class="custom-upload-image mt-5 mt-md-0" style="width: 250px; height: 250px; border: 2px solid #ccc; cursor: pointer; background-image: url(/assets/images/頭像1.png); background-size: contain; background-position: center; background-repeat: no-repeat; position: relative;">
+     <label for="avatar6" class="form-label text-white" style="position: absolute; top: 10px; right: 10px; background-color: rgba(0, 0, 0, 0.5); padding: 5px; border-radius: 5px;">上傳圖片</label>
+     <input class="form-control" type="file" id="avatar6" name="avatar" accept="image/*" style="display: none;">
+     <img id="previewImage6" src="" alt="預覽圖片" style="width: 100%; height: 100%; display: none;">
+   </div>
+                   
+                   
+                  
+   <h6 class="text-white my-3">公司形象照:</h6>
+   <div id="custom-avatar-upload7" class="custom-upload-image mt-5 mt-md-0" style="width: 250px; height: 250px; border: 2px solid #ccc; cursor: pointer; background-image: url(/assets/images/頭像1.png); background-size: contain; background-position: center; background-repeat: no-repeat; position: relative;">
+   <label for="avatar7" class="form-label text-white" style="position: absolute; top: 10px; right: 10px; background-color: rgba(0, 0, 0, 0.5); padding: 5px; border-radius: 5px;">上傳圖片</label>
+   <input class="form-control" type="file" id="avatar7" name="avatar" accept="image/*" style="display: none;">
+   <img id="previewImage7" src="" alt="預覽圖片" style="width: 100%; height: 100%; display: none;">
+ </div>
+</div>
+               
+            <!-- form表單 - 表格區 -->
+                    <form class="row g-3 ms-md-2 ms-0">
+                        <div class="col-xl-6 pt-md-0 pt-3">
+                          <label for="project-projectname" class="form-label text-white fs-5">項目名稱/公司行號<br><span class="fs-6 text-gray-400">若公司尚未設立，請填入完整的項目名稱</span></label>
+                          <input type="text" class="form-control inputField" id="project-projectname">
+                        </div>
+                        <div class="col-xl-3 ">
+                            <label for="project-name" class="form-label text-white fs-5 ">聯絡人</label>
+                            <input type="text" class="form-control inputField" id="project-name">
+                        </div>
+                        <div class="col-xl-3">
+                            <label for="project-phone" class="form-label text-white fs-5">聯絡電話</label>
+                            <input type="tel" class="form-control inputField" id="project-phone">
+                        </div>
+                        <div class="col-xl-6">
+                            <label for="project-website" class="form-label text-white fs-5">公司網址<span class="fs-6 text-gray-400 ps-1">填寫公司官網網址</span></label>
+                            <input type="email" class="form-control inputField" id="project-website">
+                        </div>
+                        <div class="col-xl-6">
+                            <label for="project-address" class="form-label text-white fs-5">公司地址<span class="fs-6 text-gray-400 ps-1">填寫公司主要營運地址</span></label>
+                            <input type="text" class="form-control inputField" id="project-address">
+                        </div>
+                        <div class="col-xl-4">
+                            <label for="country" class="form-label text-white fs-5">公司成立狀態<span class="fs-6 text-gray-400 ps-1">如為已設立公司,需再填寫公司統一編號。</span></label>
+                            <select id="country" name="country" class="fs-6 p-1">
+                              <option value="" selected >請選擇狀態</option>
+                              <option value="notestablished">未成立</option>
+                              <option value="established">已成立</option>
+                            </select>
+                        </div>
+                        <div class="col-xl-6 pt-xl-6">
+                            <label for="project-number" class="form-label text-white fs-5">統一編號<span class="fs-6 text-gray-400 ps-1">我們將會審核此統編,請正確填寫</span></label>
+                            <input type="number" class="form-control inputField" id="project-number">
+                        </div>
+                        <div class="col-xl-4">
+                            <label for="industry" class="form-label text-white fs-5">產業分類</label>
+                            <select id="industry" name="industry" class="fs-6 p-1">
+                              <option value="" selected >請選擇產業</option>
+                              <option value="wholesale-retail">批發/零售</option>
+                              <option value="biotechnology">生物科技</option>
+                              <option value="internet">網際網路相關</option>
+                              <option value="established">文教相關</option>
+                              <option value="spread">大眾傳播相關</option>
+                              <option value="travel">旅遊/休閒/運動</option>
+                              <option value="serve">一般服務</option>
+                              <option value="electronic">電子資訊/軟體/半導體相關</option>
+                              <option value="manufacturing">一般製造</option>
+                              <option value="logistics">物流/倉儲</option>
+                              <option value="politics">政治宗教及社福相關</option>
+                              <option value="finance">金融投顧/保險</option>
+                              <option value="accounting">法律/會計/顧問/研發</option>
+                              <option value="design">設計相關</option>
+                              <option value="architecture">建築營造/不動產相關</option>
+                              <option value="healthcare">醫療保健/環境衛生</option>
+                              <option value="ore">礦石及土石採取</option>
+                              <option value="stay">住宿相關</option>
+                              <option value="food">餐飲</option>
+                            </select>
+                        </div>
+                        <div class="col-xl-3">
+                            <label for="scale" class="form-label text-white fs-5">人數規模</label>
+                            <select id="scale" name="country" class="fs-6 p-1">
+                              <option value="" selected >請選擇規模</option>
+                              <option value="one">10 人以下</option>
+                              <option value="two">11-50 人</option>
+                              <option value="three">51-100 人</option>
+                              <option value="four">101-200 人</option>
+                              <option value="five">201-500 人</option>
+                              <option value="six">501-1000 人</option>
+                              <option value="seven">1001-5000 人</option>
+                              <option value="eight">5001-10,000 人</option>
+                              <option value="nine">10,001 人以上</option>
+                            </select>
+                        </div>
+                        <div class="col-xl-2">
+                            <label for="project-capital" class="form-label text-white fs-5">資本額</label>
+                            <input type="text" class="form-control inputField" id="project-capital">
+                        </div>
+                        <div class="col-xl-2">
+                            <label for="project-fundraising" class="form-label text-white fs-5">募資金額</label>
+                            <input type="text" class="form-control inputField" id="project-fundraising">
+                        </div>
+                      </form>
+                         
+                </div>
+            </div>
+            <!-- form表單 - 文字框區 -->
+            <form class="row g-3">
+                <div class="col-md-8 mt-8">
+                  <label for="project-Introduction" class="form-label text-white fs-5">項目簡介</label>
+                  <textarea id="project-Introduction" rows="5"   class="w-100 bg-transparent  inputField text-white"></textarea>
+                </div>
+                <div class="col-md-8">
+                    <label for="project-illustrate" class="form-label text-white fs-5">團隊說明</label>
+                    <textarea id="project-illustrate" rows="5"  class="w-100 bg-transparent  inputField text-white"></textarea>
+                </div>
+                <div class="col-md-8">
+                    <h4 class="text-gray-400 py-8 fw-bolder">SWOT分析</h4>
+                    <label for="project-advantages" class="form-label text-white fs-5 me-8">優勢</label>
+                    <textarea id="project-advantages" rows="3"  class="w-100 bg-transparent  inputField text-white"></textarea>
+                </div>
+                <div class="col-md-8">
+                    <label for="project-disadvantages" class="form-label text-white fs-5 me-8">劣勢</label>
+                    <textarea id="project-disadvantages" rows="3"  class="w-100 bg-transparent  inputField text-white"></textarea>
+                </div>   
+                <div class="col-md-8">  
+                    <label for="project-chance" class="form-label text-white fs-5 me-8">機會</label>
+                    <textarea id="project-chance" rows="3"  class="w-100 bg-transparent  inputField text-white" ></textarea>
+                </div>   
+                <div class="col-md-8">   
+                    <label for="project-threaten" class="form-label text-white fs-5 me-8">威脅</label>
+                    <textarea id="project-threaten" rows="3"  class="w-100 bg-transparent  inputField text-white"></textarea>
+                </div>
+                <div class="col-md-8">
+                    <label for="project-marketsize" class="form-label text-white fs-5">市場規模</label>
+                    <textarea id="project-marketsize" rows="5"  class="w-100 bg-transparent  inputField text-white"></textarea>
+                </div>
+                <div class="col-md-8">
+                    <label for="project-product" class="form-label text-white fs-5 me-8">產品</label>
+                    <textarea id="project-product" rows="5"  class="w-100 bg-transparent  inputField text-white"></textarea>
+                </div>
+                <div class="col-md-8">
+                    <label for="project-competitiveproducts" class="form-label text-white fs-5">競爭產品</label>
+                    <textarea id="project-competitiveproducts" rows="5"  class="w-100 bg-transparent  inputField text-white"></textarea>
+                </div>
+                <div class="col-md-8">
+                    <label for="project-business" class="form-label text-white fs-5">商業模式</label>
+                    <textarea id="project-business" rows="5"  class="w-100 bg-transparent  inputField text-white"></textarea>
+                </div>
+                <div class="col-md-8">
+                    <label for="project-information" class="form-label text-white fs-5">創業者資訊</label>
+                    <textarea id="project-information" rows="5"  class="w-100 bg-transparent  inputField text-white"></textarea>
+                </div>
+            </form>
+
+            <div>
+                <h4 class="text-gray-400 py-8 fw-bolder">其他相關訊息</h4>
+            <h5 class="text-white mb-3">目前財務狀況</h5>
+            <div class="d-flex  align-items-center">
+             <div id="custom-avatar-upload8" class="custom-upload-image mt-5 mt-md-0" style="width: 250px; height: 250px; border: 2px solid #ccc; cursor: pointer; background-image: url(/assets/images/頭像1.png); background-size: contain; background-position: center; background-repeat: no-repeat; position: relative;">
+                        <label for="avatar8" class="form-label text-white" style="position: absolute; top: 10px; right: 10px; background-color: rgba(0, 0, 0, 0.5); padding: 5px; border-radius: 5px;">上傳圖片</label>
+                        <input class="form-control" type="file" id="avatar8" name="avatar" accept="image/*" style="display: none;">
+                        <img id="previewImage8" src="" alt="預覽圖片" style="width: 100%; height: 100%; display: none;">
+                      </div>
+              <p class="text-gray-400 w-50 ms-3">目前公司營運財報資料或是個人請提供財力證明，也是讓投資人評估募資的重要資訊。</p>
+            </div>
+              <h5 class="text-white mt-5 mb-3">上傳照片參考</h5>
+            <div class="d-flex align-items-center">
+                <div id="custom-avatar-upload9" class="custom-upload-image mt-5 mt-md-0" style="width: 250px; height: 250px; border: 2px solid #ccc; cursor: pointer; background-image: url(/assets/images/頭像1.png); background-size: contain; background-position: center; background-repeat: no-repeat; position: relative;">
+                    <label for="avatar9" class="form-label text-white" style="position: absolute; top: 10px; right: 10px; background-color: rgba(0, 0, 0, 0.5); padding: 5px; border-radius: 5px;">上傳圖片</label>
+                    <input class="form-control" type="file" id="avatar9" name="avatar" accept="image/*" style="display: none;">
+                    <img id="previewImage9" src="" alt="預覽圖片" style="width: 100%; height: 100%; display: none;">
+                  </div>
+              <p class="text-gray-400 w-50 ms-3">目前公司營運財報資料或是個人請提供財力證明，也是讓投資人評估募資的重要資訊。</p>
+            </div>
+        </div>
+
+
+<!-- Buttons -->
+  <div class="d-flex justify-content-around pt-8">
+    <button   type="button"  class="btn btn-lg btn-outline-danger fw-bold" id="clearButton"><i class="bi bi-x-circle "></i> 清除
+  </button>
+  <button class="btn btn-lg btn-outline-primary-600 fw-bold" data-bs-toggle="modal" data-bs-target="#newprojects-modal">
+    <i class="bi bi-save"></i> 儲存變更
+</button>
+</div>
+                
+
+ <!-- modal 儲存變更 -->
+ <div class="modal fade" id="newprojects-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content bg-gray-1000">
+            <div class="modal-header border-0">
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+            <div class="modal-body text-center text-primary-600 fs-3 fw-bold">
+               儲存成功
+            </div>
+            <div class="border-0 text-center mt-15 mb-14">
+                <button type="button" class="btn btn-lg btn-primary-600 fw-bolder  px-9" data-bs-dismiss="modal" aria-label="Close">確認</button>
+            </div>
+          </div>
+    </div>
+</div>
+
+
+   
+
+   

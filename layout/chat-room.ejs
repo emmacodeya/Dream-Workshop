@@ -4,7 +4,7 @@
 
 
 <!-- 聊天室視窗 -->
-<div id="chatWindow" class="chat-window " aria-hidden="true" role="dialog" aria-labelledby="chatTitle">
+<div id="chatWindow" class="chat-window desktop active" aria-hidden="true" role="dialog" aria-labelledby="chatTitle">
     <div class="chat-header d-flex justify-content-between align-items-center border-bottom p-1">
       <h5 id="chatTitle" class="text-gray-200">聊聊</h5>
       <button id="closeChat" class="btn close-chat-button" aria-label="關閉聊天室">
@@ -13,8 +13,8 @@
     </div>
 
     <div class="row g-0">
-        <div class="col-6">
-          <div class="message-list" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+        <div class="col-lg-6">
+          <div class="message-list d-none d-lg-block" id="v-pills-tab" role="tablist" aria-orientation="vertical">
             <button class="border message-item" id="v-pills-alcohol-tab" data-bs-toggle="pill" data-bs-target="#v-pills-alcohol" type="button" role="tab" aria-controls="v-pills-alcohol" aria-selected="true">
                 <div class="d-flex align-items-center justify-content-between">
                     <div class="p-1">
@@ -62,7 +62,7 @@
             </button>
           </div>
         </div>
-        <div class="col-6">
+        <div class="col-lg-6 col-md-6">
           <div class="tab-content bg-gray-600" id="v-pills-tabContent">
             <div class="tab-pane fade show active alcohol" id="v-pills-alcohol" role="tabpanel" aria-labelledby="v-pills-alcohol-tab"
             style="height: 300px;">
@@ -127,16 +127,16 @@
       });
 
       // 發送訊息
-      sendButton.addEventListener('click', function() {
-        const message = chatInput.value.trim();
-        if (message !== "") {
-          const messageElement = document.createElement('p');
-          messageElement.textContent = message;
-          chatBody.appendChild(messageElement);
-          chatInput.value = '';
-          chatBody.scrollTop = chatBody.scrollHeight; 
-        }
-      });
+      // sendButton.addEventListener('click', function() {
+      //   const message = chatInput.value.trim();
+      //   if (message !== "") {
+      //     const messageElement = document.createElement('p');
+      //     messageElement.textContent = message;
+      //     chatBody.appendChild(messageElement);
+      //     chatInput.value = '';
+      //     chatBody.scrollTop = chatBody.scrollHeight; 
+      //   }
+      // });
 
 </script>
 

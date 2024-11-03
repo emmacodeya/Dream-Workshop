@@ -1,0 +1,82 @@
+<div class="pt-8">
+  <table class="table table-dark table-hover table-bordered border-gray-600">
+    <thead class="text-center fs-4">
+      <tr>
+        <th class="text-primary-600" scope="col">標題</th>
+        <th class="text-primary-600" scope="col">留言人</th>
+        <th class="text-primary-600" scope="col">留言內容</th>
+        <th class="text-primary-600" scope="col">操作</th>
+      </tr>
+    </thead>
+    <tbody class="text-center">
+        <tr class="align-middle">
+            <td>是否該放棄年薪7百萬的工作轉去創業?</td>
+            <td>曹穎惠</td>
+            <td>想創就創，反正工作隨時都有</td>
+            <td><button class="btn btn-outline-primary-600 text-center" data-bs-toggle="modal" data-bs-target="#exampleModal-reply-articlemessage" role="button">回覆</button>
+            </td>
+        </tr>
+        <tr class="align-middle">
+          <td>是否該放棄年薪7百萬的工作轉去創業?</td>
+          <td>中村修二</td>
+          <td>創失敗了回去工作也會甘願一點 至少試過了</td>
+          <td><button class="btn btn-outline-primary-600 text-center" data-bs-toggle="modal" data-bs-target="#exampleModal-reply-articlemessage" role="button">回覆</button>
+          </td>
+      </tr>
+      <tr class="align-middle">
+        <td>是否該放棄年薪7百萬的工作轉去創業?</td>
+        <td>三島由紀夫</td>
+        <td>你的副業，老婆能夠幫忙嗎？讓它變老婆主業試試看</td>
+        <td><button class="btn btn-outline-primary-600 text-center" data-bs-toggle="modal" data-bs-target="#exampleModal-reply-articlemessage" role="button">回覆</button>
+        </td>
+    </tr>
+    <tr class="align-middle">
+      <td>是否該放棄年薪7百萬的工作轉去創業?</td>
+      <td>戴琪</td>
+      <td>再多幹幾年就退休了，何必想不開去創業</td>
+      <td><button class="btn btn-outline-primary-600 text-center" data-bs-toggle="modal" data-bs-target="#exampleModal-reply-articlemessage" role="button">回覆</button>
+      </td>
+  </tr>
+  <tr class="align-middle">
+    <td>是否該放棄年薪7百萬的工作轉去創業?</td>
+    <td>丁肇中</td>
+    <td>副業目前跟你本業比差太多，你本業都說很累了，幹嘛還要花時間處理副業阿？</td>
+    <td><button class="btn btn-outline-primary-600 text-center" data-bs-toggle="modal" data-bs-target="#exampleModal-reply-articlemessage" role="button">回覆</button>
+    </td>
+</tr>
+    </tbody>
+  </table>
+
+</div>
+
+ <!-- modal 回覆 -->
+
+<div class="modal fade" id="exampleModal-reply-articlemessage" tabindex="-1" aria-labelledby="exampleModalToggleLabel-Projects" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content bg-gray-1000">
+          <div class="modal-header border-0">
+            <h5 class="modal-title text-primary-600" id="exampleModalToggleLabel-Projects">回覆內容</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+          <div class="modal-body text-center">
+            <label for="project-replycontent" class="form-label text-white fs-5"></label>
+              <textarea id="project-replycontent" rows="4"  class="w-100 bg-transparent text-white inputField text-white"></textarea>
+              <div class="modal-footer border-0 d-flex justify-content-between">
+                  <button type="button" class="btn btn-lg btn-gray-600 fw-bolder" id="clearButton6">清除</button>
+                  <button class="btn btn-lg btn-primary-600 fw-bolder" role="button"  data-bs-dismiss="modal">送出</button>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+
+
+<script>
+  // 清除文字
+  document.getElementById('clearButton6')?.addEventListener('click', function() {
+      document.querySelectorAll('.inputField').forEach(function(input) {
+          input.value = ''; 
+      });
+  });
+  </script>
+

@@ -88,9 +88,26 @@
                 </div>
 
                 <div class="col-md-3 mx-md-auto text-center">
-                    <a href="#" class="btn py-lg-3 py-2 px-4 btn-primary-600 fw-bolder">報名</a>
+                    <button class="btn btn-lg btn-primary-600 " data-bs-toggle="modal" data-bs-target="#activity-modal">報名</button>
                   </div>
             </div>
+
+             <!-- modal 報名 -->
+ <div class="modal fade" id="activity-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content bg-gray-1000">
+            <div class="modal-header border-0">
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+            <div class="modal-body text-center text-primary-600 fs-3 fw-bold">
+               報名成功
+            </div>
+            <div class="border-0 text-center mt-15 mb-14">
+                <button type="button" class="btn btn-lg btn-primary-600 fw-bolder  px-9" data-bs-dismiss="modal">確認</button>
+            </div>
+          </div>
+    </div>
+  </div>
          </section>
 
     </main>

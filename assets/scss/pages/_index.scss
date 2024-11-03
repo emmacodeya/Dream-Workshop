@@ -4,6 +4,9 @@
   background-repeat: none;
   background-size: cover;
   height: 100vh;
+  @include pad {
+    padding-inline: 24px;
+  }
   @include mobile {
     padding-inline: 12px;
   }
@@ -30,6 +33,9 @@
 
 //  banner-input
 .banner-search {
+  @include pad {
+    flex-direction: column;
+  }
   @include mobile {
     flex-direction: column;
   }
@@ -184,9 +190,22 @@
   }
 }
 
+.background-container {
+  width: 229.5px;
+  height: 120px;
+  background-size: 100%;
+  background-position: center;
+  transition: background-size 0.3s ease;
+  overflow: hidden;
+}
+
+.background-container:hover {
+  background-size: 120%;
+}
+
 .industry-card {
   height: 120px;
-  padding: 12px;
+  // padding: 12px;
   font-weight: bolder;
   display: flex;
   justify-content: end;
@@ -197,8 +216,26 @@
     font-weight: bold;
     letter-spacing: 6%;
   }
+  @include pad {
+    padding-inline: 6px!important;
+  }
   @include mobile {
     width: 100%;
     height: 100px;
   }
+}
+@media (min-width: 992px) and (max-width: 1400px) {
+  // .industry-card img {
+  //   max-width: 80px;
+  // }
+  // .field-map .container {
+  //   max-width: 100%;
+  // }
+  // .field-map .container {
+  //   margin: 0; 
+  // }
+  .col-custom-3 {
+    flex: 0 0 33.333%; /* 佔 1/3 寬度 */
+    max-width: 33.333%;
+}
 }
